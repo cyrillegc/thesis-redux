@@ -1,0 +1,4401 @@
+C:\Users\Cyrille\Desktop\venv\redux\Scripts\python.exe "C:/Users/Cyrille/Google Drive/UNIL/ISH/Mémoire/redux/songkick_api_test.py"
+Dump found. Concerts: 81741
+Dump found. Venues: 6929
+1
+10
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+11
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+12
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+13
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+14
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+15
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+16
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+17
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+18
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+19
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+2
+20
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+21
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+22
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+23
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+24
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+25
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+26
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+27
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+28
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+29
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+3
+30
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+31
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+32
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+33
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+34
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+35
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+36
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+37
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+38
+380
+381
+382
+383
+384
+385
+386
+387
+388
+389
+39
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+4
+40
+400
+401
+402
+403
+404
+405
+406
+407
+408
+409
+41
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+42
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+43
+430
+431
+432
+433
+434
+435
+436
+437
+438
+439
+44
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+45
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+46
+460
+461
+462
+463
+464
+465
+466
+467
+468
+469
+47
+470
+471
+472
+473
+474
+475
+476
+477
+478
+479
+48
+480
+481
+482
+483
+484
+485
+486
+487
+488
+489
+49
+490
+491
+492
+493
+494
+495
+496
+497
+498
+499
+5
+50
+500
+501
+502
+503
+504
+505
+506
+507
+508
+509
+51
+510
+511
+512
+513
+514
+515
+516
+517
+518
+519
+52
+520
+521
+522
+523
+524
+525
+526
+527
+528
+529
+53
+530
+531
+532
+533
+534
+535
+536
+537
+538
+539
+54
+540
+541
+542
+543
+544
+545
+546
+547
+548
+549
+55
+550
+551
+552
+553
+554
+555
+556
+557
+558
+559
+56
+560
+561
+562
+563
+564
+565
+566
+567
+568
+569
+57
+570
+571
+572
+573
+574
+575
+576
+577
+578
+579
+58
+580
+581
+582
+583
+584
+585
+586
+587
+588
+589
+59
+590
+591
+592
+593
+594
+595
+596
+597
+598
+599
+6
+60
+600
+601
+602
+603
+604
+605
+606
+607
+608
+609
+61
+610
+611
+612
+613
+614
+615
+616
+617
+618
+619
+62
+620
+621
+622
+623
+624
+625
+626
+627
+628
+629
+63
+630
+631
+632
+633
+634
+635
+636
+637
+638
+639
+64
+640
+641
+642
+643
+644
+645
+646
+647
+648
+649
+65
+650
+651
+652
+653
+654
+655
+656
+657
+658
+659
+66
+660
+661
+662
+663
+664
+665
+666
+667
+668
+669
+67
+670
+671
+672
+673
+674
+675
+676
+677
+678
+679
+68
+680
+681
+682
+683
+684
+685
+686
+687
+688
+689
+69
+690
+691
+692
+693
+694
+695
+696
+697
+698
+699
+7
+70
+700
+701
+702
+703
+704
+705
+706
+707
+708
+709
+71
+710
+711
+712
+713
+714
+715
+716
+717
+718
+719
+72
+720
+721
+722
+723
+724
+725
+726
+727
+728
+729
+73
+730
+731
+732
+733
+734
+735
+736
+737
+738
+739
+74
+740
+741
+742
+743
+744
+745
+746
+747
+748
+749
+75
+750
+751
+752
+753
+754
+755
+756
+757
+758
+759
+76
+760
+761
+762
+763
+764
+765
+766
+767
+768
+769
+77
+770
+771
+772
+773
+774
+775
+776
+777
+778
+779
+78
+780
+781
+782
+783
+784
+785
+786
+787
+788
+789
+79
+790
+791
+792
+793
+794
+795
+796
+797
+798
+799
+8
+80
+800
+801
+802
+803
+804
+805
+806
+807
+808
+809
+81
+810
+811
+812
+813
+814
+815
+816
+817
+818
+819
+82
+820
+821
+822
+823
+824
+825
+826
+827
+828
+829
+83
+830
+831
+832
+833
+834
+835
+836
+837
+838
+839
+84
+840
+841
+842
+843
+844
+845
+846
+847
+848
+849
+85
+-------------- venues page 850
+/venues/4344640
+https://www.songkick.com/venues/4344640
+https://www.songkick.com/venues/4344640/gigography?page=1
+[<Response [302]>]
+/venues/4348991
+https://www.songkick.com/venues/4348991
+https://www.songkick.com/venues/4348991/gigography?page=1
+[<Response [302]>]
+/venues/4249369
+https://www.songkick.com/venues/4249369
+https://www.songkick.com/venues/4249369/gigography?page=1
+[<Response [302]>]
+/venues/4249374
+https://www.songkick.com/venues/4249374
+https://www.songkick.com/venues/4249374/gigography?page=1
+[<Response [302]>]
+/venues/4265614
+https://www.songkick.com/venues/4265614
+https://www.songkick.com/venues/4265614/gigography?page=1
+[<Response [302]>]
+/venues/4267019
+https://www.songkick.com/venues/4267019
+https://www.songkick.com/venues/4267019/gigography?page=1
+[<Response [302]>]
+/venues/4273059
+https://www.songkick.com/venues/4273059
+https://www.songkick.com/venues/4273059/gigography?page=1
+[<Response [302]>]
+/venues/4279434
+https://www.songkick.com/venues/4279434
+https://www.songkick.com/venues/4279434/gigography?page=1
+[<Response [302]>]
+After page 850 : Venues: 6937 - Concerts: 81741
+-------------- venues page 851
+/venues/4292249
+https://www.songkick.com/venues/4292249
+https://www.songkick.com/venues/4292249/gigography?page=1
+[<Response [302]>]
+/venues/4302569
+https://www.songkick.com/venues/4302569
+https://www.songkick.com/venues/4302569/gigography?page=1
+[<Response [302]>]
+/venues/4304134
+https://www.songkick.com/venues/4304134
+https://www.songkick.com/venues/4304134/gigography?page=1
+[<Response [302]>]
+/venues/4315254
+https://www.songkick.com/venues/4315254
+https://www.songkick.com/venues/4315254/gigography?page=1
+[<Response [302]>]
+/venues/4322349
+https://www.songkick.com/venues/4322349
+https://www.songkick.com/venues/4322349/gigography?page=1
+[<Response [302]>]
+/venues/4354102
+https://www.songkick.com/venues/4354102
+https://www.songkick.com/venues/4354102/gigography?page=1
+[<Response [302]>]
+/venues/4354361
+https://www.songkick.com/venues/4354361
+https://www.songkick.com/venues/4354361/gigography?page=1
+[<Response [302]>]
+/venues/4356866
+https://www.songkick.com/venues/4356866
+https://www.songkick.com/venues/4356866/gigography?page=1
+[<Response [302]>]
+/venues/4360798
+https://www.songkick.com/venues/4360798
+https://www.songkick.com/venues/4360798/gigography?page=1
+[<Response [302]>]
+After page 851 : Venues: 6946 - Concerts: 81741
+-------------- venues page 852
+/venues/4361175
+https://www.songkick.com/venues/4361175
+https://www.songkick.com/venues/4361175/gigography?page=1
+[<Response [302]>]
+/venues/4361523
+https://www.songkick.com/venues/4361523
+https://www.songkick.com/venues/4361523/gigography?page=1
+[<Response [302]>]
+/venues/4366009
+https://www.songkick.com/venues/4366009
+https://www.songkick.com/venues/4366009/gigography?page=1
+[<Response [302]>]
+/venues/4366907
+https://www.songkick.com/venues/4366907
+https://www.songkick.com/venues/4366907/gigography?page=1
+[<Response [302]>]
+/venues/4367612
+https://www.songkick.com/venues/4367612
+https://www.songkick.com/venues/4367612/gigography?page=1
+[<Response [302]>]
+/venues/4367944
+https://www.songkick.com/venues/4367944
+https://www.songkick.com/venues/4367944/gigography?page=1
+[<Response [302]>]
+/venues/4367958
+https://www.songkick.com/venues/4367958
+https://www.songkick.com/venues/4367958/gigography?page=1
+[<Response [302]>]
+/venues/4368116
+https://www.songkick.com/venues/4368116
+https://www.songkick.com/venues/4368116/gigography?page=1
+[<Response [302]>]
+/venues/4368289
+https://www.songkick.com/venues/4368289
+https://www.songkick.com/venues/4368289/gigography?page=1
+[<Response [302]>]
+/venues/4368306
+https://www.songkick.com/venues/4368306
+https://www.songkick.com/venues/4368306/gigography?page=1
+[<Response [302]>]
+After page 852 : Venues: 6956 - Concerts: 81741
+-------------- venues page 853
+/venues/4368607
+https://www.songkick.com/venues/4368607
+https://www.songkick.com/venues/4368607/gigography?page=1
+[<Response [302]>]
+/venues/4368942
+https://www.songkick.com/venues/4368942
+https://www.songkick.com/venues/4368942/gigography?page=1
+[<Response [302]>]
+/venues/4369669
+https://www.songkick.com/venues/4369669
+https://www.songkick.com/venues/4369669/gigography?page=1
+[<Response [302]>]
+/venues/4369928
+https://www.songkick.com/venues/4369928
+https://www.songkick.com/venues/4369928/gigography?page=1
+[<Response [302]>]
+/venues/4370842
+https://www.songkick.com/venues/4370842
+https://www.songkick.com/venues/4370842/gigography?page=1
+[<Response [302]>]
+/venues/4370722
+https://www.songkick.com/venues/4370722
+https://www.songkick.com/venues/4370722/gigography?page=1
+[<Response [302]>]
+/venues/4371190
+https://www.songkick.com/venues/4371190
+https://www.songkick.com/venues/4371190/gigography?page=1
+[<Response [302]>]
+/venues/4371913
+https://www.songkick.com/venues/4371913
+https://www.songkick.com/venues/4371913/gigography?page=1
+[<Response [302]>]
+/venues/4373946
+https://www.songkick.com/venues/4373946
+https://www.songkick.com/venues/4373946/gigography?page=1
+[<Response [302]>]
+/venues/4374867
+https://www.songkick.com/venues/4374867
+https://www.songkick.com/venues/4374867/gigography?page=1
+[<Response [302]>]
+After page 853 : Venues: 6966 - Concerts: 81741
+-------------- venues page 854
+/venues/4374935
+https://www.songkick.com/venues/4374935
+https://www.songkick.com/venues/4374935/gigography?page=1
+[<Response [302]>]
+/venues/4375550
+https://www.songkick.com/venues/4375550
+https://www.songkick.com/venues/4375550/gigography?page=1
+[<Response [302]>]
+/venues/4375499
+https://www.songkick.com/venues/4375499
+https://www.songkick.com/venues/4375499/gigography?page=1
+[<Response [302]>]
+/venues/4375385
+https://www.songkick.com/venues/4375385
+https://www.songkick.com/venues/4375385/gigography?page=1
+[<Response [302]>]
+/venues/4375767
+https://www.songkick.com/venues/4375767
+https://www.songkick.com/venues/4375767/gigography?page=1
+[<Response [302]>]
+/venues/4375764
+https://www.songkick.com/venues/4375764
+https://www.songkick.com/venues/4375764/gigography?page=1
+[<Response [302]>]
+/venues/4376292
+https://www.songkick.com/venues/4376292
+https://www.songkick.com/venues/4376292/gigography?page=1
+[<Response [302]>]
+/venues/4376255
+https://www.songkick.com/venues/4376255
+https://www.songkick.com/venues/4376255/gigography?page=1
+[<Response [302]>]
+/venues/4377184
+https://www.songkick.com/venues/4377184
+https://www.songkick.com/venues/4377184/gigography?page=1
+[<Response [302]>]
+/venues/4378270
+https://www.songkick.com/venues/4378270
+https://www.songkick.com/venues/4378270/gigography?page=1
+[<Response [302]>]
+After page 854 : Venues: 6976 - Concerts: 81741
+-------------- venues page 855
+/venues/4378735
+https://www.songkick.com/venues/4378735
+https://www.songkick.com/venues/4378735/gigography?page=1
+[<Response [302]>]
+/venues/4378951
+https://www.songkick.com/venues/4378951
+https://www.songkick.com/venues/4378951/gigography?page=1
+[<Response [302]>]
+/venues/4378921
+https://www.songkick.com/venues/4378921
+https://www.songkick.com/venues/4378921/gigography?page=1
+[<Response [302]>]
+/venues/4379369
+https://www.songkick.com/venues/4379369
+https://www.songkick.com/venues/4379369/gigography?page=1
+[<Response [302]>]
+/venues/4379552
+https://www.songkick.com/venues/4379552
+https://www.songkick.com/venues/4379552/gigography?page=1
+[<Response [302]>]
+/venues/78805
+https://www.songkick.com/venues/78805
+https://www.songkick.com/venues/78805/gigography?page=1
+[<Response [302]>]
+/venues/1260386
+https://www.songkick.com/venues/1260386
+https://www.songkick.com/venues/1260386/gigography?page=1
+[<Response [302]>]
+/venues/1330986
+https://www.songkick.com/venues/1330986
+https://www.songkick.com/venues/1330986/gigography?page=1
+[<Response [302]>]
+/venues/1360016
+https://www.songkick.com/venues/1360016
+https://www.songkick.com/venues/1360016/gigography?page=1
+[<Response [302]>]
+/venues/1474633
+https://www.songkick.com/venues/1474633
+https://www.songkick.com/venues/1474633/gigography?page=1
+[<Response [302]>]
+After page 855 : Venues: 6986 - Concerts: 81741
+-------------- venues page 856
+/venues/1474648
+https://www.songkick.com/venues/1474648
+https://www.songkick.com/venues/1474648/gigography?page=1
+[<Response [302]>]
+/venues/1503178
+https://www.songkick.com/venues/1503178
+https://www.songkick.com/venues/1503178/gigography?page=1
+[<Response [302]>]
+/venues/1880503
+https://www.songkick.com/venues/1880503
+https://www.songkick.com/venues/1880503/gigography?page=1
+[<Response [302]>]
+/venues/1938714
+https://www.songkick.com/venues/1938714
+https://www.songkick.com/venues/1938714/gigography?page=1
+[<Response [302]>]
+/venues/551431
+https://www.songkick.com/venues/551431
+https://www.songkick.com/venues/551431/gigography?page=1
+[<Response [302]>]
+/venues/691446
+https://www.songkick.com/venues/691446
+https://www.songkick.com/venues/691446/gigography?page=1
+[<Response [302]>]
+/venues/203673
+https://www.songkick.com/venues/203673
+https://www.songkick.com/venues/203673/gigography?page=1
+[<Response [302]>]
+/venues/1980834
+https://www.songkick.com/venues/1980834
+https://www.songkick.com/venues/1980834/gigography?page=1
+[<Response [302]>]
+/venues/2053764
+https://www.songkick.com/venues/2053764
+https://www.songkick.com/venues/2053764/gigography?page=1
+[<Response [302]>]
+/venues/2155274
+https://www.songkick.com/venues/2155274
+https://www.songkick.com/venues/2155274/gigography?page=1
+[<Response [302]>]
+After page 856 : Venues: 6996 - Concerts: 81741
+-------------- venues page 857
+/venues/2160649
+https://www.songkick.com/venues/2160649
+https://www.songkick.com/venues/2160649/gigography?page=1
+[<Response [302]>]
+/venues/4387389
+https://www.songkick.com/venues/4387389
+https://www.songkick.com/venues/4387389/gigography?page=1
+[<Response [302]>]
+/venues/3402754
+https://www.songkick.com/venues/3402754
+https://www.songkick.com/venues/3402754/gigography?page=1
+[<Response [302]>]
+/venues/3489459
+https://www.songkick.com/venues/3489459
+https://www.songkick.com/venues/3489459/gigography?page=1
+[<Response [302]>]
+/venues/3496904
+https://www.songkick.com/venues/3496904
+https://www.songkick.com/venues/3496904/gigography?page=1
+[<Response [302]>]
+/venues/3438714
+https://www.songkick.com/venues/3438714
+https://www.songkick.com/venues/3438714/gigography?page=1
+[<Response [302]>]
+/venues/3438059
+https://www.songkick.com/venues/3438059
+https://www.songkick.com/venues/3438059/gigography?page=1
+[<Response [302]>]
+/venues/3459099
+https://www.songkick.com/venues/3459099
+https://www.songkick.com/venues/3459099/gigography?page=1
+[<Response [302]>]
+/venues/3470634
+https://www.songkick.com/venues/3470634
+https://www.songkick.com/venues/3470634/gigography?page=1
+[<Response [302]>]
+/venues/3525479
+https://www.songkick.com/venues/3525479
+https://www.songkick.com/venues/3525479/gigography?page=1
+[<Response [302]>]
+After page 857 : Venues: 7006 - Concerts: 81741
+-------------- venues page 858
+/venues/3568464
+https://www.songkick.com/venues/3568464
+https://www.songkick.com/venues/3568464/gigography?page=1
+[<Response [302]>]
+/venues/3776399
+https://www.songkick.com/venues/3776399
+https://www.songkick.com/venues/3776399/gigography?page=1
+[<Response [302]>]
+/venues/3816529
+https://www.songkick.com/venues/3816529
+https://www.songkick.com/venues/3816529/gigography?page=1
+[<Response [302]>]
+/venues/3832794
+https://www.songkick.com/venues/3832794
+https://www.songkick.com/venues/3832794/gigography?page=1
+[<Response [302]>]
+After page 858 : Venues: 7010 - Concerts: 81741
+-------------- venues page 859
+/venues/3840204
+https://www.songkick.com/venues/3840204
+https://www.songkick.com/venues/3840204/gigography?page=1
+[<Response [302]>]
+/venues/3840114
+https://www.songkick.com/venues/3840114
+https://www.songkick.com/venues/3840114/gigography?page=1
+[<Response [302]>]
+/venues/3856939
+https://www.songkick.com/venues/3856939
+https://www.songkick.com/venues/3856939/gigography?page=1
+[<Response [302]>]
+/venues/3868154
+https://www.songkick.com/venues/3868154
+https://www.songkick.com/venues/3868154/gigography?page=1
+[<Response [302]>]
+/venues/3879849
+https://www.songkick.com/venues/3879849
+https://www.songkick.com/venues/3879849/gigography?page=1
+[<Response [302]>]
+/venues/3881084
+https://www.songkick.com/venues/3881084
+https://www.songkick.com/venues/3881084/gigography?page=1
+[<Response [302]>]
+/venues/3901994
+https://www.songkick.com/venues/3901994
+https://www.songkick.com/venues/3901994/gigography?page=1
+[<Response [302]>]
+/venues/3906649
+https://www.songkick.com/venues/3906649
+https://www.songkick.com/venues/3906649/gigography?page=1
+[<Response [302]>]
+/venues/4387972
+https://www.songkick.com/venues/4387972
+https://www.songkick.com/venues/4387972/gigography?page=1
+[<Response [302]>]
+/venues/4405923
+https://www.songkick.com/venues/4405923
+https://www.songkick.com/venues/4405923/gigography?page=1
+[<Response [302]>]
+After page 859 : Venues: 7020 - Concerts: 81741
+-------------- venues page 86
+/venues/1496778
+https://www.songkick.com/venues/1496778
+https://www.songkick.com/venues/1496778/gigography?page=1
+....... concerts page 1
+https://www.songkick.com/concerts/28769204-famous-dex-at-queens-club
+https://www.songkick.com/concerts/14680389-sandro-kuhne-at-queens-club
+https://www.songkick.com/concerts/14680289-martinez-at-queens-club
+https://www.songkick.com/concerts/14403284-nima-gorji-at-queens-club
+https://www.songkick.com/concerts/12191363-robert-dietz-at-queens-club
+https://www.songkick.com/concerts/11731538-mendo-at-queens-club
+https://www.songkick.com/concerts/11629073-fabiano-at-queens-club
+https://www.songkick.com/concerts/10617948-santosh-khan-at-queens-club
+https://www.songkick.com/concerts/10522098-santosh-khan-at-queens-club
+https://www.songkick.com/concerts/10519553-santosh-khan-at-queens-club
+https://www.songkick.com/concerts/10628798-max-varano-at-queens-club
+https://www.songkick.com/concerts/10395878-santosh-khan-at-queens-club
+https://www.songkick.com/concerts/10252743-herr-muller-at-queens-club
+https://www.songkick.com/venues/1496778/gigography?page=2
+[<Response [302]>]
+/venues/2147414
+https://www.songkick.com/venues/2147414
+https://www.songkick.com/venues/2147414/gigography?page=1
+....... concerts page 1
+https://www.songkick.com/concerts/39286746-throttle-at-wknd-club
+https://www.songkick.com/concerts/31150619-tujamo-at-wknd-club
+https://www.songkick.com/concerts/30569819-benny-benassi-at-wknd-club
+https://www.songkick.com/concerts/29646614-jax-jones-at-wknd-club
+https://www.songkick.com/concerts/27875294-sigala-at-wknd-club
+https://www.songkick.com/concerts/28419689-paco-osuna-at-wknd-club
+https://www.songkick.com/concerts/28273549-mike-perry-at-wknd-club
+https://www.songkick.com/concerts/26894429-michael-calfan-at-wknd-club
+https://www.songkick.com/concerts/26624924-klingande-at-wknd-club
+https://www.songkick.com/concerts/17218359-dj-sneak-at-wknd-club
+https://www.songkick.com/concerts/16788459-mercury-at-wknd-club
+https://www.songkick.com/concerts/16232644-todd-terry-at-wknd-club
+https://www.songkick.com/concerts/15305899-stefano-ritteri-at-wknd-club
+https://www.songkick.com/venues/2147414/gigography?page=2
+[<Response [302]>]
+/venues/2304799
+https://www.songkick.com/venues/2304799
+https://www.songkick.com/venues/2304799/gigography?page=1
+....... concerts page 1
+https://www.songkick.com/concerts/39796606-lucas-debargue-at-verbier-festival
+https://www.songkick.com/concerts/39796605-lucas-debargue-at-verbier-festival
+https://www.songkick.com/concerts/39796604-lucas-debargue-at-verbier-festival
+https://www.songkick.com/concerts/39562743-sonya-yoncheva-at-verbier-festival
+https://www.songkick.com/concerts/39457014-augustin-dumay-at-verbier-festival
+https://www.songkick.com/concerts/31689339-lucas-debargue-at-verbier-festival
+https://www.songkick.com/concerts/31689334-lucas-debargue-at-verbier-festival
+https://www.songkick.com/concerts/31689329-lucas-debargue-at-verbier-festival
+https://www.songkick.com/festivals/434978-verbier/id/28050704-verbier-festival-2017
+https://www.songkick.com/concerts/27217194-lucas-debargue-at-verbier-festival
+https://www.songkick.com/concerts/23708333-randy-valentine-at-verbier-festival
+https://www.songkick.com/concerts/19406979-andreas-ottensamer-at-verbier-festival
+https://www.songkick.com/concerts/16652794-rufus-wainwright-at-verbier-festival
+https://www.songkick.com/venues/2304799/gigography?page=2
+[<Response [302]>]
+/venues/419826
+https://www.songkick.com/venues/419826
+https://www.songkick.com/venues/419826/gigography?page=1
+....... concerts page 1
+https://www.songkick.com/concerts/39936194-laurent-and-max-at-zurcher-theaterspektakel
+https://www.songkick.com/festivals/1592609-theaterspektakel/id/38976940-theaterspektakel-2019
+https://www.songkick.com/concerts/39075255-ebony-bones-at-zurcher-theaterspektakel
+https://www.songkick.com/concerts/34168999-henrik-schwarz-at-zurcher-theaterspektakel
+https://www.songkick.com/festivals/1592609-theaterspektakel/id/27277909-theaterspektakel-2016
+https://www.songkick.com/concerts/20606938-orchestre-tout-puissant-marcel-duchamp-at-zurcher-theaterspektakel
+https://www.songkick.com/concerts/16500854-bombino-at-zurcher-theaterspektakel
+https://www.songkick.com/concerts/9636793-imperial-tiger-orchestra-at-zurcher-theaterspektakel
+https://www.songkick.com/concerts/5854321-hells-kitchen-at-zurcher-theaterspektakel
+https://www.songkick.com/concerts/6297226-amparo-sanchez-at-zurcher-theaterspektakel
+https://www.songkick.com/concerts/2160336-soha-at-zurcher-theaterspektakel
+https://www.songkick.com/concerts/2069551-daau-die-anarchistische-abendunterhaltung-at-zurcher-theaterspektakel
+https://www.songkick.com/concerts/2069866-daau-die-anarchistische-abendunterhaltung-at-zurcher-theaterspektakel
+https://www.songkick.com/venues/419826/gigography?page=2
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 86 : Venues: 7024 - Concerts: 81792
+-------------- venues page 860
+/venues/4410519
+https://www.songkick.com/venues/4410519
+https://www.songkick.com/venues/4410519/gigography?page=1
+[<Response [302]>]
+/venues/4250569
+https://www.songkick.com/venues/4250569
+https://www.songkick.com/venues/4250569/gigography?page=1
+[<Response [302]>]
+/venues/4418115
+https://www.songkick.com/venues/4418115
+https://www.songkick.com/venues/4418115/gigography?page=1
+[<Response [302]>]
+/venues/4418301
+https://www.songkick.com/venues/4418301
+https://www.songkick.com/venues/4418301/gigography?page=1
+[<Response [302]>]
+/venues/4418309
+https://www.songkick.com/venues/4418309
+https://www.songkick.com/venues/4418309/gigography?page=1
+[<Response [302]>]
+/venues/4421086
+https://www.songkick.com/venues/4421086
+https://www.songkick.com/venues/4421086/gigography?page=1
+[<Response [302]>]
+/venues/4421111
+https://www.songkick.com/venues/4421111
+https://www.songkick.com/venues/4421111/gigography?page=1
+[<Response [302]>]
+/venues/4421120
+https://www.songkick.com/venues/4421120
+https://www.songkick.com/venues/4421120/gigography?page=1
+[<Response [302]>]
+/venues/4387702
+https://www.songkick.com/venues/4387702
+https://www.songkick.com/venues/4387702/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 860 : Venues: 7033 - Concerts: 81792
+-------------- venues page 861
+/venues/4045984
+https://www.songkick.com/venues/4045984
+https://www.songkick.com/venues/4045984/gigography?page=1
+[<Response [302]>]
+/venues/3913144
+https://www.songkick.com/venues/3913144
+https://www.songkick.com/venues/3913144/gigography?page=1
+[<Response [302]>]
+/venues/3922334
+https://www.songkick.com/venues/3922334
+https://www.songkick.com/venues/3922334/gigography?page=1
+[<Response [302]>]
+/venues/3938499
+https://www.songkick.com/venues/3938499
+https://www.songkick.com/venues/3938499/gigography?page=1
+[<Response [302]>]
+/venues/3950259
+https://www.songkick.com/venues/3950259
+https://www.songkick.com/venues/3950259/gigography?page=1
+[<Response [302]>]
+/venues/3958079
+https://www.songkick.com/venues/3958079
+https://www.songkick.com/venues/3958079/gigography?page=1
+[<Response [302]>]
+/venues/4008944
+https://www.songkick.com/venues/4008944
+https://www.songkick.com/venues/4008944/gigography?page=1
+[<Response [302]>]
+/venues/4052784
+https://www.songkick.com/venues/4052784
+https://www.songkick.com/venues/4052784/gigography?page=1
+[<Response [302]>]
+/venues/4054379
+https://www.songkick.com/venues/4054379
+https://www.songkick.com/venues/4054379/gigography?page=1
+[<Response [302]>]
+/venues/4109089
+https://www.songkick.com/venues/4109089
+https://www.songkick.com/venues/4109089/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 861 : Venues: 7043 - Concerts: 81792
+-------------- venues page 862
+/venues/4390281
+https://www.songkick.com/venues/4390281
+https://www.songkick.com/venues/4390281/gigography?page=1
+[<Response [302]>]
+/venues/4398535
+https://www.songkick.com/venues/4398535
+https://www.songkick.com/venues/4398535/gigography?page=1
+[<Response [302]>]
+/venues/3975679
+https://www.songkick.com/venues/3975679
+https://www.songkick.com/venues/3975679/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 862 : Venues: 7046 - Concerts: 81792
+-------------- venues page 863
+/venues/4206629
+https://www.songkick.com/venues/4206629
+https://www.songkick.com/venues/4206629/gigography?page=1
+[<Response [302]>]
+/venues/4211994
+https://www.songkick.com/venues/4211994
+https://www.songkick.com/venues/4211994/gigography?page=1
+[<Response [302]>]
+/venues/4233229
+https://www.songkick.com/venues/4233229
+https://www.songkick.com/venues/4233229/gigography?page=1
+[<Response [302]>]
+/venues/2870043
+https://www.songkick.com/venues/2870043
+https://www.songkick.com/venues/2870043/gigography?page=1
+[<Response [302]>]
+/venues/2917698
+https://www.songkick.com/venues/2917698
+https://www.songkick.com/venues/2917698/gigography?page=1
+[<Response [302]>]
+/venues/2939178
+https://www.songkick.com/venues/2939178
+https://www.songkick.com/venues/2939178/gigography?page=1
+[<Response [302]>]
+/venues/2983423
+https://www.songkick.com/venues/2983423
+https://www.songkick.com/venues/2983423/gigography?page=1
+[<Response [302]>]
+/venues/3010334
+https://www.songkick.com/venues/3010334
+https://www.songkick.com/venues/3010334/gigography?page=1
+[<Response [302]>]
+/venues/3012864
+https://www.songkick.com/venues/3012864
+https://www.songkick.com/venues/3012864/gigography?page=1
+[<Response [302]>]
+/venues/3046319
+https://www.songkick.com/venues/3046319
+https://www.songkick.com/venues/3046319/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 863 : Venues: 7056 - Concerts: 81792
+-------------- venues page 864
+/venues/3066954
+https://www.songkick.com/venues/3066954
+https://www.songkick.com/venues/3066954/gigography?page=1
+[<Response [302]>]
+/venues/2752073
+https://www.songkick.com/venues/2752073
+https://www.songkick.com/venues/2752073/gigography?page=1
+[<Response [302]>]
+/venues/2757123
+https://www.songkick.com/venues/2757123
+https://www.songkick.com/venues/2757123/gigography?page=1
+[<Response [302]>]
+/venues/2941528
+https://www.songkick.com/venues/2941528
+https://www.songkick.com/venues/2941528/gigography?page=1
+[<Response [302]>]
+/venues/3021544
+https://www.songkick.com/venues/3021544
+https://www.songkick.com/venues/3021544/gigography?page=1
+[<Response [302]>]
+/venues/3047344
+https://www.songkick.com/venues/3047344
+https://www.songkick.com/venues/3047344/gigography?page=1
+[<Response [302]>]
+/venues/2830313
+https://www.songkick.com/venues/2830313
+https://www.songkick.com/venues/2830313/gigography?page=1
+[<Response [302]>]
+/venues/2830878
+https://www.songkick.com/venues/2830878
+https://www.songkick.com/venues/2830878/gigography?page=1
+[<Response [302]>]
+/venues/2936218
+https://www.songkick.com/venues/2936218
+https://www.songkick.com/venues/2936218/gigography?page=1
+[<Response [302]>]
+/venues/3065539
+https://www.songkick.com/venues/3065539
+https://www.songkick.com/venues/3065539/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 864 : Venues: 7066 - Concerts: 81792
+-------------- venues page 865
+/venues/3065569
+https://www.songkick.com/venues/3065569
+https://www.songkick.com/venues/3065569/gigography?page=1
+[<Response [302]>]
+/venues/2811798
+https://www.songkick.com/venues/2811798
+https://www.songkick.com/venues/2811798/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 865 : Venues: 7068 - Concerts: 81792
+-------------- venues page 866
+/venues/2550594
+https://www.songkick.com/venues/2550594
+https://www.songkick.com/venues/2550594/gigography?page=1
+[<Response [302]>]
+/venues/3098884
+https://www.songkick.com/venues/3098884
+https://www.songkick.com/venues/3098884/gigography?page=1
+[<Response [302]>]
+/venues/3131234
+https://www.songkick.com/venues/3131234
+https://www.songkick.com/venues/3131234/gigography?page=1
+[<Response [302]>]
+/venues/3201458
+https://www.songkick.com/venues/3201458
+https://www.songkick.com/venues/3201458/gigography?page=1
+[<Response [302]>]
+/venues/3265619
+https://www.songkick.com/venues/3265619
+https://www.songkick.com/venues/3265619/gigography?page=1
+[<Response [302]>]
+/venues/3309684
+https://www.songkick.com/venues/3309684
+https://www.songkick.com/venues/3309684/gigography?page=1
+[<Response [302]>]
+/venues/3344249
+https://www.songkick.com/venues/3344249
+https://www.songkick.com/venues/3344249/gigography?page=1
+[<Response [302]>]
+/venues/3344254
+https://www.songkick.com/venues/3344254
+https://www.songkick.com/venues/3344254/gigography?page=1
+[<Response [302]>]
+/venues/3141674
+https://www.songkick.com/venues/3141674
+https://www.songkick.com/venues/3141674/gigography?page=1
+[<Response [302]>]
+/venues/3215483
+https://www.songkick.com/venues/3215483
+https://www.songkick.com/venues/3215483/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 866 : Venues: 7078 - Concerts: 81792
+-------------- venues page 867
+/venues/3059279
+https://www.songkick.com/venues/3059279
+https://www.songkick.com/venues/3059279/gigography?page=1
+[<Response [302]>]
+/venues/2525569
+https://www.songkick.com/venues/2525569
+https://www.songkick.com/venues/2525569/gigography?page=1
+[<Response [302]>]
+/venues/2523964
+https://www.songkick.com/venues/2523964
+https://www.songkick.com/venues/2523964/gigography?page=1
+[<Response [302]>]
+/venues/2537969
+https://www.songkick.com/venues/2537969
+https://www.songkick.com/venues/2537969/gigography?page=1
+[<Response [302]>]
+/venues/3231764
+https://www.songkick.com/venues/3231764
+https://www.songkick.com/venues/3231764/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 867 : Venues: 7083 - Concerts: 81792
+-------------- venues page 868
+/venues/3331334
+https://www.songkick.com/venues/3331334
+https://www.songkick.com/venues/3331334/gigography?page=1
+[<Response [302]>]
+/venues/3315389
+https://www.songkick.com/venues/3315389
+https://www.songkick.com/venues/3315389/gigography?page=1
+[<Response [302]>]
+/venues/3341084
+https://www.songkick.com/venues/3341084
+https://www.songkick.com/venues/3341084/gigography?page=1
+[<Response [302]>]
+/venues/3340969
+https://www.songkick.com/venues/3340969
+https://www.songkick.com/venues/3340969/gigography?page=1
+[<Response [302]>]
+/venues/3340974
+https://www.songkick.com/venues/3340974
+https://www.songkick.com/venues/3340974/gigography?page=1
+[<Response [302]>]
+/venues/3345194
+https://www.songkick.com/venues/3345194
+https://www.songkick.com/venues/3345194/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 868 : Venues: 7089 - Concerts: 81792
+-------------- venues page 869
+/venues/4335321
+https://www.songkick.com/venues/4335321
+https://www.songkick.com/venues/4335321/gigography?page=1
+[<Response [302]>]
+/venues/4337609
+https://www.songkick.com/venues/4337609
+https://www.songkick.com/venues/4337609/gigography?page=1
+[<Response [302]>]
+/venues/4338370
+https://www.songkick.com/venues/4338370
+https://www.songkick.com/venues/4338370/gigography?page=1
+[<Response [302]>]
+/venues/4341915
+https://www.songkick.com/venues/4341915
+https://www.songkick.com/venues/4341915/gigography?page=1
+[<Response [302]>]
+/venues/4343122
+https://www.songkick.com/venues/4343122
+https://www.songkick.com/venues/4343122/gigography?page=1
+[<Response [302]>]
+/venues/4343561
+https://www.songkick.com/venues/4343561
+https://www.songkick.com/venues/4343561/gigography?page=1
+[<Response [302]>]
+/venues/4343999
+https://www.songkick.com/venues/4343999
+https://www.songkick.com/venues/4343999/gigography?page=1
+[<Response [302]>]
+/venues/4347315
+https://www.songkick.com/venues/4347315
+https://www.songkick.com/venues/4347315/gigography?page=1
+[<Response [302]>]
+/venues/4347848
+https://www.songkick.com/venues/4347848
+https://www.songkick.com/venues/4347848/gigography?page=1
+[<Response [302]>]
+/venues/4350933
+https://www.songkick.com/venues/4350933
+https://www.songkick.com/venues/4350933/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 869 : Venues: 7099 - Concerts: 81792
+-------------- venues page 87
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 87 : Venues: 7099 - Concerts: 81792
+-------------- venues page 870
+/venues/4321319
+https://www.songkick.com/venues/4321319
+https://www.songkick.com/venues/4321319/gigography?page=1
+[<Response [302]>]
+/venues/4324889
+https://www.songkick.com/venues/4324889
+https://www.songkick.com/venues/4324889/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 870 : Venues: 7101 - Concerts: 81792
+-------------- venues page 871
+/venues/4355863
+https://www.songkick.com/venues/4355863
+https://www.songkick.com/venues/4355863/gigography?page=1
+[<Response [302]>]
+/venues/4356303
+https://www.songkick.com/venues/4356303
+https://www.songkick.com/venues/4356303/gigography?page=1
+[<Response [302]>]
+/venues/4356638
+https://www.songkick.com/venues/4356638
+https://www.songkick.com/venues/4356638/gigography?page=1
+[<Response [302]>]
+/venues/4357814
+https://www.songkick.com/venues/4357814
+https://www.songkick.com/venues/4357814/gigography?page=1
+[<Response [302]>]
+/venues/4359399
+https://www.songkick.com/venues/4359399
+https://www.songkick.com/venues/4359399/gigography?page=1
+[<Response [302]>]
+/venues/4359635
+https://www.songkick.com/venues/4359635
+https://www.songkick.com/venues/4359635/gigography?page=1
+[<Response [302]>]
+/venues/4366042
+https://www.songkick.com/venues/4366042
+https://www.songkick.com/venues/4366042/gigography?page=1
+[<Response [302]>]
+/venues/4367608
+https://www.songkick.com/venues/4367608
+https://www.songkick.com/venues/4367608/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 871 : Venues: 7109 - Concerts: 81792
+-------------- venues page 872
+/venues/4367610
+https://www.songkick.com/venues/4367610
+https://www.songkick.com/venues/4367610/gigography?page=1
+[<Response [302]>]
+/venues/4368861
+https://www.songkick.com/venues/4368861
+https://www.songkick.com/venues/4368861/gigography?page=1
+[<Response [302]>]
+/venues/4369683
+https://www.songkick.com/venues/4369683
+https://www.songkick.com/venues/4369683/gigography?page=1
+[<Response [302]>]
+/venues/4369681
+https://www.songkick.com/venues/4369681
+https://www.songkick.com/venues/4369681/gigography?page=1
+[<Response [302]>]
+/venues/4369867
+https://www.songkick.com/venues/4369867
+https://www.songkick.com/venues/4369867/gigography?page=1
+[<Response [302]>]
+/venues/4370065
+https://www.songkick.com/venues/4370065
+https://www.songkick.com/venues/4370065/gigography?page=1
+[<Response [302]>]
+/venues/4370030
+https://www.songkick.com/venues/4370030
+https://www.songkick.com/venues/4370030/gigography?page=1
+[<Response [302]>]
+/venues/4370231
+https://www.songkick.com/venues/4370231
+https://www.songkick.com/venues/4370231/gigography?page=1
+[<Response [302]>]
+/venues/4370901
+https://www.songkick.com/venues/4370901
+https://www.songkick.com/venues/4370901/gigography?page=1
+[<Response [302]>]
+/venues/4371666
+https://www.songkick.com/venues/4371666
+https://www.songkick.com/venues/4371666/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 872 : Venues: 7119 - Concerts: 81792
+-------------- venues page 873
+/venues/4371983
+https://www.songkick.com/venues/4371983
+https://www.songkick.com/venues/4371983/gigography?page=1
+[<Response [302]>]
+/venues/4372817
+https://www.songkick.com/venues/4372817
+https://www.songkick.com/venues/4372817/gigography?page=1
+[<Response [302]>]
+/venues/4372841
+https://www.songkick.com/venues/4372841
+https://www.songkick.com/venues/4372841/gigography?page=1
+[<Response [302]>]
+/venues/4372712
+https://www.songkick.com/venues/4372712
+https://www.songkick.com/venues/4372712/gigography?page=1
+[<Response [302]>]
+/venues/4374292
+https://www.songkick.com/venues/4374292
+https://www.songkick.com/venues/4374292/gigography?page=1
+[<Response [302]>]
+/venues/4374534
+https://www.songkick.com/venues/4374534
+https://www.songkick.com/venues/4374534/gigography?page=1
+[<Response [302]>]
+/venues/4375049
+https://www.songkick.com/venues/4375049
+https://www.songkick.com/venues/4375049/gigography?page=1
+[<Response [302]>]
+/venues/4375213
+https://www.songkick.com/venues/4375213
+https://www.songkick.com/venues/4375213/gigography?page=1
+[<Response [302]>]
+/venues/4375235
+https://www.songkick.com/venues/4375235
+https://www.songkick.com/venues/4375235/gigography?page=1
+[<Response [302]>]
+/venues/4375474
+https://www.songkick.com/venues/4375474
+https://www.songkick.com/venues/4375474/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 873 : Venues: 7129 - Concerts: 81792
+-------------- venues page 874
+/venues/2094419
+https://www.songkick.com/venues/2094419
+https://www.songkick.com/venues/2094419/gigography?page=1
+[<Response [302]>]
+/venues/2113904
+https://www.songkick.com/venues/2113904
+https://www.songkick.com/venues/2113904/gigography?page=1
+[<Response [302]>]
+/venues/2165499
+https://www.songkick.com/venues/2165499
+https://www.songkick.com/venues/2165499/gigography?page=1
+[<Response [302]>]
+/venues/2189354
+https://www.songkick.com/venues/2189354
+https://www.songkick.com/venues/2189354/gigography?page=1
+[<Response [302]>]
+/venues/4386859
+https://www.songkick.com/venues/4386859
+https://www.songkick.com/venues/4386859/gigography?page=1
+[<Response [302]>]
+/venues/3592804
+https://www.songkick.com/venues/3592804
+https://www.songkick.com/venues/3592804/gigography?page=1
+[<Response [302]>]
+/venues/3602459
+https://www.songkick.com/venues/3602459
+https://www.songkick.com/venues/3602459/gigography?page=1
+[<Response [302]>]
+/venues/3602464
+https://www.songkick.com/venues/3602464
+https://www.songkick.com/venues/3602464/gigography?page=1
+[<Response [302]>]
+/venues/3726364
+https://www.songkick.com/venues/3726364
+https://www.songkick.com/venues/3726364/gigography?page=1
+[<Response [302]>]
+/venues/3743999
+https://www.songkick.com/venues/3743999
+https://www.songkick.com/venues/3743999/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 874 : Venues: 7139 - Concerts: 81792
+-------------- venues page 875
+/venues/1909503
+https://www.songkick.com/venues/1909503
+https://www.songkick.com/venues/1909503/gigography?page=1
+[<Response [302]>]
+/venues/1323421
+https://www.songkick.com/venues/1323421
+https://www.songkick.com/venues/1323421/gigography?page=1
+[<Response [302]>]
+/venues/1379146
+https://www.songkick.com/venues/1379146
+https://www.songkick.com/venues/1379146/gigography?page=1
+[<Response [302]>]
+/venues/1385631
+https://www.songkick.com/venues/1385631
+https://www.songkick.com/venues/1385631/gigography?page=1
+[<Response [302]>]
+/venues/643616
+https://www.songkick.com/venues/643616
+https://www.songkick.com/venues/643616/gigography?page=1
+[<Response [302]>]
+/venues/2014444
+https://www.songkick.com/venues/2014444
+https://www.songkick.com/venues/2014444/gigography?page=1
+[<Response [302]>]
+/venues/2093474
+https://www.songkick.com/venues/2093474
+https://www.songkick.com/venues/2093474/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 875 : Venues: 7146 - Concerts: 81792
+-------------- venues page 876
+/venues/3721889
+https://www.songkick.com/venues/3721889
+https://www.songkick.com/venues/3721889/gigography?page=1
+[<Response [302]>]
+/venues/3639229
+https://www.songkick.com/venues/3639229
+https://www.songkick.com/venues/3639229/gigography?page=1
+[<Response [302]>]
+/venues/3644074
+https://www.songkick.com/venues/3644074
+https://www.songkick.com/venues/3644074/gigography?page=1
+[<Response [302]>]
+/venues/3644844
+https://www.songkick.com/venues/3644844
+https://www.songkick.com/venues/3644844/gigography?page=1
+[<Response [302]>]
+/venues/3648104
+https://www.songkick.com/venues/3648104
+https://www.songkick.com/venues/3648104/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 876 : Venues: 7151 - Concerts: 81792
+-------------- venues page 877
+/venues/3652964
+https://www.songkick.com/venues/3652964
+https://www.songkick.com/venues/3652964/gigography?page=1
+[<Response [302]>]
+/venues/3688784
+https://www.songkick.com/venues/3688784
+https://www.songkick.com/venues/3688784/gigography?page=1
+[<Response [302]>]
+/venues/3415249
+https://www.songkick.com/venues/3415249
+https://www.songkick.com/venues/3415249/gigography?page=1
+[<Response [302]>]
+/venues/3425349
+https://www.songkick.com/venues/3425349
+https://www.songkick.com/venues/3425349/gigography?page=1
+[<Response [302]>]
+/venues/3430084
+https://www.songkick.com/venues/3430084
+https://www.songkick.com/venues/3430084/gigography?page=1
+[<Response [302]>]
+/venues/3439044
+https://www.songkick.com/venues/3439044
+https://www.songkick.com/venues/3439044/gigography?page=1
+[<Response [302]>]
+/venues/3446064
+https://www.songkick.com/venues/3446064
+https://www.songkick.com/venues/3446064/gigography?page=1
+[<Response [302]>]
+/venues/3518519
+https://www.songkick.com/venues/3518519
+https://www.songkick.com/venues/3518519/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 877 : Venues: 7159 - Concerts: 81792
+-------------- venues page 878
+/venues/3418609
+https://www.songkick.com/venues/3418609
+https://www.songkick.com/venues/3418609/gigography?page=1
+[<Response [302]>]
+/venues/3421124
+https://www.songkick.com/venues/3421124
+https://www.songkick.com/venues/3421124/gigography?page=1
+[<Response [302]>]
+/venues/3461779
+https://www.songkick.com/venues/3461779
+https://www.songkick.com/venues/3461779/gigography?page=1
+[<Response [302]>]
+/venues/3464409
+https://www.songkick.com/venues/3464409
+https://www.songkick.com/venues/3464409/gigography?page=1
+[<Response [302]>]
+/venues/3501549
+https://www.songkick.com/venues/3501549
+https://www.songkick.com/venues/3501549/gigography?page=1
+[<Response [302]>]
+/venues/3777794
+https://www.songkick.com/venues/3777794
+https://www.songkick.com/venues/3777794/gigography?page=1
+[<Response [302]>]
+/venues/3811319
+https://www.songkick.com/venues/3811319
+https://www.songkick.com/venues/3811319/gigography?page=1
+[<Response [302]>]
+/venues/3815384
+https://www.songkick.com/venues/3815384
+https://www.songkick.com/venues/3815384/gigography?page=1
+[<Response [302]>]
+/venues/3832779
+https://www.songkick.com/venues/3832779
+https://www.songkick.com/venues/3832779/gigography?page=1
+[<Response [302]>]
+/venues/3852474
+https://www.songkick.com/venues/3852474
+https://www.songkick.com/venues/3852474/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 878 : Venues: 7169 - Concerts: 81792
+-------------- venues page 879
+/venues/4396789
+https://www.songkick.com/venues/4396789
+https://www.songkick.com/venues/4396789/gigography?page=1
+[<Response [302]>]
+/venues/4397950
+https://www.songkick.com/venues/4397950
+https://www.songkick.com/venues/4397950/gigography?page=1
+[<Response [302]>]
+/venues/2865288
+https://www.songkick.com/venues/2865288
+https://www.songkick.com/venues/2865288/gigography?page=1
+[<Response [302]>]
+/venues/4407305
+https://www.songkick.com/venues/4407305
+https://www.songkick.com/venues/4407305/gigography?page=1
+[<Response [302]>]
+/venues/4408551
+https://www.songkick.com/venues/4408551
+https://www.songkick.com/venues/4408551/gigography?page=1
+[<Response [302]>]
+/venues/4334693
+https://www.songkick.com/venues/4334693
+https://www.songkick.com/venues/4334693/gigography?page=1
+[<Response [302]>]
+/venues/4417205
+https://www.songkick.com/venues/4417205
+https://www.songkick.com/venues/4417205/gigography?page=1
+[<Response [302]>]
+/venues/4420940
+https://www.songkick.com/venues/4420940
+https://www.songkick.com/venues/4420940/gigography?page=1
+[<Response [302]>]
+/venues/4393602
+https://www.songkick.com/venues/4393602
+https://www.songkick.com/venues/4393602/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 879 : Venues: 7178 - Concerts: 81792
+-------------- venues page 88
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 88 : Venues: 7178 - Concerts: 81792
+-------------- venues page 880
+/venues/4391368
+https://www.songkick.com/venues/4391368
+https://www.songkick.com/venues/4391368/gigography?page=1
+[<Response [302]>]
+/venues/4395572
+https://www.songkick.com/venues/4395572
+https://www.songkick.com/venues/4395572/gigography?page=1
+[<Response [302]>]
+/venues/4395105
+https://www.songkick.com/venues/4395105
+https://www.songkick.com/venues/4395105/gigography?page=1
+[<Response [302]>]
+/venues/3966269
+https://www.songkick.com/venues/3966269
+https://www.songkick.com/venues/3966269/gigography?page=1
+[<Response [302]>]
+/venues/3966274
+https://www.songkick.com/venues/3966274
+https://www.songkick.com/venues/3966274/gigography?page=1
+[<Response [302]>]
+/venues/3998654
+https://www.songkick.com/venues/3998654
+https://www.songkick.com/venues/3998654/gigography?page=1
+[<Response [302]>]
+/venues/4011669
+https://www.songkick.com/venues/4011669
+https://www.songkick.com/venues/4011669/gigography?page=1
+[<Response [302]>]
+/venues/4022444
+https://www.songkick.com/venues/4022444
+https://www.songkick.com/venues/4022444/gigography?page=1
+[<Response [302]>]
+/venues/4038959
+https://www.songkick.com/venues/4038959
+https://www.songkick.com/venues/4038959/gigography?page=1
+[<Response [302]>]
+/venues/4049409
+https://www.songkick.com/venues/4049409
+https://www.songkick.com/venues/4049409/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 880 : Venues: 7188 - Concerts: 81792
+-------------- venues page 881
+/venues/4061029
+https://www.songkick.com/venues/4061029
+https://www.songkick.com/venues/4061029/gigography?page=1
+[<Response [302]>]
+/venues/4064809
+https://www.songkick.com/venues/4064809
+https://www.songkick.com/venues/4064809/gigography?page=1
+[<Response [302]>]
+/venues/4092369
+https://www.songkick.com/venues/4092369
+https://www.songkick.com/venues/4092369/gigography?page=1
+[<Response [302]>]
+/venues/3951864
+https://www.songkick.com/venues/3951864
+https://www.songkick.com/venues/3951864/gigography?page=1
+[<Response [302]>]
+/venues/3995574
+https://www.songkick.com/venues/3995574
+https://www.songkick.com/venues/3995574/gigography?page=1
+[<Response [302]>]
+/venues/4001759
+https://www.songkick.com/venues/4001759
+https://www.songkick.com/venues/4001759/gigography?page=1
+[<Response [302]>]
+/venues/4055974
+https://www.songkick.com/venues/4055974
+https://www.songkick.com/venues/4055974/gigography?page=1
+[<Response [302]>]
+/venues/4088939
+https://www.songkick.com/venues/4088939
+https://www.songkick.com/venues/4088939/gigography?page=1
+[<Response [302]>]
+/venues/4097979
+https://www.songkick.com/venues/4097979
+https://www.songkick.com/venues/4097979/gigography?page=1
+[<Response [302]>]
+/venues/4100999
+https://www.songkick.com/venues/4100999
+https://www.songkick.com/venues/4100999/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 881 : Venues: 7198 - Concerts: 81792
+-------------- venues page 882
+/venues/4132899
+https://www.songkick.com/venues/4132899
+https://www.songkick.com/venues/4132899/gigography?page=1
+[<Response [302]>]
+/venues/4143354
+https://www.songkick.com/venues/4143354
+https://www.songkick.com/venues/4143354/gigography?page=1
+[<Response [302]>]
+/venues/4156989
+https://www.songkick.com/venues/4156989
+https://www.songkick.com/venues/4156989/gigography?page=1
+[<Response [302]>]
+/venues/4159794
+https://www.songkick.com/venues/4159794
+https://www.songkick.com/venues/4159794/gigography?page=1
+[<Response [302]>]
+/venues/4160204
+https://www.songkick.com/venues/4160204
+https://www.songkick.com/venues/4160204/gigography?page=1
+[<Response [302]>]
+/venues/4169169
+https://www.songkick.com/venues/4169169
+https://www.songkick.com/venues/4169169/gigography?page=1
+[<Response [302]>]
+/venues/4170954
+https://www.songkick.com/venues/4170954
+https://www.songkick.com/venues/4170954/gigography?page=1
+[<Response [302]>]
+/venues/4180829
+https://www.songkick.com/venues/4180829
+https://www.songkick.com/venues/4180829/gigography?page=1
+[<Response [302]>]
+/venues/4181134
+https://www.songkick.com/venues/4181134
+https://www.songkick.com/venues/4181134/gigography?page=1
+[<Response [302]>]
+/venues/4196149
+https://www.songkick.com/venues/4196149
+https://www.songkick.com/venues/4196149/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 882 : Venues: 7208 - Concerts: 81792
+-------------- venues page 883
+/venues/4199969
+https://www.songkick.com/venues/4199969
+https://www.songkick.com/venues/4199969/gigography?page=1
+[<Response [302]>]
+/venues/4207979
+https://www.songkick.com/venues/4207979
+https://www.songkick.com/venues/4207979/gigography?page=1
+[<Response [302]>]
+/venues/4225309
+https://www.songkick.com/venues/4225309
+https://www.songkick.com/venues/4225309/gigography?page=1
+[<Response [302]>]
+/venues/4233329
+https://www.songkick.com/venues/4233329
+https://www.songkick.com/venues/4233329/gigography?page=1
+[<Response [302]>]
+/venues/4233219
+https://www.songkick.com/venues/4233219
+https://www.songkick.com/venues/4233219/gigography?page=1
+[<Response [302]>]
+/venues/4233284
+https://www.songkick.com/venues/4233284
+https://www.songkick.com/venues/4233284/gigography?page=1
+[<Response [302]>]
+/venues/4234414
+https://www.songkick.com/venues/4234414
+https://www.songkick.com/venues/4234414/gigography?page=1
+[<Response [302]>]
+/venues/4240654
+https://www.songkick.com/venues/4240654
+https://www.songkick.com/venues/4240654/gigography?page=1
+[<Response [302]>]
+/venues/4242994
+https://www.songkick.com/venues/4242994
+https://www.songkick.com/venues/4242994/gigography?page=1
+[<Response [302]>]
+/venues/2363259
+https://www.songkick.com/venues/2363259
+https://www.songkick.com/venues/2363259/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 883 : Venues: 7218 - Concerts: 81792
+-------------- venues page 884
+/venues/2734748
+https://www.songkick.com/venues/2734748
+https://www.songkick.com/venues/2734748/gigography?page=1
+[<Response [302]>]
+/venues/2802713
+https://www.songkick.com/venues/2802713
+https://www.songkick.com/venues/2802713/gigography?page=1
+[<Response [302]>]
+/venues/2843683
+https://www.songkick.com/venues/2843683
+https://www.songkick.com/venues/2843683/gigography?page=1
+[<Response [302]>]
+/venues/2989423
+https://www.songkick.com/venues/2989423
+https://www.songkick.com/venues/2989423/gigography?page=1
+[<Response [302]>]
+/venues/3086059
+https://www.songkick.com/venues/3086059
+https://www.songkick.com/venues/3086059/gigography?page=1
+[<Response [302]>]
+/venues/2742558
+https://www.songkick.com/venues/2742558
+https://www.songkick.com/venues/2742558/gigography?page=1
+[<Response [302]>]
+/venues/2761223
+https://www.songkick.com/venues/2761223
+https://www.songkick.com/venues/2761223/gigography?page=1
+[<Response [302]>]
+/venues/2788493
+https://www.songkick.com/venues/2788493
+https://www.songkick.com/venues/2788493/gigography?page=1
+[<Response [302]>]
+/venues/2801873
+https://www.songkick.com/venues/2801873
+https://www.songkick.com/venues/2801873/gigography?page=1
+[<Response [302]>]
+/venues/2950868
+https://www.songkick.com/venues/2950868
+https://www.songkick.com/venues/2950868/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 884 : Venues: 7228 - Concerts: 81792
+-------------- venues page 885
+/venues/2993303
+https://www.songkick.com/venues/2993303
+https://www.songkick.com/venues/2993303/gigography?page=1
+[<Response [302]>]
+/venues/3082494
+https://www.songkick.com/venues/3082494
+https://www.songkick.com/venues/3082494/gigography?page=1
+[<Response [302]>]
+/venues/3092674
+https://www.songkick.com/venues/3092674
+https://www.songkick.com/venues/3092674/gigography?page=1
+[<Response [302]>]
+/venues/3095379
+https://www.songkick.com/venues/3095379
+https://www.songkick.com/venues/3095379/gigography?page=1
+[<Response [302]>]
+/venues/3100589
+https://www.songkick.com/venues/3100589
+https://www.songkick.com/venues/3100589/gigography?page=1
+[<Response [302]>]
+/venues/2863353
+https://www.songkick.com/venues/2863353
+https://www.songkick.com/venues/2863353/gigography?page=1
+[<Response [302]>]
+/venues/2865933
+https://www.songkick.com/venues/2865933
+https://www.songkick.com/venues/2865933/gigography?page=1
+[<Response [302]>]
+/venues/2867598
+https://www.songkick.com/venues/2867598
+https://www.songkick.com/venues/2867598/gigography?page=1
+[<Response [302]>]
+/venues/2870058
+https://www.songkick.com/venues/2870058
+https://www.songkick.com/venues/2870058/gigography?page=1
+[<Response [302]>]
+/venues/2870063
+https://www.songkick.com/venues/2870063
+https://www.songkick.com/venues/2870063/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 885 : Venues: 7238 - Concerts: 81792
+-------------- venues page 886
+/venues/2870083
+https://www.songkick.com/venues/2870083
+https://www.songkick.com/venues/2870083/gigography?page=1
+[<Response [302]>]
+/venues/2874568
+https://www.songkick.com/venues/2874568
+https://www.songkick.com/venues/2874568/gigography?page=1
+[<Response [302]>]
+/venues/2922173
+https://www.songkick.com/venues/2922173
+https://www.songkick.com/venues/2922173/gigography?page=1
+[<Response [302]>]
+/venues/2957678
+https://www.songkick.com/venues/2957678
+https://www.songkick.com/venues/2957678/gigography?page=1
+[<Response [302]>]
+/venues/3010344
+https://www.songkick.com/venues/3010344
+https://www.songkick.com/venues/3010344/gigography?page=1
+[<Response [302]>]
+/venues/3057239
+https://www.songkick.com/venues/3057239
+https://www.songkick.com/venues/3057239/gigography?page=1
+[<Response [302]>]
+/venues/2752828
+https://www.songkick.com/venues/2752828
+https://www.songkick.com/venues/2752828/gigography?page=1
+[<Response [302]>]
+/venues/2830838
+https://www.songkick.com/venues/2830838
+https://www.songkick.com/venues/2830838/gigography?page=1
+[<Response [302]>]
+/venues/2849778
+https://www.songkick.com/venues/2849778
+https://www.songkick.com/venues/2849778/gigography?page=1
+[<Response [302]>]
+/venues/3017339
+https://www.songkick.com/venues/3017339
+https://www.songkick.com/venues/3017339/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 886 : Venues: 7248 - Concerts: 81792
+-------------- venues page 887
+/venues/3065524
+https://www.songkick.com/venues/3065524
+https://www.songkick.com/venues/3065524/gigography?page=1
+[<Response [302]>]
+/venues/3176314
+https://www.songkick.com/venues/3176314
+https://www.songkick.com/venues/3176314/gigography?page=1
+[<Response [302]>]
+/venues/3253924
+https://www.songkick.com/venues/3253924
+https://www.songkick.com/venues/3253924/gigography?page=1
+[<Response [302]>]
+/venues/3327119
+https://www.songkick.com/venues/3327119
+https://www.songkick.com/venues/3327119/gigography?page=1
+[<Response [302]>]
+/venues/3344264
+https://www.songkick.com/venues/3344264
+https://www.songkick.com/venues/3344264/gigography?page=1
+[<Response [302]>]
+/venues/3344274
+https://www.songkick.com/venues/3344274
+https://www.songkick.com/venues/3344274/gigography?page=1
+[<Response [302]>]
+/venues/3379239
+https://www.songkick.com/venues/3379239
+https://www.songkick.com/venues/3379239/gigography?page=1
+[<Response [302]>]
+/venues/3172314
+https://www.songkick.com/venues/3172314
+https://www.songkick.com/venues/3172314/gigography?page=1
+[<Response [302]>]
+/venues/3249654
+https://www.songkick.com/venues/3249654
+https://www.songkick.com/venues/3249654/gigography?page=1
+[<Response [302]>]
+/venues/3307194
+https://www.songkick.com/venues/3307194
+https://www.songkick.com/venues/3307194/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 887 : Venues: 7258 - Concerts: 81792
+-------------- venues page 888
+/venues/3317469
+https://www.songkick.com/venues/3317469
+https://www.songkick.com/venues/3317469/gigography?page=1
+[<Response [302]>]
+/venues/3380234
+https://www.songkick.com/venues/3380234
+https://www.songkick.com/venues/3380234/gigography?page=1
+[<Response [302]>]
+/venues/3255809
+https://www.songkick.com/venues/3255809
+https://www.songkick.com/venues/3255809/gigography?page=1
+[<Response [302]>]
+/venues/3271084
+https://www.songkick.com/venues/3271084
+https://www.songkick.com/venues/3271084/gigography?page=1
+[<Response [302]>]
+/venues/3322089
+https://www.songkick.com/venues/3322089
+https://www.songkick.com/venues/3322089/gigography?page=1
+[<Response [302]>]
+/venues/4335410
+https://www.songkick.com/venues/4335410
+https://www.songkick.com/venues/4335410/gigography?page=1
+[<Response [302]>]
+/venues/4343559
+https://www.songkick.com/venues/4343559
+https://www.songkick.com/venues/4343559/gigography?page=1
+[<Response [302]>]
+/venues/4343562
+https://www.songkick.com/venues/4343562
+https://www.songkick.com/venues/4343562/gigography?page=1
+[<Response [302]>]
+/venues/4343558
+https://www.songkick.com/venues/4343558
+https://www.songkick.com/venues/4343558/gigography?page=1
+[<Response [302]>]
+/venues/4345321
+https://www.songkick.com/venues/4345321
+https://www.songkick.com/venues/4345321/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 888 : Venues: 7268 - Concerts: 81792
+-------------- venues page 889
+/venues/4345870
+https://www.songkick.com/venues/4345870
+https://www.songkick.com/venues/4345870/gigography?page=1
+[<Response [302]>]
+/venues/4262064
+https://www.songkick.com/venues/4262064
+https://www.songkick.com/venues/4262064/gigography?page=1
+[<Response [302]>]
+/venues/4267084
+https://www.songkick.com/venues/4267084
+https://www.songkick.com/venues/4267084/gigography?page=1
+[<Response [302]>]
+/venues/4267014
+https://www.songkick.com/venues/4267014
+https://www.songkick.com/venues/4267014/gigography?page=1
+[<Response [302]>]
+/venues/4273514
+https://www.songkick.com/venues/4273514
+https://www.songkick.com/venues/4273514/gigography?page=1
+[<Response [302]>]
+/venues/4276289
+https://www.songkick.com/venues/4276289
+https://www.songkick.com/venues/4276289/gigography?page=1
+[<Response [302]>]
+/venues/4296454
+https://www.songkick.com/venues/4296454
+https://www.songkick.com/venues/4296454/gigography?page=1
+[<Response [302]>]
+/venues/4314799
+https://www.songkick.com/venues/4314799
+https://www.songkick.com/venues/4314799/gigography?page=1
+[<Response [302]>]
+/venues/4316824
+https://www.songkick.com/venues/4316824
+https://www.songkick.com/venues/4316824/gigography?page=1
+[<Response [302]>]
+/venues/4323484
+https://www.songkick.com/venues/4323484
+https://www.songkick.com/venues/4323484/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 889 : Venues: 7278 - Concerts: 81792
+-------------- venues page 89
+/venues/3379234
+https://www.songkick.com/venues/3379234
+https://www.songkick.com/venues/3379234/gigography?page=1
+....... concerts page 1
+https://www.songkick.com/concerts/39609693-caroline-chevin-at-alti-moschti
+https://www.songkick.com/concerts/39200107-rising-lights-at-alti-moschti
+https://www.songkick.com/concerts/39478302-adrian-tacchi-at-alti-moschti
+https://www.songkick.com/concerts/39362336-lilly-martin-at-alti-moschti
+https://www.songkick.com/concerts/35091954-trummer-ch-at-alti-moschti
+https://www.songkick.com/concerts/36987659-silhouette-tales-at-alti-moschti
+https://www.songkick.com/concerts/37130994-veronica-fusaro-at-alti-moschti
+https://www.songkick.com/concerts/33389084-veronikas-ndiigo-at-alti-moschti
+https://www.songkick.com/concerts/34679639-carrousel-at-alti-moschti
+https://www.songkick.com/concerts/32809339-veronica-fusaro-at-alti-moschti
+https://www.songkick.com/concerts/32523194-another-me-at-alti-moschti
+https://www.songkick.com/concerts/32660529-lilly-martin-at-alti-moschti
+https://www.songkick.com/venues/3379234/gigography?page=2
+[<Response [302]>]
+/venues/2658193
+https://www.songkick.com/venues/2658193
+https://www.songkick.com/venues/2658193/gigography?page=1
+....... concerts page 1
+https://www.songkick.com/festivals/3388630-artfestival-interlaken/id/40006233-artfestival-interlaken-2021
+https://www.songkick.com/concerts/39262028-patrik-jansson-band-at-goldener-anker
+https://www.songkick.com/concerts/39351419-kabuki-joe-at-goldener-anker
+https://www.songkick.com/concerts/38437909-skatalites-at-goldener-anker
+https://www.songkick.com/concerts/37693074-rapamole-at-goldener-anker
+https://www.songkick.com/concerts/36186294-mc-juli-at-goldener-anker
+https://www.songkick.com/concerts/30631154-death-by-chocolate-at-goldener-anker
+https://www.songkick.com/concerts/30248909-caravana-sun-at-goldener-anker
+https://www.songkick.com/concerts/27245349-inner-circle-at-goldener-anker
+https://www.songkick.com/concerts/27281889-caravana-sun-at-goldener-anker
+https://www.songkick.com/concerts/24059034-caravana-sun-at-goldener-anker
+https://www.songkick.com/concerts/20724708-caravana-sun-at-goldener-anker
+https://www.songkick.com/concerts/20724663-caravana-sun-at-goldener-anker
+https://www.songkick.com/venues/2658193/gigography?page=2
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 89 : Venues: 7280 - Concerts: 81817
+-------------- venues page 890
+/venues/4326554
+https://www.songkick.com/venues/4326554
+https://www.songkick.com/venues/4326554/gigography?page=1
+[<Response [302]>]
+/venues/4327763
+https://www.songkick.com/venues/4327763
+https://www.songkick.com/venues/4327763/gigography?page=1
+[<Response [302]>]
+/venues/4329699
+https://www.songkick.com/venues/4329699
+https://www.songkick.com/venues/4329699/gigography?page=1
+[<Response [302]>]
+/venues/4357615
+https://www.songkick.com/venues/4357615
+https://www.songkick.com/venues/4357615/gigography?page=1
+[<Response [302]>]
+/venues/4358559
+https://www.songkick.com/venues/4358559
+https://www.songkick.com/venues/4358559/gigography?page=1
+[<Response [302]>]
+/venues/4361073
+https://www.songkick.com/venues/4361073
+https://www.songkick.com/venues/4361073/gigography?page=1
+[<Response [302]>]
+/venues/4361975
+https://www.songkick.com/venues/4361975
+https://www.songkick.com/venues/4361975/gigography?page=1
+[<Response [302]>]
+/venues/4363369
+https://www.songkick.com/venues/4363369
+https://www.songkick.com/venues/4363369/gigography?page=1
+[<Response [302]>]
+/venues/4366467
+https://www.songkick.com/venues/4366467
+https://www.songkick.com/venues/4366467/gigography?page=1
+[<Response [302]>]
+/venues/4366908
+https://www.songkick.com/venues/4366908
+https://www.songkick.com/venues/4366908/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 890 : Venues: 7290 - Concerts: 81817
+-------------- venues page 891
+/venues/4366846
+https://www.songkick.com/venues/4366846
+https://www.songkick.com/venues/4366846/gigography?page=1
+[<Response [302]>]
+/venues/4367892
+https://www.songkick.com/venues/4367892
+https://www.songkick.com/venues/4367892/gigography?page=1
+[<Response [302]>]
+/venues/4368067
+https://www.songkick.com/venues/4368067
+https://www.songkick.com/venues/4368067/gigography?page=1
+[<Response [302]>]
+/venues/4368588
+https://www.songkick.com/venues/4368588
+https://www.songkick.com/venues/4368588/gigography?page=1
+[<Response [302]>]
+/venues/4368502
+https://www.songkick.com/venues/4368502
+https://www.songkick.com/venues/4368502/gigography?page=1
+[<Response [302]>]
+/venues/4369543
+https://www.songkick.com/venues/4369543
+https://www.songkick.com/venues/4369543/gigography?page=1
+[<Response [302]>]
+/venues/4369671
+https://www.songkick.com/venues/4369671
+https://www.songkick.com/venues/4369671/gigography?page=1
+[<Response [302]>]
+/venues/4370222
+https://www.songkick.com/venues/4370222
+https://www.songkick.com/venues/4370222/gigography?page=1
+[<Response [302]>]
+/venues/4371980
+https://www.songkick.com/venues/4371980
+https://www.songkick.com/venues/4371980/gigography?page=1
+[<Response [302]>]
+/venues/4373838
+https://www.songkick.com/venues/4373838
+https://www.songkick.com/venues/4373838/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 891 : Venues: 7300 - Concerts: 81817
+-------------- venues page 892
+/venues/4374320
+https://www.songkick.com/venues/4374320
+https://www.songkick.com/venues/4374320/gigography?page=1
+[<Response [302]>]
+/venues/4374802
+https://www.songkick.com/venues/4374802
+https://www.songkick.com/venues/4374802/gigography?page=1
+[<Response [302]>]
+/venues/4375798
+https://www.songkick.com/venues/4375798
+https://www.songkick.com/venues/4375798/gigography?page=1
+[<Response [302]>]
+/venues/4377049
+https://www.songkick.com/venues/4377049
+https://www.songkick.com/venues/4377049/gigography?page=1
+[<Response [302]>]
+/venues/4377536
+https://www.songkick.com/venues/4377536
+https://www.songkick.com/venues/4377536/gigography?page=1
+[<Response [302]>]
+/venues/4379053
+https://www.songkick.com/venues/4379053
+https://www.songkick.com/venues/4379053/gigography?page=1
+[<Response [302]>]
+/venues/4379117
+https://www.songkick.com/venues/4379117
+https://www.songkick.com/venues/4379117/gigography?page=1
+[<Response [302]>]
+/venues/4379937
+https://www.songkick.com/venues/4379937
+https://www.songkick.com/venues/4379937/gigography?page=1
+[<Response [302]>]
+/venues/4382102
+https://www.songkick.com/venues/4382102
+https://www.songkick.com/venues/4382102/gigography?page=1
+[<Response [302]>]
+/venues/4383907
+https://www.songkick.com/venues/4383907
+https://www.songkick.com/venues/4383907/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 892 : Venues: 7310 - Concerts: 81817
+-------------- venues page 893
+/venues/4384427
+https://www.songkick.com/venues/4384427
+https://www.songkick.com/venues/4384427/gigography?page=1
+[<Response [302]>]
+/venues/118070
+https://www.songkick.com/venues/118070
+https://www.songkick.com/venues/118070/gigography?page=1
+[<Response [302]>]
+/venues/1467568
+https://www.songkick.com/venues/1467568
+https://www.songkick.com/venues/1467568/gigography?page=1
+[<Response [302]>]
+/venues/1878208
+https://www.songkick.com/venues/1878208
+https://www.songkick.com/venues/1878208/gigography?page=1
+[<Response [302]>]
+/venues/643731
+https://www.songkick.com/venues/643731
+https://www.songkick.com/venues/643731/gigography?page=1
+[<Response [302]>]
+/venues/2162004
+https://www.songkick.com/venues/2162004
+https://www.songkick.com/venues/2162004/gigography?page=1
+[<Response [302]>]
+/venues/2165494
+https://www.songkick.com/venues/2165494
+https://www.songkick.com/venues/2165494/gigography?page=1
+[<Response [302]>]
+/venues/2173819
+https://www.songkick.com/venues/2173819
+https://www.songkick.com/venues/2173819/gigography?page=1
+[<Response [302]>]
+/venues/2199299
+https://www.songkick.com/venues/2199299
+https://www.songkick.com/venues/2199299/gigography?page=1
+[<Response [302]>]
+/venues/3411589
+https://www.songkick.com/venues/3411589
+https://www.songkick.com/venues/3411589/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 893 : Venues: 7320 - Concerts: 81817
+-------------- venues page 894
+/venues/3449719
+https://www.songkick.com/venues/3449719
+https://www.songkick.com/venues/3449719/gigography?page=1
+[<Response [302]>]
+/venues/3470764
+https://www.songkick.com/venues/3470764
+https://www.songkick.com/venues/3470764/gigography?page=1
+[<Response [302]>]
+/venues/3493209
+https://www.songkick.com/venues/3493209
+https://www.songkick.com/venues/3493209/gigography?page=1
+[<Response [302]>]
+/venues/3535974
+https://www.songkick.com/venues/3535974
+https://www.songkick.com/venues/3535974/gigography?page=1
+[<Response [302]>]
+/venues/3585174
+https://www.songkick.com/venues/3585174
+https://www.songkick.com/venues/3585174/gigography?page=1
+[<Response [302]>]
+/venues/3465359
+https://www.songkick.com/venues/3465359
+https://www.songkick.com/venues/3465359/gigography?page=1
+[<Response [302]>]
+/venues/3467544
+https://www.songkick.com/venues/3467544
+https://www.songkick.com/venues/3467544/gigography?page=1
+[<Response [302]>]
+/venues/3481634
+https://www.songkick.com/venues/3481634
+https://www.songkick.com/venues/3481634/gigography?page=1
+[<Response [302]>]
+/venues/3491764
+https://www.songkick.com/venues/3491764
+https://www.songkick.com/venues/3491764/gigography?page=1
+[<Response [302]>]
+/venues/3496899
+https://www.songkick.com/venues/3496899
+https://www.songkick.com/venues/3496899/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 894 : Venues: 7330 - Concerts: 81817
+-------------- venues page 895
+/venues/3517869
+https://www.songkick.com/venues/3517869
+https://www.songkick.com/venues/3517869/gigography?page=1
+[<Response [302]>]
+/venues/3528224
+https://www.songkick.com/venues/3528224
+https://www.songkick.com/venues/3528224/gigography?page=1
+[<Response [302]>]
+/venues/3528909
+https://www.songkick.com/venues/3528909
+https://www.songkick.com/venues/3528909/gigography?page=1
+[<Response [302]>]
+/venues/3532824
+https://www.songkick.com/venues/3532824
+https://www.songkick.com/venues/3532824/gigography?page=1
+[<Response [302]>]
+/venues/3602469
+https://www.songkick.com/venues/3602469
+https://www.songkick.com/venues/3602469/gigography?page=1
+[<Response [302]>]
+/venues/3602474
+https://www.songkick.com/venues/3602474
+https://www.songkick.com/venues/3602474/gigography?page=1
+[<Response [302]>]
+/venues/3735309
+https://www.songkick.com/venues/3735309
+https://www.songkick.com/venues/3735309/gigography?page=1
+[<Response [302]>]
+/venues/3739734
+https://www.songkick.com/venues/3739734
+https://www.songkick.com/venues/3739734/gigography?page=1
+[<Response [302]>]
+/venues/3739739
+https://www.songkick.com/venues/3739739
+https://www.songkick.com/venues/3739739/gigography?page=1
+[<Response [302]>]
+/venues/3649529
+https://www.songkick.com/venues/3649529
+https://www.songkick.com/venues/3649529/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 895 : Venues: 7340 - Concerts: 81817
+-------------- venues page 896
+/venues/3656984
+https://www.songkick.com/venues/3656984
+https://www.songkick.com/venues/3656984/gigography?page=1
+[<Response [302]>]
+/venues/3658349
+https://www.songkick.com/venues/3658349
+https://www.songkick.com/venues/3658349/gigography?page=1
+[<Response [302]>]
+/venues/3660444
+https://www.songkick.com/venues/3660444
+https://www.songkick.com/venues/3660444/gigography?page=1
+[<Response [302]>]
+/venues/3672034
+https://www.songkick.com/venues/3672034
+https://www.songkick.com/venues/3672034/gigography?page=1
+[<Response [302]>]
+/venues/3684789
+https://www.songkick.com/venues/3684789
+https://www.songkick.com/venues/3684789/gigography?page=1
+[<Response [302]>]
+/venues/3701389
+https://www.songkick.com/venues/3701389
+https://www.songkick.com/venues/3701389/gigography?page=1
+[<Response [302]>]
+/venues/3723899
+https://www.songkick.com/venues/3723899
+https://www.songkick.com/venues/3723899/gigography?page=1
+[<Response [302]>]
+/venues/3777039
+https://www.songkick.com/venues/3777039
+https://www.songkick.com/venues/3777039/gigography?page=1
+[<Response [302]>]
+/venues/3788644
+https://www.songkick.com/venues/3788644
+https://www.songkick.com/venues/3788644/gigography?page=1
+[<Response [302]>]
+/venues/3820714
+https://www.songkick.com/venues/3820714
+https://www.songkick.com/venues/3820714/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 896 : Venues: 7350 - Concerts: 81817
+-------------- venues page 897
+/venues/3842159
+https://www.songkick.com/venues/3842159
+https://www.songkick.com/venues/3842159/gigography?page=1
+[<Response [302]>]
+/venues/3862539
+https://www.songkick.com/venues/3862539
+https://www.songkick.com/venues/3862539/gigography?page=1
+[<Response [302]>]
+/venues/3883379
+https://www.songkick.com/venues/3883379
+https://www.songkick.com/venues/3883379/gigography?page=1
+[<Response [302]>]
+/venues/3913149
+https://www.songkick.com/venues/3913149
+https://www.songkick.com/venues/3913149/gigography?page=1
+[<Response [302]>]
+/venues/4387777
+https://www.songkick.com/venues/4387777
+https://www.songkick.com/venues/4387777/gigography?page=1
+[<Response [302]>]
+/venues/4400054
+https://www.songkick.com/venues/4400054
+https://www.songkick.com/venues/4400054/gigography?page=1
+[<Response [302]>]
+/venues/2985133
+https://www.songkick.com/venues/2985133
+https://www.songkick.com/venues/2985133/gigography?page=1
+[<Response [302]>]
+/venues/4357616
+https://www.songkick.com/venues/4357616
+https://www.songkick.com/venues/4357616/gigography?page=1
+[<Response [302]>]
+/venues/4391999
+https://www.songkick.com/venues/4391999
+https://www.songkick.com/venues/4391999/gigography?page=1
+[<Response [302]>]
+/venues/4418204
+https://www.songkick.com/venues/4418204
+https://www.songkick.com/venues/4418204/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 897 : Venues: 7360 - Concerts: 81817
+-------------- venues page 898
+/venues/4415817
+https://www.songkick.com/venues/4415817
+https://www.songkick.com/venues/4415817/gigography?page=1
+[<Response [302]>]
+/venues/4416404
+https://www.songkick.com/venues/4416404
+https://www.songkick.com/venues/4416404/gigography?page=1
+[<Response [302]>]
+/venues/4386707
+https://www.songkick.com/venues/4386707
+https://www.songkick.com/venues/4386707/gigography?page=1
+[<Response [302]>]
+/venues/1827243
+https://www.songkick.com/venues/1827243
+https://www.songkick.com/venues/1827243/gigography?page=1
+[<Response [302]>]
+/venues/4395689
+https://www.songkick.com/venues/4395689
+https://www.songkick.com/venues/4395689/gigography?page=1
+[<Response [302]>]
+/venues/4420943
+https://www.songkick.com/venues/4420943
+https://www.songkick.com/venues/4420943/gigography?page=1
+[<Response [302]>]
+/venues/4421119
+https://www.songkick.com/venues/4421119
+https://www.songkick.com/venues/4421119/gigography?page=1
+[<Response [302]>]
+/venues/3950234
+https://www.songkick.com/venues/3950234
+https://www.songkick.com/venues/3950234/gigography?page=1
+[<Response [302]>]
+/venues/3977054
+https://www.songkick.com/venues/3977054
+https://www.songkick.com/venues/3977054/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 898 : Venues: 7369 - Concerts: 81817
+-------------- venues page 899
+/venues/3980579
+https://www.songkick.com/venues/3980579
+https://www.songkick.com/venues/3980579/gigography?page=1
+[<Response [302]>]
+/venues/3993494
+https://www.songkick.com/venues/3993494
+https://www.songkick.com/venues/3993494/gigography?page=1
+[<Response [302]>]
+/venues/4022439
+https://www.songkick.com/venues/4022439
+https://www.songkick.com/venues/4022439/gigography?page=1
+[<Response [302]>]
+/venues/4026769
+https://www.songkick.com/venues/4026769
+https://www.songkick.com/venues/4026769/gigography?page=1
+[<Response [302]>]
+/venues/4026774
+https://www.songkick.com/venues/4026774
+https://www.songkick.com/venues/4026774/gigography?page=1
+[<Response [302]>]
+/venues/4026779
+https://www.songkick.com/venues/4026779
+https://www.songkick.com/venues/4026779/gigography?page=1
+[<Response [302]>]
+/venues/4047519
+https://www.songkick.com/venues/4047519
+https://www.songkick.com/venues/4047519/gigography?page=1
+[<Response [302]>]
+/venues/4070094
+https://www.songkick.com/venues/4070094
+https://www.songkick.com/venues/4070094/gigography?page=1
+[<Response [302]>]
+/venues/4071864
+https://www.songkick.com/venues/4071864
+https://www.songkick.com/venues/4071864/gigography?page=1
+[<Response [302]>]
+/venues/3922344
+https://www.songkick.com/venues/3922344
+https://www.songkick.com/venues/3922344/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 899 : Venues: 7379 - Concerts: 81817
+-------------- venues page 9
+/venues/2148724
+https://www.songkick.com/venues/2148724
+https://www.songkick.com/venues/2148724/gigography?page=1
+....... concerts page 1
+https://www.songkick.com/concerts/39326680-jiggo-at-komplex-klub
+https://www.songkick.com/concerts/39356998-bars-and-melody-at-komplex-klub
+https://www.songkick.com/concerts/39312359-wheel-fi-at-komplex-klub
+https://www.songkick.com/concerts/39120449-maine-at-komplex-klub
+https://www.songkick.com/concerts/39118244-dame-at-komplex-klub
+https://www.songkick.com/concerts/39143606-mert-at-komplex-klub
+https://www.songkick.com/concerts/39062176-james-barker-band-at-komplex-klub
+https://www.songkick.com/concerts/37723179-finch-asozial-at-komplex-klub
+https://www.songkick.com/concerts/38165274-ice-nine-kills-at-komplex-klub
+https://www.songkick.com/concerts/37221314-goitzsche-front-at-komplex-klub
+https://www.songkick.com/concerts/38428929-alien-weaponry-at-komplex-klub
+https://www.songkick.com/concerts/38131779-gunna-at-komplex-klub
+https://www.songkick.com/concerts/36984244-nothing-more-at-komplex-klub
+https://www.songkick.com/concerts/34261544-karbholz-at-komplex-klub
+https://www.songkick.com/concerts/36432549-kurdo-at-komplex-klub
+https://www.songkick.com/concerts/36543474-okto-vulgaris-at-komplex-klub
+https://www.songkick.com/concerts/33578634-goitzsche-front-at-komplex-klub
+https://www.songkick.com/concerts/36570604-dose-us-at-komplex-klub
+https://www.songkick.com/concerts/35616834-drefgold-at-komplex-klub
+https://www.songkick.com/concerts/35230554-loco-escrito-at-komplex-klub
+https://www.songkick.com/concerts/34716984-loco-escrito-at-komplex-klub
+https://www.songkick.com/concerts/36061494-boomdabash-at-komplex-klub
+https://www.songkick.com/concerts/34136809-black-peaks-at-komplex-klub
+https://www.songkick.com/concerts/34407499-thunderpussy-at-komplex-klub
+https://www.songkick.com/concerts/34407504-hellzapoppin-at-komplex-klub
+https://www.songkick.com/concerts/33964824-asap-ant-at-komplex-klub
+https://www.songkick.com/concerts/32105924-dame-at-komplex-klub
+https://www.songkick.com/concerts/32287364-butcher-babies-at-komplex-klub
+https://www.songkick.com/concerts/32003814-ces-at-komplex-klub
+https://www.songkick.com/concerts/32947009-mert-at-komplex-klub
+https://www.songkick.com/concerts/31437289-mert-at-komplex-klub
+https://www.songkick.com/concerts/32022804-cosmic-gate-at-komplex-klub
+https://www.songkick.com/concerts/31643824-inglorious-at-komplex-klub
+https://www.songkick.com/concerts/30948494-mastodon-at-komplex-klub
+https://www.songkick.com/concerts/30826404-ces-at-komplex-klub
+https://www.songkick.com/concerts/31198179-capo-at-komplex-klub
+https://www.songkick.com/concerts/31416979-ali-at-komplex-klub
+https://www.songkick.com/concerts/30789919-makala-at-komplex-klub
+https://www.songkick.com/concerts/30955399-decapitated-at-komplex-klub
+https://www.songkick.com/concerts/30483409-mudi-at-komplex-klub
+https://www.songkick.com/concerts/30203364-chakuza-at-komplex-klub
+https://www.songkick.com/concerts/30355609-galactic-empire-at-komplex-klub
+https://www.songkick.com/concerts/30440399-loco-escrito-at-komplex-klub
+https://www.songkick.com/concerts/29650324-hanson-at-komplex-klub
+https://www.songkick.com/concerts/29155189-mimiks-at-komplex-klub
+https://www.songkick.com/concerts/29183404-chakuza-at-komplex-klub
+https://www.songkick.com/concerts/29194174-marash-and-dave-at-komplex-klub
+https://www.songkick.com/concerts/29155204-ufo361-at-komplex-klub
+https://www.songkick.com/concerts/29000319-me-and-that-man-at-komplex-klub
+https://www.songkick.com/concerts/28991204-ruffiction-at-komplex-klub
+https://www.songkick.com/venues/2148724/gigography?page=2
+....... concerts page 2
+https://www.songkick.com/concerts/27661259-dame-at-komplex-klub
+https://www.songkick.com/concerts/27225894-overkill-at-komplex-klub
+https://www.songkick.com/concerts/26961149-suicidal-angels-at-komplex-klub
+https://www.songkick.com/concerts/27938554-toseland-at-komplex-klub
+https://www.songkick.com/concerts/26685699-nimo-at-komplex-klub
+https://www.songkick.com/concerts/26915084-jeff-angells-staticland-at-komplex-klub
+https://www.songkick.com/concerts/26665994-dc-us-at-komplex-klub
+https://www.songkick.com/concerts/26381104-ill-nino-at-komplex-klub
+https://www.songkick.com/concerts/25043939-lumaraa-at-komplex-klub
+https://www.songkick.com/concerts/23733013-silla-at-komplex-klub
+https://www.songkick.com/concerts/25434474-karbholz-at-komplex-klub
+https://www.songkick.com/concerts/25629274-punch-arogunz-at-komplex-klub
+https://www.songkick.com/concerts/24860869-punch-arogunz-at-komplex-klub
+https://www.songkick.com/concerts/25629084-187-strassenbande-at-komplex-klub
+https://www.songkick.com/concerts/25116079-dillon-cooper-at-komplex-klub
+https://www.songkick.com/concerts/24637124-nothing-more-at-komplex-klub
+https://www.songkick.com/concerts/24490864-karbholz-at-komplex-klub
+https://www.songkick.com/concerts/25244519-amir-gwirtzman-at-komplex-klub
+https://www.songkick.com/concerts/24260969-minuit-machine-at-komplex-klub
+https://www.songkick.com/concerts/24191534-exploding-boy-at-komplex-klub
+https://www.songkick.com/concerts/23518303-dewscented-at-komplex-klub
+https://www.songkick.com/concerts/22376293-vdelli-at-komplex-klub
+https://www.songkick.com/concerts/21831253-subways-at-komplex-klub
+https://www.songkick.com/concerts/22090938-looptroop-rockers-at-komplex-klub
+https://www.songkick.com/concerts/21831523-betraying-the-martyrs-at-komplex-klub
+https://www.songkick.com/concerts/21860163-before-you-exit-at-komplex-klub
+https://www.songkick.com/concerts/22419608-grey-monday-at-komplex-klub
+https://www.songkick.com/concerts/22217533-extrema-at-komplex-klub
+https://www.songkick.com/concerts/21609938-kadebostany-at-komplex-klub
+https://www.songkick.com/concerts/21831348-hoffmaestro-at-komplex-klub
+https://www.songkick.com/concerts/21831333-i-the-breather-at-komplex-klub
+https://www.songkick.com/concerts/21609883-hundreds-at-komplex-klub
+https://www.songkick.com/concerts/22076183-grey-monday-at-komplex-klub
+https://www.songkick.com/concerts/21609833-die-orsons-at-komplex-klub
+https://www.songkick.com/concerts/21609818-one-ok-rock-at-komplex-klub
+https://www.songkick.com/concerts/21831053-joey-badass-at-komplex-klub
+https://www.songkick.com/concerts/21448833-temperance-movement-at-komplex-klub
+https://www.songkick.com/concerts/21684003-jungle-at-komplex-klub
+https://www.songkick.com/concerts/21831098-nick-mulvey-at-komplex-klub
+https://www.songkick.com/concerts/21609608-la-coka-nostra-at-komplex-klub
+https://www.songkick.com/concerts/19547029-letzte-instanz-at-komplex-klub
+https://www.songkick.com/concerts/21488413-gramatik-at-komplex-klub
+https://www.songkick.com/concerts/21620468-thurston-moore-at-komplex-klub
+https://www.songkick.com/concerts/20212108-blackberry-smoke-at-komplex-klub
+https://www.songkick.com/concerts/21609293-crossfaith-at-komplex-klub
+https://www.songkick.com/concerts/21167858-boxer-rebellion-at-komplex-klub
+https://www.songkick.com/concerts/21609253-kensington-at-komplex-klub
+https://www.songkick.com/concerts/20837358-attila-at-komplex-klub
+https://www.songkick.com/concerts/20520028-antlers-at-komplex-klub
+https://www.songkick.com/concerts/19055964-selig-at-komplex-klub
+https://www.songkick.com/venues/2148724/gigography?page=3
+....... concerts page 3
+https://www.songkick.com/concerts/20149768-fray-at-komplex-klub
+https://www.songkick.com/concerts/20406168-brew-at-komplex-klub
+https://www.songkick.com/concerts/20908293-escape-the-fate-at-komplex-klub
+https://www.songkick.com/concerts/20626603-soja-at-komplex-klub
+https://www.songkick.com/concerts/19547009-nick-howard-at-komplex-klub
+https://www.songkick.com/concerts/20879718-bullet-at-komplex-klub
+https://www.songkick.com/concerts/21608743-8x15-at-komplex-klub
+https://www.songkick.com/concerts/21608733-lilly-wood-and-the-prick-at-komplex-klub
+https://www.songkick.com/concerts/19818804-brian-jonestown-massacre-at-komplex-klub
+https://www.songkick.com/concerts/19789859-dispatch-at-komplex-klub
+https://www.songkick.com/concerts/19480769-of-mice-and-men-at-komplex-klub
+https://www.songkick.com/concerts/19960298-temples-at-komplex-klub
+https://www.songkick.com/concerts/20286948-bo-saris-at-komplex-klub
+https://www.songkick.com/concerts/20143788-black-tiger-sex-machine-at-komplex-klub
+https://www.songkick.com/concerts/19398399-robert-francis-at-komplex-klub
+https://www.songkick.com/concerts/19264879-glitch-mob-at-komplex-klub
+https://www.songkick.com/concerts/19666799-triggerfinger-at-komplex-klub
+https://www.songkick.com/concerts/19666794-minor-alps-at-komplex-klub
+https://www.songkick.com/concerts/19587514-bo-saris-at-komplex-klub
+https://www.songkick.com/festivals/899724-loudfest-hardcoremetal-thursday/id/18765069-loudfest--hardcoremetal-thursday-2014
+https://www.songkick.com/festivals/899719-loudfest-2-day-pass/id/18765064-loudfest--2-day-pass-2014
+https://www.songkick.com/festivals/899714-loudfest-punkrock-wednesday/id/18765059-loudfest--punkrock-wednesday-2014
+https://www.songkick.com/concerts/18765054-halestorm-at-komplex-klub
+https://www.songkick.com/concerts/19398344-kosheen-at-komplex-klub
+https://www.songkick.com/concerts/19575329-bury-tomorrow-at-komplex-klub
+https://www.songkick.com/concerts/19398324-justin-nozuka-at-komplex-klub
+https://www.songkick.com/concerts/18776024-band-of-skulls-at-komplex-klub
+https://www.songkick.com/concerts/18845669-dub-pistols-at-komplex-klub
+https://www.songkick.com/concerts/19546534-cults-at-komplex-klub
+https://www.songkick.com/concerts/17854689-revolverheld-at-komplex-klub
+https://www.songkick.com/concerts/18813764-nick-howard-at-komplex-klub
+https://www.songkick.com/concerts/19442559-five-finger-death-punch-at-komplex-klub
+https://www.songkick.com/concerts/18691154-jezabels-at-komplex-klub
+https://www.songkick.com/concerts/18765034-earl-sweatshirt-at-komplex-klub
+https://www.songkick.com/concerts/18732849-you-me-at-six-at-komplex-klub
+https://www.songkick.com/concerts/19398264-william-fitzsimmons-at-komplex-klub
+https://www.songkick.com/concerts/18871729-cloud-control-at-komplex-klub
+https://www.songkick.com/concerts/18339559-midlake-at-komplex-klub
+https://www.songkick.com/concerts/17996159-casper-at-komplex-klub
+https://www.songkick.com/concerts/19254119-pretty-reckless-at-komplex-klub
+https://www.songkick.com/concerts/19037894-all-time-low-at-komplex-klub
+https://www.songkick.com/concerts/18801369-truckfighters-at-komplex-klub
+https://www.songkick.com/concerts/18232729-hoffmaestro-at-komplex-klub
+https://www.songkick.com/concerts/18601234-breton-at-komplex-klub
+https://www.songkick.com/concerts/19113879-mike-vath-at-komplex-klub
+https://www.songkick.com/concerts/18655239-long-distance-calling-at-komplex-klub
+https://www.songkick.com/concerts/19274774-renegade-hardware-sessions-at-komplex-klub
+https://www.songkick.com/concerts/18444314-defeater-at-komplex-klub
+https://www.songkick.com/concerts/19152229-jahcoozi-at-komplex-klub
+https://www.songkick.com/concerts/18357149-megan-nicole-at-komplex-klub
+https://www.songkick.com/venues/2148724/gigography?page=4
+....... concerts page 4
+https://www.songkick.com/concerts/19055779-iriepathie-at-komplex-klub
+https://www.songkick.com/concerts/18655229-dreadnoughts-at-komplex-klub
+https://www.songkick.com/concerts/18871594-pharoahe-monch-at-komplex-klub
+https://www.songkick.com/concerts/14703424-heavens-basement-at-komplex-klub
+https://www.songkick.com/concerts/18203759-alec-troniq-at-komplex-klub
+https://www.songkick.com/concerts/16750369-ayo-at-komplex-klub
+https://www.songkick.com/concerts/17597604-uncle-acid-and-the-deadbeats-at-komplex-klub
+https://www.songkick.com/concerts/17929479-deap-vally-at-komplex-klub
+https://www.songkick.com/concerts/17706014-glasvegas-at-komplex-klub
+https://www.songkick.com/concerts/18008649-oh-land-at-komplex-klub
+https://www.songkick.com/concerts/18405224-martyn-at-komplex-klub
+https://www.songkick.com/concerts/17770504-thees-uhlmann-at-komplex-klub
+https://www.songkick.com/concerts/17210364-slackers-at-komplex-klub
+https://www.songkick.com/festivals/515-red/id/17318329-red-festival-2013
+https://www.songkick.com/concerts/17929364-tito-and-tarantula-at-komplex-klub
+https://www.songkick.com/concerts/17428709-trixie-whitley-at-komplex-klub
+https://www.songkick.com/concerts/17805984-electro-swing-club-at-komplex-klub
+https://www.songkick.com/concerts/17411034-we-butter-the-bread-with-butter-at-komplex-klub
+https://www.songkick.com/concerts/17223589-we-butter-the-bread-with-butter-at-komplex-klub
+https://www.songkick.com/concerts/17574964-zebrahead-at-komplex-klub
+https://www.songkick.com/concerts/17116519-65daysofstatic-at-komplex-klub
+https://www.songkick.com/concerts/16693784-genetikk-at-komplex-klub
+https://www.songkick.com/concerts/16785194-boxer-rebellion-at-komplex-klub
+https://www.songkick.com/concerts/16969219-god-is-an-astronaut-at-komplex-klub
+https://www.songkick.com/concerts/16738289-dillinger-escape-plan-at-komplex-klub
+https://www.songkick.com/concerts/16738279-sleeping-with-sirens-at-komplex-klub
+https://www.songkick.com/concerts/17087124-nofx-at-komplex-klub
+https://www.songkick.com/concerts/16969194-face-to-face-at-komplex-klub
+https://www.songkick.com/concerts/16533514-donavon-frankenreiter-at-komplex-klub
+https://www.songkick.com/concerts/16058039-sea-power-at-komplex-klub
+https://www.songkick.com/concerts/15939304-peter-murphy-at-komplex-klub
+https://www.songkick.com/concerts/15878069-rocky-votolato-at-komplex-klub
+https://www.songkick.com/concerts/15878064-murder-by-death-at-komplex-klub
+https://www.songkick.com/concerts/15653629-two-gallants-at-komplex-klub
+https://www.songkick.com/concerts/15880104-cashmere-cat-at-komplex-klub
+https://www.songkick.com/concerts/16025294-dope-dod-at-komplex-klub
+https://www.songkick.com/concerts/15328664-never-shout-never-at-komplex-klub
+https://www.songkick.com/concerts/15048354-propagandhi-at-komplex-klub
+https://www.songkick.com/concerts/15620244-courteeners-at-komplex-klub
+https://www.songkick.com/concerts/15048344-shakra-at-komplex-klub
+https://www.songkick.com/concerts/14694789-demented-are-go-at-komplex-klub
+https://www.songkick.com/concerts/14836239-for-the-fallen-dreams-at-komplex-klub
+https://www.songkick.com/concerts/14836234-silverstein-at-komplex-klub
+https://www.songkick.com/concerts/16089124-vatsgoed-at-komplex-klub
+https://www.songkick.com/venues/2148724/gigography?page=5
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 9 : Venues: 7380 - Concerts: 82010
+-------------- venues page 90
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 90 : Venues: 7380 - Concerts: 82010
+-------------- venues page 900
+/venues/3963464
+https://www.songkick.com/venues/3963464
+https://www.songkick.com/venues/3963464/gigography?page=1
+[<Response [302]>]
+/venues/4001269
+https://www.songkick.com/venues/4001269
+https://www.songkick.com/venues/4001269/gigography?page=1
+[<Response [302]>]
+/venues/4049539
+https://www.songkick.com/venues/4049539
+https://www.songkick.com/venues/4049539/gigography?page=1
+[<Response [302]>]
+/venues/4089149
+https://www.songkick.com/venues/4089149
+https://www.songkick.com/venues/4089149/gigography?page=1
+[<Response [302]>]
+/venues/4097449
+https://www.songkick.com/venues/4097449
+https://www.songkick.com/venues/4097449/gigography?page=1
+[<Response [302]>]
+/venues/4100854
+https://www.songkick.com/venues/4100854
+https://www.songkick.com/venues/4100854/gigography?page=1
+[<Response [302]>]
+/venues/4141289
+https://www.songkick.com/venues/4141289
+https://www.songkick.com/venues/4141289/gigography?page=1
+[<Response [302]>]
+/venues/4173049
+https://www.songkick.com/venues/4173049
+https://www.songkick.com/venues/4173049/gigography?page=1
+[<Response [302]>]
+/venues/4186344
+https://www.songkick.com/venues/4186344
+https://www.songkick.com/venues/4186344/gigography?page=1
+[<Response [302]>]
+/venues/4207939
+https://www.songkick.com/venues/4207939
+https://www.songkick.com/venues/4207939/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 900 : Venues: 7390 - Concerts: 82010
+-------------- venues page 901
+/venues/4221579
+https://www.songkick.com/venues/4221579
+https://www.songkick.com/venues/4221579/gigography?page=1
+[<Response [302]>]
+/venues/4233239
+https://www.songkick.com/venues/4233239
+https://www.songkick.com/venues/4233239/gigography?page=1
+[<Response [302]>]
+/venues/4234609
+https://www.songkick.com/venues/4234609
+https://www.songkick.com/venues/4234609/gigography?page=1
+[<Response [302]>]
+/venues/4234419
+https://www.songkick.com/venues/4234419
+https://www.songkick.com/venues/4234419/gigography?page=1
+[<Response [302]>]
+/venues/4239374
+https://www.songkick.com/venues/4239374
+https://www.songkick.com/venues/4239374/gigography?page=1
+[<Response [302]>]
+/venues/2746648
+https://www.songkick.com/venues/2746648
+https://www.songkick.com/venues/2746648/gigography?page=1
+[<Response [302]>]
+/venues/2761863
+https://www.songkick.com/venues/2761863
+https://www.songkick.com/venues/2761863/gigography?page=1
+[<Response [302]>]
+/venues/2781743
+https://www.songkick.com/venues/2781743
+https://www.songkick.com/venues/2781743/gigography?page=1
+[<Response [302]>]
+/venues/2800833
+https://www.songkick.com/venues/2800833
+https://www.songkick.com/venues/2800833/gigography?page=1
+[<Response [302]>]
+/venues/2831723
+https://www.songkick.com/venues/2831723
+https://www.songkick.com/venues/2831723/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 901 : Venues: 7400 - Concerts: 82010
+-------------- venues page 902
+/venues/2850988
+https://www.songkick.com/venues/2850988
+https://www.songkick.com/venues/2850988/gigography?page=1
+[<Response [302]>]
+/venues/2922218
+https://www.songkick.com/venues/2922218
+https://www.songkick.com/venues/2922218/gigography?page=1
+[<Response [302]>]
+/venues/3061724
+https://www.songkick.com/venues/3061724
+https://www.songkick.com/venues/3061724/gigography?page=1
+[<Response [302]>]
+/venues/2886638
+https://www.songkick.com/venues/2886638
+https://www.songkick.com/venues/2886638/gigography?page=1
+[<Response [302]>]
+/venues/2898708
+https://www.songkick.com/venues/2898708
+https://www.songkick.com/venues/2898708/gigography?page=1
+[<Response [302]>]
+/venues/2905273
+https://www.songkick.com/venues/2905273
+https://www.songkick.com/venues/2905273/gigography?page=1
+[<Response [302]>]
+/venues/3044304
+https://www.songkick.com/venues/3044304
+https://www.songkick.com/venues/3044304/gigography?page=1
+[<Response [302]>]
+/venues/3044784
+https://www.songkick.com/venues/3044784
+https://www.songkick.com/venues/3044784/gigography?page=1
+[<Response [302]>]
+/venues/3065529
+https://www.songkick.com/venues/3065529
+https://www.songkick.com/venues/3065529/gigography?page=1
+[<Response [302]>]
+/venues/3065554
+https://www.songkick.com/venues/3065554
+https://www.songkick.com/venues/3065554/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 902 : Venues: 7410 - Concerts: 82010
+-------------- venues page 903
+/venues/3097584
+https://www.songkick.com/venues/3097584
+https://www.songkick.com/venues/3097584/gigography?page=1
+[<Response [302]>]
+/venues/2744723
+https://www.songkick.com/venues/2744723
+https://www.songkick.com/venues/2744723/gigography?page=1
+[<Response [302]>]
+/venues/2764448
+https://www.songkick.com/venues/2764448
+https://www.songkick.com/venues/2764448/gigography?page=1
+[<Response [302]>]
+/venues/2806063
+https://www.songkick.com/venues/2806063
+https://www.songkick.com/venues/2806063/gigography?page=1
+[<Response [302]>]
+/venues/3017149
+https://www.songkick.com/venues/3017149
+https://www.songkick.com/venues/3017149/gigography?page=1
+[<Response [302]>]
+/venues/3108119
+https://www.songkick.com/venues/3108119
+https://www.songkick.com/venues/3108119/gigography?page=1
+[<Response [302]>]
+/venues/2788443
+https://www.songkick.com/venues/2788443
+https://www.songkick.com/venues/2788443/gigography?page=1
+[<Response [302]>]
+/venues/2788458
+https://www.songkick.com/venues/2788458
+https://www.songkick.com/venues/2788458/gigography?page=1
+[<Response [302]>]
+/venues/2838473
+https://www.songkick.com/venues/2838473
+https://www.songkick.com/venues/2838473/gigography?page=1
+[<Response [302]>]
+/venues/2849623
+https://www.songkick.com/venues/2849623
+https://www.songkick.com/venues/2849623/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 903 : Venues: 7420 - Concerts: 82010
+-------------- venues page 904
+/venues/2853448
+https://www.songkick.com/venues/2853448
+https://www.songkick.com/venues/2853448/gigography?page=1
+[<Response [302]>]
+/venues/3059274
+https://www.songkick.com/venues/3059274
+https://www.songkick.com/venues/3059274/gigography?page=1
+[<Response [302]>]
+/venues/2462629
+https://www.songkick.com/venues/2462629
+https://www.songkick.com/venues/2462629/gigography?page=1
+[<Response [302]>]
+/venues/3139194
+https://www.songkick.com/venues/3139194
+https://www.songkick.com/venues/3139194/gigography?page=1
+[<Response [302]>]
+/venues/3154754
+https://www.songkick.com/venues/3154754
+https://www.songkick.com/venues/3154754/gigography?page=1
+[<Response [302]>]
+/venues/3268299
+https://www.songkick.com/venues/3268299
+https://www.songkick.com/venues/3268299/gigography?page=1
+[<Response [302]>]
+/venues/3287419
+https://www.songkick.com/venues/3287419
+https://www.songkick.com/venues/3287419/gigography?page=1
+[<Response [302]>]
+/venues/3306119
+https://www.songkick.com/venues/3306119
+https://www.songkick.com/venues/3306119/gigography?page=1
+[<Response [302]>]
+/venues/3313899
+https://www.songkick.com/venues/3313899
+https://www.songkick.com/venues/3313899/gigography?page=1
+[<Response [302]>]
+/venues/3321144
+https://www.songkick.com/venues/3321144
+https://www.songkick.com/venues/3321144/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 904 : Venues: 7430 - Concerts: 82010
+-------------- venues page 905
+/venues/3321219
+https://www.songkick.com/venues/3321219
+https://www.songkick.com/venues/3321219/gigography?page=1
+[<Response [302]>]
+/venues/3332004
+https://www.songkick.com/venues/3332004
+https://www.songkick.com/venues/3332004/gigography?page=1
+[<Response [302]>]
+/venues/3344229
+https://www.songkick.com/venues/3344229
+https://www.songkick.com/venues/3344229/gigography?page=1
+[<Response [302]>]
+/venues/3124129
+https://www.songkick.com/venues/3124129
+https://www.songkick.com/venues/3124129/gigography?page=1
+[<Response [302]>]
+/venues/3346054
+https://www.songkick.com/venues/3346054
+https://www.songkick.com/venues/3346054/gigography?page=1
+[<Response [302]>]
+/venues/3122219
+https://www.songkick.com/venues/3122219
+https://www.songkick.com/venues/3122219/gigography?page=1
+[<Response [302]>]
+/venues/3249664
+https://www.songkick.com/venues/3249664
+https://www.songkick.com/venues/3249664/gigography?page=1
+[<Response [302]>]
+/venues/3269524
+https://www.songkick.com/venues/3269524
+https://www.songkick.com/venues/3269524/gigography?page=1
+[<Response [302]>]
+/venues/3273314
+https://www.songkick.com/venues/3273314
+https://www.songkick.com/venues/3273314/gigography?page=1
+[<Response [302]>]
+/venues/3293349
+https://www.songkick.com/venues/3293349
+https://www.songkick.com/venues/3293349/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 905 : Venues: 7440 - Concerts: 82010
+-------------- venues page 906
+/venues/4262954
+https://www.songkick.com/venues/4262954
+https://www.songkick.com/venues/4262954/gigography?page=1
+[<Response [302]>]
+/venues/4272209
+https://www.songkick.com/venues/4272209
+https://www.songkick.com/venues/4272209/gigography?page=1
+[<Response [302]>]
+/venues/4280754
+https://www.songkick.com/venues/4280754
+https://www.songkick.com/venues/4280754/gigography?page=1
+[<Response [302]>]
+/venues/4281689
+https://www.songkick.com/venues/4281689
+https://www.songkick.com/venues/4281689/gigography?page=1
+[<Response [302]>]
+/venues/4298264
+https://www.songkick.com/venues/4298264
+https://www.songkick.com/venues/4298264/gigography?page=1
+[<Response [302]>]
+/venues/4299029
+https://www.songkick.com/venues/4299029
+https://www.songkick.com/venues/4299029/gigography?page=1
+[<Response [302]>]
+/venues/4299564
+https://www.songkick.com/venues/4299564
+https://www.songkick.com/venues/4299564/gigography?page=1
+[<Response [302]>]
+/venues/4317739
+https://www.songkick.com/venues/4317739
+https://www.songkick.com/venues/4317739/gigography?page=1
+[<Response [302]>]
+/venues/4329604
+https://www.songkick.com/venues/4329604
+https://www.songkick.com/venues/4329604/gigography?page=1
+[<Response [302]>]
+/venues/4330634
+https://www.songkick.com/venues/4330634
+https://www.songkick.com/venues/4330634/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 906 : Venues: 7450 - Concerts: 82010
+-------------- venues page 907
+/venues/4338210
+https://www.songkick.com/venues/4338210
+https://www.songkick.com/venues/4338210/gigography?page=1
+[<Response [302]>]
+/venues/4338805
+https://www.songkick.com/venues/4338805
+https://www.songkick.com/venues/4338805/gigography?page=1
+[<Response [302]>]
+/venues/4340182
+https://www.songkick.com/venues/4340182
+https://www.songkick.com/venues/4340182/gigography?page=1
+[<Response [302]>]
+/venues/4344281
+https://www.songkick.com/venues/4344281
+https://www.songkick.com/venues/4344281/gigography?page=1
+[<Response [302]>]
+/venues/4345320
+https://www.songkick.com/venues/4345320
+https://www.songkick.com/venues/4345320/gigography?page=1
+[<Response [302]>]
+/venues/4348239
+https://www.songkick.com/venues/4348239
+https://www.songkick.com/venues/4348239/gigography?page=1
+[<Response [302]>]
+/venues/4350932
+https://www.songkick.com/venues/4350932
+https://www.songkick.com/venues/4350932/gigography?page=1
+[<Response [302]>]
+/venues/4354027
+https://www.songkick.com/venues/4354027
+https://www.songkick.com/venues/4354027/gigography?page=1
+[<Response [302]>]
+/venues/4354600
+https://www.songkick.com/venues/4354600
+https://www.songkick.com/venues/4354600/gigography?page=1
+[<Response [302]>]
+/venues/4356249
+https://www.songkick.com/venues/4356249
+https://www.songkick.com/venues/4356249/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 907 : Venues: 7460 - Concerts: 82010
+-------------- venues page 908
+/venues/4358411
+https://www.songkick.com/venues/4358411
+https://www.songkick.com/venues/4358411/gigography?page=1
+[<Response [302]>]
+/venues/4363761
+https://www.songkick.com/venues/4363761
+https://www.songkick.com/venues/4363761/gigography?page=1
+[<Response [302]>]
+/venues/4364775
+https://www.songkick.com/venues/4364775
+https://www.songkick.com/venues/4364775/gigography?page=1
+[<Response [302]>]
+/venues/4366936
+https://www.songkick.com/venues/4366936
+https://www.songkick.com/venues/4366936/gigography?page=1
+[<Response [302]>]
+/venues/4368691
+https://www.songkick.com/venues/4368691
+https://www.songkick.com/venues/4368691/gigography?page=1
+[<Response [302]>]
+/venues/4368713
+https://www.songkick.com/venues/4368713
+https://www.songkick.com/venues/4368713/gigography?page=1
+[<Response [302]>]
+/venues/4369042
+https://www.songkick.com/venues/4369042
+https://www.songkick.com/venues/4369042/gigography?page=1
+[<Response [302]>]
+/venues/4370501
+https://www.songkick.com/venues/4370501
+https://www.songkick.com/venues/4370501/gigography?page=1
+[<Response [302]>]
+/venues/4371008
+https://www.songkick.com/venues/4371008
+https://www.songkick.com/venues/4371008/gigography?page=1
+[<Response [302]>]
+/venues/4372425
+https://www.songkick.com/venues/4372425
+https://www.songkick.com/venues/4372425/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 908 : Venues: 7470 - Concerts: 82010
+-------------- venues page 909
+/venues/4372839
+https://www.songkick.com/venues/4372839
+https://www.songkick.com/venues/4372839/gigography?page=1
+[<Response [302]>]
+/venues/4372903
+https://www.songkick.com/venues/4372903
+https://www.songkick.com/venues/4372903/gigography?page=1
+[<Response [302]>]
+/venues/4373664
+https://www.songkick.com/venues/4373664
+https://www.songkick.com/venues/4373664/gigography?page=1
+[<Response [302]>]
+/venues/4374325
+https://www.songkick.com/venues/4374325
+https://www.songkick.com/venues/4374325/gigography?page=1
+[<Response [302]>]
+/venues/4375326
+https://www.songkick.com/venues/4375326
+https://www.songkick.com/venues/4375326/gigography?page=1
+[<Response [302]>]
+/venues/4375496
+https://www.songkick.com/venues/4375496
+https://www.songkick.com/venues/4375496/gigography?page=1
+[<Response [302]>]
+/venues/4376359
+https://www.songkick.com/venues/4376359
+https://www.songkick.com/venues/4376359/gigography?page=1
+[<Response [302]>]
+/venues/4376830
+https://www.songkick.com/venues/4376830
+https://www.songkick.com/venues/4376830/gigography?page=1
+[<Response [302]>]
+/venues/4377321
+https://www.songkick.com/venues/4377321
+https://www.songkick.com/venues/4377321/gigography?page=1
+[<Response [302]>]
+/venues/4379659
+https://www.songkick.com/venues/4379659
+https://www.songkick.com/venues/4379659/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 909 : Venues: 7480 - Concerts: 82010
+-------------- venues page 91
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 91 : Venues: 7480 - Concerts: 82010
+-------------- venues page 910
+/venues/4380095
+https://www.songkick.com/venues/4380095
+https://www.songkick.com/venues/4380095/gigography?page=1
+[<Response [302]>]
+/venues/4380101
+https://www.songkick.com/venues/4380101
+https://www.songkick.com/venues/4380101/gigography?page=1
+[<Response [302]>]
+/venues/4380340
+https://www.songkick.com/venues/4380340
+https://www.songkick.com/venues/4380340/gigography?page=1
+[<Response [302]>]
+/venues/4380846
+https://www.songkick.com/venues/4380846
+https://www.songkick.com/venues/4380846/gigography?page=1
+[<Response [302]>]
+/venues/1450113
+https://www.songkick.com/venues/1450113
+https://www.songkick.com/venues/1450113/gigography?page=1
+[<Response [302]>]
+/venues/1502348
+https://www.songkick.com/venues/1502348
+https://www.songkick.com/venues/1502348/gigography?page=1
+[<Response [302]>]
+/venues/691431
+https://www.songkick.com/venues/691431
+https://www.songkick.com/venues/691431/gigography?page=1
+[<Response [302]>]
+/venues/1998004
+https://www.songkick.com/venues/1998004
+https://www.songkick.com/venues/1998004/gigography?page=1
+[<Response [302]>]
+/venues/2107354
+https://www.songkick.com/venues/2107354
+https://www.songkick.com/venues/2107354/gigography?page=1
+[<Response [302]>]
+/venues/2129714
+https://www.songkick.com/venues/2129714
+https://www.songkick.com/venues/2129714/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 910 : Venues: 7490 - Concerts: 82010
+-------------- venues page 911
+/venues/3434639
+https://www.songkick.com/venues/3434639
+https://www.songkick.com/venues/3434639/gigography?page=1
+[<Response [302]>]
+/venues/3459089
+https://www.songkick.com/venues/3459089
+https://www.songkick.com/venues/3459089/gigography?page=1
+[<Response [302]>]
+/venues/3459109
+https://www.songkick.com/venues/3459109
+https://www.songkick.com/venues/3459109/gigography?page=1
+[<Response [302]>]
+/venues/3468689
+https://www.songkick.com/venues/3468689
+https://www.songkick.com/venues/3468689/gigography?page=1
+[<Response [302]>]
+/venues/3496354
+https://www.songkick.com/venues/3496354
+https://www.songkick.com/venues/3496354/gigography?page=1
+[<Response [302]>]
+/venues/3531119
+https://www.songkick.com/venues/3531119
+https://www.songkick.com/venues/3531119/gigography?page=1
+[<Response [302]>]
+/venues/3550724
+https://www.songkick.com/venues/3550724
+https://www.songkick.com/venues/3550724/gigography?page=1
+[<Response [302]>]
+/venues/3584044
+https://www.songkick.com/venues/3584044
+https://www.songkick.com/venues/3584044/gigography?page=1
+[<Response [302]>]
+/venues/3595619
+https://www.songkick.com/venues/3595619
+https://www.songkick.com/venues/3595619/gigography?page=1
+[<Response [302]>]
+/venues/3603509
+https://www.songkick.com/venues/3603509
+https://www.songkick.com/venues/3603509/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 911 : Venues: 7500 - Concerts: 82010
+-------------- venues page 912
+/venues/3611534
+https://www.songkick.com/venues/3611534
+https://www.songkick.com/venues/3611534/gigography?page=1
+[<Response [302]>]
+/venues/3626369
+https://www.songkick.com/venues/3626369
+https://www.songkick.com/venues/3626369/gigography?page=1
+[<Response [302]>]
+/venues/3628419
+https://www.songkick.com/venues/3628419
+https://www.songkick.com/venues/3628419/gigography?page=1
+[<Response [302]>]
+/venues/3640624
+https://www.songkick.com/venues/3640624
+https://www.songkick.com/venues/3640624/gigography?page=1
+[<Response [302]>]
+/venues/3692349
+https://www.songkick.com/venues/3692349
+https://www.songkick.com/venues/3692349/gigography?page=1
+[<Response [302]>]
+/venues/3693849
+https://www.songkick.com/venues/3693849
+https://www.songkick.com/venues/3693849/gigography?page=1
+[<Response [302]>]
+/venues/3753504
+https://www.songkick.com/venues/3753504
+https://www.songkick.com/venues/3753504/gigography?page=1
+[<Response [302]>]
+/venues/3643809
+https://www.songkick.com/venues/3643809
+https://www.songkick.com/venues/3643809/gigography?page=1
+[<Response [302]>]
+/venues/3650154
+https://www.songkick.com/venues/3650154
+https://www.songkick.com/venues/3650154/gigography?page=1
+[<Response [302]>]
+/venues/3686539
+https://www.songkick.com/venues/3686539
+https://www.songkick.com/venues/3686539/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 912 : Venues: 7510 - Concerts: 82010
+-------------- venues page 913
+/venues/3815399
+https://www.songkick.com/venues/3815399
+https://www.songkick.com/venues/3815399/gigography?page=1
+[<Response [302]>]
+/venues/3831559
+https://www.songkick.com/venues/3831559
+https://www.songkick.com/venues/3831559/gigography?page=1
+[<Response [302]>]
+/venues/3832789
+https://www.songkick.com/venues/3832789
+https://www.songkick.com/venues/3832789/gigography?page=1
+[<Response [302]>]
+/venues/3876574
+https://www.songkick.com/venues/3876574
+https://www.songkick.com/venues/3876574/gigography?page=1
+[<Response [302]>]
+/venues/3879929
+https://www.songkick.com/venues/3879929
+https://www.songkick.com/venues/3879929/gigography?page=1
+[<Response [302]>]
+/venues/3909314
+https://www.songkick.com/venues/3909314
+https://www.songkick.com/venues/3909314/gigography?page=1
+[<Response [302]>]
+/venues/3919944
+https://www.songkick.com/venues/3919944
+https://www.songkick.com/venues/3919944/gigography?page=1
+[<Response [302]>]
+/venues/4393509
+https://www.songkick.com/venues/4393509
+https://www.songkick.com/venues/4393509/gigography?page=1
+[<Response [302]>]
+/venues/4388994
+https://www.songkick.com/venues/4388994
+https://www.songkick.com/venues/4388994/gigography?page=1
+[<Response [302]>]
+/venues/4397967
+https://www.songkick.com/venues/4397967
+https://www.songkick.com/venues/4397967/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 913 : Venues: 7520 - Concerts: 82010
+-------------- venues page 914
+/venues/4389372
+https://www.songkick.com/venues/4389372
+https://www.songkick.com/venues/4389372/gigography?page=1
+[<Response [302]>]
+/venues/4401114
+https://www.songkick.com/venues/4401114
+https://www.songkick.com/venues/4401114/gigography?page=1
+....... concerts page 1
+https://www.songkick.com/festivals/469459-heavenstage/id/22807688-heavenstage-2015
+https://www.songkick.com/venues/4401114/gigography?page=2
+[<Response [302]>]
+/venues/4369399
+https://www.songkick.com/venues/4369399
+https://www.songkick.com/venues/4369399/gigography?page=1
+[<Response [302]>]
+/venues/4402457
+https://www.songkick.com/venues/4402457
+https://www.songkick.com/venues/4402457/gigography?page=1
+[<Response [302]>]
+/venues/2990583
+https://www.songkick.com/venues/2990583
+https://www.songkick.com/venues/2990583/gigography?page=1
+[<Response [302]>]
+/venues/3647139
+https://www.songkick.com/venues/3647139
+https://www.songkick.com/venues/3647139/gigography?page=1
+[<Response [302]>]
+/venues/4368473
+https://www.songkick.com/venues/4368473
+https://www.songkick.com/venues/4368473/gigography?page=1
+[<Response [302]>]
+/venues/4414760
+https://www.songkick.com/venues/4414760
+https://www.songkick.com/venues/4414760/gigography?page=1
+[<Response [302]>]
+/venues/4233244
+https://www.songkick.com/venues/4233244
+https://www.songkick.com/venues/4233244/gigography?page=1
+[<Response [302]>]
+/venues/4416240
+https://www.songkick.com/venues/4416240
+https://www.songkick.com/venues/4416240/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 914 : Venues: 7530 - Concerts: 82011
+-------------- venues page 915
+/venues/4323339
+https://www.songkick.com/venues/4323339
+https://www.songkick.com/venues/4323339/gigography?page=1
+[<Response [302]>]
+/venues/4421124
+https://www.songkick.com/venues/4421124
+https://www.songkick.com/venues/4421124/gigography?page=1
+[<Response [302]>]
+/venues/4421122
+https://www.songkick.com/venues/4421122
+https://www.songkick.com/venues/4421122/gigography?page=1
+[<Response [302]>]
+/venues/4026764
+https://www.songkick.com/venues/4026764
+https://www.songkick.com/venues/4026764/gigography?page=1
+[<Response [302]>]
+/venues/4037644
+https://www.songkick.com/venues/4037644
+https://www.songkick.com/venues/4037644/gigography?page=1
+[<Response [302]>]
+/venues/3949289
+https://www.songkick.com/venues/3949289
+https://www.songkick.com/venues/3949289/gigography?page=1
+[<Response [302]>]
+/venues/3954109
+https://www.songkick.com/venues/3954109
+https://www.songkick.com/venues/3954109/gigography?page=1
+[<Response [302]>]
+/venues/4031754
+https://www.songkick.com/venues/4031754
+https://www.songkick.com/venues/4031754/gigography?page=1
+[<Response [302]>]
+/venues/4035179
+https://www.songkick.com/venues/4035179
+https://www.songkick.com/venues/4035179/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 915 : Venues: 7539 - Concerts: 82011
+-------------- venues page 916
+/venues/4059969
+https://www.songkick.com/venues/4059969
+https://www.songkick.com/venues/4059969/gigography?page=1
+[<Response [302]>]
+/venues/4088949
+https://www.songkick.com/venues/4088949
+https://www.songkick.com/venues/4088949/gigography?page=1
+[<Response [302]>]
+/venues/4108404
+https://www.songkick.com/venues/4108404
+https://www.songkick.com/venues/4108404/gigography?page=1
+[<Response [302]>]
+/venues/4110559
+https://www.songkick.com/venues/4110559
+https://www.songkick.com/venues/4110559/gigography?page=1
+[<Response [302]>]
+/venues/4119019
+https://www.songkick.com/venues/4119019
+https://www.songkick.com/venues/4119019/gigography?page=1
+[<Response [302]>]
+/venues/4120689
+https://www.songkick.com/venues/4120689
+https://www.songkick.com/venues/4120689/gigography?page=1
+[<Response [302]>]
+/venues/4127709
+https://www.songkick.com/venues/4127709
+https://www.songkick.com/venues/4127709/gigography?page=1
+[<Response [302]>]
+/venues/4137254
+https://www.songkick.com/venues/4137254
+https://www.songkick.com/venues/4137254/gigography?page=1
+[<Response [302]>]
+/venues/4138849
+https://www.songkick.com/venues/4138849
+https://www.songkick.com/venues/4138849/gigography?page=1
+[<Response [302]>]
+/venues/4143469
+https://www.songkick.com/venues/4143469
+https://www.songkick.com/venues/4143469/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 916 : Venues: 7549 - Concerts: 82011
+-------------- venues page 917
+/venues/3546554
+https://www.songkick.com/venues/3546554
+https://www.songkick.com/venues/3546554/gigography?page=1
+[<Response [302]>]
+/venues/3550189
+https://www.songkick.com/venues/3550189
+https://www.songkick.com/venues/3550189/gigography?page=1
+[<Response [302]>]
+/venues/3577814
+https://www.songkick.com/venues/3577814
+https://www.songkick.com/venues/3577814/gigography?page=1
+[<Response [302]>]
+/venues/3585199
+https://www.songkick.com/venues/3585199
+https://www.songkick.com/venues/3585199/gigography?page=1
+[<Response [302]>]
+/venues/3586604
+https://www.songkick.com/venues/3586604
+https://www.songkick.com/venues/3586604/gigography?page=1
+[<Response [302]>]
+/venues/3415869
+https://www.songkick.com/venues/3415869
+https://www.songkick.com/venues/3415869/gigography?page=1
+[<Response [302]>]
+/venues/3427449
+https://www.songkick.com/venues/3427449
+https://www.songkick.com/venues/3427449/gigography?page=1
+[<Response [302]>]
+/venues/3430099
+https://www.songkick.com/venues/3430099
+https://www.songkick.com/venues/3430099/gigography?page=1
+[<Response [302]>]
+/venues/3464804
+https://www.songkick.com/venues/3464804
+https://www.songkick.com/venues/3464804/gigography?page=1
+[<Response [302]>]
+/venues/3518464
+https://www.songkick.com/venues/3518464
+https://www.songkick.com/venues/3518464/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 917 : Venues: 7559 - Concerts: 82011
+-------------- venues page 918
+/venues/3535439
+https://www.songkick.com/venues/3535439
+https://www.songkick.com/venues/3535439/gigography?page=1
+[<Response [302]>]
+/venues/3544994
+https://www.songkick.com/venues/3544994
+https://www.songkick.com/venues/3544994/gigography?page=1
+[<Response [302]>]
+/venues/3584009
+https://www.songkick.com/venues/3584009
+https://www.songkick.com/venues/3584009/gigography?page=1
+[<Response [302]>]
+/venues/3589309
+https://www.songkick.com/venues/3589309
+https://www.songkick.com/venues/3589309/gigography?page=1
+[<Response [302]>]
+/venues/3803644
+https://www.songkick.com/venues/3803644
+https://www.songkick.com/venues/3803644/gigography?page=1
+[<Response [302]>]
+/venues/3872249
+https://www.songkick.com/venues/3872249
+https://www.songkick.com/venues/3872249/gigography?page=1
+[<Response [302]>]
+/venues/3874414
+https://www.songkick.com/venues/3874414
+https://www.songkick.com/venues/3874414/gigography?page=1
+[<Response [302]>]
+/venues/3904654
+https://www.songkick.com/venues/3904654
+https://www.songkick.com/venues/3904654/gigography?page=1
+[<Response [302]>]
+/venues/3906654
+https://www.songkick.com/venues/3906654
+https://www.songkick.com/venues/3906654/gigography?page=1
+[<Response [302]>]
+/venues/3922339
+https://www.songkick.com/venues/3922339
+https://www.songkick.com/venues/3922339/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 918 : Venues: 7569 - Concerts: 82011
+-------------- venues page 919
+/venues/4384783
+https://www.songkick.com/venues/4384783
+https://www.songkick.com/venues/4384783/gigography?page=1
+[<Response [302]>]
+/venues/4389675
+https://www.songkick.com/venues/4389675
+https://www.songkick.com/venues/4389675/gigography?page=1
+[<Response [302]>]
+/venues/4383780
+https://www.songkick.com/venues/4383780
+https://www.songkick.com/venues/4383780/gigography?page=1
+[<Response [302]>]
+/venues/4384535
+https://www.songkick.com/venues/4384535
+https://www.songkick.com/venues/4384535/gigography?page=1
+[<Response [302]>]
+/venues/4392176
+https://www.songkick.com/venues/4392176
+https://www.songkick.com/venues/4392176/gigography?page=1
+[<Response [302]>]
+/venues/4392239
+https://www.songkick.com/venues/4392239
+https://www.songkick.com/venues/4392239/gigography?page=1
+[<Response [302]>]
+/venues/4397949
+https://www.songkick.com/venues/4397949
+https://www.songkick.com/venues/4397949/gigography?page=1
+[<Response [302]>]
+/venues/4382895
+https://www.songkick.com/venues/4382895
+https://www.songkick.com/venues/4382895/gigography?page=1
+[<Response [302]>]
+/venues/4386608
+https://www.songkick.com/venues/4386608
+https://www.songkick.com/venues/4386608/gigography?page=1
+[<Response [302]>]
+/venues/4394807
+https://www.songkick.com/venues/4394807
+https://www.songkick.com/venues/4394807/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 919 : Venues: 7579 - Concerts: 82011
+-------------- venues page 92
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 92 : Venues: 7579 - Concerts: 82011
+-------------- venues page 920
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 920 : Venues: 7579 - Concerts: 82011
+-------------- venues page 921
+/venues/4146659
+https://www.songkick.com/venues/4146659
+https://www.songkick.com/venues/4146659/gigography?page=1
+[<Response [302]>]
+/venues/4149544
+https://www.songkick.com/venues/4149544
+https://www.songkick.com/venues/4149544/gigography?page=1
+[<Response [302]>]
+/venues/4159074
+https://www.songkick.com/venues/4159074
+https://www.songkick.com/venues/4159074/gigography?page=1
+[<Response [302]>]
+/venues/4161184
+https://www.songkick.com/venues/4161184
+https://www.songkick.com/venues/4161184/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 921 : Venues: 7583 - Concerts: 82011
+-------------- venues page 922
+/venues/4170654
+https://www.songkick.com/venues/4170654
+https://www.songkick.com/venues/4170654/gigography?page=1
+[<Response [302]>]
+/venues/4188819
+https://www.songkick.com/venues/4188819
+https://www.songkick.com/venues/4188819/gigography?page=1
+[<Response [302]>]
+/venues/4233314
+https://www.songkick.com/venues/4233314
+https://www.songkick.com/venues/4233314/gigography?page=1
+[<Response [302]>]
+/venues/4240669
+https://www.songkick.com/venues/4240669
+https://www.songkick.com/venues/4240669/gigography?page=1
+[<Response [302]>]
+/venues/4242514
+https://www.songkick.com/venues/4242514
+https://www.songkick.com/venues/4242514/gigography?page=1
+[<Response [302]>]
+/venues/4242249
+https://www.songkick.com/venues/4242249
+https://www.songkick.com/venues/4242249/gigography?page=1
+[<Response [302]>]
+/venues/2883053
+https://www.songkick.com/venues/2883053
+https://www.songkick.com/venues/2883053/gigography?page=1
+[<Response [302]>]
+/venues/2886683
+https://www.songkick.com/venues/2886683
+https://www.songkick.com/venues/2886683/gigography?page=1
+[<Response [302]>]
+/venues/2895683
+https://www.songkick.com/venues/2895683
+https://www.songkick.com/venues/2895683/gigography?page=1
+[<Response [302]>]
+/venues/3047894
+https://www.songkick.com/venues/3047894
+https://www.songkick.com/venues/3047894/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 922 : Venues: 7593 - Concerts: 82011
+-------------- venues page 923
+/venues/4346570
+https://www.songkick.com/venues/4346570
+https://www.songkick.com/venues/4346570/gigography?page=1
+[<Response [302]>]
+/venues/4347336
+https://www.songkick.com/venues/4347336
+https://www.songkick.com/venues/4347336/gigography?page=1
+[<Response [302]>]
+/venues/4347715
+https://www.songkick.com/venues/4347715
+https://www.songkick.com/venues/4347715/gigography?page=1
+[<Response [302]>]
+/venues/4349516
+https://www.songkick.com/venues/4349516
+https://www.songkick.com/venues/4349516/gigography?page=1
+[<Response [302]>]
+/venues/4353560
+https://www.songkick.com/venues/4353560
+https://www.songkick.com/venues/4353560/gigography?page=1
+[<Response [302]>]
+/venues/4354601
+https://www.songkick.com/venues/4354601
+https://www.songkick.com/venues/4354601/gigography?page=1
+[<Response [302]>]
+/venues/4354648
+https://www.songkick.com/venues/4354648
+https://www.songkick.com/venues/4354648/gigography?page=1
+[<Response [302]>]
+/venues/4355061
+https://www.songkick.com/venues/4355061
+https://www.songkick.com/venues/4355061/gigography?page=1
+[<Response [302]>]
+/venues/4360671
+https://www.songkick.com/venues/4360671
+https://www.songkick.com/venues/4360671/gigography?page=1
+[<Response [302]>]
+/venues/4367613
+https://www.songkick.com/venues/4367613
+https://www.songkick.com/venues/4367613/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 923 : Venues: 7603 - Concerts: 82011
+-------------- venues page 924
+/venues/2950863
+https://www.songkick.com/venues/2950863
+https://www.songkick.com/venues/2950863/gigography?page=1
+[<Response [302]>]
+/venues/2960453
+https://www.songkick.com/venues/2960453
+https://www.songkick.com/venues/2960453/gigography?page=1
+[<Response [302]>]
+/venues/3045294
+https://www.songkick.com/venues/3045294
+https://www.songkick.com/venues/3045294/gigography?page=1
+[<Response [302]>]
+/venues/2741433
+https://www.songkick.com/venues/2741433
+https://www.songkick.com/venues/2741433/gigography?page=1
+[<Response [302]>]
+/venues/2767793
+https://www.songkick.com/venues/2767793
+https://www.songkick.com/venues/2767793/gigography?page=1
+[<Response [302]>]
+/venues/3033059
+https://www.songkick.com/venues/3033059
+https://www.songkick.com/venues/3033059/gigography?page=1
+[<Response [302]>]
+/venues/3089844
+https://www.songkick.com/venues/3089844
+https://www.songkick.com/venues/3089844/gigography?page=1
+[<Response [302]>]
+/venues/2316474
+https://www.songkick.com/venues/2316474
+https://www.songkick.com/venues/2316474/gigography?page=1
+[<Response [302]>]
+/venues/2250579
+https://www.songkick.com/venues/2250579
+https://www.songkick.com/venues/2250579/gigography?page=1
+[<Response [302]>]
+/venues/2611938
+https://www.songkick.com/venues/2611938
+https://www.songkick.com/venues/2611938/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 924 : Venues: 7613 - Concerts: 82011
+-------------- venues page 925
+/venues/4377045
+https://www.songkick.com/venues/4377045
+https://www.songkick.com/venues/4377045/gigography?page=1
+[<Response [302]>]
+/venues/4377046
+https://www.songkick.com/venues/4377046
+https://www.songkick.com/venues/4377046/gigography?page=1
+[<Response [302]>]
+/venues/4377549
+https://www.songkick.com/venues/4377549
+https://www.songkick.com/venues/4377549/gigography?page=1
+[<Response [302]>]
+/venues/4378746
+https://www.songkick.com/venues/4378746
+https://www.songkick.com/venues/4378746/gigography?page=1
+[<Response [302]>]
+/venues/4379030
+https://www.songkick.com/venues/4379030
+https://www.songkick.com/venues/4379030/gigography?page=1
+[<Response [302]>]
+/venues/4379388
+https://www.songkick.com/venues/4379388
+https://www.songkick.com/venues/4379388/gigography?page=1
+[<Response [302]>]
+/venues/4380103
+https://www.songkick.com/venues/4380103
+https://www.songkick.com/venues/4380103/gigography?page=1
+[<Response [302]>]
+/venues/4380397
+https://www.songkick.com/venues/4380397
+https://www.songkick.com/venues/4380397/gigography?page=1
+[<Response [302]>]
+/venues/4380537
+https://www.songkick.com/venues/4380537
+https://www.songkick.com/venues/4380537/gigography?page=1
+[<Response [302]>]
+/venues/4382451
+https://www.songkick.com/venues/4382451
+https://www.songkick.com/venues/4382451/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 925 : Venues: 7623 - Concerts: 82011
+-------------- venues page 926
+/venues/3202983
+https://www.songkick.com/venues/3202983
+https://www.songkick.com/venues/3202983/gigography?page=1
+[<Response [302]>]
+/venues/3294879
+https://www.songkick.com/venues/3294879
+https://www.songkick.com/venues/3294879/gigography?page=1
+[<Response [302]>]
+/venues/4335209
+https://www.songkick.com/venues/4335209
+https://www.songkick.com/venues/4335209/gigography?page=1
+[<Response [302]>]
+/venues/4339577
+https://www.songkick.com/venues/4339577
+https://www.songkick.com/venues/4339577/gigography?page=1
+[<Response [302]>]
+/venues/4346154
+https://www.songkick.com/venues/4346154
+https://www.songkick.com/venues/4346154/gigography?page=1
+[<Response [302]>]
+/venues/4250619
+https://www.songkick.com/venues/4250619
+https://www.songkick.com/venues/4250619/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 926 : Venues: 7629 - Concerts: 82011
+-------------- venues page 927
+/venues/2186949
+https://www.songkick.com/venues/2186949
+https://www.songkick.com/venues/2186949/gigography?page=1
+[<Response [302]>]
+/venues/3468694
+https://www.songkick.com/venues/3468694
+https://www.songkick.com/venues/3468694/gigography?page=1
+[<Response [302]>]
+/venues/3543809
+https://www.songkick.com/venues/3543809
+https://www.songkick.com/venues/3543809/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 927 : Venues: 7632 - Concerts: 82011
+-------------- venues page 928
+/venues/3489444
+https://www.songkick.com/venues/3489444
+https://www.songkick.com/venues/3489444/gigography?page=1
+[<Response [302]>]
+/venues/3596254
+https://www.songkick.com/venues/3596254
+https://www.songkick.com/venues/3596254/gigography?page=1
+[<Response [302]>]
+/venues/3613379
+https://www.songkick.com/venues/3613379
+https://www.songkick.com/venues/3613379/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 928 : Venues: 7635 - Concerts: 82011
+-------------- venues page 929
+/venues/3628779
+https://www.songkick.com/venues/3628779
+https://www.songkick.com/venues/3628779/gigography?page=1
+[<Response [302]>]
+/venues/3634804
+https://www.songkick.com/venues/3634804
+https://www.songkick.com/venues/3634804/gigography?page=1
+[<Response [302]>]
+/venues/3723909
+https://www.songkick.com/venues/3723909
+https://www.songkick.com/venues/3723909/gigography?page=1
+[<Response [302]>]
+/venues/3769779
+https://www.songkick.com/venues/3769779
+https://www.songkick.com/venues/3769779/gigography?page=1
+[<Response [302]>]
+/venues/3665574
+https://www.songkick.com/venues/3665574
+https://www.songkick.com/venues/3665574/gigography?page=1
+[<Response [302]>]
+/venues/3670419
+https://www.songkick.com/venues/3670419
+https://www.songkick.com/venues/3670419/gigography?page=1
+[<Response [302]>]
+/venues/3731479
+https://www.songkick.com/venues/3731479
+https://www.songkick.com/venues/3731479/gigography?page=1
+[<Response [302]>]
+/venues/3732404
+https://www.songkick.com/venues/3732404
+https://www.songkick.com/venues/3732404/gigography?page=1
+[<Response [302]>]
+/venues/3744359
+https://www.songkick.com/venues/3744359
+https://www.songkick.com/venues/3744359/gigography?page=1
+[<Response [302]>]
+/venues/3753489
+https://www.songkick.com/venues/3753489
+https://www.songkick.com/venues/3753489/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 929 : Venues: 7645 - Concerts: 82011
+-------------- venues page 93
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 93 : Venues: 7645 - Concerts: 82011
+-------------- venues page 930
+/venues/3753554
+https://www.songkick.com/venues/3753554
+https://www.songkick.com/venues/3753554/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 930 : Venues: 7646 - Concerts: 82011
+-------------- venues page 931
+/venues/1949474
+https://www.songkick.com/venues/1949474
+https://www.songkick.com/venues/1949474/gigography?page=1
+[<Response [302]>]
+/venues/1093661
+https://www.songkick.com/venues/1093661
+https://www.songkick.com/venues/1093661/gigography?page=1
+[<Response [302]>]
+/venues/1982349
+https://www.songkick.com/venues/1982349
+https://www.songkick.com/venues/1982349/gigography?page=1
+[<Response [302]>]
+/venues/2012454
+https://www.songkick.com/venues/2012454
+https://www.songkick.com/venues/2012454/gigography?page=1
+[<Response [302]>]
+/venues/2028464
+https://www.songkick.com/venues/2028464
+https://www.songkick.com/venues/2028464/gigography?page=1
+[<Response [302]>]
+/venues/2160654
+https://www.songkick.com/venues/2160654
+https://www.songkick.com/venues/2160654/gigography?page=1
+[<Response [302]>]
+/venues/2763668
+https://www.songkick.com/venues/2763668
+https://www.songkick.com/venues/2763668/gigography?page=1
+[<Response [302]>]
+/venues/4402932
+https://www.songkick.com/venues/4402932
+https://www.songkick.com/venues/4402932/gigography?page=1
+[<Response [302]>]
+/venues/3754699
+https://www.songkick.com/venues/3754699
+https://www.songkick.com/venues/3754699/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 931 : Venues: 7655 - Concerts: 82011
+-------------- venues page 932
+/venues/4420939
+https://www.songkick.com/venues/4420939
+https://www.songkick.com/venues/4420939/gigography?page=1
+[<Response [302]>]
+/venues/4421109
+https://www.songkick.com/venues/4421109
+https://www.songkick.com/venues/4421109/gigography?page=1
+[<Response [302]>]
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 932 : Venues: 7657 - Concerts: 82011
+-------------- venues page 94
+crawl/temp_data_concerts.csv
+crawl/temp_data_venues.csv
+After page 94 : Venues: 7657 - Concerts: 82011
+-------------- venues page 948
+XXXXX COMPLETE XXXXX
+Venues: 7657
+Concerts: 82011
+
+Process finished with exit code 0
