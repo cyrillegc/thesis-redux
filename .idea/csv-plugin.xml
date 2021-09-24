@@ -38,6 +38,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\data\data_artists_matched.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\data\data_venues.csv">
           <value>
             <Attribute>
