@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\crawl\spotify\backup_09222021_2105\temp_data_artists_matched.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\crawl\spotify\temp_data_artists_matched.csv">
           <value>
             <Attribute>
