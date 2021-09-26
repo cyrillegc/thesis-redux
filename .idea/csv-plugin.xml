@@ -24,7 +24,56 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\crawl\spotify\no_match.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\crawl\spotify\temp_data_artists_matched.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\crawl\spotify_matching\backup_09222021_0858\temp_data_artists_matched.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\crawl\spotify_matching\backup_09222021_1621\temp_data_artists_matched.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\crawl\spotify_matching\backup_09222021_2105\temp_data_artists_matched.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\crawl\spotify_matching\backup_09242021_1052\temp_data_artists_matched.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\crawl\spotify_matching\no_match.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\crawl\spotify_matching\temp_data_artists_matched.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
