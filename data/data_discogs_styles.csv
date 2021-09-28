@@ -1,0 +1,615 @@
+,style_name,genre_url,genre_name
+/style/6485-1990s-r-b,1990s R&B,,
+/style/6483-2000s-r-b,2000s R&B,,
+/style/6484-2010s-r-b,2010s R&B,,
+/style/aor,AOR,,
+/style/5813-asmr,ASMR,,
+/style/aboriginal,Aboriginal,/genre/folk-world-country,"Folk, World, & Country"
+/style/abstract,Abstract,/genre/electronic,Electronic
+/style/acid,Acid,/genre/electronic,Electronic
+/style/acid-house,Acid House,/genre/electronic,Electronic
+/style/acid-jazz,Acid Jazz,/genre/electronic,Electronic
+/style/acid-rock,Acid Rock,/genre/rock,Rock
+/style/6090-acid-techno,Acid Techno,,
+/style/6091-acid-trance,Acid Trance,,
+/style/acoustic,Acoustic,/genre/rock,Rock
+/style/african,African,/genre/folk-world-country,"Folk, World, & Country"
+/style/afro-cuban,Afro-Cuban,/genre/latin,Latin
+/style/afro-cuban-jazz,Afro-Cuban Jazz,/genre/jazz,Jazz
+/style/6099-afro-house,Afro-House,,
+/style/afrobeat,Afrobeat,/genre/funk-soul,Funk / Soul
+/style/alternative-metal,Alternative Metal,/genre/rock,Rock
+/style/alternative-rock,Alternative Rock,/genre/rock,Rock
+/style/ambient,Ambient,/genre/electronic,Electronic
+/style/6100-ambient-house,Ambient House,,
+/style/6092-ambient-techno,Ambient Techno,,
+/style/andalusian-classical,Andalusian Classical,/genre/folk-world-country,"Folk, World, & Country"
+/style/arena-rock,Arena Rock,/genre/rock,Rock
+/style/art-rock,Art Rock,/genre/rock,Rock
+/style/audiobook,Audiobook,/genre/non-music,Non-Music
+/style/avant-garde-jazz,Avant-garde Jazz,/genre/jazz,Jazz
+/style/avantgarde,Avantgarde,/genre/rock,Rock
+/style/axe,Axé,/genre/latin,Latin
+/style/2029-azonto,Azonto,,
+/style/bachata,Bachata,/genre/latin,Latin
+/style/baiao,Baião,,
+/style/balearic-house,Balearic House,/genre/electronic,Electronic
+/style/ballad,Ballad,/genre/pop,Pop
+/style/ballroom,Ballroom,/genre/electronic,Electronic
+/style/baltimore-club,Baltimore Club,/genre/electronic,Electronic
+/style/bangladeshi-classical,Bangladeshi Classical,/genre/folk-world-country,"Folk, World, & Country"
+/style/barbershop,Barbershop,,
+/style/baroque,Baroque,/genre/classical,Classical
+/style/basque-music,Basque Music,,
+/style/6101-bass-house,Bass House,,
+/style/bass-music,Bass Music,/genre/electronic,Electronic
+/style/bassline,Bassline,/genre/electronic,Electronic
+/style/batucada,Batucada,/genre/latin,Latin
+/style/bayou-funk,Bayou Funk,/genre/funk-soul,Funk / Soul
+/style/beat,Beat,/genre/rock,Rock
+/style/beatbox,Beatbox,/genre/hip-hop,Hip Hop
+/style/beatdown,Beatdown,/genre/electronic,Electronic
+/style/beguine,Beguine,/genre/latin,Latin
+/style/berlin-school,Berlin-School,/genre/electronic,Electronic
+/style/bhangra,Bhangra,/genre/folk-world-country,"Folk, World, & Country"
+/style/big-band,Big Band,/genre/jazz,Jazz
+/style/big-beat,Big Beat,/genre/electronic,Electronic
+/style/6102-big-room,Big Room,,
+/style/black-metal,Black Metal,/genre/rock,Rock
+/style/bleep,Bleep,,
+/style/6093-bleep-techno,Bleep Techno,,
+/style/blue-eyed-soul,Blue-Eyed Soul,/genre/funk-soul,Funk / Soul
+/style/bluegrass,Bluegrass,/genre/folk-world-country,"Folk, World, & Country"
+/style/blues-rock,Blues Rock,/genre/rock,Rock
+/style/bolero,Bolero,/genre/delete-7,delete_7
+/style/bollywood,Bollywood,/genre/pop,Pop
+/style/bomba,Bomba,,
+/style/bongo-flava,Bongo Flava,/genre/hip-hop,Hip Hop
+/style/boogaloo,Boogaloo,/genre/latin,Latin
+/style/boogie,Boogie,/genre/funk-soul,Funk / Soul
+/style/boogie-woogie,Boogie Woogie,/genre/blues,Blues
+/style/boom-bap,Boom Bap,/genre/hip-hop,Hip Hop
+/style/bop,Bop,/genre/jazz,Jazz
+/style/bossa-nova,Bossa Nova,/genre/jazz,Jazz
+/style/bossanova,Bossanova,,
+/style/bounce,Bounce,/genre/hip-hop,Hip Hop
+/style/brass-band,Brass Band,/genre/brass-military,Brass & Military
+/style/6123-brazilian-bass,Brazilian Bass,,
+/style/break-in,Break-In,,
+/style/breakbeat,Breakbeat,/genre/electronic,Electronic
+/style/breakcore,Breakcore,/genre/electronic,Electronic
+/style/breaks,Breaks,/genre/electronic,Electronic
+/style/britcore,Britcore,/genre/hip-hop,Hip Hop
+/style/britpop,Britpop,/genre/rock,Rock
+/style/broken-beat,Broken Beat,/genre/electronic,Electronic
+/style/bubblegum,Bubblegum,/genre/pop,Pop
+/style/2038-bubbling,Bubbling,,
+/style/cajun,Cajun,/genre/folk-world-country,"Folk, World, & Country"
+/style/calypso,Calypso,/genre/reggae,Reggae
+/style/cambodian-classical,Cambodian Classical,/genre/folk-world-country,"Folk, World, & Country"
+/style/candombe,Candombe,,
+/style/canzone-napoletana,Canzone Napoletana,/genre/folk-world-country,"Folk, World, & Country"
+/style/cape-jazz,Cape Jazz,/genre/jazz,Jazz
+/style/carimbo,Carimbó,,
+/style/carnatic,Carnatic,/genre/folk-world-country,"Folk, World, & Country"
+/style/catalan-music,Catalan Music,/genre/folk-world-country,"Folk, World, & Country"
+/style/celtic,Celtic,/genre/folk-world-country,"Folk, World, & Country"
+/style/cha-cha,Cha-Cha,/genre/latin,Latin
+/style/chacarera,Chacarera,,
+/style/chamam-u00e9,Chamamé,,
+/style/champeta,Champeta,,
+/style/chanson,Chanson,/genre/pop,Pop
+/style/charanga,Charanga,/genre/latin,Latin
+/style/chicago-blues,Chicago Blues,/genre/blues,Blues
+/style/6103-chicago-hard-house,Chicago Hard House,,
+/style/3378-chicago-honky,Chicago Honky,,
+/style/6104-chicago-house,Chicago House,,
+/style/3377-chicago-push,Chicago Push,,
+/style/chillwave,Chillwave,,
+/style/chinese-classical,Chinese Classical,/genre/folk-world-country,"Folk, World, & Country"
+/style/chiptune,Chiptune,/genre/electronic,Electronic
+/style/choral,Choral,,
+/style/choro,Choro,,
+/style/christian,Christian,/genre/rock,Rock
+/style/classic-rock,Classic Rock,/genre/rock,Rock
+/style/classical,Classical,/genre/classical,Classical
+/style/cloud-rap,Cloud Rap,,
+/style/1978-coldwave,Coldwave,,
+/style/comedy,Comedy,/genre/non-music,Non-Music
+/style/compas,Compas,/genre/latin,Latin
+/style/6114-complextro,Complextro,,
+/style/conjunto,Conjunto,/genre/latin,Latin
+/style/conscious,Conscious,/genre/hip-hop,Hip Hop
+/style/contemporary,Contemporary,/genre/classical,Classical
+/style/contemporary-christian-music,Contemporary Christian Music,/genre/rock,Rock
+/style/contemporary-jazz,Contemporary Jazz,/genre/jazz,Jazz
+/style/contemporary-r-b,Contemporary R&B,/genre/funk-soul,Funk / Soul
+/style/cool-jazz,Cool Jazz,/genre/jazz,Jazz
+/style/copla,Copla,/genre/latin,Latin
+/style/corrido,Corrido,/genre/latin,Latin
+/style/country,Country,/genre/folk-world-country,"Folk, World, & Country"
+/style/country-blues,Country Blues,/genre/blues,Blues
+/style/country-rock,Country Rock,/genre/rock,Rock
+/style/crunk,Crunk,/genre/hip-hop,Hip Hop
+/style/crust,Crust,/genre/rock,Rock
+/style/cuatro,Cuatro,/genre/latin,Latin
+/style/cubano,Cubano,/genre/latin,Latin
+/style/cumbia,Cumbia,/genre/latin,Latin
+/style/cut-up-dj,Cut-up/DJ,/genre/hip-hop,Hip Hop
+/style/dj-battle-tool,DJ Battle Tool,/genre/hip-hop,Hip Hop
+/style/1997-dj-battle-tool,DJ Battle Tool,,
+/style/dance-pop,Dance-pop,/genre/electronic,Electronic
+/style/dancehall,Dancehall,/genre/reggae,Reggae
+/style/danzon,Danzon,/genre/latin,Latin
+/style/dark-ambient,Dark Ambient,/genre/electronic,Electronic
+/style/darkwave,Darkwave,,
+/style/death-metal,Death Metal,/genre/rock,Rock
+/style/1983-deathcore,Deathcore,,
+/style/deathrock,Deathrock,/genre/rock,Rock
+/style/deep-house,Deep House,/genre/electronic,Electronic
+/style/deep-techno,Deep Techno,/genre/electronic,Electronic
+/style/delta-blues,Delta Blues,/genre/blues,Blues
+/style/descarga,Descarga,/genre/latin,Latin
+/style/6094-detroit-techno,Detroit Techno,,
+/style/dialogue,Dialogue,/genre/non-music,Non-Music
+/style/disco,Disco,/genre/funk-soul,Funk / Soul
+/style/6108-disco-house,Disco House,,
+/style/disco-polo,Disco Polo,/genre/electronic,Electronic
+/style/6124-diva-house,Diva House,,
+/style/dixieland,Dixieland,/genre/jazz,Jazz
+/style/donk,Donk,/genre/electronic,Electronic
+/style/doo-wop,Doo Wop,/genre/rock,Rock
+/style/doom-metal,Doom Metal,/genre/rock,Rock
+/style/doomcore,Doomcore,/genre/electronic,Electronic
+/style/downtempo,Downtempo,/genre/electronic,Electronic
+/style/6607-dream-pop,Dream Pop,,
+/style/drone,Drone,/genre/electronic,Electronic
+/style/drum-and-bass,Drum and Bass,/genre/electronic,Electronic
+/style/dub,Dub,/genre/reggae,Reggae
+/style/dub-poetry,Dub Poetry,/genre/reggae,Reggae
+/style/dub-techno,Dub Techno,/genre/electronic,Electronic
+/style/dubstep,Dubstep,/genre/electronic,Electronic
+/style/dungeon-synth,Dungeon Synth,,
+/style/6105-dutch-house,Dutch House,,
+/style/ebm,EBM,/genre/electronic,Electronic
+/style/1996-ebm,EBM,,
+/style/early,Early,/genre/classical,Classical
+/style/east-coast-blues,East Coast Blues,/genre/blues,Blues
+/style/easy-listening,Easy Listening,/genre/jazz,Jazz
+/style/education,Education,/genre/non-music,Non-Music
+/style/educational,Educational,/genre/childrens,Children's
+/style/electric-blues,Electric Blues,/genre/blues,Blues
+/style/electro,Electro,/genre/hip-hop,Hip Hop
+/style/electro-house,Electro House,/genre/electronic,Electronic
+/style/6126-electro-swing,Electro Swing,,
+/style/electroclash,Electroclash,/genre/electronic,Electronic
+/style/emo,Emo,/genre/rock,Rock
+/style/enka,Enka,/genre/pop,Pop
+/style/erotic,Erotic,/genre/non-music,Non-Music
+/style/ethereal,Ethereal,/genre/rock,Rock
+/style/ethno-pop,Ethno-pop,/genre/folk-world-country,"Folk, World, & Country"
+/style/euro-house,Euro House,/genre/electronic,Electronic
+/style/euro-disco,Euro-Disco,/genre/electronic,Electronic
+/style/eurobeat,Eurobeat,/genre/electronic,Electronic
+/style/eurodance,Eurodance,/genre/electronic,Electronic
+/style/europop,Europop,/genre/pop,Pop
+/style/experimental,Experimental,/genre/electronic,Electronic
+/style/fado,Fado,/genre/folk-world-country,"Folk, World, & Country"
+/style/favela-funk,Favela Funk,/genre/hip-hop,Hip Hop
+/style/6115-fidget-house,Fidget House,,
+/style/field-recording,Field Recording,/genre/non-music,Non-Music
+/style/flamenco,Flamenco,/genre/latin,Latin
+/style/folk,Folk,/genre/folk-world-country,"Folk, World, & Country"
+/style/folk-metal,Folk Metal,/genre/rock,Rock
+/style/folk-rock,Folk Rock,/genre/rock,Rock
+/style/forro,Forró,/genre/latin,Latin
+/style/free-funk,Free Funk,/genre/funk-soul,Funk / Soul
+/style/free-improvisation,Free Improvisation,/genre/jazz,Jazz
+/style/free-jazz,Free Jazz,/genre/jazz,Jazz
+/style/freestyle,Freestyle,/genre/electronic,Electronic
+/style/6095-freetekno,Freetekno,,
+/style/6106-french-house,French House,,
+/style/funana-u0301,Funaná,,
+/style/funeral-doom-metal,Funeral Doom Metal,,
+/style/funk,Funk,/genre/funk-soul,Funk / Soul
+/style/funk-metal,Funk Metal,/genre/rock,Rock
+/style/funkot,Funkot,,
+/style/6107-funky-house,Funky House,,
+/style/fusion,Fusion,/genre/jazz,Jazz
+/style/future-bass,Future Bass,/genre/electronic,Electronic
+/style/6118-future-bounce,Future Bounce,,
+/style/6119-future-funk,Future Funk,,
+/style/future-garage,Future Garage,/genre/electronic,Electronic
+/style/6109-future-house,Future House,,
+/style/future-jazz,Future Jazz,/genre/electronic,Electronic
+/style/g-funk,G-Funk,/genre/hip-hop,Hip Hop
+/style/gabber,Gabber,/genre/electronic,Electronic
+/style/gagaku,Gagaku,/genre/folk-world-country,"Folk, World, & Country"
+/style/gaita,Gaita,,
+/style/gamelan,Gamelan,/genre/folk-world-country,"Folk, World, & Country"
+/style/gangsta,Gangsta,/genre/hip-hop,Hip Hop
+/style/garage-house,Garage House,/genre/electronic,Electronic
+/style/garage-rock,Garage Rock,/genre/rock,Rock
+/style/3375-german-oom-pah-polka,German/'Oom-Pah' Polka,,
+/style/ghetto,Ghetto,/genre/electronic,Electronic
+/style/ghetto-house,Ghetto House,/genre/electronic,Electronic
+/style/ghettotech,Ghettotech,/genre/electronic,Electronic
+/style/glam,Glam,/genre/rock,Rock
+/style/glitch,Glitch,/genre/electronic,Electronic
+/style/glitch-hop,Glitch Hop,/genre/hip-hop,Hip Hop
+/style/6248-gnawa,Gnawa,,
+/style/go-go,Go-Go,/genre/hip-hop,Hip Hop
+/style/goa-trance,Goa Trance,/genre/electronic,Electronic
+/style/gogo,Gogo,,
+/style/2073-goregrind,Goregrind,,
+/style/gospel,Gospel,/genre/funk-soul,Funk / Soul
+/style/goth-rock,Goth Rock,/genre/rock,Rock
+/style/gothic-metal,Gothic Metal,/genre/rock,Rock
+/style/grime,Grime,/genre/hip-hop,Hip Hop
+/style/grindcore,Grindcore,/genre/rock,Rock
+/style/griot,Griot,/genre/folk-world-country,"Folk, World, & Country"
+/style/grunge,Grunge,/genre/rock,Rock
+/style/guaguanco,Guaguancó,/genre/latin,Latin
+/style/guajira,Guajira,,
+/style/guaracha,Guaracha,/genre/latin,Latin
+/style/guarania,Guarania,/genre/latin,Latin
+/style/gwo-ka,Gwo Ka,/genre/latin,Latin
+/style/gypsy-jazz,Gypsy Jazz,/genre/jazz,Jazz
+/style/hands-up,Hands Up,,
+/style/happy-hardcore,Happy Hardcore,/genre/electronic,Electronic
+/style/hard-beat,Hard Beat,,
+/style/hard-bop,Hard Bop,/genre/jazz,Jazz
+/style/5020-hard-core,Hard Core,,
+/style/hard-house,Hard House,/genre/electronic,Electronic
+/style/hard-rock,Hard Rock,/genre/rock,Rock
+/style/hard-techno,Hard Techno,/genre/electronic,Electronic
+/style/6096-hard-techno,Hard Techno,,
+/style/hard-trance,Hard Trance,/genre/electronic,Electronic
+/style/5818-hard-trap,Hard-Trap,,
+/style/6125-hardbag,Hardbag,,
+/style/6122-hardbass,Hardbass,,
+/style/hardcore,Hardcore,/genre/electronic,Electronic
+/style/hardcore-hip-hop,Hardcore Hip-Hop,/genre/hip-hop,Hip Hop
+/style/hardstyle,Hardstyle,/genre/electronic,Electronic
+/style/harmonica-blues,Harmonica Blues,/genre/blues,Blues
+/style/harsh-noise-wall,Harsh Noise Wall,,
+/style/health-fitness,Health-Fitness,/genre/non-music,Non-Music
+/style/3302-heavenly-voices,Heavenly Voices,,
+/style/heavy-metal,Heavy Metal,/genre/rock,Rock
+/style/hi-nrg,Hi NRG,/genre/electronic,Electronic
+/style/highlife,Highlife,/genre/folk-world-country,"Folk, World, & Country"
+/style/hillbilly,Hillbilly,/genre/folk-world-country,"Folk, World, & Country"
+/style/hindustani,Hindustani,/genre/folk-world-country,"Folk, World, & Country"
+/style/hip-hop,Hip Hop,/genre/electronic,Electronic
+/style/hip-house,Hip-House,/genre/electronic,Electronic
+/style/hiplife,Hiplife,/genre/hip-hop,Hip Hop
+/style/honky-tonk,Honky Tonk,/genre/folk-world-country,"Folk, World, & Country"
+/style/hopscotch-club,Hopscotch Club,,
+/style/horrorcore,Horrorcore,/genre/hip-hop,Hip Hop
+/style/house,House,/genre/electronic,Electronic
+/style/hyper-techno,Hyper Techno,/genre/electronic,Electronic
+/style/hyphy,Hyphy,/genre/hip-hop,Hip Hop
+/style/idm,IDM,/genre/electronic,Electronic
+/style/illbient,Illbient,/genre/electronic,Electronic
+/style/impressionist,Impressionist,/genre/classical,Classical
+/style/indian-classical,Indian Classical,/genre/folk-world-country,"Folk, World, & Country"
+/style/indie-pop,Indie Pop,/genre/pop,Pop
+/style/indie-rock,Indie Rock,/genre/rock,Rock
+/style/industrial,Industrial,/genre/electronic,Electronic
+/style/6097-industrial-techno,Industrial Techno,,
+/style/instrumental,Instrumental,/genre/hip-hop,Hip Hop
+/style/interview,Interview,/genre/non-music,Non-Music
+/style/italo-house,Italo House,/genre/electronic,Electronic
+/style/italo-disco,Italo-Disco,/genre/electronic,Electronic
+/style/italodance,Italodance,/genre/electronic,Electronic
+/style/j-core,J-Core,,
+/style/j-rock,J-Rock,,
+/style/j-pop,J-pop,/genre/pop,Pop
+/style/6127-jazz-house,Jazz House,,
+/style/jazz-funk,Jazz-Funk,/genre/jazz,Jazz
+/style/jazz-rock,Jazz-Rock,/genre/rock,Rock
+/style/jazzdance,Jazzdance,/genre/electronic,Electronic
+/style/jazzy-hip-hop,Jazzy Hip-Hop,/genre/hip-hop,Hip Hop
+/style/6110-jersey-club,Jersey Club,,
+/style/jibaro,Jibaro,/genre/latin,Latin
+/style/joropo,Joropo,,
+/style/jota,Jota,,
+/style/juke,Juke,/genre/electronic,Electronic
+/style/jump-blues,Jump Blues,/genre/blues,Blues
+/style/jumpstyle,Jumpstyle,/genre/electronic,Electronic
+/style/jungle,Jungle,/genre/electronic,Electronic
+/style/6116-jungle-terror,Jungle Terror,,
+/style/junkanoo,Junkanoo,/genre/reggae,Reggae
+/style/2011-k-pop,K-pop,,
+/style/karaoke,Karaoke,/genre/pop,Pop
+/style/kaseko,Kaseko,/genre/folk-world-country,"Folk, World, & Country"
+/style/kawaii-future-bass,Kawaii Future Bass,/genre/electronic,Electronic
+/style/kayokyoku,Kayōkyoku,,
+/style/keroncong,Keroncong,,
+/style/kizomba,Kizomba,,
+/style/klasik,Klasik,/genre/folk-world-country,"Folk, World, & Country"
+/style/klezmer,Klezmer,/genre/folk-world-country,"Folk, World, & Country"
+/style/korean-court-music,Korean Court Music,/genre/folk-world-country,"Folk, World, & Country"
+/style/krautrock,Krautrock,/genre/rock,Rock
+/style/kwaito,Kwaito,/genre/hip-hop,Hip Hop
+/style/lambada,Lambada,/genre/latin,Latin
+/style/lao-music,Lao Music,/genre/folk-world-country,"Folk, World, & Country"
+/style/latin,Latin,/genre/electronic,Electronic
+/style/6111-latin-house,Latin House,,
+/style/latin-jazz,Latin Jazz,/genre/jazz,Jazz
+/style/laiko,Laïkó,/genre/folk-world-country,"Folk, World, & Country"
+/style/la-u00efk-u00f3,Laïkó,,
+/style/leftfield,Leftfield,/genre/electronic,Electronic
+/style/lento-violento,Lento Violento,,
+/style/light-music,Light Music,,
+/style/liscio,Liscio,/genre/folk-world-country,"Folk, World, & Country"
+/style/lo-fi,Lo-Fi,,
+/style/louisiana-blues,Louisiana Blues,/genre/blues,Blues
+/style/lounge,Lounge,/genre/rock,Rock
+/style/lovers-rock,Lovers Rock,/genre/reggae,Reggae
+/style/low-bap,Low Bap,,
+/style/luk-krung,Luk Krung,,
+/style/luk-thung,Luk Thung,/genre/folk-world-country,"Folk, World, & Country"
+/style/2069-mpb,MPB,,
+/style/mpb,MPB,/genre/latin,Latin
+/style/makina,Makina,/genre/electronic,Electronic
+/style/maloya,Maloya,,
+/style/mambo,Mambo,/genre/latin,Latin
+/style/marcha-carnavalesca,Marcha Carnavalesca,,
+/style/marches,Marches,/genre/brass-military,Brass & Military
+/style/mariachi,Mariachi,/genre/latin,Latin
+/style/marimba,Marimba,/genre/latin,Latin
+/style/math-rock,Math Rock,/genre/rock,Rock
+/style/mbalax,Mbalax,,
+/style/medieval,Medieval,/genre/classical,Classical
+/style/6117-melbourne-bounce,Melbourne Bounce,,
+/style/2037-melodic-death-metal,Melodic Death Metal,,
+/style/melodic-hardcore,Melodic Hardcore,/genre/rock,Rock
+/style/memphis-blues,Memphis Blues,,
+/style/mento,Mento,/genre/reggae,Reggae
+/style/merengue,Merengue,/genre/latin,Latin
+/style/metalcore,Metalcore,/genre/rock,Rock
+/style/miami-bass,Miami Bass,/genre/hip-hop,Hip Hop
+/style/6112-microhouse,Microhouse,,
+/style/military,Military,/genre/brass-military,Brass & Military
+/style/minyo,Min'yō,,
+/style/minimal,Minimal,/genre/electronic,Electronic
+/style/minimal-techno,Minimal Techno,/genre/electronic,Electronic
+/style/minneapolis-sound,Minneapolis Sound,/genre/funk-soul,Funk / Soul
+/style/mizrahi,Mizrahi,/genre/folk-world-country,"Folk, World, & Country"
+/style/mod,Mod,/genre/jazz,Jazz
+/style/modal,Modal,/genre/jazz,Jazz
+/style/modern,Modern,,
+/style/modern-classical,Modern Classical,/genre/electronic,Electronic
+/style/modern-electric-blues,Modern Electric Blues,/genre/blues,Blues
+/style/monolog,Monolog,/genre/non-music,Non-Music
+/style/6129-moombahcore,Moombahcore,,
+/style/6130-moombahsoul,Moombahsoul,,
+/style/6128-moombahton,Moombahton,,
+/style/motswako,Motswako,/genre/hip-hop,Hip Hop
+/style/mouth-music,Mouth Music,/genre/folk-world-country,"Folk, World, & Country"
+/style/movie-effects,Movie Effects,/genre/non-music,Non-Music
+/style/mugham,Mugham,/genre/folk-world-country,"Folk, World, & Country"
+/style/musette,Musette,,
+/style/music-hall,Music Hall,/genre/pop,Pop
+/style/musical,Musical,/genre/stage-screen,Stage & Screen
+/style/musique-concrete,Musique Concrète,/genre/electronic,Electronic
+/style/musica-criolla,Música Criolla,,
+/style/ndw,NDW,,
+/style/6120-nrg,NRG,,
+/style/neo-soul,Neo Soul,/genre/funk-soul,Funk / Soul
+/style/neo-trance,Neo Trance,,
+/style/neo-classical,Neo-Classical,/genre/classical,Classical
+/style/neo-romantic,Neo-Romantic,/genre/classical,Classical
+/style/neofolk,Neofolk,/genre/rock,Rock
+/style/nerdcore-techno,Nerdcore Techno,/genre/electronic,Electronic
+/style/new-age,New Age,/genre/electronic,Electronic
+/style/new-beat,New Beat,/genre/electronic,Electronic
+/style/new-jack-swing,New Jack Swing,/genre/funk-soul,Funk / Soul
+/style/new-wave,New Wave,,
+/style/no-wave,No Wave,,
+/style/noise,Noise,/genre/rock,Rock
+/style/noisecore,Noisecore,,
+/style/nordic,Nordic,/genre/folk-world-country,"Folk, World, & Country"
+/style/norteno,Norteño,/genre/latin,Latin
+/style/northern-soul,Northern Soul,/genre/funk-soul,Funk / Soul
+/style/novelty,Novelty,/genre/pop,Pop
+/style/nu-metal,Nu Metal,/genre/rock,Rock
+/style/nu-metalcore,Nu Metalcore,/genre/rock,Rock
+/style/nu-disco,Nu-Disco,,
+/style/nu-house,Nu-House,,
+/style/nueva-cancion,Nueva Cancion,/genre/latin,Latin
+/style/nueva-trova,Nueva Trova,/genre/latin,Latin
+/style/nursery-rhymes,Nursery Rhymes,/genre/childrens,Children's
+/style/n-u00e9pzene,Népzene,,
+/style/nepzene,Népzene,,
+/style/occitan,Occitan,,
+/style/oi,Oi,/genre/rock,Rock
+/style/opera,Opera,/genre/classical,Classical
+/style/operetta,Operetta,/genre/classical,Classical
+/style/ottoman-classical,Ottoman Classical,/genre/folk-world-country,"Folk, World, & Country"
+/style/outsider-house,Outsider House,/genre/electronic,Electronic
+/style/overtone-singing,Overtone Singing,/genre/folk-world-country,"Folk, World, & Country"
+/style/p-funk,P.Funk,/genre/funk-soul,Funk / Soul
+/style/pachanga,Pachanga,/genre/latin,Latin
+/style/pacific,Pacific,/genre/folk-world-country,"Folk, World, & Country"
+/style/parody,Parody,/genre/pop,Pop
+/style/pasodoble,Pasodoble,,
+/style/persian-classical,Persian Classical,/genre/folk-world-country,"Folk, World, & Country"
+/style/philippine-classical,Philippine Classical,/genre/folk-world-country,"Folk, World, & Country"
+/style/6113-philly-club,Philly Club,,
+/style/phleng-phuea-chiwit,Phleng Phuea Chiwit,,
+/style/piano-blues,Piano Blues,/genre/blues,Blues
+/style/piedmont-blues,Piedmont Blues,/genre/blues,Blues
+/style/piobaireachd,Piobaireachd,/genre/folk-world-country,"Folk, World, & Country"
+/style/pipe-drum,Pipe & Drum,/genre/brass-military,Brass & Military
+/style/plena,Plena,/genre/latin,Latin
+/style/poetry,Poetry,/genre/non-music,Non-Music
+/style/3376-polish-polka,Polish Polka,,
+/style/political,Political,/genre/non-music,Non-Music
+/style/polka,Polka,/genre/folk-world-country,"Folk, World, & Country"
+/style/pop-punk,Pop Punk,/genre/rock,Rock
+/style/6442-pop-punk,Pop Punk,,
+/style/pop-rap,Pop Rap,/genre/hip-hop,Hip Hop
+/style/pop-rock,Pop Rock,/genre/rock,Rock
+/style/2001-porro,Porro,,
+/style/porro,Porro,,
+/style/post-bop,Post Bop,/genre/jazz,Jazz
+/style/post-rock,Post Rock,/genre/rock,Rock
+/style/post-hardcore,Post-Hardcore,,
+/style/2049-post-metal,Post-Metal,,
+/style/post-modern,Post-Modern,/genre/classical,Classical
+/style/post-punk,Post-Punk,/genre/rock,Rock
+/style/6608-post-punk,Post-Punk,,
+/style/power-electronics,Power Electronics,/genre/electronic,Electronic
+/style/power-metal,Power Metal,/genre/rock,Rock
+/style/power-pop,Power Pop,/genre/rock,Rock
+/style/prog-rock,Prog Rock,/genre/rock,Rock
+/style/progressive-breaks,Progressive Breaks,,
+/style/progressive-house,Progressive House,/genre/electronic,Electronic
+/style/1999-progressive-metal,Progressive Metal,,
+/style/progressive-trance,Progressive Trance,/genre/electronic,Electronic
+/style/promotional,Promotional,/genre/non-music,Non-Music
+/style/psy-trance,Psy-Trance,/genre/electronic,Electronic
+/style/psychedelic,Psychedelic,/genre/funk-soul,Funk / Soul
+/style/psychedelic-rock,Psychedelic Rock,/genre/rock,Rock
+/style/psychobilly,Psychobilly,/genre/rock,Rock
+/style/pub-rock,Pub Rock,/genre/rock,Rock
+/style/public-broadcast,Public Broadcast,,
+/style/public-service-announcement,Public Service Announcement,/genre/non-music,Non-Music
+/style/6132-pumping-house,Pumping House,,
+/style/punk,Punk,/genre/rock,Rock
+/style/quechua,Quechua,/genre/folk-world-country,"Folk, World, & Country"
+/style/5772-r,R,,
+/style/radioplay,Radioplay,/genre/non-music,Non-Music
+/style/ragga,Ragga,/genre/reggae,Reggae
+/style/ragga-hiphop,Ragga HipHop,/genre/hip-hop,Hip Hop
+/style/ragtime,Ragtime,/genre/jazz,Jazz
+/style/ranchera,Ranchera,/genre/latin,Latin
+/style/rapso,Rapso,/genre/reggae,Reggae
+/style/rai,Raï,/genre/folk-world-country,"Folk, World, & Country"
+/style/ra-u00ef,Raï,,
+/style/rebetiko,Rebetiko,/genre/folk-world-country,"Folk, World, & Country"
+/style/reggae,Reggae,/genre/reggae,Reggae
+/style/reggae-gospel,Reggae Gospel,/genre/reggae,Reggae
+/style/reggae-pop,Reggae-Pop,/genre/reggae,Reggae
+/style/reggaeton,Reggaeton,/genre/latin,Latin
+/style/religious,Religious,/genre/non-music,Non-Music
+/style/renaissance,Renaissance,/genre/classical,Classical
+/style/rhythm-blues,Rhythm & Blues,/genre/funk-soul,Funk / Soul
+/style/rhythmic-noise,Rhythmic Noise,,
+/style/rnb-swing,RnB/Swing,/genre/hip-hop,Hip Hop
+/style/rock-roll,Rock & Roll,/genre/rock,Rock
+/style/rock-opera,Rock Opera,,
+/style/rockabilly,Rockabilly,/genre/rock,Rock
+/style/rocksteady,Rocksteady,/genre/reggae,Reggae
+/style/romani,Romani,/genre/folk-world-country,"Folk, World, & Country"
+/style/romantic,Romantic,/genre/classical,Classical
+/style/roots-reggae,Roots Reggae,/genre/reggae,Reggae
+/style/rumba,Rumba,/genre/latin,Latin
+/style/rumba-catalana,Rumba Catalana,/genre/latin,Latin
+/style/rune-singing,Rune Singing,/genre/folk-world-country,"Folk, World, & Country"
+/style/salsa,Salsa,/genre/latin,Latin
+/style/samba,Samba,/genre/latin,Latin
+/style/samba-cancao,Samba-canção,,
+/style/schlager,Schlager,/genre/pop,Pop
+/style/schranz,Schranz,/genre/electronic,Electronic
+/style/score,Score,/genre/stage-screen,Stage & Screen
+/style/6121-scouse-house,Scouse House,,
+/style/screw,Screw,/genre/hip-hop,Hip Hop
+/style/sea-shanties,Sea Shanties,,
+/style/sephardic,Sephardic,/genre/folk-world-country,"Folk, World, & Country"
+/style/seresta,Seresta,,
+/style/serial,Serial,/genre/classical,Classical
+/style/sermon,Sermon,/genre/non-music,Non-Music
+/style/shoegaze,Shoegaze,/genre/rock,Rock
+/style/ska,Ska,/genre/reggae,Reggae
+/style/skiffle,Skiffle,/genre/rock,Rock
+/style/skweee,Skweee,/genre/electronic,Electronic
+/style/3374-slovenian-polka,Slovenian Polka,,
+/style/sludge-metal,Sludge Metal,/genre/rock,Rock
+/style/smooth-jazz,Smooth Jazz,/genre/jazz,Jazz
+/style/soca,Soca,/genre/reggae,Reggae
+/style/4438-soft-ballad,Soft Ballad,,
+/style/soft-rock,Soft Rock,/genre/rock,Rock
+/style/son,Son,/genre/latin,Latin
+/style/2045-son-montuno,Son Montuno,,
+/style/son-montuno,Son Montuno,,
+/style/sonero,Sonero,/genre/latin,Latin
+/style/soukous,Soukous,/genre/folk-world-country,"Folk, World, & Country"
+/style/soul,Soul,/genre/funk-soul,Funk / Soul
+/style/soul-jazz,Soul-Jazz,/genre/jazz,Jazz
+/style/6131-soulful-house,Soulful House,,
+/style/2013-sound-art,Sound Art,,
+/style/sound-collage,Sound Collage,,
+/style/2084-sound-poetry,Sound Poetry,,
+/style/soundtrack,Soundtrack,/genre/stage-screen,Stage & Screen
+/style/southern-rock,Southern Rock,/genre/rock,Rock
+/style/space-rock,Space Rock,/genre/rock,Rock
+/style/space-age,Space-Age,/genre/electronic,Electronic
+/style/spaza,Spaza,/genre/hip-hop,Hip Hop
+/style/special-effects,Special Effects,/genre/non-music,Non-Music
+/style/speech,Speech,/genre/non-music,Non-Music
+/style/speed-garage,Speed Garage,/genre/electronic,Electronic
+/style/speed-metal,Speed Metal,/genre/rock,Rock
+/style/speedcore,Speedcore,/genre/electronic,Electronic
+/style/spoken-word,Spoken Word,/genre/non-music,Non-Music
+/style/steel-band,Steel Band,/genre/reggae,Reggae
+/style/stoner-rock,Stoner Rock,,
+/style/story,Story,/genre/childrens,Children's
+/style/surf,Surf,/genre/rock,Rock
+/style/swamp-pop,Swamp Pop,/genre/rock,Rock
+/style/swing,Swing,/genre/jazz,Jazz
+/style/swingbeat,Swingbeat,/genre/funk-soul,Funk / Soul
+/style/6229-symphonic-metal,Symphonic Metal,,
+/style/symphonic-rock,Symphonic Rock,/genre/rock,Rock
+/style/synth-pop,Synth-pop,/genre/electronic,Electronic
+/style/synthwave,Synthwave,,
+/style/s-u00e1mi-music,Sámi Music,,
+/style/sami-music,Sámi Music,/genre/folk-world-country,"Folk, World, & Country"
+/style/s-u00e9ga,Séga,,
+/style/tango,Tango,/genre/latin,Latin
+/style/4045-tankqitai,Tankqitai,,
+/style/tekno,TeKno,/genre/electronic,Electronic
+/style/tech-house,Tech House,/genre/electronic,Electronic
+/style/tech-trance,Tech Trance,,
+/style/technical,Technical,/genre/non-music,Non-Music
+/style/techno,Techno,/genre/electronic,Electronic
+/style/teen-pop,Teen pop,/genre/pop,Pop
+/style/tejano,Tejano,/genre/latin,Latin
+/style/texas-blues,Texas Blues,/genre/blues,Blues
+/style/thai-classical,Thai Classical,/genre/folk-world-country,"Folk, World, & Country"
+/style/theme,Theme,/genre/stage-screen,Stage & Screen
+/style/therapy,Therapy,/genre/non-music,Non-Music
+/style/thrash,Thrash,/genre/rock,Rock
+/style/thug-rap,Thug Rap,/genre/hip-hop,Hip Hop
+/style/timba,Timba,/genre/latin,Latin
+/style/trance,Trance,/genre/electronic,Electronic
+/style/trap,Trap,/genre/delete-5,delete_5
+/style/5815-trap-house,Trap House,,
+/style/tribal,Tribal,/genre/electronic,Electronic
+/style/tribal-house,Tribal House,/genre/electronic,Electronic
+/style/trip-hop,Trip Hop,/genre/electronic,Electronic
+/style/tropical-house,Tropical House,/genre/electronic,Electronic
+/style/trova,Trova,/genre/latin,Latin
+/style/turntablism,Turntablism,/genre/hip-hop,Hip Hop
+/style/twelve-tone,Twelve-tone,/genre/classical,Classical
+/style/twist,Twist,,
+/style/uk-funky,UK Funky,/genre/electronic,Electronic
+/style/uk-garage,UK Garage,/genre/electronic,Electronic
+/style/vallenato,Vallenato,/genre/latin,Latin
+/style/vaporwave,Vaporwave,/genre/electronic,Electronic
+/style/viking-metal,Viking Metal,/genre/rock,Rock
+/style/vocal,Vocal,/genre/pop,Pop
+/style/volksmusik,Volksmusik,,
+/style/western-swing,Western Swing,,
+/style/witch-house,Witch House,/genre/electronic,Electronic
+/style/6098-wonky-techno,Wonky Techno,,
+/style/ye-ye,Yé-Yé,,
+/style/zamba,Zamba,,
+/style/zarzuela,Zarzuela,,
+/style/zemer-ivri,Zemer Ivri,,
+/style/zouk,Zouk,/genre/folk-world-country,"Folk, World, & Country"
+/style/zydeco,Zydeco,/genre/folk-world-country,"Folk, World, & Country"
+/style/entekhno,Éntekhno,/genre/folk-world-country,"Folk, World, & Country"
+/style/u00c9ntekhno,Éntekhno,,
