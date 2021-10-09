@@ -1,0 +1,10 @@
+Cartographie des goûts musicaux en Suisse
+- musical pattern (audio features)
+- artist mobility
+
+Pour carto:
+carte suisse avec concerts qu'on peut filtrer par genre, features, artistes
+
+voir justpy
+johannes
+https://www.epfl.ch/schools/cdh/fr/recherche/cross/appel-a-contribution-cross-2020/

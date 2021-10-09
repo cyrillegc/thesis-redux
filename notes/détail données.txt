@@ -1,0 +1,28 @@
+Données Songkick
+----------------
+82’010 concerts en Suisse (1967-2021)
+- 11’111 concerts sur la période (1967-2010)
+- 70’899 concerts (2011-2021)
+sample_data_songkick_concerts
+
+32'231 artistes ayant joué au moins un concert en Suisse
+sample_data_spotify_artists
+
+7'660 lieux de concerts (salles, festivals, bar, clubs, …)
+sample_data_songkick_venues
+
+----------------------------------------------------------
+
+Données Spotify
+---------------
+28'537 artistes de Spotify correspondent à un artiste de Songkick
+sample_data_spotify_artists
+
+3694 artistes de Songkick sans correspondance dans Spotify
+sample_data_spotify_no_match
+
+247'190 morceaux les plus populaires par artiste (max. 10 morceaux par artiste)
+sample_data_spotify_tracks
+
+3'684 genres musicaux (catégories très spécifiques)
+sample_data_spotify_genres
