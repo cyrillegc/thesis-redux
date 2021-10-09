@@ -1,0 +1,2149 @@
+music_genre_id,music_genre_name,everynoise_id,subgenre_of_id,subgenre_of_name
+Q4631020,21st-century classical music,21stcenturyclassical,Q1583807,art music
+Q185298,a cappella,acappella,Q685884,vocal music
+Q98528482,abstract hip hop,abstracthiphop,Q11401,hip hop music
+Q341364,acid house,acidhouse,Q20502,house music
+Q341364,acid house,acidhouse,Q898709,rave music
+Q221772,acid jazz,acidjazz,Q164444,funk
+Q236932,acid rock,acidrock,Q206159,psychedelic rock
+Q341395,acid techno,acidtechno,Q170611,techno
+Q341395,acid techno,acidtechno,Q341364,acid house
+Q481900,acid trance,acidtrance,Q170435,trance
+Q341396,acidcore,acidcore,Q341395,acid techno
+Q341396,acidcore,acidcore,Q820049,gabber
+Q341396,acidcore,acidcore,Q11693017,darkcore
+Q423918,Acousmatic music,acousmatic,Q1326777,electroacoustic music
+Q65936357,acoustic blues,acousticblues,Q9759,blues
+Q65936357,acoustic blues,acousticblues,Q106878019,early acoustic blues
+Q65936391,acoustic rock,acousticrock,Q11399,rock music
+Q11817196,actor's song,actors,,
+Q384064,African Gospel,africangospel,Q180268,gospel music
+Q972634,African popular music,afropop,Q369820,music of Africa
+Q972634,African popular music,afropop,Q373342,popular music
+Q4690039,African reggae,africanreggae,Q9794,reggae
+Q106641536,Afro-funk,afrofunk,Q164444,funk
+Q106641536,Afro-funk,afrofunk,Q6942329,music of West Africa
+Q388100,Afro-house,afrohouse,Q20502,house music
+Q16993565,Afro-Peruvian music,musicaafroperuana,,
+Q16024685,Afro-soul,afrosoul,Q131272,soul music
+Q388296,Afrobeat,afrobeat,Q164444,funk
+Q388296,Afrobeat,afrobeat,Q9048265,Yoruba music
+Q85740017,Afroswing,afroswing,Q11401,hip hop music
+Q1091450,aggrotech,aggrotech,Q4155078,dark electro
+Q3735537,Ainu folk music,ainufolk,Q106586250,East Asian folk music
+Q106641595,Albanian folk music,albanianfolk,Q1075799,music of Albania
+Q106641595,Albanian folk music,albanianfolk,Q6966089,Balkan folk music
+Q16357920,Albanian hip hop,albanianhiphop,Q11401,hip hop music
+Q47112,Albanian iso-polyphony,albanianisopolyphony,Q685884,vocal music
+Q47112,Albanian iso-polyphony,albanianisopolyphony,Q1075799,music of Albania
+Q428656,album-oriented rock,albumrock,,
+Q2961766,Algerian chaabi,chaabialgerien,Q2961763,chaabi
+Q438476,alternative country,alternativecountry,Q83440,country music
+Q2187392,alternative dance,alternativedance,Q11366,alternative rock
+Q2187392,alternative dance,alternativedance,Q316930,dance music
+Q438503,alternative hip hop,alternativehiphop,Q6010,rap
+Q438503,alternative hip hop,alternativehiphop,Q11401,hip hop music
+Q20378,alternative metal,alternativemetal,Q11366,alternative rock
+Q20378,alternative metal,alternativemetal,Q38848,heavy metal
+Q105338947,alternative pop,alternativepop,Q37073,pop music
+Q7118426,alternative R&B,alternativerb,Q850412,contemporary R&B
+Q7118426,alternative R&B,indierb,Q850412,contemporary R&B
+Q11366,alternative rock,alternativerock,Q11399,rock music
+Q11366,alternative rock,alternativerock,Q1695023,alternative
+Q85741139,amapiano,amapiano,Q20502,house music
+Q8197165,ambient black metal,ambientblackmetal,Q132438,black metal
+Q8197165,ambient black metal,ambientblackmetal,Q756956,dark ambient
+Q2465085,ambient house,ambienthouse,Q20502,house music
+Q2465085,ambient house,ambienthouse,Q193207,ambient music
+Q1440196,ambient industrial,ambientindustrial,Q756956,dark ambient
+Q193207,ambient music,ambient,Q9778,electronic music
+Q193207,ambient music,ambient,Q213121,new age music
+Q33160145,ambient pop,ambientpop,Q37073,pop music
+Q33160145,ambient pop,ambientpop,Q592330,dream pop
+Q9149801,ambient techno,ambienttechno,Q170611,techno
+Q9149801,ambient techno,ambienttechno,Q193207,ambient music
+Q4993553,ambient trance,ambienttrance,Q170435,trance
+Q4993553,ambient trance,ambienttrance,Q193207,ambient music
+Q466445,American primitive guitar,americanprimitive,Q43343,folk music
+Q486365,anarcho-punk,anarchopunk,Q3071,punk rock
+Q483740,Anatolian rock,anadolurock,Q11399,rock music
+Q483740,Anatolian rock,anadolurock,Q1810546,Turkish folk music
+Q623904,Andalusian classical music,andalusianclassical,Q2742742,music of Andalusia
+Q623904,Andalusian classical music,andalusianclassical,Q11400811,music of North Africa
+Q623904,Andalusian classical music,andalusianclassical,Q107189715,Arabic classical music
+Q492096,Andean music,musicaandina,Q5645984,music of South America
+Q492096,Andean music,musicaandina,Q6024704,indigenous music
+Q28517114,Andean music (Colombia),musicaandinacolombiana,Q492096,Andean music
+Q541947,anthem,anthem,Q484692,hymn
+Q541947,anthem,anthem,Q63203971,religious hymn
+Q574651,anti-folk,antifolk,Q43343,folk music
+Q108616106,Appalachian folk music,appalachianfolk,Q1541229,American folk music
+Q108616106,Appalachian folk music,appalachianfolk,Q4780884,Appalachian music
+Q624221,Arabic hip hop,arabichiphop,Q11401,hip hop music
+Q624221,Arabic hip hop,arabichiphop,Q624044,Arabic music
+Q107267759,Arabic jazz,arabicjazz,Q8341,jazz
+Q107267759,Arabic jazz,arabicjazz,Q624044,Arabic music
+Q624081,Arabic pop music,arabpop,Q37073,pop music
+Q624081,Arabic pop music,arabpop,Q624044,Arabic music
+Q5893243,Argentine heavy metal,argentineheavymetal,,
+Q21713208,Argentine punk,argentinepunk,,
+Q646026,Argentine rock,argentinerock,Q11399,rock music
+Q646026,Argentine rock,argentinerock,Q645992,music of Argentina
+Q354204,Argentinian folk music,folkloreargentino,Q235858,traditional folk music
+Q354204,Argentinian folk music,folkloreargentino,Q645992,music of Argentina
+Q4069711,Armenian folk music,armenianfolk,Q2665906,music of Armenia
+Q4069711,Armenian folk music,armenianfolk,Q107013350,Caucasian folk music
+Q704073,Ars subtilior,arssubtilior,Q163775,medieval music
+Q704073,Ars subtilior,arssubtilior,Q106593854,polyphonic singing
+Q25094849,art pop,artpop,Q37073,pop music
+Q659599,art punk,artpunk,Q3071,punk rock
+Q217467,art rock,artrock,Q11399,rock music
+Q4797274,art song,artsong,Q7366,song
+Q4797274,art song,artsong,Q685884,vocal music
+Q4797274,art song,artsong,Q1583807,art music
+Q55604305,Asian American hip hop,asianamericanhiphop,,
+Q4810433,Assyrian folk/pop music,assyrianpop,Q98528189,Arabic folk music
+Q108297181,Asturian folk music,musicafolkasturiana,Q98528259,Spanish folk music
+Q108297181,Asturian folk music,musicafolkasturiana,Q98528277,Celtic folk music
+Q108297181,Asturian folk music,musicafolkasturiana,Q107611523,music of Asturias
+Q65937017,atmospheric black metal,atmosphericblackmetal,Q132438,black metal
+Q21998415,Australian classical music,australianclassical,Q9730,Western classical music
+Q2407589,Australian country music,australiancountry,Q83440,country music
+Q2407589,Australian country music,australiancountry,Q3114644,music of Australia
+Q4825017,Australian hardcore,australianhardcore,Q10922,hardcore punk
+Q4825017,Australian hardcore,australianhardcore,Q3114644,music of Australia
+Q783243,Australian hip hop,australianhiphop,Q11401,hip hop music
+Q4825029,Australian indie rock,australianindierock,Q183504,indie rock
+Q4825029,Australian indie rock,australianindierock,Q3437817,Australian rock
+Q4825034,Australian jazz,australianjazz,Q8341,jazz
+Q4825034,Australian jazz,australianjazz,Q3114644,music of Australia
+Q3437817,Australian rock,australianrock,Q11399,rock music
+Q3437817,Australian rock,australianrock,Q3114644,music of Australia
+Q4825221,Australian ska,australianska,Q54365,ska
+Q4825221,Australian ska,australianska,Q3114644,music of Australia
+Q4825229,Australian thrash metal,australianthrashmetal,Q483352,thrash metal
+Q4825229,Australian thrash metal,australianthrashmetal,Q3114644,music of Australia
+Q122772,Austrian hip hop,austrianhiphop,Q11401,hip hop music
+Q122772,Austrian hip hop,austrianhiphop,Q2090712,music of Austria
+Q700423,Austropop,austropop,Q37073,pop music
+Q790188,avant-garde jazz,avantgardejazz,Q8341,jazz
+Q790188,avant-garde jazz,avantgardejazz,Q2332751,avant-garde music
+Q641357,avant-garde metal,avantgardemetal,Q38848,heavy metal
+Q2332751,avant-garde music,avantgarde,Q1583807,art music
+Q1435485,axé,axe,Q899215,music of Brazil
+Q4832826,Azonto,azonto,,
+Q40461,bachata,bachata,Q316930,dance music
+Q40461,bachata,bachata,Q3328778,tropical music
+Q40461,bachata,bachata,Q6942370,music of the Dominican Republic
+Q1353390,background music,backgroundmusic,Q848399,easy listening
+Q5569994,Baião,baiao,Q11639,dance
+Q5569994,Baião,baiao,Q899215,music of Brazil
+Q4848738,baithak gana,baithakgana,,
+Q804401,Bakersfield sound,bakersfieldsound,Q83440,country music
+Q804401,Bakersfield sound,bakersfieldsound,Q3140141,honky tonk
+Q7770873,bal-musette,balmusette,Q11639,dance
+Q7770873,bal-musette,balmusette,Q2956178,French folk music
+Q2197508,Balkan beats,balkanbeats,,
+Q805044,Balkan brass,balkanbrass,,
+Q106522098,ballroom,vogue,Q20502,house music
+Q4855476,Bangladeshi hip hop,bangladeshihiphop,Q11401,hip hop music
+Q4855476,Bangladeshi hip hop,bangladeshihiphop,Q3328593,music of Bangladesh
+Q4855483,Bangladeshi rock,bangladeshirock,Q11399,rock music
+Q4855483,Bangladeshi rock,bangladeshirock,Q3328593,music of Bangladesh
+Q807820,barbershop music,barbershop,Q185298,a cappella
+Q807820,barbershop music,barbershop,Q7939193,vocal harmony
+Q4056436,bard song,bard,Q2498201,music of Russia
+Q4056436,bard song,bard,Q89363113,singer-songwriter music
+Q4056436,bard song,bard,Q94499224,Russian song
+Q4056436,bard song,bard,Q106298881,contemporary folk music
+Q96647680,bardcore,bardcore,,
+Q8361,baroque music,baroque,Q9730,Western classical music
+Q8361,baroque music,baroque,Q1583807,art music
+Q46046,baroque pop,baroquepop,Q8361,baroque music
+Q46046,baroque pop,baroquepop,Q37073,pop music
+Q46046,baroque pop,baroquepop,Q48834745,orchestral pop
+Q108297192,Basque folk music,basquefolk,Q964987,music of Spain
+Q108297192,Basque folk music,basquefolk,Q98528192,European folk music
+Q3328599,Basque music,euskalmusica,Q672134,music of France
+Q3328599,Basque music,euskalmusica,Q964987,music of Spain
+Q27345019,bass house,basshouse,Q20502,house music
+Q96740854,bass music,bassmusic,Q9778,electronic music
+Q96740854,bass music,bassmusic,Q11401,hip hop music
+Q4846346,bassline,bassline,Q1165777,UK garage
+Q108297194,batida,batida,Q1191544,kuduro
+Q97178866,batidão romântico,batidaoromantico,Q97278139,brega funk
+Q12302979,battle rap,battlerap,Q6010,rap
+Q12302979,battle rap,battlerap,Q11401,hip hop music
+Q12302979,battle rap,battlerap,Q1955280,music competition
+Q4875789,beach music,beachmusic,,
+Q26906566,Beat poetry,beatpoetry,Q482,poetry
+Q213608,beatboxing,beatboxing,Q2529779,vocal percussion
+Q105513,bebop,bebop,Q8341,jazz
+Q28746819,bedroom pop,bedroompop,Q37073,pop music
+Q28746819,bedroom pop,bedroompop,Q1507298,lo-fi music
+Q3303865,Belarusian rock,belarusianrock,Q11399,rock music
+Q3303865,Belarusian rock,belarusianrock,Q2347119,music of Belarus
+Q815536,Belgian hip hop,belgianhiphop,Q11401,hip hop music
+Q2473848,Belgian jazz,belgianjazz,,
+Q3437819,Belgian rock,belgianrock,Q11399,rock music
+Q3437819,Belgian rock,belgianrock,Q2587471,music of Belgium
+Q6301761,Benga music,benga,Q106586248,music of East Africa
+Q108297196,Bengali folk music,bengalifolk,Q3328596,music of West Bengal
+Q108297196,Bengali folk music,bengalifolk,Q98528198,South Asian folk music
+Q530750,Berlin School of electronic music,berlinschool,Q9778,electronic music
+Q530750,Berlin School of electronic music,berlinschool,Q79784514,progressive electronic
+Q854844,Bhangra,bhangra,,
+Q105756581,big band music,bigband,Q203775,swing music
+Q858579,big beat,bigbeat,Q663519,breakbeat
+Q15300817,big room house,bigroom,Q627906,electro house
+Q860196,Bikutsi,bikutsi,,
+Q4917174,BisRock,bisrock,Q3388814,Pinoy rock
+Q773880,bitpop,bitpop,Q37073,pop music
+Q773880,bitpop,bitpop,Q106422444,bit music
+Q108297198,black 'n' roll,blacknroll,Q132438,black metal
+Q132438,black metal,blackmetal,Q38848,heavy metal
+Q28070612,blackened crust,blackenedcrust,Q38848,heavy metal
+Q28070612,blackened crust,blackenedcrust,Q825769,crust punk
+Q16855754,blackgaze,blackgaze,Q132438,black metal
+Q16855754,blackgaze,blackgaze,Q272167,shoegaze
+Q16855754,blackgaze,blackgaze,Q65937017,atmospheric black metal
+Q106522080,bleep techno,bleeptechno,Q170611,techno
+Q4930356,Bluegrass fiddle,bluegrassfiddle,,
+Q21327441,bluegrass gospel,bluegrassgospel,Q180268,gospel music
+Q21327441,bluegrass gospel,bluegrassgospel,Q213714,bluegrass music
+Q213714,bluegrass music,bluegrass,Q83440,country music
+Q213714,bluegrass music,bluegrass,Q65943778,traditional country
+Q9759,blues,blues,Q373342,popular music
+Q193355,blues rock,bluesrock,Q9759,blues
+Q193355,blues rock,bluesrock,Q11399,rock music
+Q3310676,Boeremusiek,boeremusiek,,
+Q15830404,bolero,bolero,Q727781,music of Latin America
+Q15830404,bolero,bolero,Q2188189,musical work
+Q15830404,bolero,bolero,Q3328778,tropical music
+Q630689,Bongo Flava,bongoflava,Q11401,hip hop music
+Q892958,boogaloo,boogaloo,Q11639,dance
+Q892958,boogaloo,boogaloo,Q45981,rhythm and blues
+Q892958,boogaloo,boogaloo,Q18345375,Latin music
+Q4942839,boogie,boogie,Q1190485,post-disco
+Q212952,boogie-woogie,boogiewoogie,Q373342,popular music
+Q529742,boom bap,boombap,Q11401,hip hop music
+Q108297200,bop,chicagobop,Q2572585,pop rap
+Q108297200,bop,chicagobop,Q15697534,drill
+Q486263,bossa nova,bossanova,Q373342,popular music
+Q486263,bossa nova,bossanova,Q899215,music of Brazil
+Q4948714,Bothy ballad,bothyballad,Q17018487,Scottish folk music
+Q4949812,bounce music,bounce,Q1253172,Southern hip hop
+Q4950496,bouyon,bouyon,Q107025062,French Caribbean music
+Q106468591,boy band music,boyband,Q37073,pop music
+Q2537800,Bozlak,bozlak,,
+Q64140592,brass band music,britishbrassband,Q639197,instrumental music
+Q85748774,Brazilian bass,brazilianbass,Q20502,house music
+Q1484821,Brazilian classical music,brazilianclassical,Q9730,Western classical music
+Q1484821,Brazilian classical music,brazilianclassical,Q899215,music of Brazil
+Q1958247,Brazilian gaucho music,musicagaucha,Q899215,music of Brazil
+Q3135796,Brazilian hip hop,brazilianhiphop,Q11401,hip hop music
+Q3135796,Brazilian hip hop,brazilianhiphop,Q899215,music of Brazil
+Q106508649,Brazilian jazz,brazilianjazz,Q8341,jazz
+Q2631396,Brazilian rock,brazilianrock,Q11399,rock music
+Q2631396,Brazilian rock,brazilianrock,Q899215,music of Brazil
+Q4958927,Brazilian thrash metal,brazilianthrashmetal,Q483352,thrash metal
+Q663519,breakbeat,breakbeat,Q9778,electronic music
+Q663519,breakbeat,breakbeat,Q851213,electronic dance music
+Q903735,breakcore,breakcore,Q388906,hardcore techno
+Q65937774,breaks,breaks,,
+Q2464314,brega,brega,Q373342,popular music
+Q97278139,brega funk,bregafunk,Q1931130,funk carioca
+Q28206879,Brill Building,brillbuildingpop,Q37073,pop music
+Q4969182,Brit funk,britfunk,Q164444,funk
+Q918542,British blues,britishblues,Q640097,electric blues
+Q4971320,British dance band,britishdanceband,,
+Q469343,British hip hop,ukhiphop,Q11401,hip hop music
+Q469343,British hip hop,ukhiphop,Q268673,music of the United Kingdom
+Q211418,British Invasion,britishinvasion,,
+Q4971384,British jazz,britishjazz,Q8341,jazz
+Q4971384,British jazz,britishjazz,Q268673,music of the United Kingdom
+Q4971454,British soul,britishsoul,,
+Q189045,Britpop,britpop,Q11366,alternative rock
+Q189045,Britpop,britpop,Q484641,pop rock
+Q2406633,broken beat,brokenbeat,Q851213,electronic dance music
+Q104847359,Brooklyn drill,brooklyndrill,Q15697534,drill
+Q20903,brostep,brostep,Q106477728,post-dubstep (US)
+Q2265866,brutal death metal,brutaldeathmetal,Q241662,groove metal
+Q2265866,brutal death metal,brutaldeathmetal,Q483251,death metal
+Q2265866,brutal death metal,brutaldeathmetal,Q483352,thrash metal
+Q2076779,bubblegum dance,bubblegumdance,Q216961,Eurodance
+Q997481,bubblegum pop,bubblegumpop,Q37073,pop music
+Q997481,bubblegum pop,bubblegumpop,Q1298934,synth-pop
+Q12274232,Bulgarian folk music,bulgarianfolk,Q1003981,music of Bulgaria
+Q12274232,Bulgarian folk music,bulgarianfolk,Q6966089,Balkan folk music
+Q12274232,Bulgarian folk music,bulgarianfolk,Q16679594,Slavic folk music
+Q4996252,Bulgarian hip hop,bulgarianhiphop,Q11401,hip hop music
+Q4996252,Bulgarian hip hop,bulgarianhiphop,Q1003981,music of Bulgaria
+Q5001430,bush ballad,bushballad,Q182659,ballad
+Q2090950,Byzantine music,byzantine,Q18846,ancient music
+Q1192110,C-pop,cpop,Q37073,pop music
+Q1192110,C-pop,cpop,Q277393,music of China
+Q1192110,C-pop,mainlandchinesepop,Q37073,pop music
+Q1192110,C-pop,mainlandchinesepop,Q277393,music of China
+Q97942949,C86,c86,Q842324,indie pop
+Q97942949,C86,c86,Q1190565,jangle pop
+Q27976507,cabaret,cabaret,Q1370345,musical theater
+Q27976507,cabaret,cabaret,Q1746926,kleinkunst
+Q1026089,Cajun music,cajun,Q1541229,American folk music
+Q752785,calypso music,calypso,Q3394906,music of the Caribbean
+Q108297206,Cambodian pop,cambodianpop,Q37073,pop music
+Q108297206,Cambodian pop,cambodianpop,Q6942031,music of Cambodia
+Q60745864,Cambodian rock,cambodianrock,Q11399,rock music
+Q60745864,Cambodian rock,cambodianrock,Q6942031,music of Cambodia
+Q3274667,campursari,campursari,Q1210921,music of Indonesia
+Q5934478,campus folk song,taiwancampusfolk,Q277393,music of China
+Q5934478,campus folk song,taiwancampusfolk,Q106298881,contemporary folk music
+Q5030714,Canadian blues,canadianblues,Q9759,blues
+Q5030714,Canadian blues,canadianblues,Q6942037,music of Canada
+Q5030720,Canadian classical music,canadianclassical,Q9730,Western classical music
+Q17513978,Canadian country music,canadiancountry,,
+Q17513988,Canadian folk music,canadianfolk,Q43343,folk music
+Q17513988,Canadian folk music,canadianfolk,Q6942037,music of Canada
+Q17514023,Canadian hardcore punk,canadianhardcore,Q10922,hardcore punk
+Q469630,Canadian hip hop,canadianhiphop,Q11401,hip hop music
+Q469630,Canadian hip hop,canadianhiphop,Q6942037,music of Canada
+Q3437821,Canadian rock,canadianrock,Q11399,rock music
+Q3437821,Canadian rock,canadianrock,Q6942037,music of Canada
+Q5747258,canción melódica,cancionmelodica,Q37073,pop music
+Q1033073,candombe,candombe,Q11639,dance
+Q1033073,candombe,candombe,Q23965,music of Uruguay
+Q1033073,candombe,candombe,Q98528197,Hispanic American folk music
+Q1033032,candomblé music,candomble,Q106926325,Brazilian folk music
+Q19754215,cante alentejano,cantealentejano,Q106556293,Portuguese folk music
+Q19754215,cante alentejano,cantealentejano,Q106593854,polyphonic singing
+Q727803,Canterbury scene,canterburyscene,Q49451,progressive rock
+Q5747907,Canto popular uruguayo,cantopopularuruguayo,,
+Q2708318,Cantonese opera,cantoneseopera,Q737994,Chinese opera
+Q853873,Cantopop,cantopop,Q1192110,C-pop
+Q774475,cantu a tenore,cantoatenore,Q1048249,Italian folk music
+Q774475,cantu a tenore,cantoatenore,Q106593854,polyphonic singing
+Q108297209,canzone d'autore,canzonedautore,Q672134,music of France
+Q108297209,canzone d'autore,canzonedautore,Q89363113,singer-songwriter music
+Q108297209,canzone d'autore,canzonedautore,Q106298881,contemporary folk music
+Q1195630,canzone napoletana,canzonenapoletana,Q7366,song
+Q108297210,Cape Breton folk music,capebretonfolk,Q98528277,Celtic folk music
+Q108297210,Cape Breton folk music,capebretonfolk,Q108297207,Canadian maritime folk
+Q1036183,carimbo,carimbo,Q11639,dance
+Q1036183,carimbo,carimbo,Q170406,rhythm
+Q20102359,Catalan folk music,catalanfolk,Q3808055,music of Catalonia
+Q20102359,Catalan folk music,catalanfolk,Q20492204,Catalan music
+Q20102359,Catalan folk music,catalanfolk,Q98528192,European folk music
+Q3813661,Catalan rock,rockcatala,,
+Q2707994,Catalan rumba,rumbacatalana,Q3321920,Flamenco rumba
+Q2707994,Catalan rumba,rumbacatalana,Q3808055,music of Catalonia
+Q107013350,Caucasian folk music,caucasianfolk,Q235858,traditional folk music
+Q107013350,Caucasian folk music,caucasianfolk,Q106506985,music of the Caucasus
+Q2525544,Celtic metal,celticmetal,Q484179,folk metal
+Q854451,Celtic music,celtic,Q3328676,music of Europe
+Q1990122,Celtic punk,celticpunk,Q1425661,folk punk
+Q2662148,Celtic rock,celticrock,Q11399,rock music
+Q2662148,Celtic rock,celticrock,Q186472,folk rock
+Q4499034,Chabad niggunim,chabadniggunim,Q1989725,Nigun
+Q4499034,Chabad niggunim,chabadniggunim,Q20819985,Hasidic music
+Q870340,chalga,chalga,Q37073,pop music
+Q870340,chalga,chalga,Q43343,folk music
+Q1060475,chamamé,chamame,Q201022,folk dance
+Q98528178,chamber folk,chamberfolk,Q43343,folk music
+Q22991878,chamber pop,chamberpop,Q46046,baroque pop
+Q22991878,chamber pop,chamberpop,Q842324,indie pop
+Q1061165,champeta,champeta,Q727781,music of Latin America
+Q1062400,chanson,chanson,Q672134,music of France
+Q60985143,chaotic hardcore,chaotichardcore,Q10922,hardcore punk
+Q60985143,chaotic hardcore,chaotichardcore,Q38848,heavy metal
+Q1071873,Chicago blues,chicagoblues,Q9759,blues
+Q1071873,Chicago blues,chicagoblues,Q640097,electric blues
+Q3476584,Chicago hardcore,chicagohardcore,Q10922,hardcore punk
+Q1071961,Chicago house,chicagohouse,Q20502,house music
+Q1269729,Chicago soul,chicagosoul,Q131272,soul music
+Q17176205,Chicano punk,chicanopunk,Q11399,rock music
+Q1399695,Chicano rap,chicanorap,,
+Q2389651,children's music,childrensmusic,Q373342,popular music
+Q3437823,Chilean rock,chileanrock,Q11399,rock music
+Q3437823,Chilean rock,chileanrock,Q3889385,music of Chile
+Q961146,chilena,chilena,Q3397325,music of Mexico
+Q961146,chilena,chilena,Q5464451,folk dance of Mexico
+Q757143,chill-out music,chillout,Q9778,electronic music
+Q2963621,chillstep,chillstep,Q106130091,post-dubstep
+Q2626684,chillwave,chillwave,Q325397,indietronica
+Q2626684,chillwave,chillwave,Q703778,neo-psychedelia
+Q106634987,Chinese classical music,chineseclassical,Q277393,music of China
+Q106634987,Chinese classical music,chineseclassical,Q106586249,East Asian classical music
+Q5100799,Chinese hip hop,chinesehiphop,Q11401,hip hop music
+Q5100799,Chinese hip hop,chinesehiphop,Q277393,music of China
+Q737994,Chinese opera,chineseopera,Q7777494,theatre music
+Q737994,Chinese opera,chineseopera,Q106634987,Chinese classical music
+Q51446080,Chinese traditional music,chinesetraditional,Q277393,music of China
+Q51446080,Chinese traditional music,chinesetraditional,Q106586250,East Asian folk music
+Q135637,chiptune,chiptune,Q1062702,video game music
+Q135637,chiptune,chiptune,Q19678100,nerd music
+Q135637,chiptune,chiptune,Q106422444,bit music
+Q2261628,chopped and screwed,choppedandscrewed,Q11401,hip hop music
+Q1076513,choral music,choral,Q685884,vocal music
+Q1076539,choro,choro,,
+Q5110298,Christian alternative rock,christianalternativerock,Q11366,alternative rock
+Q5110298,Christian alternative rock,christianalternativerock,Q6452410,Christian music
+Q5110317,Christian country music,countrygospel,Q180268,gospel music
+Q5110317,Christian country music,countrygospel,Q6452410,Christian music
+Q5110317,Christian country music,countrygospel,Q65943778,traditional country
+Q18379604,Christian electronic dance music,cedm,Q851213,electronic dance music
+Q18379604,Christian electronic dance music,cedm,Q6452410,Christian music
+Q2225757,Christian hardcore,christianhardcore,Q10922,hardcore punk
+Q2225757,Christian hardcore,christianhardcore,Q6452410,Christian music
+Q2238236,Christian hip hop,christianhiphop,Q11401,hip hop music
+Q2238236,Christian hip hop,christianhiphop,Q6452410,Christian music
+Q2238236,Christian hip hop,gospelrap,Q11401,hip hop music
+Q2238236,Christian hip hop,gospelrap,Q6452410,Christian music
+Q822914,Christian metal,christianmetal,Q38848,heavy metal
+Q822914,Christian metal,christianmetal,Q6452410,Christian music
+Q6452410,Christian music,christianmusic,Q1065742,religious music
+Q63885,Christian punk,christianpunk,Q3071,punk rock
+Q63885,Christian punk,christianpunk,Q6452410,Christian music
+Q753520,Christian rock,christianrock,Q11399,rock music
+Q753520,Christian rock,christianrock,Q6452410,Christian music
+Q1090048,chutney music,chutney,Q1051735,soca music
+Q108616070,Circassian folk music,circassianfolk,Q5121359,Circassian music
+Q108616070,Circassian folk music,circassianfolk,Q107013350,Caucasian folk music
+Q108610259,circuit house,circuit,Q20502,house music
+Q205978,circus music,circus,Q26897135,functional music
+Q11307326,city pop,citypop,Q37073,pop music
+Q1096120,classic rock,classicrock,,
+Q17723,Classical period,classicalera,Q9730,Western classical music
+Q17723,Classical period,classicalera,Q1583807,art music
+Q502448,coco,coco,Q899215,music of Brazil
+Q5141514,coimbra fado,fadodecoimbra,Q185676,fado
+Q2343562,coldwave,coldwave,Q187760,new wave
+Q2343562,coldwave,coldwave,Q598929,post-punk
+Q5147976,Colombian rock,colombianrock,Q11399,rock music
+Q5147976,Colombian rock,colombianrock,Q920883,music of Colombia
+Q602646,comedy hip hop,comedyrap,Q11401,hip hop music
+Q602646,comedy hip hop,comedyrap,Q5151495,comedy music
+Q1391336,comedy rock,comedyrock,Q11399,rock music
+Q1391336,comedy rock,comedyrock,Q5151495,comedy music
+Q2726026,compas,kompa,Q3333303,méringue
+Q2726026,compas,kompa,Q107025062,French Caribbean music
+Q11691380,complextro,complextro,Q627906,electro house
+Q3453150,Congolese rumba,rumbacongolaise,,
+Q141459,conscious hip hop,conscioushiphop,Q6010,rap
+Q141459,conscious hip hop,conscioushiphop,Q11401,hip hop music
+Q612024,contemporary classical music,contemporaryclassical,Q1338153,20th-century classical music
+Q5165023,contemporary commercial music,ccm,,
+Q98528145,contemporary country,contemporarycountry,Q83440,country music
+Q106298881,contemporary folk music,contemporaryfolk,Q43343,folk music
+Q5928480,contemporary jazz,contemporaryjazz,Q8341,jazz
+Q327547,cool jazz,cooljazz,Q8341,jazz
+Q15042720,copla,copla,Q1862748,copla
+Q15042720,copla,copla,Q98528259,Spanish folk music
+Q107091525,Cornish folk music,cornishfolk,Q1771297,English folk music
+Q107091525,Cornish folk music,cornishfolk,Q98528277,Celtic folk music
+Q869210,corrido,corrido,Q182659,ballad
+Q869210,corrido,corrido,Q943929,traditional folk song
+Q108665706,corrido tumbado,corridostumbados,Q101440473,sierreña
+Q2378916,Corsican folk music,corsicanfolk,Q2956178,French folk music
+Q5177472,country and Irish,irishcountry,Q83440,country music
+Q5177472,country and Irish,irishcountry,Q7482056,Irish folk music
+Q649823,country blues,countryblues,Q9759,blues
+Q649823,country blues,countryblues,Q43343,folk music
+Q649823,country blues,countryblues,Q83440,country music
+Q649823,country blues,countryblues,Q1541229,American folk music
+Q649823,country blues,countryblues,Q65936357,acoustic blues
+Q106562392,country boogie,countryboogie,Q65943778,traditional country
+Q83440,country music,country,Q373342,popular music
+Q83440,country music,country,Q107718737,music of North America
+Q2280497,country pop,countrypop,Q37073,pop music
+Q2280497,country pop,countrypop,Q83440,country music
+Q2706919,country rap,countryrap,,
+Q613408,country rock,countryrock,Q11399,rock music
+Q613408,country rock,countryrock,Q83440,country music
+Q513357,Coupé-Décalé,coupedecale,,
+Q2268922,Cowpunk,cowpunk,Q3071,punk rock
+Q2268922,Cowpunk,cowpunk,Q613408,country rock
+Q108615898,Cretan folk music,kritika,Q3564665,music of Crete
+Q108615898,Cretan folk music,kritika,Q12876995,Greek folk music
+Q107331898,Croatian folk music,croatianfolk,Q1236268,music of Croatia
+Q107331898,Croatian folk music,croatianfolk,Q16679594,Slavic folk music
+Q25110284,Croatian hip hop,croatianhiphop,,
+Q3437826,Croatian rock,croatianrock,,
+Q65937817,crossover prog,crossoverprog,Q49451,progressive rock
+Q65937817,crossover prog,crossoverprog,Q28045566,crossover rock
+Q932977,crossover thrash,crossoverthrash,Q10922,hardcore punk
+Q932977,crossover thrash,crossoverthrash,Q483352,thrash metal
+Q936573,crunk,crunk,Q11401,hip hop music
+Q825769,crust punk,crustpunk,Q10922,hardcore punk
+Q825769,crust punk,crustpunk,Q486365,anarcho-punk
+Q155119,Cuarteto,cuarteto,Q645992,music of Argentina
+Q388475,Cuban rumba,cubanrumba,Q1544863,music of Cuba
+Q108297222,cubaton,cubaton,Q202930,reggaeton
+Q108297222,cubaton,cubaton,Q1544863,music of Cuba
+Q766240,cueca chilena,cuecachilena,Q201022,folk dance
+Q766240,cueca chilena,cuecachilena,Q891374,Bolivian dance
+Q766240,cueca chilena,cuecachilena,Q98528197,Hispanic American folk music
+Q723418,cumbia,cumbia,Q920883,music of Colombia
+Q723418,cumbia,cumbia,Q3328778,tropical music
+Q5794671,cumbia andina mexicana,cumbiaandinamexicana,Q492096,Andean music
+Q21059341,cumbia pop,cumbiapop,Q547137,Latin pop
+Q21059341,cumbia pop,cumbiapop,Q4789437,Argentine cumbia
+Q5794686,cumbia salvadoreña,cumbiasalvadorena,,
+Q5794688,cumbia santafesina,cumbiasantafesina,Q723418,cumbia
+Q108297224,cumbia sonidera,cumbiasonidera,Q6826021,Mexican cumbia
+Q1143752,Cumbia villera,cumbiavillera,,
+Q3008122,cyber metal,cybermetal,Q208494,industrial metal
+Q3008122,cyber metal,cybermetal,Q476983,synth-punk
+Q3008180,Cybergrind,cybergrind,Q188534,grindcore
+Q108297225,Czech folk music,czechfolk,Q2981079,music of the Czech Republic
+Q108297225,Czech folk music,czechfolk,Q16679594,Slavic folk music
+Q3506890,Czech hip hop,czechhiphop,Q11401,hip hop music
+Q3437882,Czech rock,czechrock,,
+Q1151260,D-beat,dbeat,Q825769,crust punk
+Q1156570,Dabke,dabke,Q201022,folk dance
+Q1156570,Dabke,dabke,Q624044,Arabic music
+Q1156570,Dabke,dabke,Q1503406,music of the Middle East
+Q211756,dance-pop,dancepop,Q37073,pop music
+Q211756,dance-pop,dancepop,Q316930,dance music
+Q1643549,dance-punk,dancepunk,Q598929,post-punk
+Q2281409,dance-rock,dancerock,Q11399,rock music
+Q2281409,dance-rock,dancerock,Q316930,dance music
+Q107332291,dancefloor drum and bass,dancefloordnb,Q188994,drum and bass
+Q474027,dancehall,dancehall,Q9794,reggae
+Q474027,dancehall,dancehall,Q572717,music of Jamaica
+Q1159539,dangdut,dangdut,Q37073,pop music
+Q1159539,dangdut,dangdut,Q1210921,music of Indonesia
+Q1159539,dangdut,dangdut,Q106586999,Southeast Asian folk music
+Q5219868,Danish folk music,danishfolk,Q2449418,music of Denmark
+Q5219868,Danish folk music,danishfolk,Q7050752,Nordic folk music
+Q1270332,Danish hip hop,danishhiphop,Q11401,hip hop music
+Q1270332,Danish hip hop,danishhiphop,Q2449418,music of Denmark
+Q5219842,Danish jazz,danishjazz,Q8341,jazz
+Q5219842,Danish jazz,danishjazz,Q2449418,music of Denmark
+Q3437827,Danish rock,danishrock,Q11399,rock music
+Q3437827,Danish rock,danishrock,Q2449418,music of Denmark
+Q105757139,dansband music,dansband,Q37073,pop music
+Q12307741,dansktop,dansktop,,
+Q756956,dark ambient,darkambient,Q193207,ambient music
+Q756956,dark ambient,darkambient,Q936942,post-industrial music
+Q1166158,dark cabaret,darkcabaret,Q27976507,cabaret
+Q4155078,dark electro,darkelectro,Q372103,electronic body music
+Q4155078,dark electro,darkelectro,Q1403744,electro-industrial
+Q106621114,dark folk,darkfolk,Q775614,neofolk
+Q31837446,dark jazz,darkjazz,Q8341,jazz
+Q31837446,dark jazz,darkjazz,Q756956,dark ambient
+Q2452152,dark psytrance,darkpsytrance,Q622871,psychedelic trance
+Q1166218,dark rock,darkrock,Q11366,alternative rock
+Q3840596,dark wave,darkwave,Q598929,post-punk
+Q1166321,darkstep,darkstep,Q188994,drum and bass
+Q60973191,darksynth,darksynth,Q19938910,synthwave
+Q1181308,death 'n' roll,deathnroll,Q7749,rock and roll
+Q1181308,death 'n' roll,deathnroll,Q483251,death metal
+Q3487358,death industrial,deathindustrial,Q487965,industrial music
+Q3487358,death industrial,deathindustrial,Q2687544,power electronics
+Q483251,death metal,deathmetal,Q38848,heavy metal
+Q1164252,death rock,deathrock,Q3071,punk rock
+Q1164252,death rock,deathrock,Q485395,gothic rock
+Q1164252,death rock,deathrock,Q598929,post-punk
+Q2089511,death-doom,deathdoom,Q38848,heavy metal
+Q475221,deathcore,deathcore,Q183862,metalcore
+Q475221,deathcore,deathcore,Q483251,death metal
+Q888612,deathgrind,deathgrind,Q188534,grindcore
+Q888612,deathgrind,deathgrind,Q483251,death metal
+Q11320601,deathrash,deathrash,Q465978,extreme metal
+Q11320601,deathrash,deathrash,Q483251,death metal
+Q11320601,deathrash,deathrash,Q483352,thrash metal
+Q106528420,deathstep,deathstep,Q20903,brostep
+Q96376113,deconstructed club,deconstructedclub,Q9778,electronic music
+Q96376113,deconstructed club,deconstructedclub,Q1640319,experimental music
+Q1182371,deep funk,deepfunk,Q164444,funk
+Q874038,deep house,deephouse,Q20502,house music
+Q106521662,deep techno,deeptechno,Q170611,techno
+Q1127539,Delta blues,deltablues,Q9759,blues
+Q1127539,Delta blues,deltablues,Q649823,country blues
+Q16491869,Dembow,dembow,Q373342,popular music
+Q28949059,depressive black metal,depressiveblackmetal,,
+Q7800608,desert blues,desertblues,Q9759,blues
+Q7800608,desert blues,desertblues,Q98530850,Tuareg music
+Q5264196,Desi hip hop,desihiphop,,
+Q108610706,detroit house,detroithouse,Q20502,house music
+Q904500,Detroit rock,detroitrock,Q11399,rock music
+Q904500,Detroit rock,detroitrock,Q3328634,music of Detroit
+Q526463,Detroit techno,detroittechno,Q170611,techno
+Q106839650,Detroit trap,detroittrap,Q2913982,trap music
+Q59158,dhrupad,dhrupad,Q1770695,Hindustani classical music
+Q107515261,digicore,glitchcore,Q11401,hip hop music
+Q56580,digital hardcore,digitalhardcore,,
+Q58339,disco,disco,Q316930,dance music
+Q360596,disco house,discohouse,Q20502,house music
+Q1185390,disco polo,discopolo,Q211756,dance-pop
+Q3032212,diva house,divahouse,Q20502,house music
+Q906647,Dixieland,dixieland,Q8341,jazz
+Q2532560,djent,djent,Q38848,heavy metal
+Q1046920,Dōjin music,doujin,Q22669665,dōjin work
+Q5768028,Dominican hip hop,rapdominicano,Q11401,hip hop music
+Q5768028,Dominican hip hop,rapdominicano,Q6942370,music of the Dominican Republic
+Q5290881,Dominican rock,rockdominicano,Q11399,rock music
+Q5290881,Dominican rock,rockdominicano,Q6942370,music of the Dominican Republic
+Q546359,doo-wop,doowop,Q45981,rhythm and blues
+Q546359,doo-wop,doowop,Q120544,vocal group
+Q186170,doom metal,doommetal,Q38848,heavy metal
+Q186170,doom metal,doommetal,Q193355,blues rock
+Q186170,doom metal,doommetal,Q236932,acid rock
+Q1242484,doomcore,doomcore,Q388906,hardcore techno
+Q251192,downtempo,downtempo,Q9778,electronic music
+Q592330,dream pop,dreampop,Q11366,alternative rock
+Q1339027,dream trance,dreamtrance,Q170435,trance
+Q106583068,dreampunk,dreampunk,Q15733887,vaporwave
+Q15697534,drill,drill,Q11401,hip hop music
+Q15697534,drill,drill,Q2913982,trap music
+Q1259016,drill and bass,drillandbass,Q188994,drum and bass
+Q1259016,drill and bass,drillandbass,Q660984,intelligent dance music
+Q650316,drone,drone,Q9778,electronic music
+Q650316,drone,drone,Q1640319,experimental music
+Q1433387,drone metal,dronemetal,Q38848,heavy metal
+Q1433387,drone metal,dronemetal,Q186170,doom metal
+Q1433387,drone metal,dronemetal,Q650316,drone
+Q188994,drum and bass,drumandbass,Q9778,electronic music
+Q188994,drum and bass,drumandbass,Q851213,electronic dance music
+Q2121992,drumfunk,drumfunk,Q188994,drum and bass
+Q212688,dub music,dub,Q9778,electronic music
+Q212688,dub music,dub,Q9794,reggae
+Q1113204,dub poetry,dubpoetry,Q482,poetry
+Q1113204,dub poetry,dubpoetry,Q1299260,roots reggae
+Q1113204,dub poetry,dubpoetry,Q7168247,performance poetry
+Q1262781,dub techno,dubtechno,Q170611,techno
+Q1262781,dub techno,dubtechno,Q212688,dub music
+Q1262781,dub techno,dubtechno,Q1430587,minimal techno
+Q20474,dubstep,dubstep,Q851213,electronic dance music
+Q20474,dubstep,dubstep,Q1165777,UK garage
+Q267287,Dunedin sound,dunedinsound,Q183504,indie rock
+Q48971892,dungeon synth,dungeonsynth,Q9778,electronic music
+Q907799,Duranguense,duranguense,Q7309098,regional Mexican
+Q5320459,Düsseldorf School of electronic music,dusseldorfelectronic,,
+Q108297233,Dutch cabaret,dutchcabaret,Q1370345,musical theater
+Q108297233,Dutch cabaret,dutchcabaret,Q5151495,comedy music
+Q2299227,Dutch folk music,dutchfolk,Q377185,music of the Netherlands
+Q2299227,Dutch folk music,dutchfolk,Q98528192,European folk music
+Q1973965,Dutch hip hop music,dutchhiphop,Q11401,hip hop music
+Q1973965,Dutch hip hop music,dutchhiphop,Q377185,music of the Netherlands
+Q1228230,Dutch house,dutchhouse,Q627906,electro house
+Q2558340,Dutch jazz,dutchjazz,Q8341,jazz
+Q2558340,Dutch jazz,dutchjazz,Q377185,music of the Netherlands
+Q2101808,Dutch punk,dutchpunk,,
+Q3437864,Dutch rock,dutchrock,Q11399,rock music
+Q3437864,Dutch rock,dutchrock,Q377185,music of the Netherlands
+Q436016,early music,earlymusic,Q1583807,art music
+Q1277532,early reggae,earlyreggae,,
+Q876171,East Coast hip hop,eastcoasthiphop,Q11401,hip hop music
+Q848399,easy listening,easylistening,Q37073,pop music
+Q3046632,easycore,easycore,Q487914,pop punk
+Q98528206,ECM style jazz,ecmstylejazz,Q8341,jazz
+Q5348475,Egyptian hip hop,egyptianhiphop,Q11401,hip hop music
+Q5348475,Egyptian hip hop,egyptianhiphop,Q18129813,music of Egypt
+Q640097,electric blues,electricblues,Q9759,blues
+Q640097,electric blues,electricblues,Q1515757,jump blues
+Q217597,electro,electro,Q851213,electronic dance music
+Q627906,electro house,electrohouse,Q20502,house music
+Q19358266,electro latino,electrolatino,Q851213,electronic dance music
+Q19358266,electro latino,electrolatino,Q98528166,Latin electronic
+Q602561,electro swing,electroswing,Q851213,electronic dance music
+Q1403744,electro-industrial,electroindustrial,Q9778,electronic music
+Q1403744,electro-industrial,electroindustrial,Q372103,electronic body music
+Q1403744,electro-industrial,electroindustrial,Q487965,industrial music
+Q3587612,electroacoustic improvisation,electroacousticimprovisation,Q592060,free improvisation
+Q3587612,electroacoustic improvisation,electroacousticimprovisation,Q1326777,electroacoustic music
+Q861823,electroclash,electroclash,Q851213,electronic dance music
+Q372103,electronic body music,ebm,Q487965,industrial music
+Q372103,electronic body music,ebm,Q851213,electronic dance music
+Q851213,electronic dance music,edm,Q9778,electronic music
+Q851213,electronic dance music,edm,Q316930,dance music
+Q325504,electronic rock,electronicrock,Q9778,electronic music
+Q325504,electronic rock,electronicrock,Q11399,rock music
+Q817138,electronica,electronica,Q9778,electronic music
+Q2084353,electronicore,electronicore,Q377910,post-hardcore
+Q188450,electropop,electropop,Q9778,electronic music
+Q188450,electropop,electropop,Q37073,pop music
+Q10926,emo,emo,Q11399,rock music
+Q10926,emo,emo,Q264965,subculture
+Q10926,emo,emo,Q377910,post-hardcore
+Q42377959,emo rap,emorap,Q10926,emo
+Q42377959,emo rap,emorap,Q11401,hip hop music
+Q42377959,emo rap,emorap,Q20378,alternative metal
+Q42377959,emo rap,emorap,Q3930216,rapcore
+Q9253748,emo violence,emoviolence,Q11363,screamo
+Q9253748,emo violence,emoviolence,Q1784106,powerviolence
+Q89423564,emocore,emocore,Q10926,emo
+Q873478,enka,enka,,
+Q53806314,éntekhno,entehno,Q1465419,music of Greece
+Q53806314,éntekhno,entehno,Q3211884,music of the Balkans
+Q5834708,epic doom metal,epicdoom,Q186170,doom metal
+Q5834708,epic doom metal,epicdoom,Q1902656,epic heavy metal
+Q16408598,Estonian folk music,estonianfolk,Q3110519,music of Estonia
+Q16408598,Estonian folk music,estonianfolk,Q107686154,Balto-Finnic folk music
+Q3437834,Estonian rock,estonianrock,Q11399,rock music
+Q3437834,Estonian rock,estonianrock,Q3110519,music of Estonia
+Q284543,ethereal wave,etherealwave,Q485395,gothic rock
+Q284543,ethereal wave,etherealwave,Q3840596,dark wave
+Q3591962,Ethio-jazz,ethiojazz,Q8341,jazz
+Q3591962,Ethio-jazz,ethiojazz,Q369820,music of Africa
+Q2549052,ethnic electronica,ethnotronica,Q9778,electronic music
+Q108297238,euphoric hardstyle,euphorichardstyle,Q223840,hardstyle
+Q848852,Eurobeat,eurobeat,Q9778,electronic music
+Q216961,Eurodance,eurodance,Q851213,electronic dance music
+Q517415,Europop,europop,Q37073,pop music
+Q517415,Europop,europop,Q373342,popular music
+Q916387,exotica,exotica,,
+Q98528203,experimental big band,experimentalbigband,Q207378,big band
+Q98528203,experimental big band,experimentalbigband,Q790188,avant-garde jazz
+Q3736049,experimental dub,experimentaldub,Q212688,dub music
+Q105763581,experimental electronic,experimentalelectronic,Q9778,electronic music
+Q5421158,experimental hip hop,hiphopexperimental,Q11401,hip hop music
+Q5421158,experimental hip hop,hiphopexperimental,Q1640319,experimental music
+Q5421158,experimental hip hop,experimentalhiphop,Q11401,hip hop music
+Q5421158,experimental hip hop,experimentalhiphop,Q1640319,experimental music
+Q1640319,experimental music,experimental,Q638,music
+Q1640319,experimental music,experimental,Q2355696,experimental art
+Q25094591,experimental pop,experimentalpop,Q37073,pop music
+Q1641839,experimental rock,experimentalrock,Q11399,rock music
+Q1641839,experimental rock,experimentalrock,Q1640319,experimental music
+Q105636937,experimental techno,experimentaltechno,Q170611,techno
+Q185676,fado,fado,Q106556293,Portuguese folk music
+Q108297239,Faroese folk music,faroesefolk,Q6942371,music of the Faroe Islands
+Q108297239,Faroese folk music,faroesefolk,Q7050752,Nordic folk music
+Q2365784,Fidget house,fidgethouse,Q20502,house music
+Q5447390,fife and drum blues,fifeanddrum,,
+Q544440,filmi music,filmi,Q531426,music of India
+Q544440,filmi music,filmi,Q107736421,soundtrack
+Q27103155,Finnish classical music,finnishclassical,Q9730,Western classical music
+Q11894761,Finnish folk music,finnishfolk,Q1417976,music of Finland
+Q11894761,Finnish folk music,finnishfolk,Q7050752,Nordic folk music
+Q11894761,Finnish folk music,finnishfolk,Q107686154,Balto-Finnic folk music
+Q3785730,Finnish hip hop,finnishhiphop,Q11401,hip hop music
+Q3785730,Finnish hip hop,finnishhiphop,Q1417976,music of Finland
+Q3785730,Finnish hip hop,suomirap,Q11401,hip hop music
+Q3785730,Finnish hip hop,suomirap,Q1417976,music of Finland
+Q1762761,Finnish tango,finnishtango,Q338450,tango
+Q9764,flamenco,flamenco,Q201022,folk dance
+Q9764,flamenco,flamenco,Q18345375,Latin music
+Q9764,flamenco,flamenco,Q98528259,Spanish folk music
+Q9764,flamenco,canteflamenco,Q201022,folk dance
+Q9764,flamenco,canteflamenco,Q18345375,Latin music
+Q9764,flamenco,canteflamenco,Q98528259,Spanish folk music
+Q6110311,flamenco rock,rockandaluz,Q49451,progressive rock
+Q6110311,flamenco rock,rockandaluz,Q2742742,music of Andalusia
+Q106561159,Flemish folk music,flemishfolk,Q3328678,Flemish music
+Q106561159,Flemish folk music,flemishfolk,Q98528192,European folk music
+Q107564787,Florida death metal,floridadeathmetal,Q38848,heavy metal
+Q484179,folk metal,folkmetal,Q38848,heavy metal
+Q43343,folk music,folk,Q638,music
+Q1425661,folk punk,folkpunk,Q3071,punk rock
+Q1425661,folk punk,folkpunk,Q43343,folk music
+Q186472,folk rock,folkrock,Q11399,rock music
+Q186472,folk rock,folkrock,Q43343,folk music
+Q11700058,folk-pop,folkpop,Q37073,pop music
+Q11700058,folk-pop,folkpop,Q286080,acoustic music
+Q11700058,folk-pop,folkpop,Q106298881,contemporary folk music
+Q11700058,folk-pop,popfolk,Q37073,pop music
+Q11700058,folk-pop,popfolk,Q286080,acoustic music
+Q11700058,folk-pop,popfolk,Q106298881,contemporary folk music
+Q1435509,folktronica,folktronica,Q817138,electronica
+Q5466607,footwork,footwork,Q851213,electronic dance music
+Q5466607,footwork,footwork,Q96740854,bass music
+Q586110,forró,forro,Q316930,dance music
+Q586110,forró,forro,Q899215,music of Brazil
+Q10283583,forró pé de serra,forrotradicional,,
+Q2404568,freak folk,freakfolk,Q43343,folk music
+Q2404568,freak folk,freakfolk,Q1500364,psychedelic folk
+Q2607836,freakbeat,freakbeat,Q211573,garage rock
+Q2607836,freakbeat,freakbeat,Q546264,beat music
+Q98528183,free folk,freefolk,Q1500364,psychedelic folk
+Q592060,free improvisation,freeimprovisation,Q8341,jazz
+Q592060,free improvisation,freeimprovisation,Q1640319,experimental music
+Q211781,free jazz,freejazz,Q790188,avant-garde jazz
+Q106594523,freestyle,freestyle,Q211756,dance-pop
+Q106594523,freestyle,freestyle,Q851213,electronic dance music
+Q3328590,French baroque music,frenchbaroque,Q8361,baroque music
+Q2956178,French folk music,frenchfolk,Q672134,music of France
+Q2956178,French folk music,frenchfolk,Q98528192,European folk music
+Q138020,French hip hop,frenchhiphop,Q11401,hip hop music
+Q138020,French hip hop,frenchhiphop,Q672134,music of France
+Q138020,French hip hop,rapfrancais,Q11401,hip hop music
+Q138020,French hip hop,rapfrancais,Q672134,music of France
+Q1455292,French house,filterhouse,Q20502,house music
+Q5502277,French jazz,frenchjazz,Q8341,jazz
+Q5502277,French jazz,frenchjazz,Q672134,music of France
+Q662073,French opera,frenchopera,Q1344,opera
+Q1162954,French pop music,frenchpop,Q37073,pop music
+Q1162954,French pop music,frenchpop,Q672134,music of France
+Q21427887,French progressive rock,rockprogressiffrancais,Q49451,progressive rock
+Q3410854,French punk,frenchpunk,Q3071,punk rock
+Q3410854,French punk,frenchpunk,Q672134,music of France
+Q3437841,French rock,frenchrock,Q11399,rock music
+Q3437841,French rock,frenchrock,Q672134,music of France
+Q1455487,Frenchcore,frenchcore,Q388906,hardcore techno
+Q1455932,Frevo,frevo,Q11639,dance
+Q3509353,fuji music,fuji,Q9048265,Yoruba music
+Q108297245,Fula music,musiquepeule,Q6942329,music of West Africa
+Q10286190,full on,fullon,Q622871,psychedelic trance
+Q3090876,funaná,funana,Q316930,dance music
+Q2738113,funeral doom metal,funeraldoom,Q186170,doom metal
+Q164444,funk,funk,Q45981,rhythm and blues
+Q164444,funk,funk,Q373342,popular music
+Q108297246,funk 150 bpm,funk150bpm,Q1931130,funk carioca
+Q1931130,funk carioca,funkcarioca,Q11401,hip hop music
+Q1931130,funk carioca,funkcarioca,Q851213,electronic dance music
+Q107010629,funk mandelão,funkmandelao,Q1931130,funk carioca
+Q107010629,funk mandelão,ravefunk,Q1931130,funk carioca
+Q10286515,funk melody,funkmelody,Q1931130,funk carioca
+Q667659,funk metal,funkmetal,Q20378,alternative metal
+Q667659,funk metal,funkmetal,Q835891,funk rock
+Q15893013,funk ostentação,funkostentacao,Q1931130,funk carioca
+Q106547171,funk paulista,funkpaulista,,
+Q835891,funk rock,funkrock,Q11399,rock music
+Q11332204,funkot,indonesianhardcore,Q851213,electronic dance music
+Q106521759,funky breaks,funkybreaks,Q663519,breakbeat
+Q949369,funky house,funkyhouse,Q20502,house music
+Q22908553,future bass,futurebass,Q96740854,bass music
+Q22908553,future bass,futurebass,Q106477728,post-dubstep (US)
+Q80725127,future funk,futurefunk,Q20502,house music
+Q80725127,future funk,futurefunk,Q15733887,vaporwave
+Q5510816,future garage,futuregarage,Q1165777,UK garage
+Q5510816,future garage,futuregarage,Q106130091,post-dubstep
+Q20021059,future house,futurehouse,Q20502,house music
+Q828243,futurepop,futurepop,Q372103,electronic body music
+Q828243,futurepop,futurepop,Q851213,electronic dance music
+Q828243,futurepop,futurepop,Q1298934,synth-pop
+Q106636250,futuristic swag,futuristicswag,Q2572585,pop rap
+Q106636250,futuristic swag,futuristicswag,Q2913982,trap music
+Q1045541,G-funk,gfunk,Q11401,hip hop music
+Q107697041,g-house,ghouse,Q20502,house music
+Q535328,Gaita zuliana,gaitazuliana,Q2486179,music of Venezuela
+Q535328,Gaita zuliana,gaitazuliana,Q98528197,Hispanic American folk music
+Q3327514,Galician folk music,galicianfolk,Q10334896,Galician music
+Q3327514,Galician folk music,galicianfolk,Q98528259,Spanish folk music
+Q3327514,Galician folk music,galicianfolk,Q98528277,Celtic folk music
+Q194492,gamelan,gamelan,Q2088357,musical ensemble
+Q194492,gamelan,gamelan,Q106586998,Southeast Asian classical music
+Q753679,gangsta rap,gangsterrap,Q966564,hardcore hip hop
+Q928825,garage house,garagehouse,Q20502,house music
+Q2296495,garage punk,garagepunk,Q3071,punk rock
+Q2296495,garage punk,garagepunk,Q211573,garage rock
+Q211573,garage rock,garagerock,Q11399,rock music
+Q98528290,garage rock revival,garagerockrevival,Q211573,garage rock
+Q98528249,Garifuna folk music,garifunafolk,Q98528191,Caribbean folk music
+Q25419286,Gaúcho rock,rockgaucho,Q11399,rock music
+Q328296,GDR rock,ostrock,Q11399,rock music
+Q328296,GDR rock,ostrock,Q108161008,music of the German Democratic Republic
+Q106547427,geek rap,rapgeek,,
+Q2324411,geek rock,geekrock,Q11399,rock music
+Q2324411,geek rock,geekrock,Q19678100,nerd music
+Q17231747,Gekijou,skramz,Q10922,hardcore punk
+Q17231747,Gekijou,skramz,Q10926,emo
+Q107814971,Georgian folk music,georgianfolk,Q2032053,music of Georgia
+Q107814971,Georgian folk music,georgianfolk,Q107013350,Caucasian folk music
+Q107819512,German folk music,volksmusik,Q252833,Alpine folk music
+Q107819512,German folk music,volksmusik,Q2743758,music of Germany
+Q454071,German hip hop,germanhiphop,Q11401,hip hop music
+Q280955,German jazz,germanjazz,Q8341,jazz
+Q280955,German jazz,germanjazz,Q2743758,music of Germany
+Q2118402,German punk,germanpunk,Q3071,punk rock
+Q2118402,German punk,germanpunk,Q2743758,music of Germany
+Q24383,German rock,deutschrock,Q11399,rock music
+Q24383,German rock,deutschrock,Q2743758,music of Germany
+Q24383,German rock,germanrock,Q11399,rock music
+Q24383,German rock,germanrock,Q2743758,music of Germany
+Q30912999,German techno,germantechno,,
+Q281111,ghazal,ghazal,Q207804,strophe
+Q1521688,ghettotech,ghettotech,Q2748817,ghetto house
+Q106468478,girl group music,girlgroup,Q7749,rock and roll
+Q106468478,girl group music,girlgroup,Q37073,pop music
+Q106468478,girl group music,girlgroup,Q45981,rhythm and blues
+Q188539,glam metal,glammetal,Q38848,heavy metal
+Q188539,glam metal,glammetal,Q83270,hard rock
+Q1123745,glam punk,glampunk,Q3071,punk rock
+Q76092,glam rock,glamrock,Q11399,rock music
+Q1100989,glitch,glitch,Q9778,electronic music
+Q1100989,glitch,glitch,Q1640319,experimental music
+Q1100989,glitch,glitch,Q5569949,glitch art
+Q3108920,glitch hop,glitchhop,Q11401,hip hop music
+Q3108920,glitch hop,glitchhop,Q851213,electronic dance music
+Q3108920,glitch hop,glitchhop,Q1100989,glitch
+Q106528422,glitch pop,glitchpop,Q37073,pop music
+Q2000173,Gnawa music,gnawa,Q11400811,music of North Africa
+Q2000173,Gnawa music,gnawa,Q98528185,African folk music
+Q2697917,go-go,gogo,Q164444,funk
+Q835131,Goa trance,goatrance,Q170435,trance
+Q1147692,goregrind,goregrind,Q188534,grindcore
+Q3111428,gospel blues,gospelblues,Q9759,blues
+Q3111428,gospel blues,gospelblues,Q180268,gospel music
+Q180268,gospel music,gospel,Q6452410,Christian music
+Q180268,gospel music,gospel,Q107718737,music of North America
+Q3931695,gospel reggae,gospelreggae,Q9794,reggae
+Q3931695,gospel reggae,gospelreggae,Q180268,gospel music
+Q1538765,gothabilly,gothabilly,Q203720,rockabilly
+Q1538765,gothabilly,gothabilly,Q13646229,gothic music
+Q11122966,Gothenburg metal,gothenburgmetal,Q253918,melodic death metal
+Q6042534,gothic doom metal,gothicdoom,,
+Q178145,gothic metal,gothicmetal,Q38848,heavy metal
+Q485395,gothic rock,gothicrock,Q11366,alternative rock
+Q485395,gothic rock,gothicrock,Q11399,rock music
+Q485395,gothic rock,gothicrock,Q598929,post-punk
+Q29973057,gqom,gqom,Q20502,house music
+Q1987105,Grebo,grebo,Q2187392,alternative dance
+Q12876995,Greek folk music,greekfolk,Q1465419,music of Greece
+Q12876995,Greek folk music,greekfolk,Q98528192,European folk music
+Q12876996,Greek hip hop,greekhiphop,Q11401,hip hop music
+Q12876996,Greek hip hop,greekhiphop,Q1465419,music of Greece
+Q3559240,Greek new wave,neokyma,,
+Q5602044,Greek punk,greekpunk,,
+Q3437842,Greek rock,greekrock,Q11399,rock music
+Q3437842,Greek rock,greekrock,Q1465419,music of Greece
+Q26473,Gregorian chant,gregorianchant,Q827775,monody
+Q26473,Gregorian chant,gregorianchant,Q2707688,plainsong
+Q1166726,grime,grime,Q9778,electronic music
+Q188534,grindcore,grindcore,Q10922,hardcore punk
+Q188534,grindcore,grindcore,Q38848,heavy metal
+Q188534,grindcore,grindcore,Q465978,extreme metal
+Q188534,grindcore,grindcore,Q825769,crust punk
+Q107123896,griot music,griot,Q6942329,music of West Africa
+Q241662,groove metal,groovemetal,Q38848,heavy metal
+Q11365,grunge,grunge,Q11366,alternative rock
+Q5612172,grupera,grupera,Q7309098,regional Mexican
+Q1552806,guaracha,guaracha,,
+Q5614327,Guatemalan rock,rockchapin,Q11399,rock music
+Q5614327,Guatemalan rock,rockchapin,Q1298412,music of Guatemala
+Q1399566,Guggenmusik,guggenmusik,,
+Q5618068,Gumbe,gumbe,Q227045,zouk
+Q2915789,gwo ka,gwoka,Q15221176,music of Guadeloupe
+Q2915789,gwo ka,gwoka,Q107025062,French Caribbean music
+Q844245,Gypsy jazz,gypsyjazz,Q8341,jazz
+Q2715283,Gypsy punk,gypsypunk,,
+Q1915787,H8000,h8000,Q10922,hardcore punk
+Q17004101,Haitian Gospel,haitiangospel,,
+Q15356546,Hakka popular music,hakkapop,Q373342,popular music
+Q15356546,Hakka popular music,hakkapop,Q11064735,Hakka music
+Q107033667,Halloween music,halloween,Q107033384,holiday music
+Q896513,Hamburger Schule,hamburgerschule,,
+Q733804,hands up,handsup,Q890887,Eurotrance
+Q339906,happy hardcore,happyhardcore,Q388906,hardcore techno
+Q181010,hard bop,hardbop,Q105513,bebop
+Q1033912,hard dance,harddance,Q851213,electronic dance music
+Q1585015,hard house,hardhouse,Q20502,house music
+Q83270,hard rock,hardrock,Q11399,rock music
+Q832665,hard trance,hardtrance,Q170435,trance
+Q28458027,hardbass,hardbass,Q851213,electronic dance music
+Q4177625,hardcore breaks,hardcorebreaks,Q1585075,breakbeat hardcore
+Q966564,hardcore hip hop,hardcorehiphop,Q11401,hip hop music
+Q10922,hardcore punk,hardcorepunk,Q3071,punk rock
+Q388906,hardcore techno,hardcoretechno,Q170611,techno
+Q388906,hardcore techno,hardcoretechno,Q851213,electronic dance music
+Q223840,hardstyle,hardstyle,Q388906,hardcore techno
+Q223840,hardstyle,hardstyle,Q1033912,hard dance
+Q3084222,Hardtechno,hardtechno,Q170611,techno
+Q30594541,hardvapour,hardvapour,Q15733887,vaporwave
+Q106877990,harmonica blues,harmonicablues,Q9759,blues
+Q85765918,hauntology,hauntology,,
+Q747717,heartland rock,heartlandrock,Q11399,rock music
+Q98528291,heavy psych,heavypsych,Q83270,hard rock
+Q98528291,heavy psych,heavypsych,Q206159,psychedelic rock
+Q606393,Hi-NRG,hinrg,Q98528149,electro-disco
+Q105404852,hi-tech psytrance,hitech,Q2452152,dark psytrance
+Q963061,highlife,highlife,Q6942329,music of West Africa
+Q5765288,Himene tarava,himenetarava,Q3328745,music of Polynesia
+Q5765288,Himene tarava,himenetarava,Q106593854,polyphonic singing
+Q1770695,Hindustani classical music,hindustaniclassical,Q1323698,Indian classical music
+Q17004572,hip hop galsen,hiphopgalsen,,
+Q11401,hip hop music,hiphop,Q373342,popular music
+Q11401,hip hop music,hiphop,Q388207,African-American music
+Q3135807,hip hop tuga,hiphoptuga,Q11401,hip hop music
+Q601235,hip house,hiphouse,Q6010,rap
+Q601235,hip house,hiphouse,Q11401,hip hop music
+Q601235,hip house,hiphouse,Q20502,house music
+Q1619932,Hiplife,hiplife,,
+Q108788365,Hmong pop,hmongpop,Q373342,popular music
+Q108788365,Hmong pop,hmongpop,Q5873676,Hmong music
+Q108788365,Hmong pop,hmongpop,Q10838732,music of Southeast Asia
+Q5895294,Hong Kong hip hop,hongkonghiphop,Q11401,hip hop music
+Q5895294,Hong Kong hip hop,hongkonghiphop,Q6942118,music of Hong Kong
+Q3140141,honky tonk,honkytonk,Q83440,country music
+Q830325,horror punk,horrorpunk,Q3071,punk rock
+Q107985638,horror synth,horrorsynth,Q9778,electronic music
+Q1139136,horrorcore,horrorcore,Q11401,hip hop music
+Q1139136,horrorcore,horrorcore,Q16575965,horror fiction
+Q20502,house music,house,Q851213,electronic dance music
+Q3089524,huapango,huapango,Q5464451,folk dance of Mexico
+Q3089524,huapango,huapango,Q7309098,regional Mexican
+Q2307786,huayno,huayno,Q11639,dance
+Q2307786,huayno,huayno,Q492096,Andean music
+Q2307786,huayno,huayno,Q98528197,Hispanic American folk music
+Q1051575,humppa,humppa,Q959583,schlager music
+Q1051575,humppa,humppa,Q3209069,social dance
+Q1051575,humppa,humppa,Q7832302,traditional Nordic dance music
+Q722989,Hungarian folk music,hungarianfolk,Q932477,music of Hungary
+Q722989,Hungarian folk music,hungarianfolk,Q98528192,European folk music
+Q3492946,Hungarian hip hop,hungarianhiphop,Q11401,hip hop music
+Q17098563,Hungarian pop,hungarianpop,Q37073,pop music
+Q17098563,Hungarian pop,hungarianpop,Q932477,music of Hungary
+Q3437846,Hungarian rock,hungarianrock,Q11399,rock music
+Q3437846,Hungarian rock,hungarianrock,Q932477,music of Hungary
+Q104695865,hyperpop,hyperpop,Q9778,electronic music
+Q104695865,hyperpop,hyperpop,Q37073,pop music
+Q2043175,hyphy,hyphy,Q11401,hip hop music
+Q5985802,Icelandic folk music,icelandicfolk,Q2617447,music of Iceland
+Q5985802,Icelandic folk music,icelandicfolk,Q7050752,Nordic folk music
+Q5985805,Icelandic hip hop,icelandichiphop,Q11401,hip hop music
+Q5985805,Icelandic hip hop,icelandichiphop,Q2617447,music of Iceland
+Q3437852,Icelandic rock music,icelandicrock,Q11399,rock music
+Q3437852,Icelandic rock music,icelandicrock,Q2617447,music of Iceland
+Q107985650,idol kayō,idolkayo,Q1418683,kayōkyoku
+Q1658757,illbient,illbient,Q9778,electronic music
+Q105697765,impressionist music,impressionism,Q9730,Western classical music
+Q1323698,Indian classical music,indianclassical,Q1583807,art music
+Q1323698,Indian classical music,indianclassical,Q98528267,music of South Asia
+Q6022257,Indian folk music,indianfolk,Q531426,music of India
+Q6022257,Indian folk music,indianfolk,Q98528198,South Asian folk music
+Q6168383,Indian jazz,indianjazz,Q8341,jazz
+Q6168383,Indian jazz,indianjazz,Q531426,music of India
+Q16056349,Indian rock,indianrock,Q11399,rock music
+Q16056349,Indian rock,indianrock,Q531426,music of India
+Q1317816,indie folk,indiefolk,Q42201,independent music
+Q1317816,indie folk,indiefolk,Q106298881,contemporary folk music
+Q842324,indie pop,indiepop,Q11366,alternative rock
+Q842324,indie pop,indiepop,Q37073,pop music
+Q842324,indie pop,indiepop,Q42201,independent music
+Q183504,indie rock,indierock,Q11366,alternative rock
+Q183504,indie rock,indierock,Q11399,rock music
+Q183504,indie rock,indierock,Q42201,independent music
+Q325397,indietronica,indietronica,Q9778,electronic music
+Q325397,indietronica,indietronica,Q42201,independent music
+Q2340395,indigenous Australian music,australianindigenous,Q3114644,music of Australia
+Q4668375,indigenous music of Canada,canadianindigenous,Q2662072,indigenous music of North America
+Q4668375,indigenous music of Canada,canadianindigenous,Q6942037,music of Canada
+Q2662072,indigenous music of North America,nativeamerican,Q107407692,indigenous American music
+Q2662072,indigenous music of North America,nativeamerican,Q107718737,music of North America
+Q108788730,indigenous Taiwanese music,taiwaneseindigenous,Q956925,music of Taiwan
+Q108788730,indigenous Taiwanese music,taiwaneseindigenous,Q106586250,East Asian folk music
+Q108788730,indigenous Taiwanese music,taiwaneseindigenous,Q108297183,Austronesian folk music
+Q1884689,Indo pop,indonesianpop,Q37073,pop music
+Q1884689,Indo pop,indonesianpop,Q1210921,music of Indonesia
+Q108610396,Indonesian folk music,indonesianfolk,Q1210921,music of Indonesia
+Q108610396,Indonesian folk music,indonesianfolk,Q106586999,Southeast Asian folk music
+Q6026226,Indonesian hip hop,indonesianhiphop,Q11401,hip hop music
+Q6026226,Indonesian hip hop,indonesianhiphop,Q1210921,music of Indonesia
+Q4200851,Indonesian rock,indonesianrock,Q11399,rock music
+Q4200851,Indonesian rock,indonesianrock,Q1210921,music of Indonesia
+Q2097664,Indorock,indorock,,
+Q1191299,industrial hardcore,industrialhardcore,Q388906,hardcore techno
+Q1191299,industrial hardcore,industrialhardcore,Q936942,post-industrial music
+Q2004156,industrial hip hop,industrialhiphop,Q936942,post-industrial music
+Q2004156,industrial hip hop,industrialhiphop,Q5421158,experimental hip hop
+Q208494,industrial metal,industrialmetal,Q38848,heavy metal
+Q208494,industrial metal,industrialmetal,Q487965,industrial music
+Q208494,industrial metal,industrialmetal,Q968730,industrial rock
+Q487965,industrial music,industrial,Q9778,electronic music
+Q487965,industrial music,industrial,Q1640319,experimental music
+Q968730,industrial rock,industrialrock,Q11399,rock music
+Q968730,industrial rock,industrialrock,Q936942,post-industrial music
+Q29480448,industrial techno,industrialtechno,Q170611,techno
+Q29480448,industrial techno,industrialtechno,Q487965,industrial music
+Q1650296,instrumental rock,instrumentalrock,Q11399,rock music
+Q660984,intelligent dance music,intelligentdancemusic,Q9778,electronic music
+Q660984,intelligent dance music,braindance,Q9778,electronic music
+Q840748,Iranian hip hop,persianhiphop,Q11401,hip hop music
+Q840748,Iranian hip hop,persianhiphop,Q1672398,music of Iran
+Q7170257,Iranian pop music,persianpop,Q624081,Arabic pop music
+Q7170257,Iranian pop music,persianpop,Q1672398,music of Iran
+Q84322263,Irish ballad,irishballad,Q182659,ballad
+Q84322263,Irish ballad,irishballad,Q943929,traditional folk song
+Q6070734,Irish fiddle,irishfiddle,,
+Q7482056,Irish folk music,irishfolk,Q1378776,music of Ireland
+Q7482056,Irish folk music,irishfolk,Q98528277,Celtic folk music
+Q48767281,Irish hip hop,irishhiphop,Q11401,hip hop music
+Q48767281,Irish hip hop,irishhiphop,Q1378776,music of Ireland
+Q1672918,Irish rebel song,irishrebelsong,Q7482056,Irish folk music
+Q3437850,Irish rock,irishrock,Q11399,rock music
+Q3437850,Irish rock,irishrock,Q1378776,music of Ireland
+Q1482325,Islamic music,islamicrecitation,Q189594,Islamic art
+Q1482325,Islamic music,islamicrecitation,Q1065742,religious music
+Q12408915,Israeli classical music,israeliclassical,Q1583807,art music
+Q106590078,Israeli folk music,israelifolk,Q3858,music of Israel
+Q106590078,Israeli folk music,israelifolk,Q106635221,West Asian folk music
+Q12411192,Israeli hip hop,israelihiphop,Q3858,music of Israel
+Q12411192,Israeli hip hop,israelihiphop,Q11401,hip hop music
+Q107539785,Israeli pop music,israelipop,Q3858,music of Israel
+Q107539785,Israeli pop music,israelipop,Q37073,pop music
+Q6860135,Israeli punk,israelipunk,,
+Q2917227,Israeli rock,israelirock,Q3858,music of Israel
+Q2917227,Israeli rock,israelirock,Q11399,rock music
+Q16532947,Italian blues,italianblues,Q9759,blues
+Q3951797,Italian hardcore,italianhardcore,Q10922,hardcore punk
+Q3951797,Italian hardcore,italianhardcore,Q3679098,music of Italy
+Q470611,Italian hip hop,italianhiphop,Q11401,hip hop music
+Q6093324,Italian jazz,italianjazz,Q8341,jazz
+Q6093324,Italian jazz,italianjazz,Q3679098,music of Italy
+Q16254929,Italian occult psychedelia,italianoccultpsychedelia,,
+Q785522,Italian opera,italianopera,Q1344,opera
+Q725888,Italian progressive rock,italianprogressiverock,Q49451,progressive rock
+Q725888,Italian progressive rock,italianprogressiverock,Q3679098,music of Italy
+Q930592,Italo dance,italodance,,
+Q2702280,Italo house,italohouse,Q20502,house music
+Q108556049,Italo pop,italianpop,Q37073,pop music
+Q3135791,Ivorian hip hop,rapivoire,Q11401,hip hop music
+Q3135791,Ivorian hip hop,rapivoire,Q3328693,music of Ivory Coast
+Q3098078,J-core,jcore,Q388906,hardcore techno
+Q131578,J-pop,jpop,Q37073,pop music
+Q108321657,jackin house,jackinhouse,Q20502,house music
+Q106581777,jam band music,jamband,Q11399,rock music
+Q107982599,jamgrass,jamgrass,Q3307225,progressive bluegrass
+Q107982599,jamgrass,jamgrass,Q106581777,jam band music
+Q1190565,jangle pop,janglepop,Q11366,alternative rock
+Q1190565,jangle pop,janglepop,Q484641,pop rock
+Q106586236,Japanese classical music,japaneseclassical,Q257533,music of Japan
+Q106586236,Japanese classical music,japaneseclassical,Q106586249,East Asian classical music
+Q106586219,Japanese folk music,japanesefolk,Q257533,music of Japan
+Q106586219,Japanese folk music,japanesefolk,Q106586250,East Asian folk music
+Q19815286,Japanese hardcore,japanesehardcore,Q10922,hardcore punk
+Q19815286,Japanese hardcore,japanesehardcore,Q257533,music of Japan
+Q1683348,Japanese hip hop,jrap,Q11401,hip hop music
+Q1683348,Japanese hip hop,jrap,Q257533,music of Japan
+Q16821210,Japanese jazz,japanesejazz,Q8341,jazz
+Q16821210,Japanese jazz,japanesejazz,Q257533,music of Japan
+Q1055871,Japanese rock,jrock,Q11366,alternative rock
+Q1055871,Japanese rock,jrock,Q257533,music of Japan
+Q1386554,Japanese ska,japaneseska,Q54365,ska
+Q2456019,Japanoise,japanoise,Q726239,noise music
+Q11215782,Javanese gamelan,javanesegamelan,Q194492,gamelan
+Q8341,jazz,jazz,Q373342,popular music
+Q1684520,Jazz blues,jazzblues,,
+Q105527,jazz fusion,jazzfusion,Q8341,jazz
+Q105637110,jazz house,jazzhouse,Q20502,house music
+Q13403364,Jazz piano,jazzpiano,Q8341,jazz
+Q13403364,Jazz piano,jazzpiano,Q1746015,piano piece
+Q255406,jazz rap,jazzrap,Q8341,jazz
+Q255406,jazz rap,jazzrap,Q11401,hip hop music
+Q944465,jazz rock,jazzrock,Q11399,rock music
+Q38656,jazz-funk,jazzfunk,Q8341,jazz
+Q38656,jazz-funk,jazzfunk,Q164444,funk
+Q2104067,jazz-pop,jazzpop,Q37073,pop music
+Q1433547,Jazzcore,jazzcore,Q2736181,punk jazz
+Q4965901,Jersey club,jerseyclub,Q107091813,East Coast club
+Q24943969,Jewish hip hop,jewishhiphop,Q11401,hip hop music
+Q24943969,Jewish hip hop,jewishhiphop,Q1716019,Jewish music
+Q744327,joik,yoik,Q7366,song
+Q744327,joik,yoik,Q7409412,Sami music
+Q1202208,joropo,joropo,Q201022,folk dance
+Q1202208,joropo,joropo,Q920883,music of Colombia
+Q1202208,joropo,joropo,Q2486179,music of Venezuela
+Q1202208,joropo,joropo,Q3328778,tropical music
+Q1202208,joropo,joropo,Q51799726,national dance
+Q1202208,joropo,joropo,Q98528197,Hispanic American folk music
+Q9014988,Jota Aragonese,jotaaragonesa,Q252626,jota
+Q6296743,Jovem Guarda,jovemguarda,,
+Q1075338,Jug band,jugband,,
+Q1715700,Jùjú music,juju,Q9048265,Yoruba music
+Q1515757,jump blues,jumpblues,Q9759,blues
+Q46649,jump-up,jumpup,Q188994,drum and bass
+Q389631,Jumpstyle,jumpstyle,Q851213,electronic dance music
+Q1102161,jungle,jungle,Q188994,drum and bass
+Q1102161,jungle,jungle,Q851213,electronic dance music
+Q213665,K-pop,kpop,Q37073,pop music
+Q213665,K-pop,koreanpop,Q37073,pop music
+Q16154635,Kabarett,kabarett,Q7225114,political satire
+Q16154635,Kabarett,kabarett,Q27976507,cabaret
+Q3328694,Kabyle music,kabyle,Q3328583,music of Algeria
+Q3328694,Kabyle music,kabyle,Q3328601,Berber music
+Q3192617,kaneka,kaneka,Q3328606,music of New Caledonia
+Q108301597,karaoke music,karaoke,,
+Q610022,kaseko,kaseko,Q3394906,music of the Caribbean
+Q106577542,kawaii future bass,kawaiifuturebass,Q22908553,future bass
+Q106577542,kawaii future bass,kawaiifuturebass,Q96740854,bass music
+Q16096634,kawaii metal,kawaiimetal,Q38848,heavy metal
+Q16096634,kawaii metal,kawaiimetal,Q131578,J-pop
+Q1418683,kayōkyoku,kayokyoku,Q37073,pop music
+Q19860267,Kazakh pop,kazakhpop,Q37073,pop music
+Q19860267,Kazakh pop,kazakhpop,Q1131855,music of Kazakhstan
+Q6392890,Kenyan hip hop,kenyanhiphop,Q11401,hip hop music
+Q585588,Khaliji,khaliji,Q235858,traditional folk music
+Q585588,Khaliji,khaliji,Q624044,Arabic music
+Q62128,Khyal,khayal,,
+Q6410606,Kindie rock,kindierock,Q2389651,children's music
+Q947155,Kirtan,kirtan,Q98528198,South Asian folk music
+Q1597549,kizomba,kizomba,,
+Q1428470,Klapa,klapa,Q107331898,Croatian folk music
+Q106917640,kleinkunst,kleinkunst,Q89363113,singer-songwriter music
+Q212944,klezmer,klezmer,Q1716019,Jewish music
+Q31174954,koplo,dangdutkoplo,Q1159539,dangdut
+Q108574405,kora music,kora,,
+Q107000797,Korean folk music,koreantraditional,Q716060,music of Korea
+Q107000797,Korean folk music,koreantraditional,Q106586250,East Asian folk music
+Q6432024,Korean rock,krock,Q11399,rock music
+Q6432024,Korean rock,krock,Q6942280,music of South Korea
+Q320592,Krautrock,krautrock,Q1641839,experimental rock
+Q1930107,kroncong,keroncong,Q1210921,music of Indonesia
+Q1191544,kuduro,kuduro,Q851213,electronic dance music
+Q1191544,kuduro,kuduro,Q106588687,music of Central Africa
+Q6444335,kundiman,kundiman,Q3328743,music of the Philippines
+Q6444335,kundiman,kundiman,Q106586999,Southeast Asian folk music
+Q956717,kwaito,kwaito,Q20502,house music
+Q108576302,Kyrgyz traditional music,kyrgyztraditional,Q3328704,music of Kyrgyzstan
+Q108576302,Kyrgyz traditional music,kyrgyztraditional,Q98528287,Turkic-Mongolic traditional music
+Q2087267,laïko,laiko,Q220528,Rebetiko
+Q2087267,laïko,laiko,Q3211884,music of the Balkans
+Q2087267,laïko,laiko,Q12876995,Greek folk music
+Q1089050,Latin alternative,latinalternative,Q1695023,alternative
+Q1089050,Latin alternative,latinalternative,Q18345375,Latin music
+Q17007779,Latin Christian music,latinchristian,Q6452410,Christian music
+Q17007779,Latin Christian music,latinchristian,Q18345375,Latin music
+Q98528166,Latin electronic,latintronica,Q9778,electronic music
+Q98528166,Latin electronic,latintronica,Q727781,music of Latin America
+Q3827483,Latin hip hop,latinhiphop,Q11401,hip hop music
+Q3827483,Latin hip hop,latinhiphop,Q9048261,urbano music
+Q3056538,Latin house,latinhouse,Q20502,house music
+Q837389,Latin jazz,latinjazz,Q8341,jazz
+Q837389,Latin jazz,latinjazz,Q18345375,Latin music
+Q1622261,Latin metal,latinmetal,,
+Q18345375,Latin music,latin,Q205049,world music
+Q547137,Latin pop,latinpop,Q37073,pop music
+Q547137,Latin pop,latinpop,Q18345375,Latin music
+Q185162,Latin rock,latinrock,Q11399,rock music
+Q185162,Latin rock,latinrock,Q727781,music of Latin America
+Q54329757,Latin trap,traplatino,Q727781,music of Latin America
+Q54329757,Latin trap,traplatino,Q2913982,trap music
+Q54329757,Latin trap,traplatino,Q9048261,urbano music
+Q108562050,Latvian folk music,latvianfolk,Q2503249,music of Latvia
+Q108562050,Latvian folk music,latvianfolk,Q108535339,Baltic folk music
+Q6497489,Latvian rock,latvianrock,Q11399,rock music
+Q6497489,Latvian rock,latvianrock,Q2503249,music of Latvia
+Q2138639,Levenslied,levenslied,Q7366,song
+Q2138639,Levenslied,levenslied,Q2668052,Dutch-language music
+Q98528299,liedermacher,liedermacher,Q89363113,singer-songwriter music
+Q1537056,light music,lightmusic,Q207628,musical composition
+Q2082572,liquid funk,liquidfunk,Q188994,drum and bass
+Q54891495,Lithuanian folk music,lithuanianfolk,Q5766537,music of Lithuania
+Q54891495,Lithuanian folk music,lithuanianfolk,Q108535339,Baltic folk music
+Q3437856,Lithuanian rock,lithuanianrock,Q11399,rock music
+Q3437856,Lithuanian rock,lithuanianrock,Q5766537,music of Lithuania
+Q6658771,livetronica,livetronica,,
+Q6658771,livetronica,jamtronica,,
+Q97265899,lo-fi hip hop,chillhop,Q11401,hip hop music
+Q97265899,lo-fi hip hop,chillhop,Q1507298,lo-fi music
+Q108555812,lo-fi house,lofihouse,Q874038,deep house
+Q108555812,lo-fi house,lofihouse,Q18358879,outsider house
+Q1507298,lo-fi music,lofi,Q638,music
+Q515074,Louisiana blues,louisianablues,Q9759,blues
+Q1141081,lounge music,lounge,Q373342,popular music
+Q1141081,lounge music,lounge,Q848399,easy listening
+Q1872505,Lovers rock,loversrock,Q9794,reggae
+Q310871,lowercase,lowercase,Q572901,minimalist music
+Q310871,lowercase,lowercase,Q7306376,reductionism
+Q665286,Luk thung,lukthung,,
+Q193605,lullaby,lullaby,Q1123037,nursery rhyme
+Q502886,Madchester,madchester,Q9778,electronic music
+Q193217,madrigal,madrigal,Q9730,Western classical music
+Q193217,madrigal,madrigal,Q185298,a cappella
+Q193217,madrigal,madrigal,Q106593854,polyphonic singing
+Q25230739,Mahraganat,mahraganat,Q851213,electronic dance music
+Q25230739,Mahraganat,mahraganat,Q16323732,Shaabi
+Q3048168,Mákina,makina,Q9778,electronic music
+Q1815364,Makossa,makossa,Q316930,dance music
+Q6742056,Malaysian hip hop,malaysianhiphop,Q11401,hip hop music
+Q6742070,Malaysian pop,malaysianpop,Q37073,pop music
+Q6742070,Malaysian pop,malaysianpop,Q3328715,music of Malaysia
+Q80725067,mallsoft,mallsoft,Q1141081,lounge music
+Q80725067,mallsoft,mallsoft,Q15733887,vaporwave
+Q496929,Maloya,maloya,Q3328757,music of Réunion
+Q1646666,mambo,mambo,Q1544863,music of Cuba
+Q1646666,mambo,mambo,Q3328778,tropical music
+Q3328711,Mandingo music,musiquemandingue,Q6942329,music of West Africa
+Q973150,mandopop,mandopop,Q1192110,C-pop
+Q642983,Manele,manele,,
+Q1759189,mangue bit,manguebeat,Q899215,music of Brazil
+Q6749708,Manila sound,manilasound,,
+Q1753071,Maracatu,maracatu,Q106926325,Brazilian folk music
+Q464129,Mariachi,mariachi,Q7309098,regional Mexican
+Q106876493,marimba music,marimba,,
+Q1786724,Marrabenta,marrabenta,Q106586248,music of East Africa
+Q1078010,martial industrial,martialindustrial,Q487965,industrial music
+Q6783396,Maskandi,maskandi,Q17111801,Zulu music
+Q1132152,math rock,mathrock,Q11366,alternative rock
+Q616679,mathcore,mathcore,Q183862,metalcore
+Q556959,Mbalax,mbalax,Q8030395,Wolof music
+Q6799695,Mbira music,mbira,Q369820,music of Africa
+Q641318,Medieval folk rock,medievalfolk,Q186472,folk rock
+Q641318,Medieval folk rock,medievalrock,Q186472,folk rock
+Q163775,medieval music,medieval,,
+Q2337447,Meditation music,meditation,,
+Q20047305,Melbourne bounce,melbournebounce,Q627906,electro house
+Q2997058,melodic black metal,melodicblackmetal,Q132438,black metal
+Q253918,melodic death metal,melodicdeathmetal,Q483251,death metal
+Q106404229,melodic dubstep,melodicdubstep,Q106477728,post-dubstep (US)
+Q542703,melodic hardcore,melodichardcore,Q10922,hardcore punk
+Q4490718,melodic metalcore,melodicmetalcore,Q183862,metalcore
+Q509901,Memphis blues,memphisblues,,
+Q3510161,Memphis soul,memphissoul,Q131272,soul music
+Q1262697,Mento,mento,,
+Q282131,merengue,merengue,Q11639,dance
+Q282131,merengue,merengue,Q373342,popular music
+Q282131,merengue,merengue,Q3328778,tropical music
+Q282131,merengue,merengue,Q6942370,music of the Dominican Republic
+Q6819034,Merengue típico,merenguetipico,,
+Q2344635,Mersey Beat,merseybeat,Q546264,beat music
+Q12326776,metal music,metal,Q11399,rock music
+Q183862,metalcore,metalcore,Q10922,hardcore punk
+Q183862,metalcore,metalcore,Q38848,heavy metal
+Q183862,metalcore,metallichardcore,Q10922,hardcore punk
+Q183862,metalcore,metallichardcore,Q38848,heavy metal
+Q16942073,Mexican classical music,mexicanclassical,Q9730,Western classical music
+Q16942070,Mexican folk music,mexicantraditional,Q7309098,regional Mexican
+Q16942070,Mexican folk music,mexicantraditional,Q98528197,Hispanic American folk music
+Q85785117,Mexican hip hop,mexicanhiphop,Q11401,hip hop music
+Q6036478,Mexican marimba music,marimbamexicana,Q3397325,music of Mexico
+Q6036478,Mexican marimba music,marimbamexicana,Q106876493,marimba music
+Q6826078,Mexican pop music,mexicanpop,Q37073,pop music
+Q6826078,Mexican pop music,mexicanpop,Q3397325,music of Mexico
+Q3437861,Mexican rock music,mexicanrock,Q11399,rock music
+Q3437861,Mexican rock music,mexicanrock,Q185162,Latin rock
+Q3437861,Mexican rock music,mexicanrock,Q3397325,music of Mexico
+Q65434338,Mezmur,mezmur,,
+Q546206,Miami bass,miamibass,Q11401,hip hop music
+Q1931555,microhouse,microhouse,Q20502,house music
+Q39052425,Midwest emo,midwestemo,Q10926,emo
+Q39052425,Midwest emo,midwestemo,Q183504,indie rock
+Q4993817,military cadence,militarycadence,,
+Q901610,Min'yō,minyo,Q257533,music of Japan
+Q901610,Min'yō,minyo,Q106586219,Japanese folk music
+Q750811,minimal house,minimaltechhouse,Q598593,tech house
+Q98528171,minimal synth,minimalsynth,Q6865341,minimal wave
+Q1430587,minimal techno,minimaltechno,Q170611,techno
+Q6865341,minimal wave,minimalwave,Q9778,electronic music
+Q572901,minimalist music,minimalism,Q65937946,modern classical
+Q6868046,Minneapolis sound,minneapolissound,Q187760,new wave
+Q6868046,Minneapolis sound,minneapolissound,Q835891,funk rock
+Q6868046,Minneapolis sound,minneapolissound,Q1298934,synth-pop
+Q830634,Minnesang,minnesang,Q182357,lyric poetry
+Q2738544,Mizrahi music,mizrahi,Q1716019,Jewish music
+Q2280273,mod revival,modrevival,Q98528293,mod
+Q65937937,modern blues,modernblues,Q9759,blues
+Q1037693,modern rock,modernrock,,
+Q107033631,Mongolian hip hop,mongolianhiphop,Q11401,hip hop music
+Q107033631,Mongolian hip hop,mongolianhiphop,Q3328727,music of Mongolia
+Q106560659,Mongolian pop,mongolianpop,Q37073,pop music
+Q106560659,Mongolian pop,mongolianpop,Q3328727,music of Mongolia
+Q21092,moombahton,moombahton,Q851213,electronic dance music
+Q1753803,Mor lam,molam,Q665286,Luk thung
+Q1753803,Mor lam,molam,Q106586999,Southeast Asian folk music
+Q6912676,Mormon music,lds,Q1065742,religious music
+Q502535,morna,morna,Q188237,music of Cape Verde
+Q2961759,Moroccan chaabi,chaabimarocain,Q2961763,chaabi
+Q2961759,Moroccan chaabi,chaabimarocain,Q11400811,music of North Africa
+Q16977816,Moroccan pop,moroccanpop,,
+Q65937972,Motown,motown,Q11700065,pop soul
+Q1452181,murga,murga,Q1370345,musical theater
+Q1452181,murga,murga,Q107033384,holiday music
+Q1452181,murga,murga,Q107718509,Hispanic music
+Q940462,music hall,musichall,Q336181,variety show
+Q2404891,music of Acadia,musiqueacadienne,Q6942037,music of Canada
+Q6941994,music of Andorra,musicaandorra,Q3328676,music of Europe
+Q3808055,music of Catalonia,musicacatalana,Q964987,music of Spain
+Q3109641,music of East Timor,musicatimorleste,Q10838732,music of Southeast Asia
+Q15221176,music of Guadeloupe,musiqueguadeloupe,Q6942376,music of the Lesser Antilles
+Q15221176,music of Guadeloupe,musiqueguadeloupe,Q108151421,music of the French Antilles
+Q4119678,music of Mauritania,musiquemauritanienne,Q6942329,music of West Africa
+Q2294872,music of Mozambique,musicamocambicana,Q369820,music of Africa
+Q3328732,music of Occitania,musicaoccitana,Q672134,music of France
+Q3328732,music of Occitania,musicaoccitana,Q964987,music of Spain
+Q6942263,music of Sardinia,musicasarda,Q3679098,music of Italy
+Q106506985,music of the Caucasus,kavkaz,Q525073,music of Asia
+Q106506985,music of the Caucasus,kavkaz,Q3328676,music of Europe
+Q6942358,music of the Comoros,musiquecomorienne,Q98528232,music of Southern Africa
+Q2916253,music of the Trecento,trecento,Q163775,medieval music
+Q2916253,music of the Trecento,trecento,Q3679098,music of Italy
+Q6942315,music of Valencia,musicavalenciana,Q964987,music of Spain
+Q6950428,música criolla,musicacriolla,Q3085344,music of Peru
+Q6950428,música criolla,musicacriolla,Q98528197,Hispanic American folk music
+Q1046768,música popular brasileira,mpb,Q899215,music of Brazil
+Q823560,musique concrète,musiqueconcrete,Q1326777,electroacoustic music
+Q823560,musique concrète,musiqueconcrete,Q5969884,tape music
+Q12736122,muzica ușoară românească,muzicausoara,Q848399,easy listening
+Q12736122,muzica ușoară românească,muzicausoara,Q852210,music of Romania
+Q783874,nasheed,nasheed,Q685884,vocal music
+Q783874,nasheed,nasheed,Q1482325,Islamic music
+Q1751782,Nashville sound,nashvillesound,Q2280497,country pop
+Q6979961,Native American hip hop,nativeamericanhiphop,Q11401,hip hop music
+Q6979961,Native American hip hop,nativeamericanhiphop,Q2662072,indigenous music of North America
+Q1936659,Nederpop,nederpop,Q37073,pop music
+Q1936659,Nederpop,nederpop,Q377185,music of the Netherlands
+Q268253,neo soul,neosoul,Q131272,soul music
+Q725011,neo-classical metal,neoclassicalmetal,Q38848,heavy metal
+Q1051843,neo-progressive rock,neoprogressive,Q49451,progressive rock
+Q65943390,neo-rockabilly,neorockabilly,Q203720,rockabilly
+Q899116,neoclassical dark wave,neoclassicaldarkwave,Q3840596,dark wave
+Q106576145,neoclassical music,neoclassicism,Q9730,Western classical music
+Q775614,neofolk,neofolk,Q43343,folk music
+Q25099691,neon pop-punk,neonpoppunk,,
+Q16979361,neotango,neotango,Q14390274,tango music
+Q458480,neotraditional country,neotraditionalcountry,,
+Q19672555,nerd-folk,geekfolk,Q43343,folk music
+Q19672555,nerd-folk,geekfolk,Q19678100,nerd music
+Q1754592,nerdcore,nerdcore,Q11401,hip hop music
+Q1754592,nerdcore,nerdcore,Q19678100,nerd music
+Q213572,Neue Deutsche Härte,neuedeutscheharte,Q38848,heavy metal
+Q213572,Neue Deutsche Härte,neuedeutscheharte,Q83270,hard rock
+Q213572,Neue Deutsche Härte,neuedeutscheharte,Q2743758,music of Germany
+Q1362878,Neue Deutsche Todeskunst,neuedeutschetodeskunst,,
+Q646679,Neue Deutsche Welle,neuedeutschewelle,Q3071,punk rock
+Q646679,Neue Deutsche Welle,neuedeutschewelle,Q11399,rock music
+Q646679,Neue Deutsche Welle,neuedeutschewelle,Q187760,new wave
+Q646679,Neue Deutsche Welle,neuedeutschewelle,Q2743758,music of Germany
+Q1524296,Neue Volksmusik,neuevolksmusik,,
+Q967654,neurofunk,neurofunk,Q188994,drum and bass
+Q213121,new age music,newage,Q373342,popular music
+Q1890098,new beat,newbeat,Q372103,electronic body music
+Q3053954,new flamenco,nuevoflamenco,Q9764,flamenco
+Q840065,new jack swing,newjackswing,Q850412,contemporary R&B
+Q18217098,New Mexico music,newmexicomusic,Q83440,country music
+Q18217098,New Mexico music,newmexicomusic,Q203720,rockabilly
+Q18217098,New Mexico music,newmexicomusic,Q1425111,Western music (country)
+Q18217098,New Mexico music,newmexicomusic,Q18345375,Latin music
+Q516568,New Orleans blues,neworleansblues,Q9759,blues
+Q516568,New Orleans blues,neworleansblues,Q515074,Louisiana blues
+Q1982426,New Orleans jazz,neworleansjazz,,
+Q1995980,new rave,newrave,Q183504,indie rock
+Q1995980,new rave,newrave,Q2187392,alternative dance
+Q597240,New Romantic,newromantic,Q187760,new wave
+Q187760,new wave,newwave,Q11399,rock music
+Q646528,new wave music in Yugoslavia,yugoslavnewwave,Q187760,new wave
+Q370515,new wave of British heavy metal,nwobhm,Q38848,heavy metal
+Q370515,new wave of British heavy metal,nwobhm,Q268673,music of the United Kingdom
+Q85846779,New wave of traditional heavy metal,nwothm,,
+Q1811682,New Weird America,newweirdamerica,,
+Q1414858,New York death metal,newyorkdeathmetal,Q483251,death metal
+Q1983116,New York hardcore,nyhc,Q10922,hardcore punk
+Q3437867,New Zealand rock music,kiwirock,Q11399,rock music
+Q3437867,New Zealand rock music,kiwirock,Q6942216,music of New Zealand
+Q2835456,Nigerian hip hop,nigerianhiphop,Q11401,hip hop music
+Q2835456,Nigerian hip hop,nigerianhiphop,Q2738838,music of Nigeria
+Q3876770,nightcore,nightcore,Q216961,Eurodance
+Q3876770,nightcore,nightcore,Q339906,happy hardcore
+Q3876770,nightcore,nightcore,Q733804,hands up
+Q3876770,nightcore,nightcore,Q890887,Eurotrance
+Q2035976,Nintendocore,nintendocore,Q11366,alternative rock
+Q2035976,Nintendocore,nintendocore,Q135637,chiptune
+Q2035976,Nintendocore,nintendocore,Q7927912,video game culture
+Q2035976,Nintendocore,nintendocore,Q19678100,nerd music
+Q12881722,Nisiotika,nisiotika,Q1465419,music of Greece
+Q4706203,Nitzhonot,nitzhonot,Q835131,Goa trance
+Q823080,no wave,nowave,Q598929,post-punk
+Q823080,no wave,nowave,Q1641839,experimental rock
+Q726239,noise music,noise,Q9778,electronic music
+Q726239,noise music,noise,Q1640319,experimental music
+Q2545135,noise pop,noisepop,Q11366,alternative rock
+Q181861,noise rock,noiserock,Q11399,rock music
+Q181861,noise rock,rocknoise,Q11399,rock music
+Q89423271,noisecore,noisecore,Q10922,hardcore punk
+Q7050752,Nordic folk music,nordicfolk,Q26302245,music of the Nordic countries
+Q7050752,Nordic folk music,nordicfolk,Q98528192,European folk music
+Q1780056,norteña,norteno,Q235858,traditional folk music
+Q1780056,norteña,norteno,Q7309098,regional Mexican
+Q1928583,Northern soul,northernsoul,Q131272,soul music
+Q773084,Norwegian hip hop,norwegianhiphop,Q11401,hip hop music
+Q773084,Norwegian hip hop,norwegianhiphop,Q833189,music of Norway
+Q6082625,Norwegian pop music,norwegianpop,Q37073,pop music
+Q6082625,Norwegian pop music,norwegianpop,Q833189,music of Norway
+Q3437862,Norwegian rock,norwegianrock,Q11399,rock music
+Q3437862,Norwegian rock,norwegianrock,Q833189,music of Norway
+Q2002705,Nouvelle Chanson,nouvellechansonfrancaise,Q1062328,chanson
+Q254890,Nova Cançó,novacanco,,
+Q1151663,novelty music,novelty,Q5151495,comedy music
+Q3879179,nu gaze,nugaze,,
+Q1136331,nu jazz,nujazz,Q8341,jazz
+Q1136331,nu jazz,nujazz,Q9778,electronic music
+Q1136331,nu jazz,jazztronica,Q8341,jazz
+Q1136331,nu jazz,jazztronica,Q9778,electronic music
+Q263734,nu metal,numetal,Q20378,alternative metal
+Q263734,nu metal,numetal,Q38848,heavy metal
+Q39052604,nu metalcore,numetalcore,Q263734,nu metal
+Q1756101,nu skool breaks,nuskoolbreaks,Q663519,breakbeat
+Q4045538,nu-disco,nudisco,Q20502,house music
+Q4045538,nu-disco,nudisco,Q58339,disco
+Q1151259,nueva canción,nuevacancion,Q265147,revolutionary song
+Q1151259,nueva canción,nuevacancion,Q89363113,singer-songwriter music
+Q1151259,nueva canción,nuevacancion,Q106298881,contemporary folk music
+Q1632601,nuevo tango,nuevotango,Q14390274,tango music
+Q98528251,nyahbinghi,nyahbinghi,Q572717,music of Jamaica
+Q15975701,Oberkrainer music,oberkrainer,Q108321843,Slovenian folk music
+Q274401,Oi!,oi,Q3071,punk rock
+Q7085499,Old time fiddle,oldtimefiddle,Q1541229,American folk music
+Q868855,old-school hip hop,oldschoolhiphop,Q11401,hip hop music
+Q972424,old-time music,oldtime,Q65943778,traditional country
+Q1344,opera,opera,Q9730,Western classical music
+Q1344,opera,opera,Q7777494,theatre music
+Q1344,opera,opera,Q58483083,dramatico-musical work
+Q11885649,opera metal,operametal,,
+Q2336819,operatic pop,operaticpop,Q37073,pop music
+Q170384,operetta,operetta,Q25379,play
+Q170384,operetta,operetta,Q2188189,musical work
+Q2659045,Oriental metal,orientalmetal,Q38848,heavy metal
+Q2659045,Oriental metal,orientalmetal,Q484179,folk metal
+Q107565104,original Pilipino music,opm,Q373342,popular music
+Q107565104,original Pilipino music,opm,Q3328743,music of the Philippines
+Q278357,Oshare kei,osharekei,Q131425,visual kei
+Q1518063,Ottoman classical music,turkishclassical,Q1074080,music of Turkey
+Q1518063,Ottoman classical music,turkishclassical,Q98528260,Islamic modal music
+Q964658,outlaw country,outlawcountry,Q4490991,progressive country
+Q18358879,outsider house,outsiderhouse,Q3947,house
+Q2416307,outsider music,outsider,Q638,music
+Q577080,P-Funk,pfunk,Q29025044,psychedelic funk
+Q12882577,pagan black metal,paganblackmetal,Q132438,black metal
+Q12882577,pagan black metal,paganblackmetal,Q1457545,pagan metal
+Q3360459,pagode,pagode,Q11403,samba
+Q25448883,pagode baiano,pagodebaiano,Q1435485,axé
+Q25448883,pagode baiano,pagodebaiano,Q3360459,pagode
+Q10343541,pagode romântico,pagodenovo,Q3360459,pagode
+Q1432934,Paisley Underground,paisleyunderground,Q206159,psychedelic rock
+Q7125896,Pakistani hip hop,pakistanihiphop,,
+Q7125908,Pakistani pop,pakistanipop,Q37073,pop music
+Q7125908,Pakistani pop,pakistanipop,Q3328740,music of Pakistan
+Q7125918,Pakistani rock,pakistanirock,Q11399,rock music
+Q7125918,Pakistani rock,pakistanirock,Q3328740,music of Pakistan
+Q3322869,Palm Desert Scene,palmdesertscene,,
+Q7134728,Paraguayan polka,polcaparaguaya,Q201022,folk dance
+Q6110316,Paraguayan rock,paraguayanrock,,
+Q2746731,parody music,parody,Q170539,parody
+Q2746731,parody music,parody,Q5151495,comedy music
+Q1420722,partido alto,partidoalto,Q11403,samba
+Q1420722,partido alto,partidoalto,Q11639,dance
+Q208341,pasodoble,pasodobles,Q1457972,Latin dance
+Q11223087,Persian traditional music,persiantraditional,Q1672398,music of Iran
+Q11223087,Persian traditional music,persiantraditional,Q98528260,Islamic modal music
+Q7171184,Peruvian cumbia,cumbiaperuana,Q723418,cumbia
+Q5898242,Peruvian hip hop,peruvianhiphop,Q11401,hip hop music
+Q5898242,Peruvian hip hop,peruvianhiphop,Q3085344,music of Peru
+Q3437873,Peruvian rock,peruvianrock,Q11399,rock music
+Q3437873,Peruvian rock,peruvianrock,Q3085344,music of Peru
+Q1546028,Philadelphia soul,phillysoul,Q131272,soul music
+Q6665252,Phleng phuea chiwit,phlengphueachiwit,Q186472,folk rock
+Q6665252,Phleng phuea chiwit,phlengphueachiwit,Q10838732,music of Southeast Asia
+Q90568328,Phonk,phonk,Q11401,hip hop music
+Q2603965,piano blues,pianoblues,Q9759,blues
+Q2090023,piano rock,pianorock,Q11399,rock music
+Q2090023,piano rock,pianorock,Q484641,pop rock
+Q1109497,Piedmont blues,piedmontblues,Q106878019,early acoustic blues
+Q7196456,Pinoy hip hop,pinoyhiphop,Q11401,hip hop music
+Q7196456,Pinoy hip hop,pinoyhiphop,Q3328743,music of the Philippines
+Q7196459,Pinoy reggae,pinoyreggae,,
+Q3388814,Pinoy rock,pinoyrock,Q11399,rock music
+Q3388814,Pinoy rock,pinoyrock,Q3328743,music of the Philippines
+Q1457753,pìobaireachd,pibroch,Q1583807,art music
+Q1457753,pìobaireachd,pibroch,Q17018487,Scottish folk music
+Q106547262,Pisadinha,piseiro,Q10283582,electronic forró
+Q104503881,plena uruguaya,plenauruguaya,Q2715398,plena
+Q7205507,Plunderphonics,plunderphonics,Q1744304,sound collage
+Q11822344,Polish folk music,polishfolk,Q473602,music of Poland
+Q11822344,Polish folk music,polishfolk,Q16679594,Slavic folk music
+Q2102553,Polish hip hop,polishhiphop,Q11401,hip hop music
+Q7210038,Polish jazz,polishjazz,Q8341,jazz
+Q7210038,Polish jazz,polishjazz,Q473602,music of Poland
+Q7210069,Polish reggae,polishreggae,Q9794,reggae
+Q7210069,Polish reggae,polishreggae,Q473602,music of Poland
+Q7210075,Polish rock,polishrock,Q11399,rock music
+Q7210075,Polish rock,polishrock,Q473602,music of Poland
+Q106647671,Polish sung poetry,poezjaspiewana,Q473602,music of Poland
+Q106647671,Polish sung poetry,poezjaspiewana,Q1519864,sung poetry
+Q969663,political hip hop,politicalhiphop,Q11401,hip hop music
+Q153071,polka,polka,Q201022,folk dance
+Q153071,polka,polka,Q316930,dance music
+Q153071,polka,polka,Q1085001,ballroom dance
+Q179465,polyphony,polyphony,,
+Q37073,pop music,pop,Q373342,popular music
+Q487914,pop punk,poppunk,Q3071,punk rock
+Q487914,pop punk,poppunk,Q11399,rock music
+Q487914,pop punk,poppunk,Q37073,pop music
+Q2572585,pop rap,poprap,Q11401,hip hop music
+Q484641,pop rock,poprock,Q11399,rock music
+Q484641,pop rock,poprock,Q37073,pop music
+Q11700065,pop soul,popsoul,Q37073,pop music
+Q11700065,pop soul,popsoul,Q131272,soul music
+Q584752,pornogrind,pornogrind,,
+Q3069904,porro,porro,Q723418,cumbia
+Q106556293,Portuguese folk music,portuguesefolk,Q2579987,music of Portugal
+Q106556293,Portuguese folk music,portuguesefolk,Q98528192,European folk music
+Q3092733,Portuguese rock,portugueserock,Q11399,rock music
+Q3092733,Portuguese rock,portugueserock,Q2579987,music of Portugal
+Q1878514,post-black metal,postblackmetal,Q41343,post-metal
+Q1878514,post-black metal,postblackmetal,Q132438,black metal
+Q1878514,post-black metal,postblackmetal,Q209137,post-rock
+Q1190485,post-disco,postdisco,,
+Q379671,post-grunge,postgrunge,Q11366,alternative rock
+Q377910,post-hardcore,posthardcore,Q3071,punk rock
+Q377910,post-hardcore,posthardcore,Q10922,hardcore punk
+Q377910,post-hardcore,posthardcore,Q209137,post-rock
+Q41343,post-metal,postmetal,Q38848,heavy metal
+Q41343,post-metal,postmetal,Q209137,post-rock
+Q41343,post-metal,postmetal,Q272167,shoegaze
+Q98528143,post-minimalism,postminimalism,Q65937946,modern classical
+Q598929,post-punk,postpunk,Q3071,punk rock
+Q598929,post-punk,postpunk,Q11399,rock music
+Q209137,post-rock,postrock,Q11399,rock music
+Q209137,post-rock,postrock,Q1641839,experimental rock
+Q2687544,power electronics,powerelectronics,Q9778,electronic music
+Q2687544,power electronics,powerelectronics,Q487965,industrial music
+Q2687544,power electronics,powerelectronics,Q726239,noise music
+Q57143,power metal,powermetal,Q38848,heavy metal
+Q57143,power metal,powermetal,Q211723,speed metal
+Q1913888,power noise,powernoise,Q487965,industrial music
+Q1913888,power noise,powernoise,Q726239,noise music
+Q837837,power pop,powerpop,Q484641,pop rock
+Q1784106,powerviolence,powerviolence,Q10922,hardcore punk
+Q2111784,production music,librarymusic,Q64223661,stock media
+Q2111784,production music,librarymusic,Q107736421,soundtrack
+Q3307225,progressive bluegrass,progressivebluegrass,Q213714,bluegrass music
+Q3307225,progressive bluegrass,progressivebluegrass,Q4490991,progressive country
+Q25389262,progressive breaks,progressivebreaks,Q663519,breakbeat
+Q25389262,progressive breaks,progressivebreaks,Q12200830,progressive electronic dance music
+Q542971,progressive death metal,progressivedeathmetal,Q483251,death metal
+Q542971,progressive death metal,progressivedeathmetal,Q484344,progressive metal
+Q915152,progressive house,progressivehouse,Q20502,house music
+Q915152,progressive house,progressivehouse,Q12200830,progressive electronic dance music
+Q484344,progressive metal,progmetal,Q38848,heavy metal
+Q484344,progressive metal,progmetal,Q49451,progressive rock
+Q484344,progressive metal,progressivemetal,Q38848,heavy metal
+Q484344,progressive metal,progressivemetal,Q49451,progressive rock
+Q30587784,progressive metalcore,progressivemetalcore,Q183862,metalcore
+Q2385862,progressive psytrance,progressivepsytrance,Q622871,psychedelic trance
+Q2385862,progressive psytrance,progressivepsytrance,Q12200830,progressive electronic dance music
+Q49451,progressive rock,progressiverock,Q11399,rock music
+Q2260696,progressive trance,progressivetrance,Q170435,trance
+Q2260696,progressive trance,progressivetrance,Q12200830,progressive electronic dance music
+Q27190,protopunk,protopunk,Q11399,rock music
+Q749475,psybient,psychill,Q251192,downtempo
+Q11680297,psychedelic breakbeat,psybreaks,Q663519,breakbeat
+Q1500364,psychedelic folk,psychedelicfolk,Q43343,folk music
+Q2106887,psychedelic hip hop,psychedelichiphop,Q11401,hip hop music
+Q383982,psychedelic pop,psychedelicpop,Q37073,pop music
+Q206159,psychedelic rock,psychedelicrock,Q11399,rock music
+Q206159,psychedelic rock,psychedelicrock,Q846119,psychedelic music
+Q2743435,psychedelic soul,psychedelicsoul,Q131272,soul music
+Q622871,psychedelic trance,psychedelictrance,Q170435,trance
+Q13627677,psychobilly,psychobilly,Q3071,punk rock
+Q13627677,psychobilly,psychobilly,Q203720,rockabilly
+Q24077837,Psydub,psydub,Q9778,electronic music
+Q1431327,pub rock,pubrock,Q11399,rock music
+Q8564213,Punjabi folk music,punjabifolk,Q531426,music of India
+Q8564213,Punjabi folk music,punjabifolk,Q98528198,South Asian folk music
+Q2551540,punk blues,punkblues,Q3071,punk rock
+Q25554481,punk music,punk,Q373342,popular music
+Q1307555,punk'n'roll,punknroll,Q3071,punk rock
+Q1307555,punk'n'roll,punknroll,Q7749,rock and roll
+Q283405,punta,punta,,
+Q3410876,punta rock,puntarock,,
+Q98528158,purple sound,purplesound,Q20474,dubstep
+Q98528158,purple sound,purplesound,Q106130091,post-dubstep
+Q7263021,Pygmy music,pygmymusic,Q106588687,music of Central Africa
+Q512410,Qawwali,qawwali,Q762917,Devotional song
+Q3135794,Quebec hip hop,hiphopquebecois,Q11401,hip hop music
+Q930995,queercore,queercore,Q3071,punk rock
+Q930995,queercore,queercore,Q153946,punk counterculture
+Q2746831,quiet storm,quietstorm,Q37073,pop music
+Q2746831,quiet storm,quietstorm,Q105527,jazz fusion
+Q2746831,quiet storm,quietstorm,Q131272,soul music
+Q2746831,quiet storm,quietstorm,Q850412,contemporary R&B
+Q3345491,Rabindra Sangeet,rabindrasangeet,,
+Q1702909,Raga rock,ragarock,Q11399,rock music
+Q2710523,ragga jungle,raggajungle,Q740911,ragga
+Q2710523,ragga jungle,raggajungle,Q1102161,jungle
+Q185652,ragtime,ragtime,Q373342,popular music
+Q185652,ragtime,ragtime,Q7139128,parlour music
+Q185652,ragtime,ragtime,Q107718737,music of North America
+Q839029,Raï,rai,Q624044,Arabic music
+Q877342,rakugo,rakugo,Q3328821,narration
+Q727634,ranchera,ranchera,Q7309098,regional Mexican
+Q727634,ranchera,ranchera,Q16942070,Mexican folk music
+Q6010,rap,rap,Q11401,hip hop music
+Q6010,rap,rap,Q6942562,musical performance
+Q856872,rap metal,rapmetal,Q6010,rap
+Q856872,rap metal,rapmetal,Q20378,alternative metal
+Q856872,rap metal,rapmetal,Q38848,heavy metal
+Q877693,rap rock,raprock,Q6010,rap
+Q877693,rap rock,raprock,Q11399,rock music
+Q877693,rap rock,raprock,Q11401,hip hop music
+Q4390945,rautalanka,rautalanka,Q1650296,instrumental rock
+Q898709,rave music,rave,Q851213,electronic dance music
+Q28328303,Raw Black Metal,rawblackmetal,Q38848,heavy metal
+Q21000514,rawstyle,rawstyle,Q223840,hardstyle
+Q220528,Rebetiko,rebetiko,Q12876995,Greek folk music
+Q3422697,Red Dirt,reddirt,Q852767,Southern rock
+Q3422697,Red Dirt,reddirt,Q964658,outlaw country
+Q9794,reggae,reggae,Q572717,music of Jamaica
+Q500879,reggae en Español,reggaeenespanol,Q9794,reggae
+Q500879,reggae en Español,reggaeenespanol,Q107718509,Hispanic music
+Q1606591,reggae fusion,reggaefusion,Q9794,reggae
+Q7308175,reggae rock,reggaerock,Q9794,reggae
+Q7308175,reggae rock,reggaerock,Q11399,rock music
+Q202930,reggaeton,reggaeton,Q474027,dancehall
+Q7309098,regional Mexican,regionalmexican,Q3397325,music of Mexico
+Q201405,Renaissance music,renaissance,Q1583807,art music
+Q6106812,retro-soul,retrosoul,Q131272,soul music
+Q221438,rhumba,rumba,Q1457972,Latin dance
+Q221438,rhumba,rumba,Q107718539,Hispanic American music
+Q45981,rhythm and blues,rb,Q373342,popular music
+Q45981,rhythm and blues,rhythmandblues,Q373342,popular music
+Q852209,riddim,riddim,Q639197,instrumental music
+Q677542,Riot grrrl,riotgrrrl,Q3071,punk rock
+Q12671486,ritual ambient,ritualambient,Q756956,dark ambient
+Q7749,rock and roll,rockandroll,Q11399,rock music
+Q7749,rock and roll,rockandroll,Q373342,popular music
+Q2994332,rock en Español,rockenespanol,Q11399,rock music
+Q2994332,rock en Español,rockenespanol,Q107718509,Hispanic music
+Q1752801,Rock in Opposition,rockinopposition,Q3630966,avant-prog
+Q12702016,rock kapak,rockkapak,Q11399,rock music
+Q11399,rock music,rock,Q373342,popular music
+Q203720,rockabilly,rockabilly,Q7749,rock and roll
+Q573484,rocksteady,rocksteady,Q572717,music of Jamaica
+Q12736118,Romanian church music,muzicabisericeasca,Q8812109,church music
+Q98528265,Romanian contemporary folk,romanianfolk,Q852210,music of Romania
+Q98528265,Romanian contemporary folk,romanianfolk,Q106298881,contemporary folk music
+Q12736123,Romanian folk music,muzicapopulara,Q235858,traditional folk music
+Q12736123,Romanian folk music,muzicapopulara,Q852210,music of Romania
+Q12736123,Romanian folk music,muzicapopulara,Q98528192,European folk music
+Q3419345,Romanian hip hop,romanianrap,Q11401,hip hop music
+Q3419345,Romanian hip hop,romanianrap,Q852210,music of Romania
+Q7362666,Romanian rock,romanianrock,Q11399,rock music
+Q7362666,Romanian rock,romanianrock,Q852210,music of Romania
+Q1299260,roots reggae,rootsreggae,Q9794,reggae
+Q1929352,roots rock,rootsrock,Q11399,rock music
+Q1891685,Russian chanson,russianchanson,,
+Q3785732,Russian hip hop,russianhiphop,Q11401,hip hop music
+Q3785732,Russian hip hop,russianhiphop,Q2498201,music of Russia
+Q107539809,Russian indie music,russianindie,Q42201,independent music
+Q107539809,Russian indie music,russianindie,Q2498201,music of Russia
+Q378495,Russian pop,russianpop,Q37073,pop music
+Q378495,Russian pop,russianpop,Q2498201,music of Russia
+Q2624785,Russian rock,russianrock,Q11399,rock music
+Q2624785,Russian rock,russianrock,Q2498201,music of Russia
+Q4400837,Russian romance,russianromance,Q1519864,sung poetry
+Q4400837,Russian romance,russianromance,Q88340836,Russian music
+Q4400498,Russian traditional music,russianfolk,Q16679594,Slavic folk music
+Q4400498,Russian traditional music,russianfolk,Q88340836,Russian music
+Q7385628,Ryūkōka,ryukoka,Q257533,music of Japan
+Q7397320,Sacred Steel,sacredsteel,Q106085531,Black gospel music
+Q2369761,salon music,salonmusic,Q207628,musical composition
+Q208239,salsa,salsa,Q316930,dance music
+Q208239,salsa,salsa,Q727781,music of Latin America
+Q208239,salsa,salsa,Q3328778,tropical music
+Q20016116,salsa choke,salsachoke,Q11639,dance
+Q20016116,salsa choke,salsachoke,Q208239,salsa
+Q11403,samba,samba,Q899215,music of Brazil
+Q11403,samba,samba,Q18345375,Latin music
+Q9300201,samba de roda,rodadesamba,Q11639,dance
+Q9300201,samba de roda,sambaderoda,Q11639,dance
+Q9300201,samba de roda,rodadesamba,Q106926325,Brazilian folk music
+Q9300201,samba de roda,sambaderoda,Q106926325,Brazilian folk music
+Q455686,samba reggae,sambareggae,Q1435485,axé
+Q108556056,samba soul,braziliansoul,Q11403,samba
+Q108556056,samba soul,braziliansoul,Q131272,soul music
+Q3470692,samba-enredo,sambaenredo,Q11403,samba
+Q13634037,samba-jazz,sambajazz,Q8341,jazz
+Q13634037,samba-jazz,sambajazz,Q486263,bossa nova
+Q834959,samba-rock,sambarock,Q11403,samba
+Q3179786,sambass,sambass,Q188994,drum and bass
+Q7409412,Sami music,sami,Q11999259,Sámi art
+Q7409412,Sami music,sami,Q26302245,music of the Nordic countries
+Q106594784,sasscore,sasscore,,
+Q959583,schlager music,schlager,Q7366,song
+Q959583,schlager music,schlager,Q37073,pop music
+Q700440,Schrammelmusik,schrammelmusik,,
+Q307054,Schranz,schranz,Q170611,techno
+Q17018487,Scottish folk music,traditionalscottishfolk,Q235858,traditional folk music
+Q17018487,Scottish folk music,traditionalscottishfolk,Q1048469,music of Scotland
+Q17018487,Scottish folk music,traditionalscottishfolk,Q98528277,Celtic folk music
+Q17018487,Scottish folk music,scottishfolk,Q235858,traditional folk music
+Q17018487,Scottish folk music,scottishfolk,Q1048469,music of Scotland
+Q17018487,Scottish folk music,scottishfolk,Q98528277,Celtic folk music
+Q7438078,Scottish hip-hop,scottishhiphop,,
+Q106522190,scouse house,bouncyhouse,Q1585015,hard house
+Q11363,screamo,screamo,Q10926,emo
+Q11363,screamo,screamo,Q153946,punk counterculture
+Q11363,screamo,screamo,Q377910,post-hardcore
+Q1195253,sea shanty,shanty,Q502658,work song
+Q1195253,sea shanty,shanty,Q10669480,sailor song
+Q1781796,Sega music,sega,,
+Q1470503,semba,semba,Q98528185,African folk music
+Q1470503,semba,semba,Q106588687,music of Central Africa
+Q25047660,Serbian folk music,serbianfolk,Q235858,traditional folk music
+Q25047660,Serbian folk music,serbianfolk,Q2363645,music of Serbia
+Q3135801,Serbian hip hop,serbianhiphop,Q11401,hip hop music
+Q507246,serialism,serialism,Q207628,musical composition
+Q507246,serialism,serialism,Q65937946,modern classical
+Q1958273,sertanejo,sertanejo,Q899215,music of Brazil
+Q10370558,sertanejo universitário,sertanejouniversitario,Q1958273,sertanejo
+Q674684,sevdalinka,sevdah,Q3328608,music of Bosnia and Herzegovina
+Q674684,sevdalinka,sevdah,Q6966089,Balkan folk music
+Q674684,sevdalinka,sevdah,Q16679594,Slavic folk music
+Q16323732,Shaabi,shaabi,Q624044,Arabic music
+Q16323732,Shaabi,shaabi,Q11400811,music of North Africa
+Q3868631,shamanic music,shamanic,Q1065742,religious music
+Q1207347,Shibuya-kei,shibuyakei,Q131578,J-pop
+Q1207347,Shibuya-kei,shibuyakei,Q16821210,Japanese jazz
+Q1207347,Shibuya-kei,shibuyakei,Q48834745,orchestral pop
+Q272167,shoegaze,shoegaze,Q11366,alternative rock
+Q661651,show tune,showtunes,Q7366,song
+Q661651,show tune,showtunes,Q1370345,musical theater
+Q101440473,sierreña,sierreno,Q1780056,norteña
+Q89363113,singer-songwriter music,singersongwriter,Q286080,acoustic music
+Q89363113,singer-songwriter music,singersongwriter,Q685884,vocal music
+Q54365,ska,ska,Q373342,popular music
+Q183016,ska jazz,skajazz,,
+Q460674,ska punk,skapunk,Q3071,punk rock
+Q460674,ska punk,punkska,Q3071,punk rock
+Q460674,ska punk,skapunk,Q3990466,Third wave of ska
+Q460674,ska punk,punkska,Q3990466,Third wave of ska
+Q828305,skate punk,skatepunk,Q3071,punk rock
+Q606089,skiffle,skiffle,Q43343,folk music
+Q888137,skweee,skweee,Q135637,chiptune
+Q888137,skweee,skweee,Q164444,funk
+Q98528264,slack-key guitar,slackkeyguitar,Q1071834,music of Hawaii
+Q108123046,slacker rock,lofiindie,Q183504,indie rock
+Q6130346,slam death metal,slamdeathmetal,Q2265866,brutal death metal
+Q106493832,slap house,slaphouse,Q20021059,future house
+Q106493832,slap house,slaphouse,Q85748774,Brazilian bass
+Q1785028,sleaze rock,sleazerock,,
+Q7541571,Slovak folk music,slovakfolk,Q2381945,music of Slovakia
+Q7541571,Slovak folk music,slovakfolk,Q16679594,Slavic folk music
+Q3785733,Slovak hip hop,slovakhiphop,Q11401,hip hop music
+Q3785733,Slovak hip hop,slovakhiphop,Q2381945,music of Slovakia
+Q108321843,Slovenian folk music,slovenianfolk,Q3328766,music of Slovenia
+Q108321843,Slovenian folk music,slovenianfolk,Q16679594,Slavic folk music
+Q7541854,Slovenian hip hop,slovenianhiphop,Q11401,hip hop music
+Q7541854,Slovenian hip hop,slovenianhiphop,Q3328766,music of Slovenia
+Q3437876,Slovenian rock,slovenianrock,Q11399,rock music
+Q3437876,Slovenian rock,slovenianrock,Q3328766,music of Slovenia
+Q1490170,slowcore,slowcore,Q183504,indie rock
+Q720959,sludge metal,sludgemetal,Q10922,hardcore punk
+Q720959,sludge metal,sludgemetal,Q38848,heavy metal
+Q720959,sludge metal,sludgemetal,Q186170,doom metal
+Q720959,sludge metal,sludgemetal,Q852767,Southern rock
+Q831354,smooth jazz,smoothjazz,Q8341,jazz
+Q3963051,smooth soul,smoothsoul,Q37073,pop music
+Q3963051,smooth soul,smoothsoul,Q131272,soul music
+Q3963051,smooth soul,smoothsoul,Q164444,funk
+Q1051735,soca music,soca,Q3394906,music of the Caribbean
+Q217191,soft rock,softrock,Q484641,pop rock
+Q4428744,son cubano,soncubano,Q11639,dance
+Q4428744,son cubano,soncubano,Q1544863,music of Cuba
+Q4428744,son cubano,soncubano,Q3328778,tropical music
+Q1797650,son jarocho,sonjarocho,Q373342,popular music
+Q1797650,son jarocho,sonjarocho,Q3397325,music of Mexico
+Q1797650,son jarocho,sonjarocho,Q16942070,Mexican folk music
+Q6825988,son mexicano,mexicanson,Q7309098,regional Mexican
+Q7561194,Song poem,songpoem,,
+Q264289,sophisti-pop,sophistipop,Q37073,pop music
+Q1752683,soukous,soukous,Q11639,dance
+Q1752683,soukous,soukous,Q369820,music of Africa
+Q1752683,soukous,soukous,Q3453150,Congolese rumba
+Q2521569,soul blues,soulblues,,
+Q1615483,soul jazz,souljazz,Q8341,jazz
+Q1615483,soul jazz,souljazz,Q131272,soul music
+Q131272,soul music,soul,Q45981,rhythm and blues
+Q131272,soul music,soul,Q373342,popular music
+Q60729751,soulful house,soulfulhouse,Q20502,house music
+Q1744327,sound art,soundart,Q378604,new media art
+Q1744304,sound collage,soundcollage,Q170593,collage art
+Q1744304,sound collage,soundcollage,Q2188189,musical work
+Q1744304,sound collage,soundcollage,Q5969884,tape music
+Q7565881,South African jazz,southafricanjazz,Q8341,jazz
+Q7565881,South African jazz,southafricanjazz,Q4794612,music of South Africa
+Q2022163,Southern gospel,southerngospel,Q180268,gospel music
+Q1253172,Southern hip hop,southernhiphop,Q11401,hip hop music
+Q56353998,Southern metal,southernmetal,Q38848,heavy metal
+Q56353998,Southern metal,southernmetal,Q852767,Southern rock
+Q852767,Southern rock,southernrock,Q11399,rock music
+Q1567032,Southern soul,southernsoul,Q131272,soul music
+Q30895273,Sovietwave,sovietwave,Q19938910,synthwave
+Q1779294,Space age pop,spaceagepop,Q848399,easy listening
+Q16625659,space ambient,spaceambient,Q193207,ambient music
+Q16625659,space ambient,spaceambient,Q2342263,space music
+Q236913,space rock,spacerock,Q11399,rock music
+Q236913,space rock,spacerock,Q206159,psychedelic rock
+Q98528259,Spanish folk music,spanishfolk,Q964987,music of Spain
+Q98528259,Spanish folk music,spanishfolk,Q98528192,European folk music
+Q2258450,Spanish hip hop,spanishhiphop,Q11401,hip hop music
+Q2258450,Spanish hip hop,rapespanol,Q11401,hip hop music
+Q7573410,Spanish jazz,spanishjazz,Q8341,jazz
+Q7573410,Spanish jazz,spanishjazz,Q964987,music of Spain
+Q2385634,Spanish progressive rock,spanishprogressiverock,Q49451,progressive rock
+Q2385634,Spanish progressive rock,spanishprogressiverock,Q964987,music of Spain
+Q3437832,Spanish rock,spanishrock,Q11399,rock music
+Q3437832,Spanish rock,spanishrock,Q964987,music of Spain
+Q780517,speed garage,speedgarage,Q1165777,UK garage
+Q211723,speed metal,speedmetal,Q38848,heavy metal
+Q848457,Speedcore,speedcore,Q388906,hardcore techno
+Q98528204,spiritual jazz,spiritualjazz,Q790188,avant-garde jazz
+Q212024,spirituals,spirituals,Q388207,African-American music
+Q212024,spirituals,spirituals,Q1541229,American folk music
+Q7602145,starogradska muzika,starogradska,,
+Q106582953,steampunk music,steampunk,,
+Q108539884,stomp and flutter,stompandflutter,Q373342,popular music
+Q1772422,stoner metal,stonermetal,Q38848,heavy metal
+Q1772422,stoner metal,stonermetal,Q617240,stoner rock
+Q617240,stoner rock,stonerrock,Q83270,hard rock
+Q2353203,straight-ahead jazz,straightaheadjazz,,
+Q2832970,streektaal,streektaal,,
+Q383615,street punk,streetpunk,Q3071,punk rock
+Q181897,stride,stride,Q8341,jazz
+Q181897,stride,stride,Q185652,ragtime
+Q1519864,sung poetry,sungpoetry,Q482,poetry
+Q1519864,sung poetry,sungpoetry,Q89363113,singer-songwriter music
+Q2461933,sunshine pop,sunshinepop,Q37073,pop music
+Q2497323,suomisaundi,suomisaundi,Q622871,psychedelic trance
+Q220830,surf music,surfmusic,Q11399,rock music
+Q220830,surf music,surfmusic,Q37073,pop music
+Q107697441,surf punk,surfpunk,Q3071,punk rock
+Q107697441,surf punk,surfpunk,Q220830,surf music
+Q534606,swamp blues,swampblues,Q9759,blues
+Q106522115,swamp pop,swamppop,Q37073,pop music
+Q106522115,swamp pop,swamppop,Q1026089,Cajun music
+Q675553,swamp rock,swamprock,Q1929352,roots rock
+Q675553,swamp rock,swamprock,Q106522115,swamp pop
+Q94119778,Swedish classical music,swedishclassical,Q9730,Western classical music
+Q94119778,Swedish classical music,swedishclassical,Q846784,music of Sweden
+Q2682013,Swedish death metal,swedishdeathmetal,Q483251,death metal
+Q204067,Swedish hip hop,swedishhiphop,Q11401,hip hop music
+Q204067,Swedish hip hop,swedishhiphop,Q846784,music of Sweden
+Q7655004,Swedish jazz,swedishjazz,Q8341,jazz
+Q7655004,Swedish jazz,swedishjazz,Q846784,music of Sweden
+Q7260406,Swedish punk,swedishpunk,Q3071,punk rock
+Q7260406,Swedish punk,swedishpunk,Q846784,music of Sweden
+Q70985836,Swedish soul,swedishsoul,Q131272,soul music
+Q203775,swing music,swing,Q8341,jazz
+Q447962,Swing revival,swingrevival,,
+Q1337973,Swiss hip hop,swisshiphop,Q11401,hip hop music
+Q1337973,Swiss hip hop,swisshiphop,Q2082510,music of Switzerland
+Q1337973,Swiss hip hop,schweizerrap,Q11401,hip hop music
+Q1337973,Swiss hip hop,schweizerrap,Q2082510,music of Switzerland
+Q3437879,Swiss rock,swissrock,Q11399,rock music
+Q3437879,Swiss rock,swissrock,Q2082510,music of Switzerland
+Q1621467,symphonic black metal,symphonicblackmetal,Q132438,black metal
+Q1621467,symphonic black metal,symphonicblackmetal,Q486415,symphonic metal
+Q486415,symphonic metal,symphonicmetal,Q38848,heavy metal
+Q486415,symphonic metal,symphonicmetal,Q719927,symphonic rock
+Q31930766,symphonic power metal,symphonicpowermetal,Q57143,power metal
+Q31930766,symphonic power metal,symphonicpowermetal,Q486415,symphonic metal
+Q719927,symphonic rock,symphonicrock,Q11399,rock music
+Q30632022,synth-funk,synthfunk,Q164444,funk
+Q1298934,synth-pop,synthpop,Q9778,electronic music
+Q1298934,synth-pop,synthpop,Q37073,pop music
+Q1298934,synth-pop,synthpop,Q187760,new wave
+Q476983,synth-punk,synthpunk,Q3071,punk rock
+Q476983,synth-punk,synthpunk,Q9778,electronic music
+Q19938910,synthwave,synthwave,Q9778,electronic music
+Q1564596,Taarab,taarab,,
+Q7676613,Taiwanese hip hop,taiwanhiphop,Q11401,hip hop music
+Q278409,Taiwanese pop,hokkienpop,Q37073,pop music
+Q278409,Taiwanese pop,hokkienpop,Q956925,music of Taiwan
+Q278409,Taiwanese pop,taiwanesepop,Q37073,pop music
+Q278409,Taiwanese pop,taiwanpop,Q37073,pop music
+Q278409,Taiwanese pop,taiwanesepop,Q956925,music of Taiwan
+Q278409,Taiwanese pop,taiwanpop,Q956925,music of Taiwan
+Q7676623,Taiwanese rock,taiwanrock,Q11399,rock music
+Q7676623,Taiwanese rock,taiwanrock,Q956925,music of Taiwan
+Q107192370,Tajik traditional music,tajiktraditional,Q3328772,music of Tajikistan
+Q107192370,Tajik traditional music,tajiktraditional,Q98528260,Islamic modal music
+Q17153632,Tallava,tallava,,
+Q105099967,Tambora music,tamborazo,,
+Q10295992,tanci,tanci,,
+Q16637763,tango canción,tangocancion,,
+Q14390274,tango music,tango,Q316930,dance music
+Q14390274,tango music,tango,Q727781,music of Latin America
+Q14390274,tango music,tango,Q18345375,Latin music
+Q324617,tarantella,tarantella,Q201022,folk dance
+Q324617,tarantella,tarantella,Q6093177,Italian folk dance
+Q4452477,Tatar folk music,tatarfolk,Q6941941,music of Tatarstan
+Q4452477,Tatar folk music,tatarfolk,Q98528287,Turkic-Mongolic traditional music
+Q4452477,Tatar folk music,tatarfolk,Q106626655,Tatar music
+Q48941193,Tatar pop music,tatarpop,Q37073,pop music
+Q48941193,Tatar pop music,tatarpop,Q6941941,music of Tatarstan
+Q48941193,Tatar pop music,tatarpop,Q106626655,Tatar music
+Q598593,tech house,techhouse,Q20502,house music
+Q2302695,tech trance,techtrance,,
+Q1076092,technical death metal,technicaldeathmetal,Q483251,death metal
+Q170611,techno,techno,Q851213,electronic dance music
+Q11319232,techno kayō,technokayo,Q1298934,synth-pop
+Q11319232,techno kayō,technokayo,Q1418683,kayōkyoku
+Q10932272,technobanda,tecnobanda,Q170611,techno
+Q10932272,technobanda,tecnobanda,Q1815419,Banda band
+Q10932272,technobanda,tecnobanda,Q2812726,Banda music
+Q1634085,tecno brega,tecnobrega,Q851213,electronic dance music
+Q1634085,tecno brega,tecnobrega,Q2464314,brega
+Q739138,teen pop,teenpop,Q37073,pop music
+Q431415,tejano music,tejano,Q7309098,regional Mexican
+Q1265050,Terrorcore,terrorcore,,
+Q107197766,Tex-Mex,texmex,Q1929352,roots rock
+Q1271752,Texas blues,texasblues,Q9759,blues
+Q14493900,Texas country music,texascountry,Q83440,country music
+Q106928658,Thai folk music,thaifolk,Q867306,music of Thailand
+Q106928658,Thai folk music,thaifolk,Q106586999,Southeast Asian folk music
+Q6654795,Thai hip hop,thaihiphop,Q11401,hip hop music
+Q6654795,Thai hip hop,thaihiphop,Q867306,music of Thailand
+Q85806181,Thai idol,thaiidol,Q3328764,Thai pop music
+Q3328764,Thai pop music,thaipop,Q37073,pop music
+Q3328764,Thai pop music,thaipop,Q867306,music of Thailand
+Q3304143,Thai rock,thairock,Q11399,rock music
+Q3304143,Thai rock,thairock,Q867306,music of Thailand
+Q108676555,therapy music,therapy,Q26897135,functional music
+Q483352,thrash metal,thrashmetal,Q38848,heavy metal
+Q1067089,throat singing,throatsinging,Q691771,overtone singing
+Q1067089,throat singing,throatsinging,Q98528287,Turkic-Mongolic traditional music
+Q371745,timba,timba,,
+Q1121111,Tin Pan Alley,tinpanalley,Q186286,vaudeville
+Q1121111,Tin Pan Alley,tinpanalley,Q373342,popular music
+Q1136047,torch song,torchsong,Q380233,love song
+Q7832321,traditional bluegrass,traditionalbluegrass,Q213714,bluegrass music
+Q65943778,traditional country,traditionalcountry,Q83440,country music
+Q65943778,traditional country,traditionalcountry,Q1541229,American folk music
+Q235858,traditional folk music,traditionalfolk,Q43343,folk music
+Q235858,traditional folk music,traditionalfolk,Q108612075,traditional music
+Q7832297,traditional Japanese music,japanesetraditional,Q257533,music of Japan
+Q7832297,traditional Japanese music,japanesetraditional,Q106586219,Japanese folk music
+Q1432540,Trallalero,trallalero,Q1048249,Italian folk music
+Q1432540,Trallalero,trallalero,Q106593854,polyphonic singing
+Q170435,trance,trance,Q851213,electronic dance music
+Q922865,trancecore,trancecore,Q388906,hardcore techno
+Q47781397,trap (EDM),electronictrap,Q851213,electronic dance music
+Q47781397,trap (EDM),electronictrap,Q96740854,bass music
+Q2913982,trap music,trap,Q11401,hip hop music
+Q7844612,tribal guarachero,trival,Q851213,electronic dance music
+Q7844612,tribal guarachero,trival,Q98528166,Latin electronic
+Q202925,tribal house,tribalhouse,Q20502,house music
+Q205560,trip hop,triphop,Q251192,downtempo
+Q205560,trip hop,triphop,Q851213,electronic dance music
+Q18342587,tropical house,tropicalhouse,Q20502,house music
+Q1413061,tropicália,tropicalia,Q1046768,música popular brasileira
+Q485915,trot,trot,Q716060,music of Korea
+Q2420447,trova,trova,Q1544863,music of Cuba
+Q7847156,truck-driving country,truckdrivingcountry,Q83440,country music
+Q98530850,Tuareg music,musiquetouareg,Q3328601,Berber music
+Q6153818,Tunantada,tunantada,,
+Q786815,turbo-folk,turbofolk,,
+Q107540971,Turkish alternative music,turkishalternative,Q1074080,music of Turkey
+Q107540971,Turkish alternative music,turkishalternative,Q1695023,alternative
+Q1810546,Turkish folk music,turkishfolk,Q1074080,music of Turkey
+Q1810546,Turkish folk music,turkishfolk,Q106635221,West Asian folk music
+Q2464833,Turkish hip hop,turkishhiphop,Q11401,hip hop music
+Q2464833,Turkish hip hop,turkishhiphop,Q1074080,music of Turkey
+Q7855391,Turkish pop music,turkishpop,Q37073,pop music
+Q7855391,Turkish pop music,turkishpop,Q1074080,music of Turkey
+Q98091634,Turkish rock,turkishrock,Q11399,rock music
+Q98091634,Turkish rock,turkishrock,Q1074080,music of Turkey
+Q1046801,turntablism,turntablism,Q11401,hip hop music
+Q1046801,turntablism,turntablism,Q1640319,experimental music
+Q370778,twee pop,tweepop,Q37073,pop music
+Q370778,twee pop,tweepop,Q842324,indie pop
+Q2406900,Twoubadou,twoubadou,,
+Q1750088,UK 82,uk82,Q10922,hardcore punk
+Q65943851,UK drill,ukdrill,Q11401,hip hop music
+Q9364028,UK funky,ukfunky,Q1165777,UK garage
+Q1165777,UK garage,ukgarage,Q851213,electronic dance music
+Q66364245,Ukrainian folk music,ukrainianfolk,Q155858,music of Ukraine
+Q66364245,Ukrainian folk music,ukrainianfolk,Q16679594,Slavic folk music
+Q7878542,Ukrainian hip hop,ukrainianhiphop,Q11401,hip hop music
+Q7878542,Ukrainian hip hop,ukrainianhiphop,Q155858,music of Ukraine
+Q19901725,Ukrainian metal,ukrainianmetal,Q38848,heavy metal
+Q19901725,Ukrainian metal,ukrainianmetal,Q155858,music of Ukraine
+Q16152327,Ukrainian pop music,ukrainianpop,Q37073,pop music
+Q16152327,Ukrainian pop music,ukrainianpop,Q155858,music of Ukraine
+Q2370159,Ukrainian rock,ukrainianrock,,
+Q2398226,Umeå hardcore,umeahardcore,Q10922,hardcore punk
+Q970409,unblack metal,unblackmetal,Q132438,black metal
+Q970409,unblack metal,unblackmetal,Q822914,Christian metal
+Q965635,underground hip hop,undergroundhiphop,Q6010,rap
+Q965635,underground hip hop,undergroundrap,Q6010,rap
+Q965635,underground hip hop,undergroundhiphop,Q11401,hip hop music
+Q965635,underground hip hop,undergroundrap,Q11401,hip hop music
+Q965635,underground hip hop,undergroundhiphop,Q42201,independent music
+Q965635,underground hip hop,undergroundrap,Q42201,independent music
+Q965635,underground hip hop,undergroundhiphop,Q1373485,underground music
+Q965635,underground hip hop,undergroundrap,Q1373485,underground music
+Q1136765,uplifting trance,upliftingtrance,Q170435,trance
+Q106594174,uptempo hardcore,uptempohardcore,Q388906,hardcore techno
+Q2529400,urban contemporary,urbancontemporary,,
+Q5967604,urban contemporary gospel,contemporarygospel,Q180268,gospel music
+Q5967604,urban contemporary gospel,contemporarygospel,Q106085531,Black gospel music
+Q7901509,Uruguayan rock,rockuruguayo,Q11399,rock music
+Q7901509,Uruguayan rock,rockuruguayo,Q23965,music of Uruguay
+Q108665742,US power metal,uspowermetal,Q38848,heavy metal
+Q108665742,US power metal,uspowermetal,Q2267955,music of the United States
+Q107539696,Uzbek pop music,uzbekpop,Q37073,pop music
+Q107539696,Uzbek pop music,uzbekpop,Q3328738,music of Uzbekistan
+Q107192506,Uzbek traditional music,uzbektraditional,Q3328738,music of Uzbekistan
+Q107192506,Uzbek traditional music,uzbektraditional,Q98528260,Islamic modal music
+Q5398894,V-pop,vpop,,
+Q5398894,V-pop,vietnamesepop,,
+Q1574985,vallenato,vallenato,Q920883,music of Colombia
+Q1574985,vallenato,vallenato,Q3328778,tropical music
+Q1574985,vallenato,vallenato,Q98528197,Hispanic American folk music
+Q80724932,vaportrap,vaportrap,Q15733887,vaporwave
+Q15733887,vaporwave,vaporwave,Q9778,electronic music
+Q17118203,vaudeville,vaudeville,Q7366,song
+Q17118203,vaudeville,vaudeville,Q128758,satire
+Q7919872,Venezuelan rock,venezuelanrock,Q11399,rock music
+Q7919872,Venezuelan rock,venezuelanrock,Q2486179,music of Venezuela
+Q1062702,video game music,videogamemusic,Q9778,electronic music
+Q1062702,video game music,videogamemusic,Q107021951,score
+Q61127902,Vietnamese bolero,vietnamesebolero,,
+Q3437891,Vietnamese rock,rockviet,Q11399,rock music
+Q213149,Viking metal,vikingmetal,Q132438,black metal
+Q213149,Viking metal,vikingmetal,Q484179,folk metal
+Q1232283,villancico,villancicos,Q5185279,poem
+Q3482281,vise,visor,Q7366,song
+Q3482281,vise,visor,Q7654953,Swedish folk music
+Q963369,vispop,vispop,,
+Q131425,visual kei,visualkei,Q11399,rock music
+Q173844,vocal house,vocalhouse,Q20502,house music
+Q1530455,vocal jazz,vocaljazz,Q8341,jazz
+Q1530455,vocal jazz,vocaljazz,Q685884,vocal music
+Q1027999,vocal trance,vocaltrance,Q170435,trance
+Q2532274,Volkstümliche Musik,volkstumlichemusik,Q373342,popular music
+Q2532274,Volkstümliche Musik,volkstumlichemusik,Q62906332,entertainment music
+Q13586773,war metal,warmetal,Q38848,heavy metal
+Q13586773,war metal,warmetal,Q132438,black metal
+Q13586773,war metal,warmetal,Q465978,extreme metal
+Q13586773,war metal,warmetal,Q483251,death metal
+Q7972788,Wassoulou music,wassoulou,Q6942329,music of West Africa
+Q106369996,wave,wave,Q9778,electronic music
+Q106369996,wave,wave,Q96740854,bass music
+Q106654239,weightless,weightless,Q1166726,grime
+Q48297861,Welsh folk music,welshfolk,Q6942327,music of Wales
+Q48297861,Welsh folk music,welshfolk,Q98528277,Celtic folk music
+Q106635221,West Asian folk music,middleeasterntraditional,Q1503406,music of the Middle East
+Q106635221,West Asian folk music,middleeasterntraditional,Q106635234,Asian folk music
+Q429264,West Coast hip hop,westcoastrap,Q11401,hip hop music
+Q9730,Western classical music,classical,Q1583807,art music
+Q1425111,Western music (country),cowboywestern,Q65943778,traditional country
+Q1730388,Western swing,westernswing,Q83440,country music
+Q28856774,wind music,windensemble,Q286080,acoustic music
+Q1840167,witch house,witchhouse,Q9778,electronic music
+Q3296134,wizard rock,wrock,Q388591,Harry Potter fandom
+Q3296134,wizard rock,wrock,Q2324411,geek rock
+Q8031215,women's music,womensmusic,,
+Q1136045,wonky,wonky,Q851213,electronic dance music
+Q4020968,World fusion music,worldfusion,,
+Q205049,world music,world,Q638,music
+Q8044676,Xinyao,xinyao,,
+Q28401124,yacht rock,yachtrock,,
+Q1636684,yé-yé,yeye,Q37073,pop music
+Q106654149,yiddish folksong,yiddishfolk,Q98528192,European folk music
+Q106654149,yiddish folksong,yiddishfolk,Q108297179,Ashkenazi music
+Q41923,yodeling,yodeling,Q685884,vocal music
+Q3106448,zamba,zamba,Q11639,dance
+Q3106448,zamba,zamba,Q98528197,Hispanic American folk music
+Q196999,Zeuhl,zeuhl,Q3630966,avant-prog
+Q10874829,Zhongguo feng,chinesewind,,
+Q10874829,Zhongguo feng,zhongguofeng,,
+Q8072085,Zimbabwean hip hop,zimhiphop,Q11401,hip hop music
+Q8072085,Zimbabwean hip hop,zimhiphop,Q3868605,music of Zimbabwe
+Q17108017,Zimdancehall,zimdancehall,,
+Q106654134,zolo,zolo,Q11399,rock music
+Q227036,zouglou,zouglou,,
+Q227045,zouk,zouk,Q107025062,French Caribbean music
+Q245296,Zydeco,zydeco,Q1026089,Cajun music
