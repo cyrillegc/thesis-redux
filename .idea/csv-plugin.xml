@@ -3,35 +3,7 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="\crawl\spotify\backup_09222021_0858\temp_data_artists_matched.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\crawl\spotify\backup_09222021_1621\temp_data_artists_matched.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\crawl\spotify\backup_09222021_2105\temp_data_artists_matched.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\crawl\spotify\no_match.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\crawl\spotify\temp_data_artists_matched.csv">
+        <entry key="\crawl\spotify_artists\temp_data_spotify_artists.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -80,7 +52,7 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\data\data_artists.csv">
+        <entry key="\crawl\spotify_tracks\backup_27092021_1942\temp_data_spotify_tracks.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -94,7 +66,49 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\data\data_venues.csv">
+        <entry key="\data\data_discogs_styles.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\data_songkick_artists.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\data_songkick_venues.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\data_spotify_artists.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\data_spotify_genres.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\data_spotify_no_match.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\data_spotify_tracks.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
