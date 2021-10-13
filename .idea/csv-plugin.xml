@@ -38,13 +38,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\crawl\spotify_matching\no_match.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\crawl\spotify_matching\temp_data_artists_matched.csv">
           <value>
             <Attribute>
@@ -73,6 +66,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\data\data_singled_songkick_concerts_artists.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\data\data_songkick_artists.csv">
           <value>
             <Attribute>
@@ -95,13 +95,6 @@
           </value>
         </entry>
         <entry key="\data\data_spotify_genres.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\data\data_spotify_no_match.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
