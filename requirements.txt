@@ -1,0 +1,7 @@
+beautifulsoup4~=4.10.0
+lazypredict
+numpy~=1.19.1
+pandas~=1.0.5
+plotly~=5.3.1
+streamlit~=1.0.0
+requests~=2.26.0
