@@ -52,6 +52,11 @@ with col1:
         format_func=lambda x: artists_df.loc[x, 'artist_name'],
     )
 
+    artist_genre_selection = st.radio(
+        'Display by artists or genres',
+        options=['Genres', 'Artists'],
+    )
+
 with col2:
     end_date = st.date_input(
         'End date range',
@@ -67,26 +72,43 @@ with col2:
         #format_func=lambda x: venues_df.loc[x, 'locality'],
     )
 
-type_selection = st.radio(
-    'Display venues by artists or genres',
-    options=['Genres', 'Artists'],
-)
+    concert_venue_selection = st.radio(
+        'Display venues or concerts',
+        options=['Venues', 'Concerts'],
+    )
+
 
 date_filter = concerts_df[(concerts_df['startDate'] > str(start_date)) & (concerts_df['startDate'] < str(end_date))].index
 filtered_by_date_df = venues_top_genres_df.loc[venues_top_genres_df['concert_id'].isin(date_filter)]
 
-if type_selection == 'Artists':
+if artist_genre_selection == 'Artists':
+    data_selection = artist_selection
+    column_name = 'artist_id'
+else:
+    data_selection = genres_selection
+    column_name = 'top_genre'
+
+if concert_venue_selection == 'Venues':
     results_df = venues_df.loc[
         filtered_by_date_df.loc[
-            filtered_by_date_df['artist_id'].isin(artist_selection)
+            filtered_by_date_df[column_name].isin(data_selection)
         ]['venue_id'].unique()
     ]
+    marker_size = None
 else:
     results_df = venues_df.loc[
-        filtered_by_date_df.loc[
-            filtered_by_date_df['top_genre'].isin(genres_selection)
-        ]['venue_id'].unique()
+        concerts_df.loc[
+            filtered_by_date_df.loc[
+                filtered_by_date_df[column_name].isin(data_selection)
+            ]['concert_id'].unique()
+        ]['venue_id']
     ]
+
+    results_df['venue_ratio'] = 0
+    venue_count = results_df.groupby('venue')['venue_ratio'].transform("count")
+    sum_venue_count = venue_count.sum()
+    results_df['venue_ratio'] = venue_count / sum_venue_count
+    marker_size = results_df['venue_ratio']
 
 fig_scatter = px.scatter_mapbox(
     results_df,
@@ -94,10 +116,15 @@ fig_scatter = px.scatter_mapbox(
     hover_name='venue', hover_data=hover_data,
     color_discrete_sequence=['red'],
     opacity=1,
+    zoom=6,
+    center={'lat': 46.801111, 'lon': 8.226667},
+    size=marker_size,
+    color=None,
+    size_max=15,
 )
 
 fig_scatter.update_layout(
-    mapbox_style='streets',
+    mapbox_style='basic',
     mapbox_accesstoken=mapbox_token,
     hoverlabel={
         'bgcolor': 'white',
@@ -106,14 +133,16 @@ fig_scatter.update_layout(
 )
 
 fig_density = px.density_mapbox(
-    venues_df,
+    results_df,
     lat='latitude', lon='longitude',
     hover_name='venue',
-    radius=10,
+    radius=5,
+    zoom=6,
+    center={'lat': 46.801111, 'lon': 8.226667}
 )
 
 fig_density.update_layout(
-    mapbox_style='streets',
+    mapbox_style='basic',
     mapbox_accesstoken=mapbox_token,
     hoverlabel={
         'bgcolor': 'white',
@@ -122,14 +151,4 @@ fig_density.update_layout(
 )
 
 st.plotly_chart(fig_scatter)
-
-st.write('Show info about artist')
-st.write(artists_df.loc[artist_selection])
-st.write('Show concerts by artist')
-st.write(
-    concerts_df.loc[
-        venues_top_genres_df.loc[
-            venues_top_genres_df['artist_id'].isin(artist_selection)
-        ]['concert_id'].unique()
-    ].sort_values(by=['startDate'])
-)
+st.plotly_chart(fig_density)

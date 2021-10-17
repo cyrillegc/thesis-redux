@@ -8,3 +8,13 @@ carte suisse avec concerts qu'on peut filtrer par genre, features, artistes
 voir justpy
 johannes
 https://www.epfl.ch/schools/cdh/fr/recherche/cross/appel-a-contribution-cross-2020/
+
+
+move venv to project folder
+classification with lazypredict
+audiofeatures + listeners + followers + genres to predict popularity
+si mauvais résultat, standardiser les données (sklearn standardScaler)
+prédire la popularité
+lien (corrélation) entre popularité (prédite) et la géolocalisation?
+lien entre features et géolocalisation: quel type de relation les features entretiennent avec la géolocalisation?
+lien entre audio features et features spatiales (salles, lieu, taille salle, etc...)
