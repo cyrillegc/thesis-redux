@@ -25,10 +25,13 @@ def open_data():
     with open('data/data_singled_venues_top_genres.csv', encoding='utf-8') as file_concat:
         venues_top_genres_df = pd.read_csv(file_concat, index_col=0)
 
-    return venues_df, artists_df, concerts_df, venues_top_genres_df
+    with open('data/data_stats_venues_genres.csv', encoding='utf-8') as file_stats:
+        stats_df = pd.read_csv(file_stats, index_col=0)
+
+    return venues_df, artists_df, concerts_df, venues_top_genres_df, stats_df
 
 
-venues_df, artists_df, concerts_df, venues_top_genres_df = open_data()
+venues_df, artists_df, concerts_df, venues_top_genres_df, stats_df = open_data()
 
 hover_data = {'latitude': False, 'longitude': False}
 
@@ -45,15 +48,8 @@ with col1:
         max_value=max_date,
     )
 
-    artist_selection = st.multiselect(
-        'Select artist',
-        options=artists_df.index,
-        default=artists_df.iloc[0].name,
-        format_func=lambda x: artists_df.loc[x, 'artist_name'],
-    )
-
     artist_genre_selection = st.radio(
-        'Display by artists or genres',
+        'Show artists or genres',
         options=['Genres', 'Artists'],
     )
 
@@ -65,18 +61,25 @@ with col2:
         max_value=max_date,
     )
 
-    genres_selection = st.multiselect(
-        'Select genres',
-        options=sorted(venues_top_genres_df['top_genre'].unique()),
-        default=sorted(venues_top_genres_df['top_genre'].unique())[0]
-        #format_func=lambda x: venues_df.loc[x, 'locality'],
-    )
-
     concert_venue_selection = st.radio(
         'Display venues or concerts',
         options=['Venues', 'Concerts'],
     )
 
+if artist_genre_selection == 'Artists':
+    artist_selection = st.multiselect(
+        'Select artist',
+        options=artists_df.index,
+        default=artists_df.iloc[0].name,
+        format_func=lambda x: artists_df.loc[x, 'artist_name'],
+    )
+else:
+    genres_selection = st.multiselect(
+        'Select genres',
+        options=sorted(venues_top_genres_df['top_genre'].unique()),
+        default=sorted(venues_top_genres_df['top_genre'].unique())[0]
+        # format_func=lambda x: venues_df.loc[x, 'locality'],
+    )
 
 date_filter = concerts_df[(concerts_df['startDate'] > str(start_date)) & (concerts_df['startDate'] < str(end_date))].index
 filtered_by_date_df = venues_top_genres_df.loc[venues_top_genres_df['concert_id'].isin(date_filter)]
@@ -110,45 +113,47 @@ else:
     results_df['venue_ratio'] = venue_count / sum_venue_count
     marker_size = results_df['venue_ratio']
 
-fig_scatter = px.scatter_mapbox(
-    results_df,
-    lat='latitude', lon='longitude',
-    hover_name='venue', hover_data=hover_data,
-    color_discrete_sequence=['red'],
-    opacity=1,
-    zoom=6,
-    center={'lat': 46.801111, 'lon': 8.226667},
-    size=marker_size,
-    color=None,
-    size_max=15,
+if not results_df.empty:
+    fig_scatter = px.scatter_mapbox(
+        results_df,
+        lat='latitude', lon='longitude',
+        hover_name='venue', hover_data=hover_data,
+        color_discrete_sequence=['red'],
+        opacity=1,
+        zoom=6,
+        center={'lat': 46.801111, 'lon': 8.226667},
+        size=marker_size,
+        color=None,
+        size_max=15,
+    )
+
+    fig_scatter.update_layout(
+        mapbox_style='basic',
+        mapbox_accesstoken=mapbox_token,
+        hoverlabel={
+            'bgcolor': 'white',
+            'font_size': 12,
+        }
+    )
+
+    st.plotly_chart(fig_scatter)
+
+venue_selection = st.selectbox(
+    'Show genres stats about a venue',
+    options=stats_df.index,
+    format_func=lambda x: venues_df.loc[x, 'venue']
 )
 
-fig_scatter.update_layout(
-    mapbox_style='basic',
-    mapbox_accesstoken=mapbox_token,
-    hoverlabel={
-        'bgcolor': 'white',
-        'font_size': 12,
-    }
+sort_bar_chart = st.checkbox(
+    'Sort bar chart'
 )
 
-fig_density = px.density_mapbox(
-    results_df,
-    lat='latitude', lon='longitude',
-    hover_name='venue',
-    radius=5,
-    zoom=6,
-    center={'lat': 46.801111, 'lon': 8.226667}
-)
+if venue_selection:
+    venue_stats = stats_df.loc[venue_selection].drop('nbr_concerts')
+    if sort_bar_chart:
+        venue_stats = venue_stats.sort_values(ascending=False)
 
-fig_density.update_layout(
-    mapbox_style='basic',
-    mapbox_accesstoken=mapbox_token,
-    hoverlabel={
-        'bgcolor': 'white',
-        'font_size': 12,
-    }
-)
-
-st.plotly_chart(fig_scatter)
-st.plotly_chart(fig_density)
+    fig_histo = px.bar(
+        venue_stats
+    )
+    st.plotly_chart(fig_histo)
