@@ -4,5 +4,8 @@ lazypredict
 numpy~=1.19.1
 pandas~=1.0.5
 plotly~=5.3.1
-streamlit~=1.0.0
+pyvis
 requests~=2.26.0
+spotipy
+streamlit~=1.0.0
+scikit-learn~=0.23.1
