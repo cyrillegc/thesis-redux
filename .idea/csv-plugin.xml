@@ -52,6 +52,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\data\data_full.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\data\data_singled_songkick_concerts_artists.csv">
           <value>
             <Attribute>
@@ -59,7 +66,7 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\data\data_songkick_artists.csv">
+        <entry key="\data\data_singled_spotify_artists_genres.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -67,6 +74,27 @@
           </value>
         </entry>
         <entry key="\data\songkick\data_songkick_artists.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\songkick\data_songkick_concerts_artists.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\songkick\data_songkick_concerts_light.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\songkick\data_songkick_venues.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -87,7 +115,63 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\data\spotify\data_spotify_artists_matched.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\spotify\data_spotify_artists_matched_v2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\spotify\data_spotify_artists_multiple_matches_manual.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\data\spotify\data_spotify_artists_no_match.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\spotify\data_spotify_artists_no_match_v2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\spotify\data_spotify_genres.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\spotify\data_spotify_genres_no_match_manual.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\spotify\data_spotify_top_genres.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\spotify\data_spotify_top_genres_v3.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -123,6 +207,34 @@
           </value>
         </entry>
         <entry key="\data\wikidata\data_wikidata_top_genres.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\wikidata\data_wikidata_top_genres_list.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\wikidata\data_wikidata_top_genres_list_manual.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\wikidata\data_wikidata_unique_top_genres.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\wikidata\data_wikidata_unique_top_genres_manual.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
