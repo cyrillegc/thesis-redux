@@ -19,3 +19,12 @@ lien (corrélation) entre popularité (prédite) et la géolocalisation?
 lien entre features et géolocalisation: quel type de relation les features entretiennent avec la géolocalisation?
 lien entre audio features et features spatiales (salles, lieu, taille salle, etc...)
 
+contexte
+problématique abordée
+hypothèse
+données
+méthodologie
+résultats
+discussion sur les hypothèses
+conclusion
+OVERLEAF
