@@ -3,6 +3,27 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="\crawl\songkick\backup_09172021_1606\temp_data_venues.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\crawl\songkick\backup_09172021_1607\temp_data_venues.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\crawl\songkick\temp_data_venues.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\crawl\spotify_artists\temp_data_spotify_artists.csv">
           <value>
             <Attribute>
@@ -66,6 +87,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\data\data_singled_songkick_venues_concerts_artists.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\data\data_singled_spotify_artists_genres.csv">
           <value>
             <Attribute>
@@ -95,6 +123,20 @@
           </value>
         </entry>
         <entry key="\data\songkick\data_songkick_venues.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\songkick\data_songkick_venues_concerts_artists.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\songkick\data_songkick_venues_duplicates.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
