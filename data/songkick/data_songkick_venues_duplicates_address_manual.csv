@@ -1,0 +1,464 @@
+,venue,locality,postal_code,street,country,latitude,longitude,venue_website,manual_input
+/venues/4419137,Jeunes Rives Neuchâtel,Neuchatel,2000,.,Switzerland,46.9996,6.93441,,
+/venues/1760963,Tankstell Bar,St. Gallen,,.,Switzerland,47.41793,9.3644,,
+/venues/2111169,Brasseur des Grottes,Geneva,1201,2 Rue de la Servette,Switzerland,46.20978,6.13897,,
+/venues/4233339,Uptown Geneva,Geneva,1201,2 Rue de la Servette,Switzerland,46.20951,6.13942,,
+/venues/2940063,Dig It Records,Geneva,,3 rue de la Servette,Switzerland,46.20893,6.13957,,X
+/venues/4368116,Dit It Records,Geneva,,3 rue de la Servette,Switzerland,46.20893,6.13951,,/venues/2940063
+/venues/2815348,Cafe-bar Mokka,Bern,3600,Allmendstrasse 14,Switzerland,46.75984,7.62388,,/venues/275196
+/venues/196798,Mokka,Bern,3600,Allmendstrasse 14,Switzerland,46.75977,7.62386,,/venues/275196
+/venues/3358784,Casino De Montbenon - Salle Paderewski,Lausanne,1003,Allée Ernest-Ansermet 3,Switzerland,46.52038,6.62502,,/venues/1111161
+/venues/4410546,Chap'Tell Stage,Lausanne,1003,Allée Ernest-Ansermet 3,Switzerland,46.52046,6.62486,,/venues/1111161
+/venues/1579063,Das Zelt,Luzern,6005,Alpenquai,Switzerland,47.04516,8.31994,,
+/venues/4406885,Quai Pasa Buvette,Zug,6300,Alpenquai,Switzerland,47.17137,8.5109,https://www.quai-pasa.ch/,
+/venues/3140579,Schinzenhof,Zürich,8810,Alte Landstrasse 24,Switzerland,47.26012,8.59701,,X
+/venues/4233229,Schinzenhofsaal,Zürich,8810,Alte Landstrasse 24,Switzerland,47.26034,8.59703,,/venues/3140579
+/venues/896376,Chäslager,Stans,6370,Alter Postplatz 3,Switzerland,46.95784,8.36548,,X
+/venues/4210229,lit.z Literaturhaus Zentralschweiz,Stans,6370,Alter Postplatz 3,Switzerland,46.95788,8.36525,,/venues/896376
+/venues/2830313,Eighty Four (club Lounge Bar),Winterthur,8400,Archstrasse 8,Switzerland,47.49809,8.72357,,/venues/2379459
+/venues/2379459,Eighty Four 84,Winterthur,8400,Archstrasse 8,Switzerland,47.50078,8.72274,http://www.eighty-four.ch/,X
+/venues/3156039,Club 77,Basel,4052,Auf dem Wolf 4,Switzerland,47.54027,7.61385,,
+/venues/2107719,Club Masquerade,Basel,4052,Auf dem Wolf 4,Switzerland,47.54018,7.61372,,
+/venues/4210544,Blickfelder Festival,Zürich,8005,Ausstellungsstrasse,Switzerland,47.38291,8.53536,http://www.blickfelder.ch/index.php?id=3073,
+/venues/1260236,Jazz Party,Zürich,8400,Ausstellungsstrasse,Switzerland,47.38245,8.53603,,
+/venues/4325139,Jubiläum 70 Jahre FC Glattbrugg,Zürich,8152,Austrasse,Switzerland,47.42047,8.57046,http://www.fcglattbrugg.ch,
+/venues/3343569,Markthalle Toggenburg,Zürich,9630,Austrasse,Switzerland,47.29455,9.0898,,
+/venues/2732483,"Aula Magna Der Universität Freiburg, Misericorde",Fribourg,1700,Avenue de l'Europe 20,Switzerland,46.80621,7.15175,,/venues/4359405
+/venues/4359405,"Aula Magna, Université De Fribourg",Fribourg,1700,Avenue de l'Europe 20,Switzerland,46.80628,7.15193,,X
+/venues/2796193,Societe Hall,Moutier,2740,Avenue de la Liberte 9,Switzerland,47.27901,7.37374,,X
+/venues/4352811,Sociét Hall,Moutier,2740,Avenue de la Liberte 9,Switzerland,47.27898,7.3731,,/venues/2796193
+/venues/2934523,Casino Frauenfeld,Winterthur,8500,Bahnhofplatz 1,Switzerland,47.55674,8.89512,,
+/venues/4258939,Nf49 Am Seetalplatz,Luzern,6020,Bahnhofplatz 1,Switzerland,47.07718,8.26741,,
+/venues/2416804,Vinotake,Bern,3775,Bahnhofplatz 1,Switzerland,46.45761,7.44383,http://www.vinotake.ch/,
+/venues/4343654,WERFT,Luzern,6020,Bahnhofplatz 1,Switzerland,47.05026,8.31031,http://www.musikwerft.ch,
+/venues/3211233,Hotel Schweizerhof,Bern,3001,Bahnhofplatz 11,Switzerland,46.94884,7.44093,,
+/venues/1671073,Odeon,Zürich,,Bahnhofplatz 11,Switzerland,47.48148,8.20866,,
+/venues/2148719,Bahnhofbuffet,Dudingen,3186,Bahnhofplatz 2,Switzerland,46.85099,7.19058,,
+/venues/2985573,Berner GenerationenHaus,Bern,3001 Bern,Bahnhofplatz 2,Switzerland,46.94802,7.43962,,
+/venues/4069624,Bahnhof Wil,Wil,9500,Bahnhofplatz 3,Switzerland,47.46246,9.04117,,
+/venues/2840198,St. Agatha Kirche,Dietikon,8953,Bahnhofplatz 3,Switzerland,47.40525,8.40438,,
+/venues/3688554,Jack&Jo,Winterthur,8400,Bahnhofplatz 7,Switzerland,47.5003,8.724,http://www.jackandjo.ch/,
+/venues/2772278,Schweizerhof Bar,Zürich,8001,Bahnhofplatz 7,Switzerland,47.37693,8.5394,,
+/venues/2327354,Aachtalhalle,Amriswil,8586,Bahnhofstrasse,Switzerland,47.54913,9.22203,,
+/venues/3302819,Am Bahnhofplatz,St. Gallen,9113,Bahnhofstrasse,Switzerland,47.37186,9.19863,,
+/venues/4352875,Avec.,Willisau,6130,Bahnhofstrasse,Switzerland,47.12189,7.9948,,
+/venues/4350933,Ev.-ref. Kirche,Wohlen,5610,Bahnhofstrasse,Switzerland,47.34934,8.27184,,
+/venues/1070471,Podium,Dudingen,3186,Bahnhofstrasse,Switzerland,46.8506,7.19219,,
+/venues/3972679,RockXmas,Zürich,9630,Bahnhofstrasse,Switzerland,47.29892,9.08849,http://www.zentrum-wattwil.ch,
+/venues/418771,Kulturkarussell Rössli,Stäfa,8712,Bahnhofstrasse 1,Switzerland,47.23949,8.71878,http://kulturkarussell.ch/,
+/venues/2050124,Perron 1,Sierre,3900,Bahnhofstrasse 1,Switzerland,46.31871,7.98862,,
+/venues/4403976,Rössli Beiz,Stäfa,8712,Bahnhofstrasse 1,Switzerland,47.23964,8.71863,https://www.roesslibeiz.ch,
+/venues/4043829,Goldauerhof,Schwyz,6410,Bahnhofstrasse 10,Switzerland,47.04977,8.54475,http://goldauerhof.ch,
+/venues/3831559,Ivy Club,St. Gallen,,Bahnhofstrasse 10,Switzerland,47.42571,9.37266,https://www.ivyclub.ch,
+/venues/2797193,Jazz in Baden,Baden,5400,Bahnhofstrasse 10,Switzerland,47.47417,8.30726,http://www.jazzinbaden.ch,
+/venues/1577339,Gemeindesaal Malters,Luzern,6102,Bahnhofstrasse 16,Switzerland,47.05073,8.30449,,
+/venues/4416341,Jazzclub Thalwil,Zürich,8800,Bahnhofstrasse 16,Switzerland,47.3686,8.53998,https://www.jazzclubthalwil.ch/,
+/venues/2868038,Kursaal,Luzern,6390,Bahnhofstrasse 16,Switzerland,46.81921,8.40307,,
+/venues/2370864,City Chäller,Zürich,8750,Bahnhofstrasse 18,Switzerland,47.03994,9.0685,,
+/venues/4249139,Marianischer Saal,Luzern,6003,Bahnhofstrasse 18,Switzerland,47.05052,8.30401,,
+/venues/3588344,Restaurant & Weinbar Zum Hut,Uster,8610,Bahnhofstrasse 18,Switzerland,47.34866,8.71814,http://www.zum-hut.ch,
+/venues/1311656,Box Davos,Davos,CH-7260,Bahnhofstrasse 19,Switzerland,46.81178,9.84321,,
+/venues/4420164,Brauwerk,St. Gallen,9000,Bahnhofstrasse 19,Switzerland,47.42472,9.37178,http://www.restaurantbrauwerk.ch,
+/venues/4411229,Hotel Schützen,Basel,4310,Bahnhofstrasse 19,Switzerland,47.5531,7.79232,,
+/venues/2547429,Brasserie Treffpunkt,Herisau,9100,Bahnhofstrasse 2,Switzerland,47.38615,9.27992,http://www.treffbar.ch/,
+/venues/2396014,Montana,Davos,7260,Bahnhofstrasse 2,Switzerland,46.80878,9.84057,http://www.montana-bar.ch,
+/venues/2721693,ROX Music Bar,Bern,3700,Bahnhofstrasse 2,Switzerland,46.68979,7.67475,http://www.roxbar.ch,
+/venues/3832784,Bahnhofsaal Rheinfelden,Basel,4310,Bahnhofstrasse 21,Switzerland,47.55162,7.79251,,
+/venues/751661,Openair Gampel,Gampel,3945,Bahnhofstrasse 21,Switzerland,46.31431,7.74446,,
+/venues/4069629,Bahnhof Olten,Olten,6400,Bahnhofstrasse 22,Switzerland,47.35206,7.9079,,
+/venues/2770963,Bahnhof Wetzikon - Veloplus,Wetzikon,8620,Bahnhofstrasse 22,Switzerland,47.31991,8.79356,,
+/venues/936326,Kulturforum,Amriswil,8580,Bahnhofstrasse 22,Switzerland,47.54816,9.3025,,
+/venues/4100854,Barocca Club,Solothurn,4563,Bahnhofstrasse 24b,Switzerland,47.17109,7.56589,,X
+/venues/3139194,Nirvana Shisha Bar Lounge,Solothurn,4563,Bahnhofstrasse 24b,Switzerland,47.17086,7.56602,,/venues/4100854
+/venues/4372676,Café SEIN,Aarau,5000,Bahnhofstrasse 30,Switzerland,47.39086,8.04727,http://www.seinaarau.ch,
+/venues/1507948,Wilden Mann,Luzern,6000,Bahnhofstrasse 30,Switzerland,47.05034,8.30308,,
+/venues/3862539,Hotel Eden,Chur,7130,Bahnhofstrasse 31,Switzerland,46.77482,9.20835,,
+/venues/4361175,Ronnie Scott's Jazz Club,Zermatt,3920 Zermatt,Bahnhofstrasse 31,Switzerland,46.02114,7.74733,,
+/venues/3760199,Station 31,Weinfelden,8560,Bahnhofstrasse 31,Switzerland,47.5887,9.06339,,
+/venues/1572233,Mon Royal,Baden,5400,Bahnhofstrasse 39,Switzerland,47.47813,8.30865,,
+/venues/1509938,Royal,Baden,5400,Bahnhofstrasse 39,Switzerland,47.47625,8.30818,,
+/venues/3313899,Carlton Restaurant & Bar,Zürich,8001,Bahnhofstrasse 41,Switzerland,47.37141,8.53777,,
+/venues/4366419,Unique Hotel Post,Zermatt,3920,Bahnhofstrasse 41,Switzerland,46.0207,7.74658,,
+/venues/1832893,Privé Club,Zürich,8001,Bahnhofstrasse 66,Switzerland,47.37374,8.53861,http://www.priveclub.ch/,
+/venues/450081,Saint Germain,Zürich,8001,Bahnhofstrasse 66,Switzerland,47.37387,8.53846,http://www.saintgermain.ch/,
+/venues/3971829,Bahnhof St. Gallen,St. Gallen,,Bahnhofstrasse 8,Switzerland,47.42583,9.37304,https://www.sbb.ch/de/bahnhof-services/bahnhoefe/bahnhof-stgallen.html,
+/venues/3138489,Hotel Restaurant Weisses Rössli,Luzern,6440,Bahnhofstrasse 8,Switzerland,46.99432,8.60581,,
+/venues/3520034,Höfli Pub,St. Gallen,9113,Bahnhofstrasse 8,Switzerland,47.37287,9.19968,http://www.degersheim.ch/,
+/venues/3945324,Barfüsserplatz,Basel,4001,Barfüsserplatz,Switzerland,47.55456,7.58914,,
+/venues/4337609,Jugenskulturfestival,Basel,,Barfüsserplatz,Switzerland,47.55458,7.58988,,
+/venues/1486103,La Madeleine,Luzern,6003,Baselstrasse 15,Switzerland,47.05175,8.29826,,/venues/1993864
+/venues/1993864,La Madleine,Luzern,6003 Luzern,Baselstrasse 15,Switzerland,47.05179,8.29831,http://www.lamadeleine.ch/,X
+/venues/59035,Kulturzentrum Kammgarn,Schaffhausen,8200,Baumgartenstrasse 19,Switzerland,47.69448,8.63673,,
+/venues/2943888,TapTab Musikraum,Schaffhausen,8200,Baumgartenstrasse 19,Switzerland,47.69448,8.63624,http://www.taptab.ch,
+/venues/4357646,Stef's Kulturbistrot,Bern,3072 Ostermundigen,Bernstrasse 101,Switzerland,46.95777,7.49447,https://stefskulturbistro.ch/,
+/venues/1110011,Tell Blues Club,Bern,3072,Bernstrasse 101,Switzerland,46.94015,7.39108,,
+/venues/3083284,Bar & Pub Festival Tuggen,Eschenbach,8856,Betti 67,Switzerland,47.18563,8.93004,http://www.barundpub.ch,X
+/venues/3086059,Betti Areal Tuggen,Stäfa,8856 Tuggen,Betti 67,Switzerland,47.20308,8.94144,http://www.barundpub.ch,/venues/3083284
+/venues/2407879,Neubad,Luzern,6002,Bireggstrasse 36,Switzerland,47.04152,8.30658,https://neubad.org,X
+/venues/2744828,Neubad Luzern,Luzern,3003,Bireggstrasse 36,Switzerland,47.04135,8.30684,,/venues/2407879
+/venues/3912959,Piano Im Pool,Luzern,6003,Bireggstrasse 36,Switzerland,47.04133,8.30682,http://piano-im-pool.ch/,
+/venues/1310826,Devi's Pearl Bar,Zürich,8003,Birmensdorferstrasse 83,Switzerland,47.37078,8.52391,,
+/venues/4273514,Gran Finale Cocktail Bar,Zürich,8003,Birmensdorferstrasse 83,Switzerland,47.37082,8.52395,,
+/venues/583406,Alte Börse,Zürich,8001,Bleicherweg 5,Switzerland,47.36872,8.53785,,
+/venues/4199969,Aura Club,Zürich,8001,Bleicherweg 5,Switzerland,47.36866,8.53795,,
+/venues/4008184,Cafe Breite,Altstätten,9450,Breite 29,Switzerland,47.37838,9.53712,,X
+/venues/4420153,Café & Bar Breite,Altstätten,9450,Breite 29,Switzerland,47.37854,9.53734,https://bar-breite.ch/,/venues/4008184
+/venues/4393786,Kino Trafo,Baden,5400,Brown Boveri Platz 1,Switzerland,47.47821,8.30503,,X
+/venues/984076,Kultur- und Kongresszentrum Trafo,Baden,5400,Brown Boveri Platz 1,Switzerland,47.47824,8.30507,,/venues/4393786
+/venues/4272209,Bruderholzstrasse 150,Basel,4104,Bruderholzstrasse 150,Switzerland,47.51281,7.56929,,
+/venues/3940909,Leimentaler Open Air,Basel,4104,Bruderholzstrasse 150,Switzerland,47.51174,7.5735,https://www.leimentaler-openair.ch/,
+/venues/2189939,Aktionshalle Stanzerei,Baden,5400,Bruggerstrasse 37,Switzerland,47.47573,8.30397,http://www.jazzgehtbaden.ch/gallery2009/stanzerei/index.html,
+/venues/848676,Merkker,Baden,5400,Bruggerstrasse 37,Switzerland,47.47591,8.30448,,
+/venues/1566783,Sud Basel,Basel,4058,Burgweg 15,Switzerland,47.55794,7.60127,,X
+/venues/936386,Sudhaus,Basel,4058,Burgweg 15,Switzerland,47.55802,7.60104,,/venues/1566783
+/venues/3964199,Casino Bern,Bern,3011,Casinoplatz 1,Switzerland,46.94692,7.44801,https://www.casinobern.ch/,X
+/venues/4359406,Casino Bern - Grosser Saal,Bern,3011,Casinoplatz 1,Switzerland,46.94696,7.44825,,/venues/3964199
+/venues/2667803,Centre Intercommunal de Glace de Malley,Lausanne,1008,Chemin du Viaduc 14,Switzerland,46.5288,6.60022,http://www.cigm.ch/cms/,
+/venues/2182909,Espace Odyssée,Lausanne,1004,Chemin du Viaduc 14,Switzerland,46.52927,6.60043,,
+/venues/4357330,Vaudoise Aréna,Lausanne,1008,Chemin du Viaduc 14,Switzerland,46.52879,6.60037,https://vaudoisearena.ch,
+/venues/52876,Tonhalle Zürich,Zürich,8002,Claridenstrasse 7,Switzerland,47.36618,8.53823,,X
+/venues/2732373,Tonhalle Zürich - Grosser Saal,Zürich,8002,Claridenstrasse 7,Switzerland,47.36609,8.53797,,/venues/52876
+/venues/1956989,Change - Bar & Lounge,Baden,,Cordulaplatz,Switzerland,47.47215,8.30675,http://www.change-bar.ch,
+/venues/4390738,Ravid-20,Baden,5400,Cordulaplatz,Switzerland,47.47206,8.30667,,
+/venues/1393868,Bar3000,Zürich,8004,Dienerstrasse 33,Switzerland,47.37812,8.52743,http://bar3000.ch,
+/venues/73461,Zukunft,Zürich,8004,Dienerstrasse 33,Switzerland,47.37824,8.52753,http://www.zukunft.cl,
+/venues/4228799,Altes Rathaus,Gersau,6442 Gersau,Dorfplatz,Switzerland,47.00935,8.52362,,
+/venues/4404763,Bären,Bern,,Dorfplatz,Switzerland,46.39852,8.14577,,
+/venues/4062139,Old Town Session,Saas Fee,3910 Saas-Grund,Dorfplatz,Switzerland,46.11151,7.93331,https://oldtownsession.ch,
+/venues/4062134,SommerAuftakt inkl. Harley-Treffen in Grächen,Zermatt,3925 Grächen (VS),Dorfplatz,Switzerland,46.19625,7.83944,,
+/venues/3879779,Zentrum Chilematt,Zug,6312,Dorfplatz,Switzerland,47.19604,8.48444,,
+/venues/1665738,Alte Taverne,Frutigen-Niedersimmental,,Dorfstrasse,Switzerland,46.49124,7.5572,,
+/venues/4366751,Dorfplatz Bassersdorf,Kloten,8303,Dorfstrasse,Switzerland,47.45233,8.58675,,
+/venues/3727709,Härdöpfuchäuer Schöftland,Aarau,5040 Schöftland,Dorfstrasse,Switzerland,47.30624,8.05119,http://haerdoepfuchaeuer.ch/,
+/venues/4129184,Uni Rock,Davos,7240,Dorfstrasse,Switzerland,46.81098,9.84188,,
+/venues/2178269,Kulturwerk,Gersau,6442,Dorfstrasse 14,Switzerland,46.99166,8.52744,http://kulturwerk.ch/,
+/venues/3518809,Restaurant Engelberg,Luzern,,Dorfstrasse 14,Switzerland,46.82146,8.40608,,
+/venues/3744359,Sammy's Bar Schönried,Martigny,3778 Schönried,Dorfstrasse 14,Switzerland,46.50175,7.28449,,
+/venues/3256009,Bäckerstübli Scherzingen,Kreuzlingen,8596,Dorfstrasse 2,Switzerland,47.63042,9.22628,http://www.baeckerstuebli.ch,
+/venues/4302494,Hirschen,Fribourg,1716,Dorfstrasse 2,Switzerland,46.74177,7.2853,https://www.hirschen.pub/,
+/venues/4064039,Bsinti,Zürich,8784 Glarus Süd,Dorfstrasse 9,Switzerland,46.93955,8.99888,https://www.bsinti.ch/,
+/venues/4092604,Kipferhaus Hinterkappelen,Bern,3032,Dorfstrasse 9,Switzerland,46.96835,7.37963,,
+/venues/4079209,Barakuba,Basel,4053,Dornacherstrasse 192,Switzerland,47.54172,7.59324,https://www.barakuba.ch,
+/venues/1205906,Querfeld Halle,Basel,4053,Dornacherstrasse 192,Switzerland,47.54096,7.59311,,
+/venues/4350470,Viscose,Luzern,6020,Emmenweidstrasse 20,Switzerland,47.07363,8.27466,,/venues/3872059
+/venues/3872059,Viscose club,Luzern,6020,Emmenweidstrasse 20,Switzerland,47.07361,8.27461,https://www.facebook.com/pg/viscoseclub/,X
+/venues/4406171,Marians Im Jazzzelt,Bern,3012,Engestrasse 54,Switzerland,46.96105,7.43938,,/venues/3389884
+/venues/2834658,Venue Tba – bern (hotel Innere Enge Or Marians Jazzroom),Bern,3012,Engestrasse 54,Switzerland,46.96103,7.43941,,/venues/3389884
+/venues/3202093,Neo,Zürich,8004,Europaallee 47,Switzerland,47.37889,8.53244,,/venues/3577814
+/venues/3577814,Neo Bar,Zürich,8004,Europaallee 47,Switzerland,47.37894,8.53202,http://www.neozurich.com/,X
+/venues/2144114,Altes Schlachthaus,Langenthal,3360,Fabrikstrasse 4,Switzerland,47.18795,7.70419,http://www.altesschlachthaus.ch/,
+/venues/717346,Club Eleven,Solothurn,4500,Fabrikstrasse 4,Switzerland,47.21184,7.52576,,
+/venues/1443043,Festivalgelände Am Rotten,Gampel,3945,Festivalgelände,Switzerland,46.31577,7.74194,,
+/venues/3851044,Lakelive,Biel,2500,Festivalgelände,Switzerland,,,http://www.lakelive.ch,
+/venues/4368884,Florhof,Zürich,8001 Zürich,Florhofgasse 6,Switzerland,47.37259,8.54854,,
+/venues/3922339,Musikzentrum Kammermusiksaal I,Zürich,8001,Florhofgasse 6,Switzerland,47.37257,8.54844,,
+/venues/465906,"Q Zurich, Club",Zürich,8005,Förrlibuckstrasse 151,Switzerland,47.39182,8.51054,http://www.q-zurich.ch,/venues/1496778
+/venues/4008944,Q Zürich,Zürich,8005,Förrlibuckstrasse 151,Switzerland,47.39195,8.51086,,/venues/1496778
+/venues/1496778,Queens Club,Zürich,8005,Förrlibuckstrasse 151,Switzerland,47.39188,8.51129,,X
+/venues/4207464,Ug Safe,Basel,4001,Gerbergasse 30,Switzerland,47.55663,7.58821,,
+/venues/2283049,Unternehmen Mitte,Basel,4001,Gerbergasse 30,Switzerland,47.55658,7.58837,,
+/venues/3325419,Gessnerallee Zürich Halle,Zürich,8001,Gessnerallee 8,Switzerland,47.37477,8.53468,,
+/venues/34157,Stall 6,Zürich,8001,Gessnerallee 8,Switzerland,47.37476,8.53471,http://www.stall6.ch/,
+/venues/3324619,Römisches Theater Augusta Raurica,Basel,4302,Giebenacherstrasse 17,Switzerland,47.53397,7.72135,,X
+/venues/4408551,THEATER AUGUSTA RAURICA,Basel,4302,Giebenacherstrasse 17,Switzerland,47.53404,7.72155,https://www.theater-augusta-raurica.ch/,/venues/3324619
+/venues/684776,Jazzkantine,Luzern,6004,Grabenstrasse 8,Switzerland,47.05327,8.30579,http://www.jazzkantine.com/,
+/venues/3791174,Kunsteisbahn Grabengut,Bern,3600,Grabenstrasse 8,Switzerland,46.76147,7.62672,http://www.eislauf-club-thun.ch,
+/venues/4408420,Cour de la Société de Lecture,Geneva,,Grand-Rue 11,Switzerland,46.20237,6.14509,,
+/venues/1918679,Estarock Café,Estavayer-Le-Lac,1470,Grand-Rue 11,Switzerland,46.84908,6.84769,http://www.estarock.ch,
+/venues/3303324,Loppersaal,Luzern,6052,Grossmatt 5,Switzerland,46.99056,8.31087,,X
+/venues/3370459,Loppersaal / Grossmatt Hergiswil,Luzern,6052,Grossmatt 5,Switzerland,46.99039,8.31094,,/venues/3303324
+/venues/123641,Gurten,Bern,3000,Gurten,Switzerland,46.91726,7.44379,,/venues/923131
+/venues/923131,Gurtenfestival,Bern,3000,Gurten,Switzerland,46.9173,7.44348,,X
+/venues/981891,Casineum,Luzern,6000,Haldenstrasse 6,Switzerland,47.05504,8.31646,,/venues/953141
+/venues/953141,Casineum Grand Casino,Luzern,6006,Haldenstrasse 6,Switzerland,47.05504,8.31707,,X
+/venues/391996,Härterei,Zürich,8005,Hardstrasse 219,Switzerland,47.38572,8.51685,http://www.haertereiclub.ch,X
+/venues/3764314,Härterei Club,Zürich,8005,Hardstrasse 219,Switzerland,47.38676,8.51667,,/venues/391996
+/venues/4366789,Apples & Olives,Zürich,8005,Hardstrasse 245,Switzerland,47.38829,8.51934,http://www.applesandolivesfestival.com/,
+/venues/618641,Exil,Zürich,8005,Hardstrasse 245,Switzerland,47.38821,8.51987,http://www.exil.cl,
+/venues/3620769,Club Hard One,Zürich,8005,Hardstrasse 260,Switzerland,47.38853,8.52073,,/venues/1995709
+/venues/1995709,Hard One,Zürich,8005,Hardstrasse 260,Switzerland,47.38854,8.5207,,X
+/venues/697821,Escherwyss,Zürich,8005,Hardstrasse 305,Switzerland,47.38998,8.52128,,X
+/venues/4233264,Escherwyss Club Zürich,Zürich,8005,Hardstrasse 305,Switzerland,47.3899,8.52123,,/venues/697821
+/venues/1379156,Bahnhof Zürich Hb,Zürich,8001,Hauptbahnhof,Switzerland,47.37792,8.54019,,X
+/venues/4294644,Migrolino Autogrammstunde,Zürich,8001,Hauptbahnhof,Switzerland,47.3784,8.5384,,/venues/1379156
+/venues/4352880,Press & Books,Bern,3011,Hauptbahnhof,Switzerland,46.949,7.43853,,
+/venues/3612079,Estri.ch,Solothurn,4558,Hauptstrasse,Switzerland,47.1658,7.63421,,
+/venues/2867038,Jam Gstaad,Martigny,3780,Hauptstrasse,Switzerland,46.47199,7.28555,http://jam-events.ch/,
+/venues/4328969,Stadtfest Brugg / Red Buffalo Bar,Zürich,5200,Hauptstrasse,Switzerland,47.48329,8.20759,,
+/venues/3090554,Kultur- & Kongresszentrum Zwei Raben,Einsiedeln,8840,Hauptstrasse 20,Switzerland,47.12695,8.74515,,/venues/4357616
+/venues/4357616,Zwei Raben,Einsiedeln,8440,Hauptstrasse 20,Switzerland,47.12683,8.74518,,X
+/venues/2330724,Balmer's Herberge,Bern,3800,Hauptstrasse 23,Switzerland,46.68103,7.86377,,
+/venues/3977584,Schlosskeller Aesch,Basel,4147 Aesch,Hauptstrasse 23,Switzerland,47.46575,7.59923,http://www.schloss-chaeller.ch,
+/venues/2671378,Club Caverne,Bern,3800,Hauptstrasse 36,Switzerland,46.67952,7.86452,https://www.facebook.com/ClubCaverne,
+/venues/3995219,Mattenhof Festival,Bern,3800,Hauptstrasse 36,Switzerland,46.67936,7.86412,http://mattenhof-festival.ch/,
+/venues/59037,Alpenroesli,Muotathal,CH 6436,Hauptstrasse 42,Switzerland,46.9745,8.75693,,
+/venues/3190944,Bierhalle Linde,Altstätten,9436,Hauptstrasse 42,Switzerland,47.40697,9.60678,http://hallelinde.com,
+/venues/3769729,Klangvoll-Bar,Basel,4102,Hauptstrasse 91,Switzerland,47.53996,7.57337,https://www.klangvoll-bar.ch/,
+/venues/4342552,"Landhaus JENAZ, Kultur & Events",Landquart,7233 Jenaz,Hauptstrasse 91,Switzerland,46.92868,9.71981,http://landhaus-jenaz.ch/,
+/venues/3550724,Grosser Vortragssaal Des Kunsthauses,Zürich,8001,Heimplatz 1,Switzerland,47.37024,8.54816,,
+/venues/2484459,Kunsthausrestaurant,Zürich,8001,Heimplatz 1,Switzerland,47.37016,8.54846,http://www.kunsthausrestaurant.ch,
+/venues/3802534,"Club, Samsunghall",Zürich,,Hoffnigstrasse 1,Switzerland,47.39591,8.59745,,/venues/3236954
+/venues/3236954,Samsung Hall Zürich,Dubendorf,8600,Hoffnigstrasse 1,Switzerland,47.39574,8.59802,https://www.samsunghall.ch/,X
+/venues/3434949,Club Elite,Zürich,8048,Hohlstrasse 452,Switzerland,47.38906,8.49598,,
+/venues/1722838,Space 9,Zürich,CH-8048,Hohlstrasse 452,Switzerland,47.38908,8.49605,,
+/venues/3187014,Grienen Bar,Winterthur,8405,Ibergstrasse 3,Switzerland,47.47038,8.76591,http://www.grienen.ch/,X
+/venues/3651189,Openair Grienen,Winterthur,8405,Ibergstrasse 3,Switzerland,47.47039,8.7659,http://www.grienen.ch,/venues/3187014
+/venues/4403773,Jensen,Zürich,8153,Ifangstrasse 11,Switzerland,47.45181,8.53472,,
+/venues/1670993,Mzg Ifang,Bazenheid,9602,Ifangstrasse 11,Switzerland,47.41458,9.06374,,
+/venues/4172354,Güterschuppen,Zürich,8750,Im Volksgarten,Switzerland,47.03838,9.07149,http://www.facebook.com/gleis1glarus/,
+/venues/2593608,Kunsthaus Glarus,Zürich,8750,Im Volksgarten,Switzerland,47.03825,9.07108,http://www.kunsthausglarus.ch/,
+/venues/1072566,Generations Jazzfestival,Winterthur,8500,Industriestrasse,Switzerland,47.55992,8.89383,,
+/venues/4355654,Westhalle Thun,Bern,3600,Industriestrasse,Switzerland,46.75671,7.614,https://westhalle.ch,
+/venues/4210579,EARL Music Club,Muotathal,6440,Industriestrasse 6,Switzerland,46.97402,8.76225,https://www.facebook.com/earlmusicclub/,
+/venues/4411715,Ginial-Bar,St. Gallen,8590,Industriestrasse 6,Switzerland,47.55697,9.36788,https://www.facebook.com/fishgroup.ch,
+/venues/2922173,Avalon Club,Luzern,6010,Industriestrasse 9,Switzerland,47.02438,8.30016,,
+/venues/1580123,Industriestrasse 9,Luzern,,Industriestrasse 9,Switzerland,47.04144,8.31136,,
+/venues/3902544,Fricks Monti,Basel,,Kaistenbergstrasse 5,Switzerland,47.50816,8.02052,,
+/venues/2113749,Monti,Basel,,Kaistenbergstrasse 5,Switzerland,47.50816,8.02049,,
+/venues/393041,Papiersaal,Zürich,8045,Kalanderplatz 1,Switzerland,47.35803,8.52327,,
+/venues/3526999,Sihlcity,Zürich,8045,Kalanderplatz 1,Switzerland,47.3581,8.52329,http://www.sihlcity.ch,
+/venues/4381623,Voice+Music Academy Zürich,Zürich,8004,Kanonengasse 18,Switzerland,47.37733,8.52961,,
+/venues/2667973,Voices on Stage,Zürich,,Kanonengasse 18,Switzerland,47.37746,8.5297,,
+/venues/1129916,Alte Kaserne,Zürich,8001,Kanonengasse 20,Switzerland,47.37789,8.53007,,
+/venues/4364207,Festival IOIC,Zürich,8004,Kanonengasse 20,Switzerland,47.37772,8.53058,,
+/venues/114659,Kanzlei Club,Zürich,8004,Kanzleistrasse 56,Switzerland,47.37552,8.52581,http://www.kanzlei.ch/,X
+/venues/529336,Kanzlei Turnhalle,Zürich,8004,Kanzleistrasse 56,Switzerland,47.37573,8.52576,http://www.swix.ch/kanzlei/,/venues/114659
+/venues/3366014,Hotel Engel,Basel,4410,Kasernenstrasse 10,Switzerland,47.4826,7.73625,,
+/venues/4242729,Strandbad Walenstadt,Mels,8880,Kasernenstrasse 10,Switzerland,47.12053,9.30172,,
+/venues/2400004,Halle 52,Winterthur,8400,Katharina Sulzer Platz,Switzerland,47.49615,8.71869,,
+/venues/3275469,"Halle 53, Sulzer Areal",Winterthur,8400,Katharina Sulzer Platz,Switzerland,47.49614,8.71866,,/venues/2838453
+/venues/4373664,Kirche St. Martin Wittnau,Basel,5064,Kirchgasse,Switzerland,47.48072,7.97477,,
+/venues/2824548,Reformierte Kirche Sissach,Sissach,4450,Kirchgasse,Switzerland,47.46521,7.81017,,
+/venues/4373166,Kapelle Helferei,Zürich,8001,Kirchgasse 13,Switzerland,47.37032,8.54496,,
+/venues/2821508,Kulturhaus Helferei,Zürich,8001,Kirchgasse 13,Switzerland,47.37033,8.5451,http://www.herbst-helferei.ch/?event=tango-im-herbst-2&event_date=2016-09-24,
+/venues/2503269,Caveau du Sommelier,Olten,4600,Kirchgasse 17,Switzerland,47.34955,7.90125,http://www.caveau-olten.ch/,
+/venues/4377644,Katholische Kirche Ettingen,Basel,4107,Kirchgasse 17,Switzerland,47.55911,7.59788,,
+/venues/4299129,Lindbergh Pub,Sissach,,Kirchgasse 17,Switzerland,47.46522,7.81049,,
+/venues/3392879,Café Rorboz,Winterthur,8427,Kirchgasse 7,Switzerland,47.52967,8.57851,http://www.rorboz.ch,
+/venues/3529109,Pfarrkirche St. Peter & Paul,Luzern,6490,Kirchgasse 7,Switzerland,46.63346,8.59442,,
+/venues/2831688,Ev.-Ref. Stadtkirche Winterthur,Winterthur,8400,Kirchplatz,Switzerland,47.49873,8.72865,,
+/venues/4368883,Reformierte Kirche Brugg,Zürich,5200,Kirchplatz,Switzerland,47.48574,8.20616,,
+/venues/4391726,Röm.-kath. Pfarrkirche Lachen,Schwyz,8853,Kirchplatz,Switzerland,47.19245,8.8512,,
+/venues/4353777,Höfli Pub Mels,Mels,8887,Kirchstrasse,Switzerland,47.04656,9.42147,,
+/venues/2902503,Kirche Saanen,Montreux,3792,Kirchstrasse,Switzerland,46.49087,7.25977,,
+/venues/4032539,Amriville,Amriswil,8580,Kirchstrasse 11,Switzerland,47.54763,9.29755,http://www.amriville.ch/index.php,
+/venues/3548339,Reformierte Kirche Horgen,Zürich,8810,Kirchstrasse 11,Switzerland,47.26072,8.5983,http://musigzuerisee.ch/programm-horgen/,
+/venues/2503484,Treppenhaus,Rorschach,,Kirchstrasse 3,Switzerland,47.47755,9.49539,,
+/venues/2811798,Zentrum Missione,Sion,3904,Kirchstrasse 3,Switzerland,46.32542,7.9876,,
+/venues/2760658,Kaserne (rossstall 1 & 2) + Reithalle,Basel,4057,Klybeckstr. 1b,Switzerland,47.56384,7.59128,,
+/venues/1625668,Kultur Parterre,Basel,CH-4057,Klybeckstr. 1b,Switzerland,47.56381,7.59113,http://www.parterre.net/,
+/venues/96548,Parterre One Music,Basel,4057,Klybeckstr. 1b,Switzerland,47.56744,7.59755,,
+/venues/581561,Kursaal Arena,Bern,3013,Kornhausstrasse 3,Switzerland,46.9531,7.44938,,X
+/venues/3692349,Kursaal Bern,Bern,3000,Kornhausstrasse 3,Switzerland,46.95326,7.44874,http://www.kursaal-bern.ch/Home,/venues/581561
+/venues/2489629,Miniz7,Basel,4133,Kraftwerkstrasse 4,Switzerland,47.52672,7.69418,,/venues/514666
+/venues/4103779,Z7 - Open Air,Basel,4133,Kraftwerkstrasse 4,Switzerland,47.52667,7.69456,,/venues/514666
+/venues/1575583,Ono,Bern,CH-3011,Kramgasse 6,Switzerland,46.94815,7.45196,http://www.onobern.ch,X
+/venues/1079711,Ono Bühne Galerie Bar,Bern,3011,Kramgasse 6,Switzerland,46.9481,7.45195,,/venues/1575583
+/venues/4419623,"Kultur- und Kongresszentrum La Poste, Theatersaal",Sierre,3930,La Poste Platz 4,Switzerland,46.29109,7.88317,,/venues/2068934
+/venues/2068934,Théâtre la Poste,Sierre,3930,La Poste Platz 4,Switzerland,46.00407,7.74789,,X
+/venues/3765484,KOSMOS,Zürich,8004,Lagerstrasse 104,Switzerland,47.37999,8.5289,,X
+/venues/4395105,Kino Kosmos 6,Zürich,8004,Lagerstrasse 104,Switzerland,47.38009,8.52892,,/venues/3765484
+/venues/1243706,Da Ladä,Zürich,8040,Langstrasse 117,Switzerland,47.37911,8.52734,,
+/venues/2457699,Schneiderei,Zürich,8004,Langstrasse 117,Switzerland,47.37919,8.52723,https://www.schneiderei-verein.ch/,
+/venues/1394158,Langstars,Zürich,,Langstrasse 120,Switzerland,47.37927,8.52757,http://www.langstars.com/web/,
+/venues/3580944,Samsara Bar,Zürich,8004,Langstrasse 120,Switzerland,47.37924,8.5276,,
+/venues/2011109,District 4,Zürich,8004,Langstrasse 83,Switzerland,47.37783,8.52646,,
+/venues/969486,Diva Club,Zürich,8004,Langstrasse 83,Switzerland,47.37783,8.52644,,
+/venues/2426424,La Perla,Zürich,8004,Langstrasse 84,Switzerland,47.37776,8.52672,,X
+/venues/3687464,Perle,Zürich,8004 Zürich,Langstrasse 84,Switzerland,47.37777,8.52669,,/venues/2426424
+/venues/1863733,Burg Clanx,Appenzell,9050,Lehnstrasse,Switzerland,47.3421,9.41821,,
+/venues/3315964,Festivalgelände Köhlen,Appenzell,9050,Lehnstrasse,Switzerland,47.34205,9.41798,,
+/venues/2094419,Du Nord,Bern,3013,Lorrainestrasse 2,Switzerland,46.95493,7.44546,http://www.dunord-bern.ch/home/Kultur/Gigs-n-Drinks/,X
+/venues/3058549,Restaurant Du Nord,Bern,3013,Lorrainestrasse 2,Switzerland,46.95476,7.44559,,/venues/2094419
+/venues/4394669,Businesspark Langenthal,Langenthal,4900,Lotzwilerstrasse 66,Switzerland,47.20264,7.78329,,
+/venues/4384535,Hotel Meilenstein,Langenthal,4900,Lotzwilerstrasse 66,Switzerland,47.20249,7.78367,,
+/venues/1262971,Frostland,Grenchen,2540,Maienstrasse 6,Switzerland,47.19065,7.40642,,
+/venues/4377154,"Koller Events, Luxory",Grenchen,2540,Maienstrasse 6,Switzerland,47.19048,7.40552,,
+/venues/3560479,Maeretfescht,Solothurn,4500,Marktplatz,Switzerland,47.20791,7.53687,http://www.maeretfescht.ch,
+/venues/4274179,Marktplatz,St. Gallen,9000,Marktplatz,Switzerland,47.42602,9.37501,,
+/venues/4393616,Marktplatz Lyss,Lyss,3250,Marktplatz,Switzerland,47.07329,7.30596,,
+/venues/2396624,Wiga,Buchs,9470,Marktplatz,Switzerland,47.16679,9.46494,,
+/venues/2755448,Post Finance Arena,Bern,3014,Mingerstrasse,Switzerland,46.9573,7.46667,,X
+/venues/1047476,Postfinance Arena,Bern,3012,Mingerstrasse,Switzerland,46.9565,7.46441,,/venues/2755448
+/venues/1170106,BEA Bern Expo,Bern,3014,Mingerstrasse 6,Switzerland,46.9598,7.46817,,X
+/venues/1141436,"Bea Festhalle Bern, Halle 310",Bern,3000,Mingerstrasse 6,Switzerland,46.95965,7.46775,,/venues/1170106
+/venues/45125,Festhalle,Bern,3014,Mingerstrasse 6,Switzerland,46.95928,7.46381,,/venues/1170106
+/venues/4353288,Laufwerk,Basel,4410,Mühlegasse 2,Switzerland,47.48453,7.73373,,
+/venues/3686729,Stiftung Mühle Otelfingen,Zürich,8112,Mühlegasse 2,Switzerland,47.46362,8.38761,https://www.muehle-otelfingen.ch/,
+/venues/2922323,Das Zimmer,Bern,3011,Mühlenplatz 11,Switzerland,46.94676,7.45631,http://www.das-zimmer.ch/,
+/venues/3895794,The Black Quarter Bar,Bern,3011,Mühlenplatz 11,Switzerland,46.94672,7.45639,,
+/venues/1451643,Berner Münster,Bern,3011,Münsterplatz 1,Switzerland,46.94696,7.45052,,/venues/2960453
+/venues/2960453,Münster,Bern,3000,Münsterplatz 1,Switzerland,46.94724,7.45159,,X
+/venues/2102524,Im Engelhof,Basel,4051,Nadelberg 4,Switzerland,47.55872,7.58533,http://www.xn--offene-bhne-0hb.ch/,
+/venues/4370722,Offene Bühne Nadelberg,Basel,4051,Nadelberg 4,Switzerland,47.5587,7.58536,,
+/venues/78082,Bierhübeli,Bern,3012,Neubrückstrasse 43,Switzerland,46.95634,7.43789,http://www.bierhuebeli.ch/,
+/venues/4274124,Gustav,Bern,3012,Neubrückstrasse 43,Switzerland,46.95626,7.43782,,
+/venues/101173,Dachstock,Bern,3001,Neubrückstrasse 8,Switzerland,46.95305,7.44016,http://www.dachstock.ch/,X
+/venues/385596,Reitschule Grosse Halle,Bern,3011,Neubrückstrasse 8,Switzerland,46.95137,7.44073,,/venues/101173
+/venues/4054874,Reitschule Kino,Bern,3012,Neubrückstrasse 8,Switzerland,46.95293,7.44038,http://www.kino.reitschule.ch/reitschule/kino/,/venues/101173
+/venues/1667173,Apartment 22,Zürich,8004,Neufrankengasse 22,Switzerland,47.38075,8.52683,,
+/venues/3268119,CLUB HW,Zürich,8004,Neufrankengasse 22,Switzerland,47.38074,8.52685,http://www.h-w.club/,
+/venues/4394638,EMMA Bett und Bistro,Winterthur,8400,Oberer Graben 8,Switzerland,47.49869,8.7314,https://emma-bb.ch/,
+/venues/2640908,News Cafe Bar,St. Gallen,CH-9000,Oberer Graben 8,Switzerland,47.42526,9.37406,,
+/venues/3347089,Literatur Café,Biel,2502,Obergasse 11,Switzerland,47.14235,7.24633,http://www.litcafe.ch,X
+/venues/2125874,Literaturcafé / Café Littéraire,Biel,2502,Obergasse 11,Switzerland,47.14237,7.24645,http://litcafe.ch/,/venues/3347089
+/venues/31724,Kaufleuten,Zürich,8001,Pelikanplatz,Switzerland,47.37106,8.53572,http://www.kaufleuten.ch,X
+/venues/4092369,Kaufleuten Lima Bar,Zürich,8001,Pelikanplatz,Switzerland,47.37106,8.53591,,/venues/31724
+/venues/2510419,Bananenreiferei,Zürich,8005,Pfingstweidstrasse 101,Switzerland,47.39025,8.509,,
+/venues/3267124,Tanzwerk101,Zürich,,Pfingstweidstrasse 101,Switzerland,47.39022,8.50884,,
+/venues/1148641,Acanto,Zürich,8005,Pfingstweidstrasse 6,Switzerland,47.38789,8.51864,,
+/venues/1565928,Besame Mucho,Zürich,8005,Pfingstweidstrasse 6,Switzerland,47.38766,8.51839,,
+/venues/3832614,Les Halles,Zürich,,Pfingstweidstrasse 6,Switzerland,47.38793,8.51858,,
+/venues/4351945,Lugano Arte & Cultura (LAC),Lugano,6900,Piazza Bernardino Luini 6,Switzerland,45.99943,8.94788,,X
+/venues/2955063,"Sala Teatro, LAC",Lugano,6900,Piazza Bernardino Luini 6,Switzerland,46.00006,8.9484,,/venues/4351945
+/venues/1260221,D'improvviso,Locarno,6500,Piazza Indipendenza 1,Switzerland,46.19031,9.02281,,/venues/1591833
+/venues/1591833,Spazio Culturale Temporaneo,Locarno,6500,Piazza Indipendenza 1,Switzerland,46.1902,9.02267,,X
+/venues/4267224,La Quairmesse,Lugano,6900,Piazza Manzoni,Switzerland,46.00372,8.95198,https://www.ticino.ch/fr/events/details/La-Quairmesse-Swiss-Made-Music/142962.html,
+/venues/2612953,Palco Ai Giovani,Lugano,6900,Piazza Manzoni,Switzerland,46.0038,8.95306,http://palcoaigiovani.ch,
+/venues/1838613,Piazza Manzoni,Lugano,,Piazza Manzoni,Switzerland,46.00388,8.95239,,
+/venues/2087559,Bar Club ABC @ D! Club,Lausanne,1001,Place Centrale,Switzerland,46.52093,6.63113,http://dclub.ch/history.php,/venues/130024
+/venues/1224531,Barock Café,Martigny,1920,Place Centrale,Switzerland,46.10127,7.07326,,
+/venues/4366028,Girons de Jeunesses Lussy,Fribourg,1690,Place Centrale,Switzerland,46.80256,7.16469,,
+/venues/1680443,Le Lapin Vert Club,Sion,1997,Place Centrale,Switzerland,46.18104,7.28969,,
+/venues/4245199,Marché Artisanal de Vissoie (VS),Sierre,3961,Place Centrale,Switzerland,46.09618,7.22916,,
+/venues/1107486,Cafe Le Veme,Montreux,,Place De La Gare,Switzerland,46.46308,6.84296,,
+/venues/593616,Gare Cff,Lausanne,,Place De La Gare,Switzerland,46.5174,6.62828,,
+/venues/3438424,Bô Noël - Marché de Noël,Lausanne,,Place St. François,Switzerland,46.5199,6.63308,,
+/venues/4406168,Eglise St Francois,Lausanne,1003,Place St. François,Switzerland,46.51989,6.63359,,
+/venues/4369373,Théâtre Forum Meyrin,Geneva,1217,Place des Cinq-Continents 1,Switzerland,46.23196,6.08108,,
+/venues/418421,Undertown,Geneva,,Place des Cinq-Continents 1,Switzerland,46.23231,6.08107,,
+/venues/3232659,"Kalvingrad, l'Usine",Geneva,1204,Place des Volontaires 4,Switzerland,46.20398,6.13608,https://www.usine.ch/,/venues/45690
+/venues/2462799,Post Tenebras Rock (PTR) - L'Usine,Geneva,1204,Place des Volontaires 4,Switzerland,46.204,6.13628,http://ptrnet.ch,/venues/45690
+/venues/143748,Kulturwerk 118,Sursee,CH-6210,Postfach,Switzerland,47.17272,8.10457,http://www.kulturwerk118.ch/,
+/venues/4420333,Old Time Jazz Club Meilen,Zürich,8706,Postfach,Switzerland,47.26941,8.64371,,
+/venues/3461779,G's Music Club Vals,Chur,7132,Poststrasse,Switzerland,46.62018,9.18127,http://www.gsvals.ch,
+/venues/3735309,Kongresssaal Arosa,Arosa,7050,Poststrasse,Switzerland,46.78297,9.68221,,X
+/venues/3459129,Kursaal Arosa,Arosa,7050,Poststrasse,Switzerland,46.78286,9.68168,,/venues/3735309
+/venues/3602464,Reformierte Stadtkirche,Zürich,5600,Poststrasse,Switzerland,47.38775,8.1786,,
+/venues/3986329,Pöschtli Events,St. Gallen,9220,Poststrasse 10,Switzerland,47.4924,9.24117,http://post-bischofszell.ch,
+/venues/1445923,Studio 15,St. Gallen,9000,Poststrasse 10,Switzerland,47.42495,9.37323,,
+/venues/4098154,"Kulturhaus Palazzo, Theater",Basel,4410,Poststrasse 2,Switzerland,47.484,7.73228,,
+/venues/4098104,Songwriter Night Rheineck,St. Gallen,9424,Poststrasse 2,Switzerland,47.42521,9.37388,https://www.facebook.com/SongwriterRheineck/,
+/venues/58729,Casino,Herisau,9100,Poststrasse 9,Switzerland,47.38463,9.2779,,X
+/venues/521246,Casino Bibliothek Herisau,Herisau,9100,Poststrasse 9,Switzerland,47.38464,9.27794,,/venues/58729
+/venues/2708063,Escher Raumdesign,Davos,7270,Promenade,Switzerland,46.79399,9.82197,,
+/venues/2843683,Kapelle Gstaad,Martigny,3780,Promenade,Switzerland,46.47427,7.28579,,
+/venues/2938518,1. Mai-feier,Bern,3600,Rathausplatz,Switzerland,46.75974,7.62869,,
+/venues/3868089,BeJazz Sommer,Bern,,Rathausplatz,Switzerland,46.94855,7.45225,,
+/venues/4382429,3. Alpen-Welle Schlager Open Air,Sierre,CH-3954,Rathausstraße 8,Switzerland,46.37962,7.62649,,
+/venues/4379369,Patinage,Sierre,,Rathausstraße 8,Switzerland,46.3159,7.98782,,
+/venues/3743999,Rue Charles-Emmanuel de Rivaz,Lausanne,1890,Rue Charles-Emmanuel de Rivaz,Switzerland,46.21776,7.00301,,
+/venues/3032454,Théâtre du Martolet,Lausanne,1890,Rue Charles-Emmanuel de Rivaz,Switzerland,46.21775,7.00318,,
+/venues/2929368,La Tanière,Geneva,1227,Rue Jacques Dalphin 53,Switzerland,46.18089,6.1403,,
+/venues/4376676,Le Champmeslé,Geneva,1227 Carouge,Rue Jacques Dalphin 53,Switzerland,46.18091,6.14034,,
+/venues/3807999,JET by Valentino,Lausanne,1003,Rue de Genève 23,Switzerland,46.52187,6.62717,http://www.madclub.ch,/venues/120770
+/venues/120770,Mad Club,Lausanne,1003,Rue de Genève 23,Switzerland,46.52205,6.62724,http://www.madclub.ch,X
+/venues/4342136,Qwertz,Lausanne,1003,Rue de la Grotte 3,Switzerland,46.51874,6.63431,,
+/venues/1858633,Standard Café,Lausanne,1003,Rue de la Grotte 3,Switzerland,46.51842,6.63405,http://www.standardcafe.ch/,
+/venues/4395748,Cave Du Café De Paris,La Chaux De Fonds,2300,Rue du Progrès 4,Switzerland,47.10708,6.82961,,
+/venues/2693443,Les Murs du Son,La Chaux De Fonds,2300,Rue du Progrès 4,Switzerland,47.107,6.82948,http://www.mursduson.ch,
+/venues/4042764,"ETH, Auditorium",Zürich,,Rämistrasse 101,Switzerland,47.37654,8.54809,,X
+/venues/1079941,"Student Party Center (stuz²), Eth Zürich",Zürich,8092,Rämistrasse 101,Switzerland,47.37642,8.54799,,/venues/4042764
+/venues/3422039,Schauspielhaus Pfauen,Zürich,8001,Rämistrasse 34,Switzerland,47.37027,8.54923,,X
+/venues/2566809,Schauspielhaus Zurich,Zürich,8001,Rämistrasse 34,Switzerland,47.37026,8.54924,,/venues/3422039
+/venues/3082494,Schloss Rittersaal,Zürich,8640,Schlossweg,Switzerland,47.19155,8.8097,,
+/venues/4296454,Schloss Werdenberg,Buchs,9470,Schlossweg,Switzerland,47.169,9.46223,,
+/venues/2545729,Kongress-zentrum Schluefweg,Kloten,8302,Schluefweg 10,Switzerland,47.44404,8.58223,,/venues/3797319
+/venues/3797319,Swiss Arena,Kloten,8302,Schluefweg 10,Switzerland,47.44306,8.58316,,X
+/venues/841911,Nordportal,Baden,5400,Schmiedestrasse 12/14,Switzerland,47.48129,8.30029,,X
+/venues/843506,"Nordportal Fjord, Baden",Baden,5400,Schmiedestrasse 12/14,Switzerland,47.48132,8.30027,,/venues/841911
+/venues/4396453,Kreuzhof Bar,Langenthal,4900,Schulhausstrasse 5,Switzerland,47.21134,7.78769,http://www.kreuzhofbar.ch,
+/venues/4104034,Kulturschachtle,Zürich,8134,Schulhausstrasse 5,Switzerland,47.31319,8.52975,http://www.kulturschachtle.ch,
+/venues/4351232,Mehrzweckhalle Heiget,Zürich,8320,Schulhausstrasse 5,Switzerland,47.38989,8.75486,,
+/venues/4380087,Dorfzentrum Bottighofen,Kreuzlingen,8598,Schulstrasse 4,Switzerland,47.64993,9.17633,,
+/venues/4371913,Gemeindesaal Zweisimmen,Obersimmental-Saanen,3770,Schulstrasse 4,Switzerland,46.55089,7.37661,,
+/venues/4371541,Pusterum,Bern,3007,Schwarztorstrasse 102,Switzerland,46.94479,7.42489,,
+/venues/3509194,Werkhof 102,Bern,3007,Schwarztorstrasse 102,Switzerland,46.94484,7.42564,https://www.werkhof102.com/,
+/venues/4019069,Forum Royal,Baden,4058,Schwarzwald Allee 175,Switzerland,48.27749,8.186,,/venues/3970449
+/venues/3970449,Forum Royale,Basel,4058,Schwarzwald Allee 175,Switzerland,47.56604,7.60706,,X
+/venues/125906,"Dachstock, Reitschule",Bern,3001,Schützenmatte,Switzerland,47.03436,7.31387,http://www.reitschule.ch,/venues/101173
+/venues/4161334,SCHÜTZenhaus,Bern,3011,Schützenmatte,Switzerland,46.95304,7.4412,,/venues/101173
+/venues/3964069,Beatus Wellness & Spa Hotel,Bern,3658,Seestrasse 300,Switzerland,47.25421,8.614,https://www.beatus.ch/en,X
+/venues/4421111,"Hotel Beatus, Merligen BE (Switzerland)",Bern,3658,Seestrasse 300,Switzerland,46.69629,7.73751,,/venues/3964069
+/venues/3454569,Rote Fabrik Ziegel oh Lac,Zürich,8038,Seestrasse 395,Switzerland,47.34359,8.53583,,/venues/30935
+/venues/3958534,lethargy,Zürich,8038 Zurich,Seestrasse 395,Switzerland,47.34356,8.53583,http://www.lethargy.ch/2018/,/venues/30935
+/venues/3293414,"Kkthun, Schadausaal",Bern,3601,Seestrasse 68,Switzerland,46.74312,7.62939,,/venues/1562518
+/venues/1483203,Schadausaal (kkthun),Bern,3504,Seestrasse 68,Switzerland,46.74324,7.62953,,/venues/1562518
+/venues/3817934,Street Food Fest,Stäfa,,Seestrasse 68,Switzerland,47.2385,8.71993,,
+/venues/4143469,Alts Schlachthuus Laufen,Laufen,4242,Seidenweg 55,Switzerland,47.42215,7.50368,,X
+/venues/979411,Kulturzentrum Alts Schlachthuus,Laufen,4242,Seidenweg 55,Switzerland,47.42215,7.50389,,/venues/4143469
+/venues/4082229,Photobastei,Zürich,8005,Sihlquai 125,Switzerland,47.38464,8.5339,http://www.photobastei.ch/,X
+/venues/2551629,Photobastei 2.0,Zürich,8005,Sihlquai 125,Switzerland,47.38473,8.53404,http://www.photobastei.ch/event/37/coldking-s-acoustic-mo-blanc.html,/venues/4082229
+/venues/2660583,Tabourettli,Basel,4001,Spalenberg 12,Switzerland,47.55754,7.58676,,/venues/2847713
+/venues/2847713,Theater Fauteuil,Basel,4051,Spalenberg 12,Switzerland,47.55734,7.5864,,X
+/venues/4366601,"Theater Fauteuil, Tabourettli",Basel,4051,Spalenberg 12,Switzerland,47.55735,7.58641,,/venues/2847713
+/venues/2767953,Turnhalle,Bern,3011,Speichergasse 4,Switzerland,46.95034,7.44298,,/venues/2755408
+/venues/936361,Turnhalle im PROGR,Bern,3011,Speichergasse 4,Switzerland,46.95022,7.44299,,/venues/2755408
+/venues/3626914,Old Capitol,Langenthal,4900,Spitalgasse 6,Switzerland,47.21108,7.78992,https://oldcapitol.ch/,X
+/venues/3962434,OldCapitol,Langenthal,4900,Spitalgasse 6,Switzerland,47.21104,7.78967,,/venues/3626914
+/venues/3963829,Beach Battle,Uzwil,9244,Sportstrasse,Switzerland,47.44123,9.14238,http://www.beachbattle.ch,
+/venues/3224879,Eissporthalle Kleinholz,Olten,4600,Sportstrasse,Switzerland,47.34354,7.896,,
+/venues/3166144,Badi Lounge,Frutigen,3714,Sportweg 1,Switzerland,46.59353,7.65295,http://www.badilounge.info/,
+/venues/4332994,Open Air Im Freibadareal,Frutigen,3714,Sportweg 1,Switzerland,46.59355,7.65342,,
+/venues/2307434,Casinotheater,Winterthur,8400,Stadthausstrasse 119,Switzerland,47.49986,8.72658,,X
+/venues/2846208,Casinotheater Theatersaal,Winterthur,8400,Stadthausstrasse 119,Switzerland,47.49974,8.72661,,/venues/2307434
+/venues/3667439,Casinotheater Winterthur,Winterthur,8400,Stadthausstrasse 119,Switzerland,47.49974,8.72662,,/venues/2307434
+/venues/3468699,Frauenstimmen-Festival Brig,Sierre,,Stadtplatz,Switzerland,46.31686,7.98816,http://www.frauenstimmen.ch/,
+/venues/1614178,Stadtplatz,Lyss,3270,Stadtplatz,Switzerland,47.0444,7.27583,,
+/venues/2894763,Stars of Sounds Aarberg,Lyss,3270,Stadtplatz,Switzerland,47.04437,7.27586,,
+/venues/4390292,Gleis 1,Zürich,8606,Stationsstrasse 54,Switzerland,47.36849,8.68166,https://www.gleis1.cafe/home,
+/venues/4351827,Gleis1,Uster,8606,Stationsstrasse 54,Switzerland,47.36936,8.68649,http://www.gleis1.cafe,
+/venues/4130839,Fabrikhalle,Bern,3014,Stauffacherstrasse 60,Switzerland,46.96567,7.45511,http://bit.ly/TanzkarussellSilvester,
+/venues/29644,Volkshaus,Zürich,8004,Stauffacherstrasse 60,Switzerland,47.37546,8.52722,http://www.volkshaus.ch/,X
+/venues/3289504,"Volkshaus, Theatersaal",Zürich,8004,Stauffacherstrasse 60,Switzerland,47.37548,8.52748,,/venues/29644
+/venues/3637199,43. Winterthurer Musikfestwochen,Winterthur,8400,Steinberggasse,Switzerland,47.49831,8.72831,http://www.musikfestwochen.ch/,/venues/505121
+/venues/505121,Winterthurer Musikfestwochen,Winterthur,8400,Steinberggasse,Switzerland,47.49833,8.72866,http://www.musikfestwochen.ch/,X
+/venues/1641558,"Festsaal, Stadtcasino Basel",Basel,4051,Steinenberg 14,Switzerland,47.5543,7.58954,,/venues/80955
+/venues/2732288,Stadt-casino - Musiksaal,Basel,4000,Steinenberg 14,Switzerland,47.55425,7.58936,,/venues/80955
+/venues/1153811,"Musiksaal, Stadtcasino Basel",Basel,4051,"Steinenberg 14, Barfüsserplatz",Switzerland,47.55421,7.58949,,/venues/80955
+/venues/80955,Stadtcasino Basel,Basel,4005,"Steinenberg 14, Barfüsserplatz",Switzerland,47.55431,7.58946,,X
+/venues/3602994,Casa del Lüc,Winterthur,8405,Sägeweg 1,Switzerland,47.48274,8.76248,https://www.facebook.com/casadellucwinterthur/,X
+/venues/4092794,Casa del Lüzifer,Winterthur,8405,Sägeweg 1,Switzerland,47.48278,8.7625,,/venues/3602994
+/venues/33267,KiFF,Aarau,5000,Tellistrasse 118,Switzerland,47.39869,8.0637,http://www.kiff.ch,X
+/venues/4336887,"Kiff, Saal",Aarau,5000,Tellistrasse 118,Switzerland,47.39856,8.06473,,/venues/33267
+/venues/32834,Mascotte,Zürich,8001 Zü,Theaterstrasse 10,Switzerland,47.36635,8.54669,http://www.mascotte.ch,
+/venues/137743,Stadthofsaal,Uster,8610,Theaterstrasse 10,Switzerland,47.34895,8.71513,,
+/venues/2600483,Luzerner Theater,Luzern,6003,Theaterstrasse 2,Switzerland,47.05062,8.3062,http://www.luzernertheater.ch/,X
+/venues/3964894,Theaterbox,Luzern,6003 Luzern,Theaterstrasse 2,Switzerland,47.0506,8.30617,,/venues/2600483
+/venues/4334903,Bistro du Theatre,Luzern,6002,Theaterstrasse 5,Switzerland,47.05025,8.30672,http://www.bistrodutheatre.ch,/venues/2600483
+/venues/3171054,Stadttheater,Sursee,6210,Theaterstrasse 5,Switzerland,47.17352,8.10925,,
+/venues/4233309,Gemeindezentrum Lötschberg,Bern,3700,Thunstrasse 2,Switzerland,46.69035,7.67531,,/venues/2906373
+/venues/2906373,Lötschbergsaal,Bern,3700,Thunstrasse 2,Switzerland,46.69024,7.67517,,X
+/venues/1569323,Alexander Hotel,Davos,7270,Tobelmühlestrasse 2,Switzerland,46.79723,9.82291,,
+/venues/3846919,Hard Rock Hotel,Davos,7270,Tobelmühlestrasse 2,Switzerland,46.7971,9.82306,https://www.hardrockhotels.com/davos/,
+/venues/4367944,1.Stock,Basel,4142,Tramstrasse 66,Switzerland,47.50828,7.61618,http://ersterstock.ninja/,X
+/venues/1475258,Erster Stock,Basel,,Tramstrasse 66,Switzerland,47.51018,7.61652,http://www.schoolyard.ch/sy_1stock/index.php?content=info,/venues/4367944
+/venues/3164934,Rockfact Münchenstein,Basel,4142,Tramstrasse 66,Switzerland,47.50792,7.61626,http://rockfact.ch/,
+/venues/4366848,Gasthaus Albisgütli,Zürich,8045,Uetlibergstrasse 341,Switzerland,47.35204,8.50842,,X
+/venues/58780,Schützenhaus Albisgütli,Zürich,8045,Uetlibergstrasse 341,Switzerland,47.35217,8.50824,,/venues/4366848
+/venues/4284259,Hafenscharte,Basel,4057,Uferstrasse 40,Switzerland,47.5778,7.58682,,
+/venues/2636388,Sommer Residenz,Basel,,Uferstrasse 40,Switzerland,47.5766,7.58679,http://www.sommerresidenz.ch/,
+/venues/2304014,Folk Club,Chur,7000,Untere Gasse 9,Switzerland,46.8487,9.53054,,X
+/venues/125908,Werkstatt Chur,Chur,7000,Untere Gasse 9,Switzerland,46.84873,9.53064,http://www.werkstattchur.ch,/venues/2304014
+/venues/3000729,Kirche San Niculo,St. Moritz,7504,Via Maistra,Switzerland,46.49529,9.90007,,
+/venues/3215483,St. Moritz Dorf,St. Moritz,7500,Via Maistra,Switzerland,46.50065,9.84411,,
+/venues/4342551,SPORTBAR,St. Moritz,7504,Via Maistra 145,Switzerland,46.49228,9.90358,http://www.sporthotel.ch,/venues/2289554
+/venues/2289554,Sporthotel,St. Moritz,,Via Maistra 145,Switzerland,46.49213,9.90352,http://www.sporthotel.ch/,X
+/venues/2724828,Hotel Kurhaus,Chur,7078,Voa Principala 40,Switzerland,46.72652,9.55841,https://kurhaus.com/,
+/venues/4362397,Kurhaus-Saal,Chur,7078 Lenzerheide,Voa Principala 40,Switzerland,46.72643,9.55832,,
+/venues/4152839,Progr U62,Bern,3011,Waisenhausplatz 30,Switzerland,46.95023,7.4439,,/venues/2755408
+/venues/1182241,Stiftung Progr,Bern,3011,Waisenhausplatz 30,Switzerland,46.95016,7.44387,http://progr.ch,/venues/2755408
+/venues/3425329,SOHO Club,Bern,4537,Wangenstrasse 45,Switzerland,47.24108,7.65203,,
+/venues/3193379,Schuetzenhouse,Bern,4537,Wangenstrasse 45,Switzerland,47.24109,7.65202,,
+/venues/69432,Dynamo,Zürich,8006,Wasserwerkstrasse 21,Switzerland,47.3834,8.53938,http://www.dynamo.ch/,X
+/venues/3607324,Dynamo Werk 21,Zürich,8006,Wasserwerkstrasse 21,Switzerland,47.3833,8.53931,https://www.dynamo.ch/,/venues/69432
+/venues/2208879,Klubi,Zürich,8037,Wasserwerkstrasse 89a,Switzerland,47.38658,8.53443,http://klubi.ch/,X
+/venues/3706779,UMBO,Zürich,,Wasserwerkstrasse 89a,Switzerland,47.3868,8.53378,,/venues/2208879
+/venues/4097449,Miles,Luzern,6010,Werkstrasse 9,Switzerland,47.03086,8.29385,,
+/venues/2196839,ZAK,Zürich,8645,Werkstrasse 9,Switzerland,47.23204,8.83434,,
+/venues/2031629,Kunsthaus Zürich,Zürich,8024,Winkelwiese 4,Switzerland,47.37016,8.54666,,
+/venues/3217028,Theater an der Winkelwiese,Zürich,CH-8001 Zürich,Winkelwiese 4,Switzerland,47.37016,8.54671,http://winkelwiese.ch/,
+/venues/66426,Kongresshaus Biel,Biel,2502,Zentralstrasse 60,Switzerland,47.13488,7.24856,,X
+/venues/3118569,Palais des Congrès,Biel,2501,Zentralstrasse 60,Switzerland,47.13485,7.2478,http://www.ctsbiel-bienne.ch/,/venues/66426
+/venues/3977044,Gate54,Baden,5400,Zürcherstrasse 1,Switzerland,47.47113,8.30619,,
+/venues/936356,Ventil - Cafe Bar Club,Baden,5400,Zürcherstrasse 1,Switzerland,47.47113,8.30613,,
