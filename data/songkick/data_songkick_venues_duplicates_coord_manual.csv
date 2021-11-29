@@ -806,7 +806,7 @@
 /venues/3672044,Caveau de Vigneron,Neuchatel,,,Switzerland,46.97757,6.87692,,
 /venues/3672034,Fête Privée,Neuchatel,,,Switzerland,46.97757,6.87692,,
 /venues/33268,La Case à Chocs,Neuchatel,2000,Quai Philippe Godet 20,Switzerland,46.98923,6.9218,http://www.case-a-chocs.ch,X
-/venues/188313,Queen Kong Club,Neuchatel,2000,Quai Philippe Godet 20,Switzerland,46.98923,6.9218,,
+/venues/188313,Queen Kong Club,Neuchatel,2000,Quai Philippe Godet 20,Switzerland,46.98923,6.9218,,/venues/33268
 /venues/2880683,Jeunes Rives,Neuchatel,2001,,Switzerland,46.98999,6.92927,,
 /venues/3398949,Le Balkkon,Neuchatel,,,Switzerland,46.98999,6.92927,,
 /venues/3567269,Kiosk'Art Jeunes-Rives,Neuchatel,,,Switzerland,46.98999,6.92927,,
@@ -1340,10 +1340,10 @@
 /venues/4358877,MÄX,Zürich,8005,Hardstrasse 219,Switzerland,47.38676,8.51667,,
 /venues/2539429,Griechisch-Orthodoxe Kirche Agios Dimitrios,Zürich,8037,Rousseaustrasse 17,Switzerland,47.38698,8.53459,,
 /venues/2895683,Club Saal,Zürich,8037,Rousseaustrasse 17,Switzerland,47.38698,8.53459,,
-/venues/1129971,Komplex 457,Zürich,8048,Hohlstrasse 457,Switzerland,47.38732,8.49986,,
-/venues/3816524,IF Performance Hall,Zürich,8048,Hohlstrasse 457,Switzerland,47.38732,8.49986,,
-/venues/4055604,Klub Komplex,Zürich,8048,Hohlstrasse 457,Switzerland,47.38732,8.49986,,/venues/2148724
-/venues/2148724,Komplex Klub,Zürich,8048,Hohlstrasse 457,Switzerland,47.38732,8.49986,http://www.komplex457.ch/klub/klub/,X
+/venues/1129971,Komplex 457,Zürich,8048,Hohlstrasse 457,Switzerland,47.38732,8.49986,,X
+/venues/3816524,IF Performance Hall,Zürich,8048,Hohlstrasse 457,Switzerland,47.38732,8.49986,,/venues/1129971
+/venues/4055604,Klub Komplex,Zürich,8048,Hohlstrasse 457,Switzerland,47.38732,8.49986,,/venues/1129971
+/venues/2148724,Komplex Klub,Zürich,8048,Hohlstrasse 457,Switzerland,47.38732,8.49986,http://www.komplex457.ch/klub/klub/,/venues/1129971
 /venues/585256,Neues Theater Spirgarten,Zürich,8048,Lindenplatz 5,Switzerland,47.38739,8.48542,,X
 /venues/1030406,Seminarhotel Spirgarten,Zürich,8048,Lindenplatz 5,Switzerland,47.38739,8.48542,,/venues/585256
 /venues/619071,Kongresszentrum Spirgarten,Zürich,8048,Lindenplatz 5,Switzerland,47.38739,8.48542,,/venues/585256
@@ -1497,8 +1497,8 @@
 /venues/848676,Merkker,Baden,5400,Bruggerstrasse 37,Switzerland,47.47591,8.30448,,X
 /venues/946411,Stanzerei,Baden,5400,Bruggerstrasse 37,Switzerland,47.47591,8.30448,,
 /venues/1926069,Stadtfest,Baden,5400,Bruggerstrasse 37,Switzerland,47.47591,8.30448,,
-/venues/1509938,Royal,Baden,5400,Bahnhofstrasse 39,Switzerland,47.47625,8.30818,,
-/venues/2760648,Kulturbetrieb Royal,Baden,5400,Bahnhofstrasse 39,Switzerland,47.47625,8.30818,,
+/venues/1509938,Royal,Baden,5400,Bahnhofstrasse 39,Switzerland,47.47625,8.30818,,X
+/venues/2760648,Kulturbetrieb Royal,Baden,5400,Bahnhofstrasse 39,Switzerland,47.47625,8.30818,,/venues/1509938
 /venues/4366906,Amphitheater Vindonissa,Zürich,5210,Amphirain 2,Switzerland,47.4769,8.21389,,
 /venues/4380397,Das Zelt Windisch,Aargau,5210,Amphirain 2,Switzerland,47.4769,8.21389,,
 /venues/984076,Kultur- und Kongresszentrum Trafo,Baden,5400,Brown Boveri Platz 1,Switzerland,47.47824,8.30507,,
@@ -1523,8 +1523,8 @@
 /venues/2114929,Café Noire,Basel,,,Switzerland,47.49645,7.59426,,
 /venues/4417442,Lokal,Winterthur,8400,Zürcherstrasse 41,Switzerland,47.49674,8.71604,https://www.facebook.com/lokal.winterthur/?ref=page_internal,X
 /venues/4294499,Lokstadt / Halle Draisine,Winterthur,8400,Zürcherstrasse 41,Switzerland,47.49674,8.71604,,/venues/4417442
-/venues/505121,Winterthurer Musikfestwochen,Winterthur,8400,Steinberggasse,Switzerland,47.49833,8.72866,http://www.musikfestwochen.ch/,
-/venues/354756,Steinberggasse,Winterthur,8400,Steinberggasse,Switzerland,47.49833,8.72866,,
+/venues/505121,Winterthurer Musikfestwochen,Winterthur,8400,Steinberggasse,Switzerland,47.49833,8.72866,http://www.musikfestwochen.ch/,X
+/venues/354756,Steinberggasse,Winterthur,8400,Steinberggasse,Switzerland,47.49833,8.72866,,/venues/505121
 /venues/3654179,Kulturkoller,Winterthur,,,Switzerland,47.49882,8.72369,,
 /venues/3366179,Zeughaus,Winterthur,,,Switzerland,47.49882,8.72369,,
 /venues/3397159,Bolero,Winterthur,,,Switzerland,47.49882,8.72369,,

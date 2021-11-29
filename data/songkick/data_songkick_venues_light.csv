@@ -643,7 +643,7 @@
 641,/venues/2509004,/venues/2509004,Bierhalle,St. Gallen,47.41793,9.3644
 642,/venues/3190944,/venues/3190944,Bierhalle Linde,Altstätten,47.40697,9.60678
 643,/venues/78082,/venues/78082,Bierhübeli,Bern,46.95634,7.437889999999999
-644,/venues/3615099,/venues/3615099,Bierhübeli Bern,Bern,46.95626,7.4378199999999985
+644,/venues/3615099,/venues/78082,Bierhübeli Bern,Bern,46.95626,7.4378199999999985
 645,/venues/3874474,/venues/3874474,Big Ben Westside,Zürich,,
 646,/venues/3331539,/venues/3331539,Bike Zone,Baden,47.46968,8.30161
 647,/venues/4396955,/venues/4396955,Biker's Base,Pfaffikon,47.36352,8.76725
@@ -684,8 +684,8 @@
 682,/venues/4391892,/venues/4391892,Blausee Events,Blausee,46.53245,7.66476
 683,/venues/4267339,/venues/4267339,Bleiche Wohlen,Wohlen,47.35121,8.28153
 684,/venues/1579828,/venues/1579828,Bleifrei,Aarau,47.39119,8.059389999999999
-685,/venues/54662,/venues/54662,Bleu Lizard,Lausanne,,
-686,/venues/245568,/venues/245568,Bleu Lézard,Lausanne,46.52017,6.63766
+685,/venues/54662,/venues/1305711,Bleu Lizard,Lausanne,,
+686,/venues/245568,/venues/1305711,Bleu Lézard,Lausanne,46.52017,6.63766
 687,/venues/4210544,/venues/4210544,Blickfelder Festival,Zürich,47.38291,8.53536
 688,/venues/551596,/venues/551596,Bling Bar & Club,Zürich,,
 689,/venues/2541759,/venues/2541759,Block 56,Basel,47.57228,7.576810000000001
@@ -1113,7 +1113,7 @@
 1111,/venues/2503269,/venues/2503269,Caveau du Sommelier,Olten,47.34955,7.90125
 1112,/venues/2431619,/venues/2431619,Caveau le Chapeau,Lausanne,,
 1113,/venues/4382895,/venues/4382895,Caves du Château de Coppet,Geneva,46.31005,6.17353
-1114,/venues/4338097,/venues/4338097,Caves du Manoir,Martigny,,
+1114,/venues/4338097,/venues/418386,Caves du Manoir,Martigny,,
 1115,/venues/2796468,/venues/2796468,Caves du Théâtre de Valère (Dolmen/Cavajazz),Sion,46.22271,7.33948
 1116,/venues/1641563,/venues/1641563,Cdv (centre De Vie),Neuchatel,46.98912,6.90867
 1117,/venues/3970099,/venues/3970099,Ceizs Schweiz IEGCHURCH,Zürich,,
@@ -1122,7 +1122,7 @@
 1120,/venues/4349629,/venues/4349629,Centraf' Tropic Disco Bar,La Chaux De Fonds,47.10291,6.83155
 1121,/venues/3230284,/venues/3230284,Central Station,Geneva,46.2104,6.1398199999999985
 1122,/venues/3839449,/venues/3839449,Centre Bellevaux,Lausanne,46.53736,6.6327
-1123,/venues/1644743,/venues/1644743,"Centre Commercial Balexert, Scène Fnac",Geneva,,
+1123,/venues/1644743,/venues/1586603,"Centre Commercial Balexert, Scène Fnac",Geneva,,
 1124,/venues/4302664,/venues/4302664,Centre Culturel Du Manoir,Geneva,46.21585,6.1814800000000005
 1125,/venues/4392178,/venues/4392178,Centre Culturel Espace Diamono,Geneva,46.18304000000001,6.142
 1126,/venues/4341272,/venues/4341272,Centre Culturel de Rossemaison,Basel,47.3462,7.34255
@@ -1778,13 +1778,13 @@
 1776,/venues/4370501,/venues/4370501,Espace Culturel du Bois-des-Arts,Geneva,46.18792,6.198919999999998
 1777,/venues/492146,/venues/492146,Espace Gruyere,Bulle,46.61499,7.04904
 1778,/venues/971771,/venues/971771,Espace Guinguette,Montreux,46.46273,6.84243
-1779,/venues/4418119,/venues/4418119,"Espace Live, Foire du Valais",Martigny,46.09732,7.077839999999999
+1779,/venues/4418119,/venues/4033554,"Espace Live, Foire du Valais",Martigny,46.09732,7.077839999999999
 1780,/venues/2398239,/venues/2398239,Espace Noir,Bern,47.15309,6.99937
 1781,/venues/2182909,/venues/2182909,Espace Odyssée,Lausanne,46.52927,6.60043
 1782,/venues/4410104,/venues/4410104,Espace Saint-Marc,Martigny,46.07497,7.21977
 1783,/venues/4299564,/venues/4299564,Espace Solidaire Pâquis,Geneva,,
 1784,/venues/3172159,/venues/3172159,Espace St-Martin,Lausanne,46.52334000000001,6.63722
-1785,/venues/4026079,/venues/4026079,Espace Tribus - Foire du Valais,Martigny,,
+1785,/venues/4026079,/venues/4033554,Espace Tribus - Foire du Valais,Martigny,,
 1786,/venues/3578804,/venues/3578804,Espace l'Aurore,Fribourg,46.67135,7.061489999999999
 1787,/venues/4335410,/venues/4335410,Espacejazz,Lausanne,46.52079000000001,6.6314899999999986
 1788,/venues/4393011,/venues/4393011,Esplanade,Biel,,
@@ -2069,7 +2069,7 @@
 2067,/venues/78962,/venues/78962,Forum Fribourg,Fribourg,46.82443,7.152639999999999
 2068,/venues/4358250,/venues/4358250,Forum Obere Fabrik,Sissach,,
 2069,/venues/2111344,/venues/2111344,Forum Odeon Brugg,Zürich,47.48144,8.20867
-2070,/venues/4019069,/venues/3970449,Forum Royal,Baden,48.27749,8.186
+2070,/venues/4019069,/venues/3970449,Forum Royal,Baden,,
 2071,/venues/3970449,/venues/3970449,Forum Royale,Basel,47.56604,7.6070600000000015
 2072,/venues/4145459,/venues/4145459,Forum Seon,Aarau,47.3506,8.154069999999999
 2073,/venues/1570488,/venues/1570488,Forum St-Georges,Basel,47.36629,7.34553
@@ -2298,7 +2298,7 @@
 2296,/venues/130434,/venues/130434,Geneva Arena,Geneva,46.23466,6.11377
 2297,/venues/3069994,/venues/3069994,Geneva Art Festival,Geneva,46.19839,6.1423
 2298,/venues/1490563,/venues/1490563,Geneva Club,Geneva,,
-2299,/venues/3369229,/venues/3369229,Geneva Lake Festival,Geneva,38.85429,-85.03181
+2299,/venues/3369229,/venues/3369229,Geneva Lake Festival,Geneva,,
 2300,/venues/1527003,/venues/1527003,Genf,Geneva,,
 2301,/venues/418541,/venues/418541,Genf Reithalle,Payerne,,
 2302,/venues/4033899,/venues/83369,Genossenschaft Eisenwerk,Winterthur,47.56107,8.893930000000003
@@ -2322,7 +2322,7 @@
 2320,/venues/2290199,/venues/2290199,Giesserei Oerlikon,Zürich,47.40876,8.53757
 2321,/venues/4411715,/venues/4411715,Ginial-Bar,St. Gallen,47.55697,9.36788
 2322,/venues/4303889,/venues/4303889,Gino's Kunstcafe,Wil,47.46654,9.04842
-2323,/venues/3947699,/venues/3947699,Giovani per l'Africa,Locarno,45.75275,10.73193
+2323,/venues/3947699,/venues/3947699,Giovani per l'Africa,Locarno,,
 2324,/venues/3647139,/venues/3647139,Gipfelrestaurant Weisshorn,Arosa,46.78237,9.67991
 2325,/venues/4366028,/venues/4366028,Girons de Jeunesses Lussy,Fribourg,46.80256,7.1646899999999984
 2326,/venues/2282859,/venues/2282859,Gisi Squat,Winterthur,,
@@ -2346,7 +2346,7 @@
 2344,/venues/4262529,/venues/4262529,Globepaddler Bielersee,Biel,47.1282,7.23491
 2345,/venues/4057259,/venues/4057259,Globul,Bulle,46.62639,7.06687
 2346,/venues/843631,/venues/843631,Globull,Bulle,46.62652,7.0674600000000005
-2347,/venues/3358309,/venues/3358309,Gloria Theater Säckingen,Winterthur,32.50171,-101.77517
+2347,/venues/3358309,/venues/3358309,Gloria Theater Säckingen,Winterthur,,
 2348,/venues/4336470,/venues/4336470,GloryFestival,Bern,46.94262,7.426
 2349,/venues/794486,/venues/794486,Glow Club,St. Gallen,,
 2350,/venues/3369564,/venues/3369564,Glücklich Festival,Luzern,47.05017,8.30931
@@ -2467,7 +2467,7 @@
 2465,/venues/936421,/venues/936421,Guss 81-80,Bulach,47.52487,8.53685
 2466,/venues/1538108,/venues/1538108,Guss39,Bulach,47.52487,8.53685
 2467,/venues/4274124,/venues/4274124,Gustav,Bern,46.95626,7.4378199999999985
-2468,/venues/4345398,/venues/4345398,Gustav Bar & Garten,Bern,,
+2468,/venues/4345398,/venues/4274124,Gustav Bar & Garten,Bern,,
 2469,/venues/4412896,/venues/4412896,Gustav Gleis,St. Gallen,,
 2470,/venues/4382613,/venues/4274124,Gustav@bierhübeli (kleiner Saal),Bern,46.95626,7.4378199999999985
 2471,/venues/3140844,/venues/3140844,Gutenberg Club,Zürich,47.36499,8.53065
@@ -2828,7 +2828,7 @@
 2826,/venues/2558689,/venues/2558689,I club,Geneva,46.19839,6.1423
 2827,/venues/4166489,/venues/130232,I45,Zug,47.18222,8.520760000000001
 2828,/venues/2194294,/venues/2194294,ICF Mittelland,Zürich,,
-2829,/venues/3816524,/venues/3816524,IF Performance Hall,Zürich,47.38732,8.49986
+2829,/venues/3816524,/venues/1129971,IF Performance Hall,Zürich,47.38732,8.49986
 2830,/venues/3644074,/venues/3644074,ILM Sederl,Luzern,47.07723,8.27564
 2831,/venues/4417605,/venues/4417605,INDUSTRIE36,Rorschach,47.47543,9.48339
 2832,/venues/269001,/venues/269001,INOX Music Club,Baden,,
@@ -3345,7 +3345,7 @@
 3343,/venues/3876029,/venues/3876029,Klosterruine Rüeggisberg,Bern,46.81945,7.436889999999999
 3344,/venues/4405946,/venues/4405946,Klosters Music,Chur,,
 3345,/venues/2499179,/venues/2499179,Klub Kegelbahn,Luzern,47.05285,8.29614
-3346,/venues/4055604,/venues/2148724,Klub Komplex,Zürich,47.38732,8.49986
+3346,/venues/4055604,/venues/1129971,Klub Komplex,Zürich,47.38732,8.49986
 3347,/venues/4377549,/venues/4377549,Klub Vieri,Zürich,47.3788,8.52978
 3348,/venues/3191454,/venues/3191454,Klub Villa,St. Gallen,47.42448,9.37672
 3349,/venues/2208879,/venues/2208879,Klubi,Zürich,47.38658,8.53443
@@ -3364,7 +3364,7 @@
 3362,/venues/84626,/venues/84626,Komodie Theatre,Basel,,
 3363,/venues/1129971,/venues/1129971,Komplex 457,Zürich,47.38732,8.49986
 3364,/venues/4265614,/venues/4265614,Komplex Club,Zürich,,
-3365,/venues/2148724,/venues/2148724,Komplex Klub,Zürich,47.38732,8.49986
+3365,/venues/2148724,/venues/1129971,Komplex Klub,Zürich,47.38732,8.49986
 3366,/venues/1112026,/venues/1112026,Kongress & Kursaal Bern,Bern,46.9531,7.4493800000000014
 3367,/venues/2450339,/venues/2788493,Kongress Und Kgh,Winterthur,47.50214,8.72959
 3368,/venues/2788493,/venues/2788493,Kongress- Und Kirchgemeindehaus,Winterthur,47.50214,8.72959
@@ -3487,7 +3487,7 @@
 3485,/venues/2812388,/venues/2812388,Kulturbeiz 113,Basel,47.55794,7.601269999999999
 3486,/venues/946806,/venues/946806,Kulturbeiz Chappelehof,Wohlen,47.35253,8.27784
 3487,/venues/1995254,/venues/1995254,Kulturbeiz Eggä,Oberuzwil,47.42921,9.12339
-3488,/venues/2760648,/venues/2760648,Kulturbetrieb Royal,Baden,47.47625,8.30818
+3488,/venues/2760648,/venues/1509938,Kulturbetrieb Royal,Baden,47.47625,8.30818
 3489,/venues/2853903,/venues/2853903,Kulturbistro «Zu Tisch» Bischofszell,Wil,47.49372,9.23991
 3490,/venues/2883703,/venues/2883703,Kulturbrauerei,Luzern,47.03906,8.29637
 3491,/venues/3747989,/venues/3747989,Kulturbühne LIHN,Zürich,47.12104,9.13017
@@ -3865,7 +3865,7 @@
 3863,/venues/2160054,/venues/2160054,Le Bateau-Lavoir,Geneva,46.20439,6.14316
 3864,/venues/3439924,/venues/3439924,Le Beaulieu Payerne,Payerne,46.82049,6.93238
 3865,/venues/2143094,/venues/2143094,Le Black Pearl,Montreux,,
-3866,/venues/944326,/venues/944326,Le Bleu Lezard,Lausanne,,
+3866,/venues/944326,/venues/1305711,Le Bleu Lezard,Lausanne,,
 3867,/venues/687066,/venues/687066,Le Bouffon de la Taverne,Geneva,,
 3868,/venues/96586,/venues/96586,Le Bourg,Lausanne,46.52013,6.63663
 3869,/venues/944331,/venues/944331,Le Bout Du Monde,Montreux,46.45824,6.8509699999999984
@@ -4000,14 +4000,14 @@
 3998,/venues/4393233,/venues/4393233,Les Arsenaux,Sion,46.23107,7.35528
 3999,/venues/3585474,/venues/3585474,Les Athénéennes,Geneva,46.20439,6.14316
 4000,/venues/3212043,/venues/3212043,Les Capucins,Fribourg,46.69189,6.911810000000001
-4001,/venues/4396355,/venues/4396355,Les Caves Du Mandir,Martigny,,
+4001,/venues/4396355,/venues/418386,Les Caves Du Mandir,Martigny,,
 4002,/venues/1903363,/venues/1903363,Les Caves de Bon-Séjour,Geneva,46.28398,6.165
 4003,/venues/418386,/venues/418386,Les Caves du Manoir,Martigny,46.1024,7.072260000000001
 4004,/venues/941611,/venues/941611,Les Citrons Masques,Yverdon-Les-Bains,46.78023,6.6444
 4005,/venues/3139289,/venues/3139289,Les Créatives,Geneva,46.20439,6.14316
 4006,/venues/4418845,/venues/4418845,Les Digitales,Fribourg,,
 4007,/venues/35054,/venues/35054,Les Docks,Lausanne,46.52241,6.61925
-4008,/venues/2680543,/venues/2680543,Les Docks & Base Bar,Lausanne,46.5224,6.61822
+4008,/venues/2680543,/venues/35054,Les Docks & Base Bar,Lausanne,46.5224,6.61822
 4009,/venues/3409139,/venues/3409139,Les Enfants Terribles,Geneva,46.19388,6.1452
 4010,/venues/3343969,/venues/3343969,Les Estivales Pully,Lausanne,46.50927,6.665489999999999
 4011,/venues/3928619,/venues/3928619,Les Etages des Bergues,Geneva,46.20717,6.14546
@@ -4882,7 +4882,7 @@
 4880,/venues/3271084,/venues/3271084,P'tit Rock Fest,Geneva,46.22326,6.1100900000000005
 4881,/venues/2746633,/venues/2746633,P1 Club,Dubendorf,47.40132,8.60475
 4882,/venues/4234409,/venues/4234409,P9 Event-location,Solothurn,47.1817,7.56807
-4883,/venues/4231924,/venues/4231924,PALP Festival,Martigny,,
+4883,/venues/4231924,/venues/3067564,PALP Festival,Martigny,,
 4884,/venues/3517369,/venues/3517369,PANORAMAschneebar Klewenalp,Stans,46.95719,8.365969999999999
 4885,/venues/3798624,/venues/3798624,PBZ Altstadt,Zürich,,
 4886,/venues/4262064,/venues/4262064,PFF FFS 19 - Mosaik,Stäfa,,
@@ -5200,7 +5200,7 @@
 5198,/venues/4395575,/venues/4395575,"Pop Up ""Kafi Uela""",Luzern,46.6353,8.5961
 5199,/venues/3831544,/venues/3831544,"Poprock Festival à Gilly, VD.",Nyon,,
 5200,/venues/3770599,/venues/3770599,Porno Diesel,Lausanne,46.51965,6.63227
-5201,/venues/2603448,/venues/2603448,Porrentruy-Delle Jazz Festival,Porrentruy,46.26427,-0.01434
+5201,/venues/2603448,/venues/2603448,Porrentruy-Delle Jazz Festival,Porrentruy,,
 5202,/venues/3083219,/venues/3083219,Port Gitana Bellevue,Geneva,46.19839,6.1423
 5203,/venues/4333978,/venues/4333978,Port Land,Basel,,
 5204,/venues/3518464,/venues/3518464,"Port de l'Ouchettaz, Villeneuve",Montreux,46.39633,6.9220000000000015
@@ -5246,7 +5246,7 @@
 5244,/venues/3060699,/venues/3060699,Private Event,Zürich,47.36865,8.53918
 5245,/venues/4369277,/venues/4369277,Private Event,Luzern,,
 5246,/venues/920961,/venues/920961,Private Event,Geneva,46.19839,6.1423
-5247,/venues/4344079,/venues/4344079,Private Event,Biel,,
+5247,/venues/4344079,/venues/4344081,Private Event,Biel,,
 5248,/venues/3355574,/venues/3355574,Private Event,Martigny,46.47504,7.285819999999998
 5249,/venues/3404559,/venues/3404559,Private Event,Wetzikon,47.32706,8.80136
 5250,/venues/4045984,/venues/4045984,Private Gig,Zürich,,
@@ -5312,7 +5312,7 @@
 5310,/venues/1374276,/venues/1652473,Quarry of Andonces,Montreux,,
 5311,/venues/2946158,/venues/2946158,Quartierhaus Kreis 5,Zürich,47.38444000000001,8.53452
 5312,/venues/3496354,/venues/3496354,Quartierzentrum Bachletten,Basel,47.55019,7.58033
-5313,/venues/188313,/venues/188313,Queen Kong Club,Neuchatel,46.98923,6.9218
+5313,/venues/188313,/venues/33268,Queen Kong Club,Neuchatel,46.98923,6.9218
 5314,/venues/4289019,/venues/4289019,Queency House,Lausanne,46.51953,6.634360000000001
 5315,/venues/1496778,/venues/1496778,Queens Club,Zürich,47.39188,8.511289999999999
 5316,/venues/3010814,/venues/3010814,Quellrock Open Air,Chur,47.00848,9.49224
@@ -5390,8 +5390,8 @@
 5388,/venues/2640308,/venues/2640308,Raygrodski Bar,Zürich,47.37471,8.5168
 5389,/venues/98704,/venues/98704,Razzia,Zürich,,
 5390,/venues/691456,/venues/691456,Reaktor,Winterthur,,
-5391,/venues/1537428,/venues/1537428,Reaktor 2.0,Winterthur,,
-5392,/venues/1365956,/venues/1365956,Reaktor Club,Zürich,,
+5391,/venues/1537428,/venues/691456,Reaktor 2.0,Winterthur,,
+5392,/venues/1365956,/venues/691456,Reaktor Club,Zürich,,
 5393,/venues/2819533,/venues/2819533,Reberhaus,Bern,46.97446,7.495589999999999
 5394,/venues/4375248,/venues/2819533,Reberhaus Bolligen Kultur Raum,Bern,46.97446,7.495589999999999
 5395,/venues/2907458,/venues/2907458,Rebmattweg,Lyss,47.05007,7.289169999999999
@@ -5548,9 +5548,9 @@
 5546,/venues/3627289,/venues/3627289,Rhybadi,Schaffhausen,47.69435,8.63838
 5547,/venues/4418204,/venues/4418204,Rhykantine,Schaffhausen,47.69478,8.6454
 5548,/venues/3084699,/venues/3084699,Rhypark,Basel,47.56989,7.58305
-5549,/venues/593641,/venues/3119174,Rhypark - Voltahalle,Basel,47.56989,7.58305
-5550,/venues/3119174,/venues/3119174,Rhypark Halle,Basel,47.56989,7.58305
-5551,/venues/1049506,/venues/3119174,Rhyparkhalle,Basel,47.56989,7.58305
+5549,/venues/593641,/venues/3084699,Rhypark - Voltahalle,Basel,47.56989,7.58305
+5550,/venues/3119174,/venues/3084699,Rhypark Halle,Basel,47.56989,7.58305
+5551,/venues/1049506,/venues/3084699,Rhyparkhalle,Basel,47.56989,7.58305
 5552,/venues/4346207,/venues/4346207,Rhythm & Food,Chur,,
 5553,/venues/4391510,/venues/4391510,Rickenbacher Sommer Festival,Luzern,47.21985,8.15354
 5554,/venues/4122174,/venues/4122174,Ride on Music,Martigny,46.47176,7.286569999999998
@@ -5829,7 +5829,7 @@
 5827,/venues/1894283,/venues/1894283,Salle des Combles,Geneva,46.2232,6.2038
 5828,/venues/288461,/venues/288461,Salle des Fêtes St. Léonard,Fribourg,46.81655,7.1543
 5829,/venues/82480,/venues/82480,Salle des Fêtes de Carouge,Geneva,46.18155,6.1410300000000015
-5830,/venues/67439,/venues/67439,Salle des Fêtes du Lignon,Geneva,,
+5830,/venues/67439,/venues/3092874,Salle des Fêtes du Lignon,Geneva,,
 5831,/venues/3724009,/venues/3724009,Salle des Remparts,Montreux,46.45288,6.858510000000001
 5832,/venues/4366012,/venues/3724009,Salle des Remparts,Riviera-Pays-d'Enhaut,46.45288,6.858510000000001
 5833,/venues/70214,/venues/70214,Salle du Faubourg,Geneva,46.20617,6.14036
@@ -6203,7 +6203,7 @@
 6201,/venues/51489,/venues/51489,Sound Arena,Wohlen,47.35088,8.28705
 6202,/venues/4290829,/venues/4290829,Sound Of Glarus,Zürich,47.05062,9.06279
 6203,/venues/4264604,/venues/4264604,Sound am See,Sarnen,,
-6204,/venues/683646,/venues/683646,SoundDock 14,Zürich,,
+6204,/venues/683646,/venues/417751,SoundDock 14,Zürich,,
 6205,/venues/417751,/venues/417751,SoundDock 14,Dietikon,,
 6206,/venues/3328974,/venues/3328974,Soundabout,Zürich,47.37689,8.54169
 6207,/venues/418486,/venues/418486,Soundcheck,Neuenkirch,,
@@ -6322,7 +6322,7 @@
 6320,/venues/3913414,/venues/3913414,Stadtgarten Chur,Chur,,
 6321,/venues/418966,/venues/418966,Stadthalle,Wettingen,,
 6322,/venues/419406,/venues/419406,Stadthalle Bülach,Bulach,47.51574,8.53642
-6323,/venues/86894,/venues/86894,Stadthalle Chur,Chur,52.34042,-8.86207
+6323,/venues/86894,/venues/86894,Stadthalle Chur,Chur,,
 6324,/venues/662361,/venues/662361,Stadthalle Dietikon,Dietikon,47.40704,8.38693
 6325,/venues/119941,/venues/119941,Stadthalle St. Gallen,St. Gallen,,
 6326,/venues/77146,/venues/77146,Stadthalle Sursee,Sursee,47.17407,8.10793
@@ -6400,7 +6400,7 @@
 6398,/venues/3236004,/venues/3236004,Stef's Kultur Bistro,Bern,46.94797,7.44745
 6399,/venues/3725544,/venues/3725544,Stef's Kulturbistro,Bern,,
 6400,/venues/4357646,/venues/4357646,Stef's Kulturbistrot,Bern,46.95777,7.49447
-6401,/venues/354756,/venues/354756,Steinberggasse,Winterthur,47.49833,8.728660000000001
+6401,/venues/354756,/venues/505121,Steinberggasse,Winterthur,47.49833,8.728660000000001
 6402,/venues/2715433,/venues/2715433,Steinbruch Erlinsbach,Olten,47.35977000000001,7.903589999999999
 6403,/venues/3160114,/venues/3160114,Steinway Hall,Lausanne,46.52079000000001,6.6314899999999986
 6404,/venues/3919944,/venues/3919944,Steinway Piano Gallery,Zürich,47.3699,8.543560000000001
@@ -6481,7 +6481,7 @@
 6479,/venues/4359489,/venues/4359489,Studio Ernest-Ansermet,Geneva,46.19688,6.13664
 6480,/venues/2894903,/venues/2894903,Studio Foce,Lugano,46.00562,8.9613
 6481,/venues/3677489,/venues/2894903,Studio Foce,Locarno,46.167,8.794260000000001
-6482,/venues/2067299,/venues/2067299,Studio Radio X,Basel,,
+6482,/venues/2067299,/venues/1855728,Studio Radio X,Basel,,
 6483,/venues/3705034,/venues/3705034,Studitreff ZHAW,Zürich,47.22969000000001,8.67182
 6484,/venues/133723,/venues/133723,Stufenbau,Bern,,
 6485,/venues/419536,/venues/419536,Stuz,Zürich,,
