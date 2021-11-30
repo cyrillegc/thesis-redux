@@ -8,6 +8,7 @@ import datetime
 import statistics
 from sklearn import preprocessing
 from streamlit_agraph import agraph, Node, Edge, Config
+from sklearn.cluster import KMeans
 
 st.set_page_config(layout="wide")
 mapbox_token = 'pk.eyJ1Ijoic29sbGlyeWMiLCJhIjoiY2t1bGl1aml1MW5lZDJxbXl2d2RvbWNwdiJ9.ugect2o_eFp-XGOgxaRpBg'
@@ -29,7 +30,7 @@ config = {
 
 def filter_by_date(start_date, end_date, concerts_df, venues_top_genres_df):
     date_filter = concerts_df[
-        (concerts_df['startDate'] > str(start_date)) & (concerts_df['startDate'] < str(end_date))].index
+        (concerts_df['date'] > str(start_date)) & (concerts_df['date'] < str(end_date))]['concert_id']
     data_filtered_df = venues_top_genres_df.loc[venues_top_genres_df['concert_id'].isin(date_filter)]
 
     return data_filtered_df
@@ -38,7 +39,7 @@ def filter_by_date(start_date, end_date, concerts_df, venues_top_genres_df):
 def show_network_genres():
     if len(venue_selection) == 1:
         concerts_idx_in_venue = concerts_df.loc[concerts_df['venue_id'] == venue_selection[0]].index
-        artists_in_concerts = data_full_df[data_full_df['concert_id'].isin(concerts_idx_in_venue)]
+        artists_in_concerts = full_data_df[full_data_df['concert_id'].isin(concerts_idx_in_venue)]
         artists_in_concerts = artists_in_concerts.drop_duplicates(subset=['artist_id', 'spotify_genre', 'top_genre'])
 
         nodes = []
@@ -82,39 +83,41 @@ def show_network_genres():
 
 @st.cache
 def open_data():
-    with open('data/songkick/data_songkick_venues_no_duplicates.csv', encoding='utf-8') as file_venues:
-        venues_df = pd.read_csv(file_venues, index_col=0)
+    with open('data/songkick/data_songkick_venues_light.csv', encoding='utf-8') as file:
+        venues_df = pd.read_csv(file, index_col=1).drop(columns=['Unnamed: 0'])
         venues_df = venues_df.sort_values(by=['venue'])
 
-    with open('data/spotify/data_spotify_artists_light.csv', encoding='utf-8') as file_artists:
-        artists_df = pd.read_csv(file_artists, index_col=0)
+    with open('data/spotify/data_spotify_artists_light.csv', encoding='utf-8') as file:
+        artists_df = pd.read_csv(file, index_col=1).drop(columns=['Unnamed: 0'])
 
-    with open('data/songkick/data_songkick_concerts_light.csv', encoding='utf-8') as file_concerts:
-        concerts_df = pd.read_csv(file_concerts, index_col=0)
+    with open('data/songkick/data_songkick_concerts_light.csv', encoding='utf-8') as file:
+        concerts_df = pd.read_csv(file, index_col=0)
 
-    with open('data/spotify/data_spotify_top_genres_v3.csv', encoding='utf-8') as file_genres:
-        genres_df = pd.read_csv(file_genres, index_col=0)
+    with open('data/spotify/data_spotify_top_genres_final.csv', encoding='utf-8') as file:
+        genres_df = pd.read_csv(file, index_col=0)
 
-    with open('data/data_full.csv', encoding='utf-8') as file_concat:
-        data_full_df = pd.read_csv(file_concat, index_col=0)
+    with open('data/full_data.csv', encoding='utf-8') as file:
+        full_data_df = pd.read_csv(file, index_col=0)
 
-    with open('data/data_stats_venues_genres.csv', encoding='utf-8') as file_stats:
-        stats_df = pd.read_csv(file_stats, index_col=0)
+    with open('data/data_stats_venues_genres.csv', encoding='utf-8') as file:
+        stats_venues_genres_df = pd.read_csv(file, index_col=0)
 
-    with open('data/spotify/data_spotify_tracks.csv', encoding='utf-8') as file_tracks:
-        tracks_df = pd.read_csv(file_tracks, index_col=0)
+    with open('data/data_stats_venues_features.csv', encoding='utf-8') as file:
+        stats_venues_features_df = pd.read_csv(file, index_col=0)
 
-    data_full_df = filter_by_date(min_date, max_date, concerts_df, data_full_df)
+    with open('data/spotify/data_spotify_tracks.csv', encoding='utf-8') as file:
+        tracks_df = pd.read_csv(file, index_col=0)
 
-    stats_df = stats_df.merge(venues_df['venue'], left_index=True, right_index=True).sort_values(by=['venue'])
-    stats_df = stats_df.drop(columns=['venue'])
+    stats_venues_genres_df = stats_venues_genres_df.merge(venues_df[['venue']], left_index=True, right_index=True).sort_values(by=['venue'])
+    stats_venues_genres_df = stats_venues_genres_df.drop(columns=['venue'])
 
     data_dict = {
         'venues_df': venues_df,
         'artists_df': artists_df,
         'concerts_df': concerts_df,
-        'data_full_df': data_full_df,
-        'stats_df': stats_df,
+        'full_data_df': full_data_df,
+        'stats_venues_genres_df': stats_venues_genres_df,
+        'stats_venues_features_df': stats_venues_features_df,
         'genres_df': genres_df,
         'tracks_df': tracks_df,
     }
@@ -123,12 +126,14 @@ def open_data():
 
 
 data_dict = open_data()
+
 venues_df = data_dict['venues_df']
 concerts_df = data_dict['concerts_df']
 artists_df = data_dict['artists_df']
 genres_df = data_dict['genres_df']
-data_full_df = data_dict['data_full_df']
-stats_df = data_dict['stats_df']
+full_data_df = data_dict['full_data_df']
+stats_venues_genres_df = data_dict['stats_venues_genres_df']
+stats_venues_features_df = data_dict['stats_venues_features_df']
 tracks_df = data_dict['tracks_df']
 
 # Scatter map
@@ -167,12 +172,12 @@ with st.container():
         else:
             genres_selection = st.multiselect(
                 'Select genres',
-                options=sorted(data_full_df['top_genre'].dropna().unique()),
-                default=sorted(data_full_df['top_genre'].dropna().unique())[0]
+                options=sorted(full_data_df['top_genre'].dropna().unique()),
+                default=sorted(full_data_df['top_genre'].dropna().unique())[0]
                 # format_func=lambda x: venues_df.loc[x, 'locality'],
             )
 
-        filtered_by_date_df = filter_by_date(date_selection[0], date_selection[1], concerts_df, data_full_df)
+        filtered_by_date_df = filter_by_date(date_selection[0], date_selection[1], concerts_df, full_data_df)
         hover_data = {'latitude': False, 'longitude': False}
 
         if artist_genre_selection == 'Artists':
@@ -183,20 +188,15 @@ with st.container():
             column_name = 'top_genre'
 
         if concert_venue_selection == 'Venues':
-            results_df = venues_df.loc[
-                filtered_by_date_df.loc[
-                    filtered_by_date_df[column_name].isin(data_selection)
-                ]['venue_id'].unique()
-            ]
+            results_df = filtered_by_date_df.loc[filtered_by_date_df[column_name].isin(data_selection)]['venue_id'].unique()
+            results_df = venues_df.loc[venues_df.index.isin(results_df)]
+            results_df = results_df
             marker_size = None
         else:
-            results_df = venues_df.loc[
-                concerts_df.loc[
-                    filtered_by_date_df.loc[
-                        filtered_by_date_df[column_name].isin(data_selection)
-                    ]['concert_id'].unique()
-                ]['venue_id']
-            ]
+            results_df = filtered_by_date_df.loc[filtered_by_date_df[column_name].isin(data_selection)]['concert_id'].unique()
+            results_df = concerts_df.loc[concerts_df['concert_id'].isin(results_df)]['venue_id']
+            results_df = venues_df.loc[venues_df['venue_id'].isin(results_df)]
+            results_df
 
             results_df['venue_ratio'] = 0
             venue_count = results_df.groupby('venue')['venue_ratio'].transform("count")
@@ -236,17 +236,13 @@ with st.container():
 
     venue_selection = st.multiselect(
         'Select a venue',
-        options=stats_df.index,
-        format_func=lambda x: venues_df.loc[x, 'venue'],
+        options=full_data_df['venue_id'].unique(),
+        format_func=lambda x: venues_df.loc[venues_df.index == x]['venue'][0],
         #default=stats_df.index.get_loc(stats_df.loc['/venues/418386'].name),  # set default selection to Caves du Manoir
-        help='Select at most 2 venues to compare',
+        help='Select at most 4 venues to compare',
     )
 
     col1, col2, = st.columns(2)
-
-    sort_bar_chart = st.checkbox(
-        'Sort bar chart'
-    )
 
     nbr_selected_venues = len(venue_selection)
 
@@ -256,7 +252,7 @@ with st.container():
         colors = ['#f06868', '#80d6ff', '#fab57a', '#edf798']
 
         for venue in venue_selection:
-            venue_stats = stats_df.loc[venue].drop(['nbr_concerts'])
+            venue_stats = stats_venues_genres_df.loc[venue].drop(['nbr_concerts', 'nbr_artists'])
             venue_name = venues_df.loc[venue]['venue']
 
             fig_bar.add_trace(go.Bar(
@@ -271,42 +267,17 @@ with st.container():
         fig_bar.update_layout(barmode='group', xaxis_tickangle=-45, autosize=False, height=500, )
         st.plotly_chart(fig_bar, use_container_width=True)
 
-# Artists popularity distribution
+# Artists stats
 with st.container():
-    st.subheader('Artists stats')
+    st.subheader('Artist stats')
 
-    col1, col2 = st.columns(2)
+    artist_stats_selection = st.selectbox(
+        'Select an artist',
+        options=full_data_df['artist_id'].unique(),
+        format_func=lambda x: artists_df.loc[x, 'artist_name'],
+    )
 
-    with col2:
-        preprocess_selection = st.radio('Preprocess data', ['Standardize', 'Normalize', 'None'])
 
-        artists_matched_df = artists_df.loc[pd.notna(artists_df['spotify_id'])]
-        artists_matched_df = artists_matched_df[['spotify_popularity', 'spotify_followers', 'spotify_listeners']]
-        stats_array = artists_matched_df.values
-
-        if preprocess_selection == 'Standardize':
-            standardizer = preprocessing.StandardScaler()
-            preprocessed_data = standardizer.fit_transform(stats_array.T)
-        elif preprocess_selection == 'Normalize':
-            normalizer = preprocessing.Normalizer()
-            preprocessed_data = normalizer.fit_transform(stats_array.T)
-        else:
-            preprocessed_data = stats_array.T
-
-        dist_data = [x for x in preprocessed_data]
-        dist_labels = [label for label in artists_matched_df.columns]
-
-    with col1:
-        # Create distplot with curve_type set to 'normal'
-        fig = ff.create_distplot(
-            dist_data,
-            dist_labels,
-            curve_type='normal',  # override default 'kde'
-            show_hist=False,
-            show_rug=False,
-        )
-
-        st.plotly_chart(fig, use_container_width=True)
 
 # Venues data scatter plot
 with st.container():
@@ -314,42 +285,23 @@ with st.container():
 
     # scatter plot options
     with st.container():
-        # features left out: track_popularity, key, mode, type, time_signature
-        features_columns = [
-            'artist_id', 'danceability', 'energy', 'speechiness', 'acousticness', 'instrumentalness',
-            'liveness', 'valence', 'loudness', 'tempo', 'duration_ms',
-        ]
+        def useless():
+            # get number of artists in each venue
+            venues_stats_df = pd.DataFrame(artists_stats_df.groupby('linked_venue_id').size())
+            venues_stats_df = venues_stats_df.rename(columns={0: 'nbr_artists'})
+            # get median values of listeners and followers for each venue
+            venues_stats_df = venues_stats_df.join(pd.DataFrame(artists_stats_df.groupby('linked_venue_id').median()))
+            # rename columns with median value
+            venues_stats_df = venues_stats_df.rename(columns={
+                'listeners': 'listeners_median',
+                'followers': 'followers_median'})
+            st.write(len(venues_stats_df))
 
-        # get median of audio features for each artist
-        tracks_median_df = tracks_df[features_columns].groupby('artist_id').median()
-        # add suffix median to column names
-        tracks_median_df = tracks_median_df.add_suffix('_median')
-        # sort columns alphabetically
-        tracks_median_df = tracks_median_df.reindex(sorted(tracks_median_df.columns), axis=1)
-
-        # drop rows where concert_id and artist_id are a duplicate (ex: duplicated rows bc of multiple top genres for an artist)
-        artists_in_concerts = data_full_df.drop_duplicates(subset=['concert_id', 'artist_id']).sort_values(by=['venue_id'])
-        # add artist listeners and followers stats, rename columns (remove spotify prefix)
-        artists_stats_df = artists_in_concerts.merge(artists_df[['spotify_listeners', 'spotify_followers']], left_on='artist_id', right_index=True)
-        artists_stats_df = artists_stats_df.rename(columns={'spotify_listeners': 'listeners', 'spotify_followers': 'followers'})
-        # add linked venue id
-        artists_stats_df = artists_stats_df.merge(venues_df['linked_venue_id'], left_on='venue_id', right_index=True)
-        # add artist audio features stats
-        artists_stats_df = artists_stats_df.merge(tracks_median_df, how='left', left_on='artist_id', right_index=True)
-
-        # get number of artists in each venue
-        venues_stats_df = pd.DataFrame(artists_stats_df.groupby('linked_venue_id').size())
-        venues_stats_df = venues_stats_df.rename(columns={0: 'nbr_artists'})
-        # get median values of listeners and followers for each venue
-        venues_stats_df = venues_stats_df.join(pd.DataFrame(artists_stats_df.groupby('linked_venue_id').median()))
-        # rename columns with median value
-        venues_stats_df = venues_stats_df.rename(columns={
-            'listeners': 'listeners_median',
-            'followers': 'followers_median'})
+        venues_stats_df = stats_venues_features_df.copy()
         # add venue name and locality to DataFrame
-        venues_stats_df = venues_stats_df.merge(venues_df[['venue', 'locality', 'latitude', 'longitude']], left_index=True, right_index=True)
+        venues_stats_df = venues_stats_df.merge(
+            venues_df[['venue', 'locality', 'latitude', 'longitude']], left_index=True, right_index=True)
         venues_stats_df = venues_stats_df.sort_values(by=['locality'])
-        venues_stats_df
 
         # get min and max nbr of followers (used for slider selection)
         min_followers = int(venues_stats_df['listeners_median'].min())
@@ -371,12 +323,6 @@ with st.container():
                 options=venues_stats_df['locality'].unique(),
             )
 
-            venues_excluded = st.multiselect(
-                'Exclude some venues off data',
-                options=venues_stats_df.index,
-                format_func=lambda x: venues_stats_df.loc[x, 'venue']
-            )
-
         with col2:
             y_data_selection = st.selectbox(
                 'Select data for x-axis',
@@ -394,12 +340,10 @@ with st.container():
             )
 
         with col3:
-            color_selection = st.selectbox(
-                'Select data for color of points',
-                options=venues_stats_df.drop(['venue', 'locality'], axis=1).columns,
-                format_func=lambda x: x.replace('_median', ''),  # remove _median from displayed results
-                index=0,
-                key='color_select_venues'
+            nbr_clusters_selection = st.selectbox(
+                'Select number of clusters to show',
+                options=range(1, 11),
+                index=9,
             )
 
             max_followers = 10000000
@@ -423,9 +367,19 @@ with st.container():
             (venues_stats_df['listeners_median'] <= range_followers[1])
         ]
 
-        if venues_excluded:
-            venues_excluded
-        venues_stats_df
+        stats_df = venues_stats_df.copy()
+        stats_df = stats_df[[x_data_selection, y_data_selection]]
+        stats_df = (stats_df - stats_df.mean()) / stats_df.std()
+        venue_names = list(stats_df.index)
+
+        km = KMeans(n_clusters=nbr_clusters_selection)
+        km.fit(stats_df)
+        clusters = km.labels_.tolist()
+
+        cluster_df = pd.DataFrame({'cluster': clusters}, index=venue_names).merge(venues_df['venue'], left_index=True,
+                                                                                  right_index=True)
+        venues_stats_df = venues_stats_df.merge(cluster_df['cluster'], left_index=True, right_index=True)
+        venues_stats_df['cluster'] = venues_stats_df['cluster'].astype(str)
 
     col1, col2 = st.columns(2)
 
@@ -435,9 +389,11 @@ with st.container():
             venues_stats_df,
             x=x_data_selection,
             y=y_data_selection,
-            color=color_selection,
+            color='cluster',
             trendline='ols',
-            color_continuous_scale='burg',
+            trendline_scope='overall',
+            trendline_color_override='grey',
+            color_discrete_sequence=px.colors.qualitative.G10,
             hover_data=['venue', 'locality', 'nbr_artists'],
         )
 
@@ -453,7 +409,32 @@ with st.container():
 
     # scatter plot options
     with st.container():
-        venues_df
+        # features left out: track_popularity, key, mode, type, time_signature
+        features_columns = [
+            'artist_id', 'danceability', 'energy', 'speechiness', 'acousticness', 'instrumentalness',
+            'liveness', 'valence', 'loudness', 'tempo', 'duration_ms',
+        ]
+
+        # get median of audio features for each artist
+        tracks_median_df = tracks_df[features_columns].groupby('artist_id').median()
+        # add suffix median to column names
+        tracks_median_df = tracks_median_df.add_suffix('_median')
+        # sort columns alphabetically
+        tracks_median_df = tracks_median_df.reindex(sorted(tracks_median_df.columns), axis=1)
+
+        # drop rows where concert_id and artist_id are a duplicate (ex: duplicated rows bc of multiple top genres for an artist)
+        artists_in_concerts = full_data_df.drop_duplicates(subset=['concert_id', 'artist_id']).sort_values(
+            by=['venue_id'])
+        # add artist listeners and followers stats, rename columns (remove spotify prefix)
+        artists_stats_df = artists_in_concerts.merge(
+            artists_df[['spotify_listeners', 'spotify_followers']],
+            left_on='artist_id', right_index=True)
+        artists_stats_df = artists_stats_df.rename(
+            columns={'spotify_listeners': 'listeners', 'spotify_followers': 'followers'})
+        # add linked venue id
+        artists_stats_df = artists_stats_df.merge(venues_df[['linked_venue_id']], left_on='venue_id', right_index=True)
+        # add artist audio features stats
+        artists_stats_df = artists_stats_df.merge(tracks_median_df, how='left', left_on='artist_id', right_index=True)
 
         # get number of artists in each concert
         concerts_stats_df = pd.DataFrame(artists_stats_df.groupby('concert_id').size())
@@ -464,8 +445,8 @@ with st.container():
             'listeners': 'listeners_median',
             'followers': 'followers_median'})
         # add date of concert
-        concerts_stats_df = concerts_stats_df.merge(concerts_df['startDate'], left_index=True, right_index=True)
-        concerts_stats_df['startDate'] = pd.to_datetime(concerts_stats_df['startDate'])
+        concerts_stats_df = concerts_stats_df.merge(concerts_df[['date', 'concert_id']], left_index=True, right_on='concert_id')
+        concerts_stats_df['date'] = pd.to_datetime(concerts_stats_df['date'])
         # add venue and venue_id columns (to get the name and to filter results by venue)
         concerts_stats_df = concerts_stats_df.merge(concerts_df['venue_id'], left_index=True, right_index=True)
         concerts_stats_df = concerts_stats_df.merge(venues_df['linked_venue_id'], left_on='venue_id', right_index=True)
@@ -514,14 +495,14 @@ with st.container():
             'listeners': 'listeners_median',
             'followers': 'followers_median'})
         # add date of concert
-        filtered_artists_df = filtered_artists_df.merge(concerts_df['startDate'], left_on='concert_id', right_index=True)
-        filtered_artists_df['startDate'] = pd.to_datetime(filtered_artists_df['startDate'])
+        filtered_artists_df = filtered_artists_df.merge(concerts_df[['concert_id', 'date']], on='concert_id')
+        filtered_artists_df['date'] = pd.to_datetime(filtered_artists_df['date'])
 
         col1, col2 = st.columns(2)
 
         if x_data_selection == y_data_selection:
             trendline = None
-        elif x_data_selection == 'startDate':
+        elif x_data_selection == 'date':
             trendline = None
         else:
             trendline = 'ols'
@@ -560,3 +541,66 @@ with st.container():
 
         st.plotly_chart(fig, config=config)
 
+# Venues clusters
+with st.container():
+    def filter_data(df, nbr_artists):
+        filtered_df = df.loc[df['nbr_artists'] > nbr_artists]
+        return filtered_df
+
+    filtered_genres_df = filter_data(stats_venues_genres_df, 100)
+    filtered_genres_df = filtered_genres_df.drop(columns=['nbr_artists', 'nbr_concerts'])
+    filtered_features_df = filter_data(stats_venues_features_df, 100)
+    filtered_features_df = filtered_features_df.drop(columns=['nbr_artists'])
+
+    stats_df = filtered_features_df.merge(filtered_genres_df, left_index=True, right_index=True)
+    stats_df = stats_df[['listeners_median', 'dance music']]
+    stats_df = (stats_df - stats_df.mean()) / stats_df.std()
+    venue_names = list(stats_df.index)
+
+    num_clusters = 10
+    km = KMeans(n_clusters=num_clusters)
+    km.fit(filtered_genres_df)
+    clusters = km.labels_.tolist()
+
+    cluster_df = pd.DataFrame({'cluster': clusters}, index=venue_names).merge(venues_df['venue'], left_index=True,
+                                                                              right_index=True)
+
+    for x in range(num_clusters):
+        st.write(cluster_df.loc[cluster_df['cluster'] == x]['venue'])
+
+# Artists popularity distribution
+with st.container():
+    st.subheader('Artists stats')
+
+    col1, col2 = st.columns(2)
+
+    with col2:
+        preprocess_selection = st.radio('Preprocess data', ['Standardize', 'Normalize', 'None'])
+
+        artists_matched_df = artists_df.loc[pd.notna(artists_df['spotify_id'])]
+        artists_matched_df = artists_matched_df[['spotify_followers', 'spotify_listeners']]
+        stats_array = artists_matched_df.values
+
+        if preprocess_selection == 'Standardize':
+            standardizer = preprocessing.StandardScaler()
+            preprocessed_data = standardizer.fit_transform(stats_array.T)
+        elif preprocess_selection == 'Normalize':
+            normalizer = preprocessing.Normalizer()
+            preprocessed_data = normalizer.fit_transform(stats_array.T)
+        else:
+            preprocessed_data = stats_array.T
+
+        dist_data = [x for x in preprocessed_data]
+        dist_labels = [label for label in artists_matched_df.columns]
+
+    with col1:
+        # Create distplot with curve_type set to 'normal'
+        fig = ff.create_distplot(
+            dist_data,
+            dist_labels,
+            curve_type='normal',  # override default 'kde'
+            show_hist=False,
+            show_rug=False,
+        )
+
+        st.plotly_chart(fig, use_container_width=True)
