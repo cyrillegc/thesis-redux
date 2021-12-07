@@ -7,5 +7,6 @@ plotly~=5.3.1
 pyvis
 requests~=2.26.0
 spotipy
+statsmodels
 streamlit~=1.0.0
 scikit-learn~=0.23.1
