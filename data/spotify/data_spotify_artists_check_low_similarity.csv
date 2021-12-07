@@ -24,7 +24,7 @@ artist_id,match_error,artist_name,spotify_name,spotify_id,spotify_similarity,spo
 /artists/7038144-nici-faerber,X,Nici Faerber,Riccardo Muti,7silW8RiEOoLBgAg5JBCL1,0.32,58,29643,749800,classical performance,opera,orchestral performance,,,,,,,,,,,,,,,,/artists/432665-riccardo-muti
 /artists/896808-godson,X,G-O-D-$-O-N,Joyce DiDonato,6uFDUz42zInHQ1T2JFqNrE,0.32,36,17942,52700,classical mezzo-soprano,classical performance,opera,,,,,,,,,,,,,,,,
 /artists/7851119-box-n-roll,X,Box N Roll,Rock N Roll Baby Box Vol I/Bernard Cade,13k9yebbiqUgKU6dMp9jyK,0.33,0,41,10,,,,,,,,,,,,,,,,,,,
-/artists/8146508-okwess-international,X,Okwess International,Jupiter & Okwess,2tujJgEWPfR8gdqVw183dT,0.33,25,10770,14200,afro-funk,,,,,,,,,,,,,,,,,,/artists/5407008-jupiter-and-okwess-international
+/artists/8146508-okwess-international,X,Okwess International,Jupiter & Okwess,2tujJgEWPfR8gdqVw183dT,0.33,25,10770,14200,afro-funk,,,,,,,,,,,,,,,,,,/artists/8146508-okwess-international
 /artists/7360384-feine-musik,X,Feine Musik,TourBus-Wir bringen Musik an deine Schule!,1WDftDYt1OT78rKGkqAF6f,0.34,0,1,1,,,,,,,,,,,,,,,,,,,
 /artists/5778424-technicolor-orchestra,X,The Technicolor Orchestra,"Orlando Pops Orchestra & Singers (From ""Joseph and the Amazing Technicolor Dreamcoat "")",7wr9OHkoH5HDlDyFF0CTS2,0.34,0,3,2600,,,,,,,,,,,,,,,,,,,
 /artists/497811-femil,X,Fe-m@il,Mr Ferdy Il Guru,4MWwlTyCOdHBsqp0LbMA7c,0.35,0,3,2,,,,,,,,,,,,,,,,,,,
@@ -65,8 +65,7 @@ artist_id,match_error,artist_name,spotify_name,spotify_id,spotify_similarity,spo
 /artists/9689424-dogz-ch,X,Dögz CH,Dog Chasing Sun,6ynUQgKOOGIli5xxUnxrcO,0.45,8,727,388,,,,,,,,,,,,,,,,,,,
 /artists/9165644-recdesign,X,Rec.Design,G-Design Records,6EvTivVE1b5P5m5LXIb86F,0.46,0,1,57,,,,,,,,,,,,,,,,,,,
 /artists/10074308-les-solors,X,Les Solörs,Les Soloists de Bourgogne,1GvTmK4LAkNkqkbfEkbZkC,0.46,2,0,157,,,,,,,,,,,,,,,,,,,
-/artists/7578104-coco-galaxy,X,Coco Galaxy,Galaxy P & Coco,2Zl0w9R6QuFqhxigudDjki,0.46,0,2,4,,,,,,,,,,,,,,,,,,,/artists/7578104-coco-galaxy
-/artists/7578049-cocogalaxy,X,Coco_Galaxy,Galaxy P & Coco,2Zl0w9R6QuFqhxigudDjki,0.46,0,2,4,,,,,,,,,,,,,,,,,,,/artists/7578104-coco-galaxy
+/artists/7578049-cocogalaxy,X,Coco_Galaxy,Galaxy P & Coco,2Zl0w9R6QuFqhxigudDjki,0.46,0,2,4,,,,,,,,,,,,,,,,,,,/artists/7578049-cocogalaxy
 /artists/2352229-geoffrey-gurrumul-yunupingu,,Geoffrey Gurrumul Yunupingu,Gurrumul,41U5QueLMyYyJ3Hoe4kKX4,0.46,44,33380,104600,australian indigenous,,,,,,,,,,,,,,,,,,
 /artists/6287794-c-l-v,X,C L V,Che Linh,1tTV7NZodR1nsNtMdAz5Qi,0.46,36,62685,25200,vietnamese bolero,vietnamese pop,,,,,,,,,,,,,,,,,
 /artists/8590784-r-u-b-s,X,R U B S,r u s s e l b u c k,3Si34xQXMZlrics4njesF2,0.46,20,2105,2400,hyperpop,,,,,,,,,,,,,,,,,,
@@ -76,9 +75,8 @@ artist_id,match_error,artist_name,spotify_name,spotify_id,spotify_similarity,spo
 /artists/7617294-3-wahl,X,3. Wahl,wahlflow3r,0ROcqGMjuPr7NgtmbpKfSa,0.47,0,5,323,,,,,,,,,,,,,,,,,,,
 /artists/4777833-new-album,X,The New Album,The Best Album New Primadona Vol 1,5GoZLoSE25g6ptauz6kh5z,0.47,0,6,585,,,,,,,,,,,,,,,,,,,
 /artists/7712614-chaarts,X,Chaarts,CHAARTS Chamber Artists,2YB5i3jJzmimdN0e8BZqkR,0.47,42,86,102600,,,,,,,,,,,,,,,,,,,/artists/9955624-chaarts-chamber-artists
-/artists/6562343-oscillator-temple,X,Oscillator Temple,The Temple of Oscillators,6pT0RVqYAW871ZEI3OVKd2,0.48,0,2,2,,,,,,,,,,,,,,,,,,,/artists/7875794-oscillator-temple-ch
+/artists/6562343-oscillator-temple,X,Oscillator Temple,The Temple of Oscillators,6pT0RVqYAW871ZEI3OVKd2,0.48,0,2,2,,,,,,,,,,,,,,,,,,,/artists/6562343-oscillator-temple
 /artists/9734009-lucerne-symphony,,Lucerne Symphony,Luzerner Sinfonieorchester,3bp9jWcdIJ7mBk8Z8RrKCD,0.48,26,184,12200,,,,,,,,,,,,,,,,,,,/artists/10098348-luzerner-sinfonieorchester
-/artists/7875794-oscillator-temple-ch,X,OSCILLATOR TEMPLE ,The Temple of Oscillators,6pT0RVqYAW871ZEI3OVKd2,0.48,0,2,2,,,,,,,,,,,,,,,,,,,/artists/7875794-oscillator-temple-ch
 /artists/10135205-canta-roma,X,Canta Roma,Sandra Cantante la Voz Romántica,2iXwJrFltOQm0QFASOq3A6,0.48,0,3,49900,,,,,,,,,,,,,,,,,,,
 /artists/6241329-stars-80,X,Stars 80,80s Pop Stars,6P7Nluz43Chhg9I8nzcTqC,0.48,8,7052,4700,,,,,,,,,,,,,,,,,,,
 /artists/5446323-sound-prints,X,Sound Prints,Joe Lovano & Dave Douglas Sound Prints,3JEQNreu0UTiiayxUfE9fd,0.48,12,689,2000,,,,,,,,,,,,,,,,,,,
@@ -205,7 +203,6 @@ artist_id,match_error,artist_name,spotify_name,spotify_id,spotify_similarity,spo
 /artists/4003441-bass-desires,,Bass Desires,Marc Johnson's Bass Desires,75hVPgTBWFKLcWzQt3hJhP,0.62,5,369,342,ecm-style jazz,,,,,,,,,,,,,,,,,,
 /artists/295100-riverdance,X,Riverdance,The Riverdance Singers,5IlA4h5fzcSW6HB0RYe3FX,0.62,7,91,746,,,,,,,,,,,,,,,,,,,
 /artists/9433764-sting-operation,,Sting Operation,Felix Straumann’s Sting Operation,0ulhnG7VF8VLdxCCTDHovx,0.62,0,8,68,,,,,,,,,,,,,,,,,,,
-/artists/5407008-jupiter-and-okwess-international,,Jupiter and Okwess International,Jupiter & Okwess,2tujJgEWPfR8gdqVw183dT,0.62,25,10770,14200,afro-funk,,,,,,,,,,,,,,,,,,/artists/5407008-jupiter-and-okwess-international
 /artists/3892001-nils-landgren-quartet,,Nils Landgren Quartet,"Nils Landgren, Thomas Clausen Brazilian Quartet",2xqsANpEnDvSKOCf1OASA2,0.62,0,9,7,,,,,,,,,,,,,,,,,,,
 /artists/5175023-es-brennt,,Es Brennt,Es brennt - was tun?,7jpS52Wo7jgafiZvzJnEw9,0.62,17,21,5,,,,,,,,,,,,,,,,,,,
 /artists/53910-nels-cline-singers,,The Nels Cline Singers,Nels Cline,3s6o8vxtYJ1utkWl8EXxUp,0.62,34,19238,51200,avant-garde jazz,contemporary jazz,experimental guitar,free improvisation,free jazz,jazz guitar,,,,,,,,,,,,,/artists/242853-nels-cline
@@ -258,7 +255,6 @@ artist_id,match_error,artist_name,spotify_name,spotify_id,spotify_similarity,spo
 /artists/49149-phon-roll,,Phon Roll,Phon Roll und Bubi,7vwpCkGVgX4I8jNrm3tX5U,0.67,2,27,264,,,,,,,,,,,,,,,,,,,
 /artists/70451-rh,,R-h,R@H,0zHtN2GMTkt8eEnJ1JIfzt,0.67,2,0,1900,,,,,,,,,,,,,,,,,,,
 /artists/7758504-rhabarber,X,Rhabarber,Rabarberbajarna,0EmcTsrS7SIXMlPi2vNpGe,0.67,3,45,266,fotbollslatar,,,,,,,,,,,,,,,,,,
-/artists/5349533-ochumare,,Ochumare,Ochumare Quartet,7nWmis0cDJqsZPodWFsVxz,0.67,0,19,12,,,,,,,,,,,,,,,,,,,/artists/4636813-ochumare-quartet
 /artists/8918954-oktaeder,,Oktaeder,Janto's Oktaeder,0664n3Ew4FYDG1xEvRAnmv,0.67,0,3,1,,,,,,,,,,,,,,,,,,,
 /artists/8243148-kippu,X,KIPPU,Kippage,0eoEgqMERQt0qdM7nZXC81,0.67,22,1056,10000,,,,,,,,,,,,,,,,,,,
 /artists/4635178-qrandy,X,Q-randy,Q Random,0SwlDikILFZopmTETlphu8,0.67,0,4,13,,,,,,,,,,,,,,,,,,,
@@ -325,7 +321,6 @@ artist_id,match_error,artist_name,spotify_name,spotify_id,spotify_similarity,spo
 /artists/9073239-duo-billet,,Duo Billet,Duo Billet Frigerio,7qePWqvh9XiSLqde6a2V8j,0.69,0,13,5,,,,,,,,,,,,,,,,,,,
 /artists/7500164-self-group,X,Self Group,The Self Help Group,5p8d8s6tNOBYt7W9CZ9giU,0.69,2,136,115,,,,,,,,,,,,,,,,,,,
 /artists/1095334-medallist,X,Medallist,Bronze Medallists,05Kiy4d3PUIwjjwq2A42dg,0.69,0,21,6,,,,,,,,,,,,,,,,,,,
-/artists/9048559-nels-cline-four,,The Nels Cline Four,Nels Cline,3s6o8vxtYJ1utkWl8EXxUp,0.69,34,19238,51200,avant-garde jazz,contemporary jazz,experimental guitar,free improvisation,free jazz,jazz guitar,,,,,,,,,,,,,/artists/242853-nels-cline
 /artists/2960846-alonzo-de-psy4-de-la-rime,X,Alonzo De Psy4 De La Rime,"MOH(S.KRIM), ALONZO(Psy4 de la rime)",2CNlRTzYYo6ngPfV8VUFbE,0.69,0,7,8,,,,,,,,,,,,,,,,,,,
 /artists/2378350-fell-voices,X,Fell Voices,The Fellowship Voices,5XhWEhoqtCj1amrup0xfSU,0.69,0,14,1,,,,,,,,,,,,,,,,,,,
 /artists/6495479-dj-juicy-m,,DJ Juicy M,DJ Juicy & Melodize,3yWLSdCkr7wqvPNYW5aKuj,0.69,0,163,4,,,,,,,,,,,,,,,,,,,

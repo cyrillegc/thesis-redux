@@ -645,8 +645,8 @@
 /venues/46069,Gurten Festival,Bern,3000,Gurten,Switzerland,46.9173,7.44348,https://gurtenfestival.ch,X
 /venues/3313349,Aula Alpenquai,Luzern,6000,,Switzerland,46.9176,7.60257,,
 /venues/3269524,Gutenberg Club / Lion Club,Luzern,8000,,Switzerland,46.9176,7.60257,,
-/venues/2305504,Kulturhof (pfrundschüür),Bern,3098,Muhlernstrasse 11,Switzerland,46.9207,7.41421,,X
-/venues/3109469,Kulturhof Schloss Köniz,Bern,3098,Muhlernstrasse 11,Switzerland,46.9207,7.41421,http://www.kulturhof.ch,/venues/3109469
+/venues/2305504,Kulturhof (pfrundschüür),Bern,3098,Muhlernstrasse 11,Switzerland,46.9207,7.41421,,/venues/3109469
+/venues/3109469,Kulturhof Schloss Köniz,Bern,3098,Muhlernstrasse 11,Switzerland,46.9207,7.41421,http://www.kulturhof.ch,X
 /venues/4228809,Bären Biglen,Bern,3507 Biglen,Bärenstutz 17,Switzerland,46.92827,7.62813,,
 /venues/4088939,Bären,Bern,3507,Bärenstutz 17,Switzerland,46.92827,7.62813,http://www.baeren-biglen.ch,
 /venues/3153034,"Pantschau Am See, Murten",Bern,3280,Pantschau am See,Switzerland,46.92922,7.12018,,
@@ -662,8 +662,8 @@
 /venues/940196,Tell Saal,Bern,3072,Bernstrasse 101,Switzerland,46.94015,7.39108,,X
 /venues/4412404,Bienzgut Bümpliz,Bern,3018,Bernstrasse 77,Switzerland,46.94115,7.39284,,
 /venues/4399397,Rock'n Wine,Bern,3018,Bernstrasse 77,Switzerland,46.94115,7.39284,https://www.rock-n-wine.ch/,
-/venues/827531,Musigbistrot,Bern,3007,Mühlemattstrasse 48,Switzerland,46.94251,7.43351,http://www.musigbistrot.ch,X
-/venues/3231204,Musig Bistrot,Bern,,Mühlemattstrasse 48,Switzerland,46.94251,7.43351,,/venues/3231204
+/venues/827531,Musigbistrot,Bern,3007,Mühlemattstrasse 48,Switzerland,46.94251,7.43351,http://www.musigbistrot.ch,/venues/3231204
+/venues/3231204,Musig Bistrot,Bern,,Mühlemattstrasse 48,Switzerland,46.94251,7.43351,,X
 /venues/1215251,Theatersaal Hotel National,Bern,3011,Hirschengraben 24,Switzerland,46.94614,7.43698,,/venues/542011
 /venues/542011,Theater National,Bern,3011,Hirschengraben 24,Switzerland,46.94614,7.43698,,X
 /venues/1443033,Kultur Casino,Bern,3011,"Herrengasse 25 Bern, Switzerland",Switzerland,46.94689,7.44871,,X
@@ -744,8 +744,8 @@
 /venues/3124129,Progr Hof,Bern,,Waisenhausplatz 30,Switzerland,46.95016,7.44387,,/venues/2755408
 /venues/4152839,Progr U62,Bern,3011,Waisenhausplatz 30,Switzerland,46.95023,7.4439,,/venues/2755408
 /venues/4353825,Reflector Gallery,Bern,3011,Waisenhauspatz. 30,Switzerland,46.95023,7.4439,,/venues/2755408
-/venues/2767953,Turnhalle,Bern,3011,Speichergasse 4,Switzerland,46.95034,7.44298,,X
-/venues/2783968,Café-bar Turnhalle,Bern,3011,Speichergasse 4,Switzerland,46.95034,7.44298,,/venues/2767953
+/venues/2767953,Turnhalle,Bern,3011,Speichergasse 4,Switzerland,46.95034,7.44298,,/venues/2755408
+/venues/2783968,Café-bar Turnhalle,Bern,3011,Speichergasse 4,Switzerland,46.95034,7.44298,,/venues/2755408
 /venues/4370231,Stube im Progr,Bern,3011,Speichergasse 4,Switzerland,46.95034,7.44298,,/venues/2755408
 /venues/3488519,Sound & Sandwich,Bern,,Fabrikstrasse 2a,Switzerland,46.95236,7.42282,,
 /venues/2871183,FabrikBistro,Bern,,Fabrikstrasse 2a,Switzerland,46.95236,7.42282,,
@@ -936,7 +936,7 @@
 /venues/3644844,Rockwall Under The Bridge,Burgdorf,3400,,Switzerland,47.05385,7.61758,,
 /venues/953141,Casineum Grand Casino,Luzern,6006,Haldenstrasse 6,Switzerland,47.05504,8.31707,,X
 /venues/2730788,Grand Casino Luzern,Luzern,6006,Haldenstr.6,Switzerland,47.05504,8.31707,,/venues/953141
-/venues/1983384,Casineum Club,Luzern,6006,Haldenstrasse 6,Switzerland,47.05504,8.31707,,/venues/2730788
+/venues/1983384,Casineum Club,Luzern,6006,Haldenstrasse 6,Switzerland,47.05504,8.31707,,/venues/953141
 /venues/2773408,La Grange,La Chaux De Fonds,2400,Avenue du Technicum 1,Switzerland,47.05592,6.74703,http://www.grange-casino.ch/,
 /venues/2280109,Casino Théâtre,La Chaux De Fonds,2400,Av. du Technicum 1,Switzerland,47.05592,6.74703,http://www.grange-casino.ch/,
 /venues/1984889,Kino Bourbaki,Luzern,6004,Löwenplatz 11,Switzerland,47.05693,8.31125,,X
@@ -1312,8 +1312,8 @@
 /venues/3507099,Lakritz,Zürich,8001,Museumstrasse 2,Switzerland,47.37902,8.54101,http://www.lakritz.landesmuseum.ch/,
 /venues/1502028,Gonzo,Zürich,8004,Langstrasse 135,Switzerland,47.38007,8.5277,http://Gonzoclub.ch,
 /venues/4369776,Fat Tony,Zürich,8004 Zürich,Langstrasse 135,Switzerland,47.38007,8.5277,,
-/venues/4395105,Kino Kosmos 6,Zürich,8004,Lagerstrasse 104,Switzerland,47.38009,8.52892,,X
-/venues/4233284,Kosmos Forum,Zürich,8004,Lagerstrasse 104,Switzerland,47.38009,8.52892,,/venues/4395105
+/venues/4395105,Kino Kosmos 6,Zürich,8004,Lagerstrasse 104,Switzerland,47.38009,8.52892,,/venues/3765484
+/venues/4233284,Kosmos Forum,Zürich,8004,Lagerstrasse 104,Switzerland,47.38009,8.52892,,/venues/3765484
 /venues/2367854,OG9,Zürich,8004,Lagerstrasse 98,Switzerland,47.3802,8.52937,,
 /venues/2298224,Dienstgebäude 9,Zürich,Zürich,Lagerstrasse 98,Switzerland,47.3802,8.52937,,
 /venues/3769414,RADAR - Festival For New Music,Zürich,8004,,Switzerland,47.38076,8.51729,,
@@ -1616,8 +1616,8 @@
 /venues/2527519,Kult Kino,Basel,4051,Theaterstrasse 7,Switzerland,47.55357,7.5904,http://www.kultkino.ch/,
 /venues/628996,Münsterplatz,Basel,4051,,Switzerland,47.55372,7.58607,,
 /venues/3412624,Schifflände,Basel,4051,,Switzerland,47.55372,7.58607,,
-/venues/2732288,Stadt-casino - Musiksaal,Basel,4000,Steinenberg 14,Switzerland,47.55425,7.58936,,X
-/venues/2732583,Stadt-casino - Hans Huber Saal,Basel,4000,Steinenberg 14,Switzerland,47.55425,7.58936,,/venues/2732288
+/venues/2732288,Stadt-casino - Musiksaal,Basel,4000,Steinenberg 14,Switzerland,47.55425,7.58936,,/venues/80955
+/venues/2732583,Stadt-casino - Hans Huber Saal,Basel,4000,Steinenberg 14,Switzerland,47.55425,7.58936,,/venues/80955
 /venues/3449069,Tibidabo,Winterthur,8500,Altweg 5,Switzerland,47.55425,8.89415,http://www.tibidabo.ch,X
 /venues/3182309,Tibi Dabo,Winterthur,8500,Altweg 5,Switzerland,47.55425,8.89415,,/venues/3449069
 /venues/4363045,Kunstmuseum Basel - Innenhof ('jazz&art'),Basel,4051,St. Alban-Graben 16,Switzerland,47.55429,7.59403,,
@@ -1642,8 +1642,8 @@
 /venues/115992,This Is A Hoax,Winterthur,,,Switzerland,47.5573,8.89941,,
 /venues/2626963,"Theater Gleis 5, Forum Für Andere Musik",Winterthur,,,Switzerland,47.5573,8.89941,,
 /venues/2853448,Brothers of Music,Winterthur,,,Switzerland,47.5573,8.89941,,
-/venues/4366601,"Theater Fauteuil, Tabourettli",Basel,4051,Spalenberg 12,Switzerland,47.55735,7.58641,,X
-/venues/4390325,Theater Fauteuil - Kaisersaal,Basel,4051,Spalenberg 12,Switzerland,47.55735,7.58641,,/venues/4366601
+/venues/4366601,"Theater Fauteuil, Tabourettli",Basel,4051,Spalenberg 12,Switzerland,47.55735,7.58641,,/venues/2847713
+/venues/4390325,Theater Fauteuil - Kaisersaal,Basel,4051,Spalenberg 12,Switzerland,47.55735,7.58641,,/venues/2847713
 /venues/2504514,Bscene Festival,Basel,,,Switzerland,47.55742,7.59257,,
 /venues/2077634,Musik-akademie,Basel,,,Switzerland,47.55742,7.59257,,
 /venues/2446114,Stube,Basel,,,Switzerland,47.55742,7.59257,,

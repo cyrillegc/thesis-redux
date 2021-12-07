@@ -1002,7 +1002,7 @@
 1000,/venues/4019059,/venues/4019059,Café du bout du monde,Montreux,,
 1001,/venues/2804093,/venues/2804093,Café le Nyamuk,Geneva,46.19839,6.1423
 1002,/venues/2593563,/venues/2593563,Café-Théâtre de la Voirie,Lausanne,46.5093,6.6616
-1003,/venues/2783968,/venues/2767953,Café-bar Turnhalle,Bern,46.95034,7.44298
+1003,/venues/2783968,/venues/2755408,Café-bar Turnhalle,Bern,46.95034,7.44298
 1004,/venues/2263329,/venues/2263329,Cafébar Salon,Basel,47.56565,7.59646
 1005,/venues/59034,/venues/59034,Calanda,Chur,,
 1006,/venues/3172744,/venues/3172744,Calanda Spring Festival,Chur,46.85078,9.53199
@@ -1050,7 +1050,7 @@
 1048,/venues/4003294,/venues/4003294,Casa del Negromante,Locarno,46.17038,8.79327
 1049,/venues/1116226,/venues/1116226,Casablanca,Zürich,47.3768,8.5261
 1050,/venues/981891,/venues/953141,Casineum,Luzern,47.05504000000001,8.316460000000001
-1051,/venues/1983384,/venues/2730788,Casineum Club,Luzern,47.05504000000001,8.31707
+1051,/venues/1983384,/venues/953141,Casineum Club,Luzern,47.05504000000001,8.31707
 1052,/venues/953141,/venues/953141,Casineum Grand Casino,Luzern,47.05504000000001,8.31707
 1053,/venues/1235456,/venues/1235456,Casino,Winterthur,47.55819,8.897089999999997
 1054,/venues/58729,/venues/58729,Casino,Herisau,47.38463,9.2779
@@ -2456,7 +2456,7 @@
 2454,/venues/2899493,/venues/2899493,Guitar-Repairs,St. Gallen,47.20367,9.452
 2455,/venues/58560,/venues/58560,Gundeldinger Casino,Basel,,
 2456,/venues/4359637,/venues/4359637,Gupf - Rehetobel,St. Gallen,,
-2457,/venues/123641,/venues/923131,Gurten,Bern,46.91726,7.443789999999999
+2457,/venues/123641,/venues/46069,Gurten,Bern,46.91726,7.443789999999999
 2458,/venues/4329699,/venues/4329699,Gurten Bar,Bern,,
 2459,/venues/46069,/venues/46069,Gurten Festival,Bern,46.9173,7.44348
 2460,/venues/96465,/venues/96465,Gurten Uptown,Bern,,
@@ -3409,7 +3409,7 @@
 3407,/venues/4380103,/venues/4380103,Kornhauskeller Bern,Bern,,
 3408,/venues/3437074,/venues/3437074,Kornsilo / Mühle Tiefenbrunnen,Zürich,47.35146,8.56108
 3409,/venues/3915829,/venues/3915829,Kosmos,Basel,47.56777,7.59037
-3410,/venues/4233284,/venues/4395105,Kosmos Forum,Zürich,47.38009,8.52892
+3410,/venues/4233284,/venues/3765484,Kosmos Forum,Zürich,47.38009,8.52892
 3411,/venues/77484,/venues/77484,"Koultu Zentrum, Elektra Caravan",Zürich,,
 3412,/venues/4348141,/venues/4348141,Krach Karussell,Zürich,,
 3413,/venues/579441,/venues/579441,Kraftfeld,Winterthur,47.49483,8.718110000000001
@@ -3518,7 +3518,7 @@
 3516,/venues/4098154,/venues/4098154,"Kulturhaus Palazzo, Theater",Basel,47.484,7.73228
 3517,/venues/2501544,/venues/2501544,Kulturhaus Rose,Winterthur,,
 3518,/venues/4356115,/venues/4356115,Kulturhaus West,Zofingen,47.28675,7.937810000000002
-3519,/venues/2305504,/venues/2305504,Kulturhof (pfrundschüür),Bern,46.9207,7.4142100000000015
+3519,/venues/2305504,/venues/3109469,Kulturhof (pfrundschüür),Bern,46.9207,7.4142100000000015
 3520,/venues/3109469,/venues/3109469,Kulturhof Schloss Köniz,Bern,46.9207,7.4142100000000015
 3521,/venues/1997589,/venues/1997589,Kulturhotel Guggenheim,Basel,47.4826,7.734660000000001
 3522,/venues/96556,/venues/96556,Kulturkantine,Bulach,,
@@ -3605,7 +3605,7 @@
 3603,/venues/2764443,/venues/2764443,Kursaal - Auditorium,Bern,46.68853,7.858219999999998
 3604,/venues/581561,/venues/1112026,Kursaal Arena,Bern,46.9531,7.4493800000000014
 3605,/venues/3459129,/venues/3735309,Kursaal Arosa,Arosa,46.78286,9.68168
-3606,/venues/3692349,/venues/581561,Kursaal Bern,Bern,46.95326,7.448739999999999
+3606,/venues/3692349,/venues/1112026,Kursaal Bern,Bern,46.95326,7.448739999999999
 3607,/venues/3727729,/venues/3727729,Kursaal Heiden,Appenzell,47.44584,9.53197
 3608,/venues/2026874,/venues/2026874,Kurtheater,Baden,47.48069,8.31011
 3609,/venues/417496,/venues/417496,Kuzeb,Bremgarten,47.35077,8.3445
@@ -3903,7 +3903,7 @@
 3901,/venues/4410267,/venues/4410267,Le Festival Des Possibles,Geneva,46.18696,6.12976
 3902,/venues/4369669,/venues/4369669,Le Garage,Bern,,
 3903,/venues/3280644,/venues/3280644,Le Jardin Doret,Montreux,46.4598,6.8380800000000015
-3904,/venues/1899748,/venues/1899748,Le Kab,Lausanne,,
+3904,/venues/1899748,/venues/69500,Le Kab,Lausanne,,
 3905,/venues/69500,/venues/69500,Le Kab,Geneva,46.20399999999999,6.13628
 3906,/venues/3303524,/venues/3303524,Le Kiff,Aarau,47.39043,8.0457
 3907,/venues/2177649,/venues/2177649,Le Kraken,Geneva,,
@@ -4547,7 +4547,7 @@
 4545,/venues/3785394,/venues/3785394,Musig i dä Stadt,Winterthur,47.55616,8.898060000000003
 4546,/venues/3434754,/venues/3434754,Musig im Pflegidach,Zürich,47.27358,8.341560000000001
 4547,/venues/3493919,/venues/3493919,Musigbeiz Schlüssel,Altstätten,47.37702,9.54073
-4548,/venues/827531,/venues/827531,Musigbistrot,Bern,46.94251,7.433510000000001
+4548,/venues/827531,/venues/3231204,Musigbistrot,Bern,46.94251,7.433510000000001
 4549,/venues/2742588,/venues/2742588,Musigburg,Aarburg,47.3202,7.90717
 4550,/venues/4336752,/venues/4336752,Musigbörse & Wörkshophus Bern,Bern,,
 4551,/venues/4356116,/venues/4356116,Musik & Kulturraum Zwicky Süd,Dubendorf,47.40382,8.60539
@@ -6307,7 +6307,7 @@
 6305,/venues/48388,/venues/48388,Stadion Wankdorf,Bern,46.96315,7.465039999999999
 6306,/venues/1160141,/venues/1160141,Stadt Casino Music Hall,Basel,,
 6307,/venues/118070,/venues/118070,Stadt De Suisse,Bern,,
-6308,/venues/2732583,/venues/2732288,Stadt-casino - Hans Huber Saal,Basel,47.55425,7.589360000000001
+6308,/venues/2732583,/venues/80955,Stadt-casino - Hans Huber Saal,Basel,47.55425,7.589360000000001
 6309,/venues/2732288,/venues/80955,Stadt-casino - Musiksaal,Basel,47.55425,7.589360000000001
 6310,/venues/3591549,/venues/3591549,Stadtbibliothek Baden,Baden,47.47288,8.30809
 6311,/venues/4392265,/venues/4392265,Stadtbibliothek Burgdorf,Burgdorf,47.05491,7.62401
@@ -6773,7 +6773,7 @@
 6771,/venues/3764264,/venues/3764264,Theater Dietikon,Dietikon,47.40321,8.40126
 6772,/venues/1907608,/venues/1907608,Theater Duo Fischbach,Luzern,47.0833,8.43787
 6773,/venues/2847713,/venues/2847713,Theater Fauteuil,Basel,47.55734,7.5864
-6774,/venues/4390325,/venues/4366601,Theater Fauteuil - Kaisersaal,Basel,47.55735,7.586410000000001
+6774,/venues/4390325,/venues/2847713,Theater Fauteuil - Kaisersaal,Basel,47.55735,7.586410000000001
 6775,/venues/4366601,/venues/2847713,"Theater Fauteuil, Tabourettli",Basel,47.55735,7.586410000000001
 6776,/venues/2626963,/venues/2626963,"Theater Gleis 5, Forum Für Andere Musik",Winterthur,47.5573,8.899410000000003
 6777,/venues/2751918,/venues/2751918,Theater Globe,St. Moritz,46.60218,9.95978

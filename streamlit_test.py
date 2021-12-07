@@ -507,6 +507,7 @@ with st.container():
         else:
             trendline = 'ols'
 
+    filtered_artists_df
     with col1:
         fig = px.scatter(
             filtered_concerts_df,

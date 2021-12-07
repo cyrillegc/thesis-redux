@@ -167,8 +167,8 @@
 /venues/1918679,Estarock Café,Estavayer-Le-Lac,1470,Grand-Rue 11,Switzerland,46.84908,6.84769,http://www.estarock.ch,
 /venues/3303324,Loppersaal,Luzern,6052,Grossmatt 5,Switzerland,46.99056,8.31087,,X
 /venues/3370459,Loppersaal / Grossmatt Hergiswil,Luzern,6052,Grossmatt 5,Switzerland,46.99039,8.31094,,/venues/3303324
-/venues/123641,Gurten,Bern,3000,Gurten,Switzerland,46.91726,7.44379,,/venues/923131
-/venues/923131,Gurtenfestival,Bern,3000,Gurten,Switzerland,46.9173,7.44348,,X
+/venues/123641,Gurten,Bern,3000,Gurten,Switzerland,46.91726,7.44379,,/venues/46069
+/venues/923131,Gurtenfestival,Bern,3000,Gurten,Switzerland,46.9173,7.44348,,/venues/46069
 /venues/981891,Casineum,Luzern,6000,Haldenstrasse 6,Switzerland,47.05504,8.31646,,/venues/953141
 /venues/953141,Casineum Grand Casino,Luzern,6006,Haldenstrasse 6,Switzerland,47.05504,8.31707,,X
 /venues/391996,Härterei,Zürich,8005,Hardstrasse 219,Switzerland,47.38572,8.51685,http://www.haertereiclub.ch,X
@@ -248,8 +248,8 @@
 /venues/2760658,Kaserne (rossstall 1 & 2) + Reithalle,Basel,4057,Klybeckstr. 1b,Switzerland,47.56384,7.59128,,
 /venues/1625668,Kultur Parterre,Basel,CH-4057,Klybeckstr. 1b,Switzerland,47.56381,7.59113,http://www.parterre.net/,
 /venues/96548,Parterre One Music,Basel,4057,Klybeckstr. 1b,Switzerland,47.56744,7.59755,,
-/venues/581561,Kursaal Arena,Bern,3013,Kornhausstrasse 3,Switzerland,46.9531,7.44938,,X
-/venues/3692349,Kursaal Bern,Bern,3000,Kornhausstrasse 3,Switzerland,46.95326,7.44874,http://www.kursaal-bern.ch/Home,/venues/581561
+/venues/581561,Kursaal Arena,Bern,3013,Kornhausstrasse 3,Switzerland,46.9531,7.44938,,/venues/1112026
+/venues/3692349,Kursaal Bern,Bern,3000,Kornhausstrasse 3,Switzerland,46.95326,7.44874,http://www.kursaal-bern.ch/Home,/venues/1112026
 /venues/2489629,Miniz7,Basel,4133,Kraftwerkstrasse 4,Switzerland,47.52672,7.69418,,/venues/514666
 /venues/4103779,Z7 - Open Air,Basel,4133,Kraftwerkstrasse 4,Switzerland,47.52667,7.69456,,/venues/514666
 /venues/1575583,Ono,Bern,CH-3011,Kramgasse 6,Switzerland,46.94815,7.45196,http://www.onobern.ch,X

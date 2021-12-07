@@ -87,13 +87,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\data\CH.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\data\data_full.csv">
           <value>
             <Attribute>
