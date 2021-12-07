@@ -7,7 +7,7 @@ import pandas as pd
 import datetime
 import statistics
 from sklearn import preprocessing
-from streamlit_agraph import agraph, Node, Edge, Config
+#from streamlit_agraph import agraph, Node, Edge, Config
 from sklearn.cluster import KMeans
 
 st.set_page_config(layout="wide")
