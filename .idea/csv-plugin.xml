@@ -101,6 +101,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\data\data_stats_artists.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\data\data_stats_venues_genres.csv">
           <value>
             <Attribute>
