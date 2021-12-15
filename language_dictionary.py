@@ -45,8 +45,35 @@ language_dict = {
     'nbr_artists': {'fre': 'Nbr artistes', 'eng': 'Nbr artists'},
     'latitude': {'fre': 'Latitude', 'eng': 'Latitude'},
     'longitude': {'fre': 'Longitude', 'eng': 'Longitude'},
-    'label_y_data_selection': {'fre': 'Sélectionner une variable', 'eng': 'Select data for y-axis'},
-    'label_artist_genre_selection': {'fre': 'Montrer artistes ou genres', 'eng': 'Show artists or genres'},
-    'label_concert_venue_selection': {'fre': 'Montrer salles ou concerts', 'eng': 'Display venues or concerts'},
-    'label_min_artists_selection': {'fre': 'Nbr min. artistes par salle', 'eng': 'Min. nbr artists by venue'},
+    'label_y_data_selection': {
+        'fre': "Sélectionner une variable pour l'axe y",
+        'eng': 'Select data for y-axis'},
+    'label_artist_genre_selection': {
+        'fre': 'Montrer artistes ou genres',
+        'eng': 'Show artists or genres'},
+    'label_concert_venue_selection': {
+        'fre': 'Montrer salles ou concerts',
+        'eng': 'Display venues or concerts'},
+    'label_min_artists_selection': {
+        'fre': 'Nbr min. artistes par salle',
+        'eng': 'Min. nbr artists by venue'},
+    'label_min_concerts_selection': {
+        'fre': 'Nbr min. concerts par salle',
+        'eng': 'Min. nbr concerts by venue'},
+    'label_geographical_distribution': {
+        'fre': 'Répartition géographique des salles',
+        'eng': 'Geographical distribution of venues'},
+    'description_geographical_distribution': {
+        'fre': """
+        Cet outil montre comment les salles de concert sont distribuées sur le territoire suisse, 
+        de deux manières possibles:
+        - Montrer les salles fréquentées par un ou plusieurs artistes
+        - Montrer les salles où un ou plusieurs genres sont les plus fréquents (càd au moins 40% des artistes sont de ce genre)
+        """,
+        'eng': """
+        This tool shows how concert venues are distributed on the Swiss territory, with two possibilities:
+        - Show the venues visited by one or more artists
+        - Show the venues where one or more genres are the most frequent (i.e. at least 40% of the artists are of this genre)
+        """
+    }
 }
