@@ -176,6 +176,7 @@ with st.container():
             venues_distrib = results_df['spotify_name'].value_counts().reset_index()
             venues_distrib = venues_distrib.rename(columns={'spotify_name': 'nbr concerts', 'index': 'artist'})
 
+            color_map = None
             hover_data = {'latitude': False, 'longitude': False, 'spotify_name': False, 'size': False}
             color = 'spotify_name'
             opacity = 0.8
@@ -202,6 +203,14 @@ with st.container():
             venues_distrib = venues_top_genre['genre'].value_counts().reset_index()
             venues_distrib = venues_distrib.rename(columns={'genre': 'nbr venues', 'index': 'genre'})
 
+            genres_list = full_data_df['top_genre'].dropna().value_counts().index
+            color_list = px.colors.qualitative.Plotly
+            nbr_colors = len(color_list)
+            color_map = dict()
+            for i in range(len(genres_list)):
+                color_id = i % nbr_colors
+                color_map[genres_list[i]] = color_list[color_id]
+
             color = 'genre'
             hover_data = {'latitude': False, 'longitude': False, 'size': False, 'genre_frequency': True}
             opacity = 1
@@ -215,7 +224,7 @@ with st.container():
                 lat='latitude', lon='longitude',
                 hover_name='venue',
                 hover_data=hover_data,
-                #color_discrete_sequence=px.colors.qualitative.Vivid,
+                color_discrete_map=color_map,
                 opacity=opacity,
                 zoom=6,
                 center={'lat': 46.801111, 'lon': 8.226667},
@@ -253,18 +262,22 @@ with st.container():
                     mobility_list = centroid_df['mobility_weighted_mean']
                     centroid_text = list()
                     for i in range(len(mobility_list)):
-                        centroid_text.append('Artist: ' + name_list[i] + '<br>Mobility: ' + str(mobility_list[i]))
+                        hover_string = '<b>Centroid</b><br>Artist: ' + name_list[i] + '<br>Mobility: ' + str(mobility_list[i])
+                        centroid_text.append(hover_string)
                     centroid_color = centroid_df['mobility_weighted_mean']
                 else:
-                    centroid_text = centroid_df.index
-                    centroid_color = ['black' for i in range(len(centroid_df))]
+                    centroid_text = ['<b>Centroid</b><br>' + s for s in centroid_df.index]
+                    centroid_color = list()
+                    for genre in centroid_df.index:
+                        centroid_color.append(color_map[genre])
 
-                fig_scatter.add_trace((go.Scattermapbox(
+
+                fig_scatter.add_trace(go.Scattermapbox(
                     lat=centroid_lat,
                     lon=centroid_lon,
                     mode='markers',
                     marker={
-                        'size': 11,
+                        'size': 15,
                         'color': centroid_color,
                         'colorscale': 'ylorrd',
                         'cmin': 0,
@@ -273,7 +286,21 @@ with st.container():
                     hovertext=centroid_text,
                     hoverinfo='text',
                     showlegend=False,
-                )))
+                ))
+
+                if artist_genre_selection == 'Genres':
+                    centroid_color = ['black' for i in range(len(centroid_df))]
+                    fig_scatter.add_trace(go.Scattermapbox(
+                        lat=centroid_lat,
+                        lon=centroid_lon,
+                        mode='markers',
+                        marker={
+                            'size': 10,
+                            'color': centroid_color,
+                        },
+                        hoverinfo='skip',
+                        showlegend=False,
+                    ))
 
             fig_scatter.update_layout(
                 mapbox_style='light',
