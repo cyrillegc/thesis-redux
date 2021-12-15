@@ -117,7 +117,6 @@ with col2:
 
 # Scatter map
 with st.container():
-    current_lang
     st.subheader(current_lang['label_geographical_distribution'])
     with st.expander('Explications'):
         st.markdown(current_lang['description_geographical_distribution'])
