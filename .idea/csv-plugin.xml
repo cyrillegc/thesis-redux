@@ -150,6 +150,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\data\songkick\data_songkick_venues_light_coord.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\data\spotify\data_spotify_artists.csv">
           <value>
             <Attribute>

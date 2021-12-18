@@ -9,6 +9,8 @@ import statistics
 from sklearn import preprocessing
 from sklearn.cluster import KMeans
 from language_dictionary import language_dict
+import webcolors as wc
+from PIL import ImageColor
 
 
 st.set_page_config(layout="wide")
@@ -154,6 +156,8 @@ with col2:
     current_lang = get_language_dict(lang_set)
 
 # Scatter map
+#TODO: choisir une salle et voir tous les centroides des artistes et centroïde moyen
+#TODO: afficher toutes les salles sur une carte (avec filtres nbr concerts)
 with st.container():
     st.subheader(current_lang['label_geographical_distribution'])
     with st.expander('Explications'):
@@ -328,6 +332,7 @@ with st.container():
                     height=500,
                     size='size',
                     size_max=6,
+                    category_orders={color: sorted(results_df[color])},
                     labels={
                         'spotify_name': 'Artist name'
                     }
@@ -336,16 +341,24 @@ with st.container():
                 if show_centroid_selection:
                     if show_links_selection:
                         # add centroid lines
+
                         for idx, row in results_df.iterrows():
                             line_lat = [row['latitude'], row['centroid_lat']]
                             line_lon = [row['longitude'], row['centroid_lon']]
+                            color_id = row[color]
+                            hex = color_map[color_id]
+                            rgb = ImageColor.getrgb(hex)
+                            color_line = 'rgba(' + str(rgb[0]) + ',' + str(rgb[1]) + ',' + str(rgb[2]) + ', 0.1)'
 
                             fig_scatter.add_trace(
                                 go.Scattermapbox(
                                     lat=line_lat,
                                     lon=line_lon,
                                     mode="lines",
-                                    line={'color': 'rgba(100,100,100, 0.2)'},
+                                    #line={'color': 'rgba(100,100,100, 0.2)'},
+                                    line=go.scattermapbox.Line(
+                                        color=color_line,
+                                    ),
                                     showlegend=False,
                                     hoverinfo='skip',
                                 )
@@ -432,7 +445,13 @@ with st.container():
         # bar plot for venue counts by artist/genre
         with col1:
             st.caption('Venue counts by artist/genre')
+
             nbr_items = venues_count_df.iloc[:, 0].nunique()
+            if nbr_items == 1:
+                bar_width = 0.5
+            else:
+                bar_width = 0.8
+
             if artist_genre_selection == 'Artists':
                 x_label = 'spotify_name'
                 y_label = 'nbr concerts'
@@ -452,7 +471,7 @@ with st.container():
                 },
             )
             fig.update_traces(
-                width=0.8,
+                width=bar_width,
             )
             fig.update_layout(
                 paper_bgcolor=bg_color,
