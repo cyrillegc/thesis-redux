@@ -12,6 +12,7 @@ from language_dictionary import language_dict
 
 
 st.set_page_config(layout="wide")
+bg_color = "white"
 mapbox_token = 'pk.eyJ1Ijoic29sbGlyeWMiLCJhIjoiY2t1bGl1aml1MW5lZDJxbXl2d2RvbWNwdiJ9.ugect2o_eFp-XGOgxaRpBg'
 min_date = datetime.date(2010, 1, 1)
 max_date = datetime.date(2020, 1, 1)
@@ -28,6 +29,43 @@ config = {
     }
 }
 
+@st.cache
+def spiralize_coord(data_df):
+    # initialize
+    coord_cols = ['longitude', 'latitude']
+    coord_id = 0
+    sign = 1
+    lim = 1
+    curr = 0
+
+    while True:
+        # algorithm to jitter point around original point (square spiral)
+        if curr == lim:
+            curr = 0
+            if coord_id == 0:
+                sign = -1 * sign
+                coord_id = 1
+            else:
+                lim += 1
+                coord_id = 0
+
+        coord = coord_cols[coord_id]
+        curr += 1
+
+        duplicate_coord_df = data_df.loc[data_df.duplicated(subset=coord_cols)]
+        duplicate_coord_df = duplicate_coord_df.dropna(subset=coord_cols)
+        duplicate_coord_df[coord] = duplicate_coord_df[coord] + (0.00001 * sign)
+        data_df.loc[data_df.index.isin(duplicate_coord_df.index), coord] = duplicate_coord_df[coord]
+
+        if duplicate_coord_df.empty:
+            break
+
+    return data_df
+
+@st.cache
+def convert_df(df):
+    return df.to_csv(encoding='utf-8')
+
 
 @st.cache
 def get_language_dict(lang_set):
@@ -40,7 +78,7 @@ def get_language_dict(lang_set):
 
 @st.cache
 def open_data():
-    with open('data/songkick/data_songkick_venues_light.csv', encoding='utf-8') as file:
+    with open('data/songkick/data_songkick_venues_light_coord.csv', encoding='utf-8') as file:
         venues_df = pd.read_csv(file, index_col=1).drop(columns=['Unnamed: 0'])
         venues_df = venues_df.sort_values(by=['venue'])
 
@@ -123,7 +161,7 @@ with st.container():
 
     # scatter map options
     with st.container():
-        col1, col2, col3, col4 = st.columns((1, 1, 3, 1))
+        col1, col2, col3, col4, col5 = st.columns((1, 1, 4, 1, 1))
         with col1:
             artist_genre_selection = st.radio(
                 label=current_lang['label_artist_genre_selection'],
@@ -131,10 +169,10 @@ with st.container():
             )
 
         with col2:
-            show_centroid_selection = st.radio(
-                label='Show centroid?',
-                options=['Yes', 'No'],
-            )
+            st.markdown('<span style="font-size:14px">Display options</span>', unsafe_allow_html=True)
+            show_centroid_selection = st.checkbox(label='Centroids')
+            if show_centroid_selection:
+                show_links_selection = st.checkbox(label='Links')
 
         if artist_genre_selection == 'Artists':
             with col3:
@@ -160,168 +198,267 @@ with st.container():
                     value=20,
                 )
 
+            with col5:
+                genre_frequency_selection = st.slider(
+                    label='Genre frequency (in %)',
+                    min_value=0,
+                    max_value=100,
+                    value=30,
+                    step=5,
+                )
+
         if artist_genre_selection == 'Artists':
-            results_df = full_data_df.loc[full_data_df['artist_id'].isin(artist_selection)]
-            results_df = results_df.drop_duplicates(subset=['concert_id'], keep='first')
-            results_df = results_df.merge(venues_df, left_on='venue_id', right_index=True)
-            # get centroid coord for each artist
-            centroid_columns = ['centroid_lat', 'centroid_lon', 'mobility_weighted_mean']
-            centroid_df = stats_artists_features_df.loc[artist_selection][centroid_columns]
-            centroid_df = centroid_df.merge(artists_df['spotify_name'], left_index=True, right_index=True)
-            # add centroid coord to df
-            results_df = results_df.merge(centroid_df, left_on='artist_id', right_index=True)
-            results_df['color_id'] = results_df.groupby(['artist_id']).ngroup()
-            results_df['size'] = 1
+            def get_artists_coord(data_df, artist_id_list):
+                artists_coord_df = data_df.loc[full_data_df['artist_id'].isin(artist_id_list)]
+                artists_coord_df = artists_coord_df.drop_duplicates(subset=['concert_id'], keep='first')
+                artists_coord_df = artists_coord_df.merge(venues_df, left_on='venue_id', right_index=True)
 
-            venues_distrib = results_df['spotify_name'].value_counts().reset_index()
-            venues_distrib = venues_distrib.rename(columns={'spotify_name': 'nbr concerts', 'index': 'artist'})
+                # get centroid coord for each artist
+                centroid_columns = ['centroid_lat', 'centroid_lon', 'mobility_weighted']
+                centroid_df = stats_artists_features_df.loc[artist_selection][centroid_columns]
+                centroid_df = centroid_df.merge(artists_df['spotify_name'], left_index=True, right_index=True)
 
-            color_map = None
-            hover_data = {'latitude': False, 'longitude': False, 'spotify_name': False, 'size': False}
+                # add centroid coord to df
+                artists_coord_df = artists_coord_df.merge(centroid_df, left_on='artist_id', right_index=True)
+                artists_coord_df['color_id'] = artists_coord_df.groupby(['artist_id']).ngroup()
+                artists_coord_df['size'] = 1
+
+                # spiralize duplicate coordinates
+                artists_coord_df = spiralize_coord(artists_coord_df)
+
+                venues_distrib = artists_coord_df['spotify_name'].value_counts().reset_index()
+                venues_distrib = venues_distrib.rename(columns={'spotify_name': 'nbr concerts', 'index': 'spotify_name'})
+
+                return artists_coord_df, centroid_df, venues_distrib
+
+            def map_color(data_df):
+                # assign artist to a fixed color
+                # artists sorted by most count to avoid having two popular genres with same color
+                artists_list = data_df['spotify_name'].value_counts().index
+                color_list = px.colors.qualitative.Plotly
+                nbr_colors = len(color_list)
+
+                color_map_dict = dict()
+                for i in range(len(artists_list)):
+                    color_id = i % nbr_colors
+                    color_map_dict[artists_list[i]] = color_list[color_id]
+
+                return color_map_dict
+
+            results_df, centroid_df, venues_count_df = get_artists_coord(full_data_df, artist_selection)
+
+            color_map = map_color(results_df)
+            show_scale = True
+            hover_data = {'latitude': False, 'longitude': False, 'spotify_name': True, 'size': False}
             color = 'spotify_name'
-            opacity = 0.8
+            opacity = 1
 
         # show venues with selected top genre
         else:
-            # filter venues by min number of concerts
-            venues_top_genre = stats_venues_genres_df.loc[
-                (stats_venues_genres_df['nbr_concerts'] >= min_concerts_selection)
-            ]
+            def get_genres_coord(genres_id_list, min_concerts):
+                # filter venues by min number of concerts
+                genres_coord_df = stats_venues_genres_df.loc[
+                    (stats_venues_genres_df['nbr_concerts'] >= min_concerts)
+                ]
 
-            venues_top_genre = venues_top_genre.drop(columns=['nbr_concerts', 'genre_diversity'])
-            # get venues with genre freq of at least 0.4
-            venues_top_genre = venues_top_genre[venues_top_genre > 0.4].stack().reset_index()
-            venues_top_genre = venues_top_genre.loc[venues_top_genre['level_1'].isin(genres_selection)]
-            venues_top_genre = venues_top_genre.rename(columns={'level_1': 'genre', 0: 'genre_frequency'})
-            results_df = venues_df.merge(venues_top_genre, on='venue_id')
-            # get centroid of venues
-            centroid_df = results_df.groupby('genre')[['latitude', 'longitude']].mean()
-            centroid_df = centroid_df.rename(columns={'latitude': 'centroid_lat', 'longitude': 'centroid_lon'})
-            results_df = results_df.merge(centroid_df, left_on='genre', right_index=True)
-            results_df['size'] = 5
+                genres_coord_df = genres_coord_df.drop(columns=['nbr_concerts', 'genre_diversity'])
 
-            venues_distrib = venues_top_genre['genre'].value_counts().reset_index()
-            venues_distrib = venues_distrib.rename(columns={'genre': 'nbr venues', 'index': 'genre'})
+                # get venues with genre freq of at least specified ratio
+                genre_ratio = genre_frequency_selection / 100
+                genres_coord_df = genres_coord_df[genres_coord_df >= genre_ratio].stack().reset_index()
+                genres_coord_df = genres_coord_df.loc[genres_coord_df['level_1'].isin(genres_id_list)]
+                genres_coord_df = genres_coord_df.rename(columns={'level_1': 'genre', 0: 'genre_frequency'})
+                genres_coord_df = venues_df.merge(genres_coord_df, on='venue_id')
 
-            genres_list = full_data_df['top_genre'].dropna().value_counts().index
-            color_list = px.colors.qualitative.Plotly
-            nbr_colors = len(color_list)
-            color_map = dict()
-            for i in range(len(genres_list)):
-                color_id = i % nbr_colors
-                color_map[genres_list[i]] = color_list[color_id]
+                # get centroid of venues
+                centroid_df = genres_coord_df.groupby('genre')[['latitude', 'longitude']].mean()
+                centroid_df = centroid_df.rename(columns={'latitude': 'centroid_lat', 'longitude': 'centroid_lon'})
 
+                # add centroid coord to df
+                genres_coord_df = genres_coord_df.merge(centroid_df, left_on='genre', right_index=True)
+                genres_coord_df['size'] = 5
+
+                venues_distrib = genres_coord_df['genre'].value_counts().reset_index()
+                venues_distrib = venues_distrib.rename(columns={'genre': 'nbr venues', 'index': 'genre'})
+
+                # spiralize duplicate coordinates
+                genres_coord_df = spiralize_coord(genres_coord_df)
+
+                return genres_coord_df, centroid_df, venues_distrib
+
+            def map_color(data_df):
+                # assign genre to a fixed color
+                # genres sorted by most count to avoid having two popular genres with same color
+                genres_list = data_df['top_genre'].dropna().value_counts().index
+                color_list = px.colors.qualitative.Plotly
+                nbr_colors = len(color_list)
+
+                color_map_dict = dict()
+                for i in range(len(genres_list)):
+                    color_id = i % nbr_colors
+                    color_map_dict[genres_list[i]] = color_list[color_id]
+
+                return color_map_dict
+
+            results_df, centroid_df, venues_count_df = get_genres_coord(genres_selection, min_concerts_selection)
+
+            color_map = map_color(full_data_df)
+            show_scale = False
             color = 'genre'
             hover_data = {'latitude': False, 'longitude': False, 'size': False, 'genre_frequency': True}
             opacity = 1
 
     if not results_df.empty:
-        col1, col2 = st.columns((2, 8))
+        col1, col2 = st.columns((2, 6))
 
         with col2:
-            fig_scatter = px.scatter_mapbox(
-                results_df,
-                lat='latitude', lon='longitude',
-                hover_name='venue',
-                hover_data=hover_data,
-                color_discrete_map=color_map,
-                opacity=opacity,
-                zoom=6,
-                center={'lat': 46.801111, 'lon': 8.226667},
-                color=color,
-                height=600,
-                size='size',
-                size_max=6,
-                labels={
-                    'spotify_name': 'Artist name'
-                }
-            )
+            st.caption('Venue geographical distribution')
 
-            if show_centroid_selection == 'Yes':
+            def plot_scatter_map():
+                fig_scatter = px.scatter_mapbox(
+                    results_df,
+                    lat='latitude', lon='longitude',
+                    hover_name='venue',
+                    hover_data=hover_data,
+                    color_discrete_map=color_map,
+                    opacity=opacity,
+                    zoom=6,
+                    center={'lat': 46.801111, 'lon': 8.226667},
+                    color=color,
+                    height=500,
+                    size='size',
+                    size_max=6,
+                    labels={
+                        'spotify_name': 'Artist name'
+                    }
+                )
 
-                for idx, row in results_df.iterrows():
-                    line_lat = [row['latitude'], row['centroid_lat']]
-                    line_lon = [row['longitude'], row['centroid_lon']]
+                if show_centroid_selection:
+                    if show_links_selection:
+                        # add centroid lines
+                        for idx, row in results_df.iterrows():
+                            line_lat = [row['latitude'], row['centroid_lat']]
+                            line_lon = [row['longitude'], row['centroid_lon']]
 
-                    fig_scatter.add_trace(
-                        go.Scattermapbox(
-                            lat=line_lat,
-                            lon=line_lon,
-                            mode="lines",
-                            line={'color': 'rgba(100,100,100, 0.2)'},
-                            showlegend=False,
-                            hoverinfo='skip',
-                        )
-                    )
+                            fig_scatter.add_trace(
+                                go.Scattermapbox(
+                                    lat=line_lat,
+                                    lon=line_lon,
+                                    mode="lines",
+                                    line={'color': 'rgba(100,100,100, 0.2)'},
+                                    showlegend=False,
+                                    hoverinfo='skip',
+                                )
+                            )
 
-                centroid_lat = centroid_df['centroid_lat']
-                centroid_lon = centroid_df['centroid_lon']
+                    centroid_lat = centroid_df['centroid_lat']
+                    centroid_lon = centroid_df['centroid_lon']
 
-                if artist_genre_selection == 'Artists':
-                    name_list = centroid_df['spotify_name']
-                    mobility_list = centroid_df['mobility_weighted_mean']
-                    centroid_text = list()
-                    for i in range(len(mobility_list)):
-                        hover_string = '<b>Centroid</b><br>Artist: ' + name_list[i] + '<br>Mobility: ' + str(mobility_list[i])
-                        centroid_text.append(hover_string)
-                    centroid_color = centroid_df['mobility_weighted_mean']
-                else:
-                    centroid_text = ['<b>Centroid</b><br>' + s for s in centroid_df.index]
-                    centroid_color = list()
-                    for genre in centroid_df.index:
-                        centroid_color.append(color_map[genre])
+                    # add centroid
+                    if artist_genre_selection == 'Artists':
+                        artist_name_list = centroid_df['spotify_name']
+                        mobility_list = centroid_df['mobility_weighted']
+                        centroid_text = list()
+                        for i in range(len(mobility_list)):
+                            hover_string = '<b>Centroid</b><br>Artist: ' + artist_name_list[i] + \
+                                           '<br>Mobility: ' + str(round(mobility_list[i], 2))
+                            centroid_text.append(hover_string)
+                        inner_centroid_color = centroid_df['mobility_weighted']
+                        centroid_color = list()
+                        for artist in centroid_df['spotify_name']:
+                            centroid_color.append(color_map[artist])
+                        outer_size = 15
+                        inner_size = 11
+                    else:
+                        centroid_text = ['<b>Centroid</b><br>' + s for s in centroid_df.index]
+                        centroid_color = list()
+                        for genre in centroid_df.index:
+                            centroid_color.append(color_map[genre])
+                        inner_centroid_color = ['black' for i in range(len(centroid_df))]
+                        outer_size = 15
+                        inner_size = 8
 
-
-                fig_scatter.add_trace(go.Scattermapbox(
-                    lat=centroid_lat,
-                    lon=centroid_lon,
-                    mode='markers',
-                    marker={
-                        'size': 15,
-                        'color': centroid_color,
-                        'colorscale': 'ylorrd',
-                        'cmin': 0,
-                        'cmax': 0.8,
-                    },
-                    hovertext=centroid_text,
-                    hoverinfo='text',
-                    showlegend=False,
-                ))
-
-                if artist_genre_selection == 'Genres':
-                    centroid_color = ['black' for i in range(len(centroid_df))]
                     fig_scatter.add_trace(go.Scattermapbox(
                         lat=centroid_lat,
                         lon=centroid_lon,
                         mode='markers',
-                        marker={
-                            'size': 10,
-                            'color': centroid_color,
-                        },
+                        marker=go.scattermapbox.Marker(
+                            size=outer_size,
+                            color=centroid_color,
+                        ),
+                        hovertext=centroid_text,
+                        hoverinfo='text',
+                        showlegend=False,
+                    ))
+
+                    # add color for inner centroid
+                    fig_scatter.add_trace(go.Scattermapbox(
+                        lat=centroid_lat,
+                        lon=centroid_lon,
+                        mode='markers',
+                        marker=go.scattermapbox.Marker(
+                            size=inner_size,
+                            color=inner_centroid_color,
+                            colorscale='ylorrd',
+                            cmin=0,
+                            cmax=1,
+                            showscale=show_scale,
+                            colorbar=dict(
+                                title='Mobility',
+                                len=0.5,
+                                y=0.25,
+                            ),
+                        ),
                         hoverinfo='skip',
                         showlegend=False,
                     ))
 
-            fig_scatter.update_layout(
-                mapbox_style='light',
-                mapbox_accesstoken=mapbox_token,
-                hoverlabel={
-                    'bgcolor': 'white',
-                    'font_size': 12,
-                },
-            )
+                fig_scatter.update_layout(
+                    mapbox_style='light',
+                    mapbox_accesstoken=mapbox_token,
+                    hoverlabel={
+                        'bgcolor': 'white',
+                        'font_size': 12,
+                    },
+                    paper_bgcolor=bg_color,
+                    margin=dict(l=0, r=0, t=0, b=0),
+                )
 
+                return fig_scatter
+
+            fig_scatter = plot_scatter_map()
             st.plotly_chart(fig_scatter, use_container_width=True)
 
+        # bar plot for venue counts by artist/genre
         with col1:
+            st.caption('Venue counts by artist/genre')
+            nbr_items = venues_count_df.iloc[:, 0].nunique()
             if artist_genre_selection == 'Artists':
-                x_label = 'artist'
+                x_label = 'spotify_name'
                 y_label = 'nbr concerts'
             else:
                 x_label = 'genre'
                 y_label = 'nbr venues'
 
-            fig = px.bar(venues_distrib, x=x_label, y=y_label)
+            fig = px.bar(
+                venues_count_df,
+                x=x_label,
+                y=y_label,
+                height=500,
+                color_discrete_map=color_map,
+                color=color,
+                labels={
+                    'spotify_name': 'Artist name'
+                },
+            )
+            fig.update_traces(
+                width=0.8,
+            )
+            fig.update_layout(
+                paper_bgcolor=bg_color,
+                margin=dict(l=0, r=0, t=0, b=0),
+                showlegend=False,
+            )
             st.plotly_chart(fig, use_container_width=True)
 
 # Genres in venue histogram
@@ -348,7 +485,6 @@ with st.container():
         for venue in venue_selection:
             venue_stats = stats_venues_genres_df.loc[venue].drop(['nbr_concerts', 'genre_diversity'])
             venue_name = venues_df.loc[venue]['venue']
-
             fig_bar.add_trace(go.Bar(
                 x=venue_stats.index,
                 y=venue_stats.values,
@@ -358,7 +494,14 @@ with st.container():
             idx += 1
 
         # Here we modify the tickangle of the xaxis, resulting in rotated labels.
-        fig_bar.update_layout(barmode='group', xaxis_tickangle=-45, autosize=False, height=500, )
+        fig_bar.update_layout(
+            barmode='group',
+            xaxis_tickangle=-45,
+            autosize=False,
+            height=500,
+            paper_bgcolor=bg_color,
+            margin=dict(l=0, r=0, t=0, b=0),
+        )
         st.plotly_chart(fig_bar, use_container_width=True)
 
 # Venues data scatter plot
@@ -473,7 +616,7 @@ with st.container():
 
         venues_stats_df = filter_and_cluster(venues_stats_df, x_data_selection, y_data_selection, nbr_clusters_selection)
 
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns((10, 9))
 
     with col1:
         fig = px.scatter(
@@ -489,7 +632,9 @@ with st.container():
         )
 
         fig.update_layout(
-            dragmode='pan'
+            dragmode='pan',
+            paper_bgcolor=bg_color,
+            margin=dict(l=0, r=0, t=0, b=0),
         )
 
         st.plotly_chart(fig, config=config)
@@ -518,84 +663,99 @@ with st.container():
     # scatter plot options
     with st.container():
         @st.cache
-        def get_artists_and_concerts_stats():
-
-            # features left out: track_popularity, key, mode, type, time_signature
-            features_columns = [
-                'artist_id', 'danceability', 'energy', 'speechiness', 'acousticness', 'instrumentalness',
-                'liveness', 'valence', 'loudness', 'tempo', 'duration_ms',
-            ]
-
-            # get median of audio features for each artist
-            tracks_median_df = tracks_df[features_columns].groupby('artist_id').median()
-            # add suffix median to column names
-            tracks_median_df = tracks_median_df.add_suffix('_median')
-            # sort columns alphabetically
-            tracks_median_df = tracks_median_df.reindex(sorted(tracks_median_df.columns), axis=1)
-
+        def get_concerts_in_venue_stats():
             # drop rows where concert_id and artist_id are a duplicate
-            # (ex: duplicated rows bc of multiple top genres for an artist)
-            artists_in_concerts = full_data_df.drop_duplicates(subset=['concert_id', 'artist_id']).sort_values(
-                by=['venue_id'])
-            # add artist listeners and followers stats, rename columns (remove spotify prefix)
-            artists_stats_df = artists_in_concerts.merge(
-                artists_df[['spotify_listeners', 'spotify_followers']],
-                left_on='artist_id', right_index=True)
-            artists_stats_df = artists_stats_df.rename(
-                columns={'spotify_listeners': 'listeners', 'spotify_followers': 'followers'})
-            # add linked venue id
-            artists_stats_df = artists_stats_df.merge(venues_df[['linked_venue_id']], left_on='venue_id', right_index=True)
-            # add artist audio features stats
-            artists_stats_df = artists_stats_df.merge(tracks_median_df, how='left', left_on='artist_id', right_index=True)
-
+            concerts_in_venues = full_data_df.drop_duplicates(subset=['concert_id', 'artist_id']).sort_values(
+                by=['concert_id'])
+            # get stats for each artist in each concert
+            concerts_in_venues = concerts_in_venues.merge(stats_artists_features_df, how='left', left_on='artist_id', right_index=True)
             # get number of artists in each concert
-            concerts_stats_df = pd.DataFrame(artists_stats_df.groupby('concert_id').size())
-            concerts_stats_df = concerts_stats_df.rename(columns={0: 'nbr_artists'})
-            # get median values of listeners and followers for each concert
-            concerts_stats_df = concerts_stats_df.join(pd.DataFrame(artists_stats_df.groupby('concert_id').median()))
-            concerts_stats_df = concerts_stats_df.rename(columns={
-                'listeners': 'listeners_median',
-                'followers': 'followers_median'})
-            # add date of concert
-            concerts_stats_df = concerts_stats_df.merge(concerts_df[['date', 'concert_id']], left_index=True, right_on='concert_id')
-            concerts_stats_df['date'] = pd.to_datetime(concerts_stats_df['date'])
-            # add venue and venue_id columns (to get the name and to filter results by venue)
-            concerts_stats_df = concerts_stats_df.merge(concerts_df['venue_id'], left_index=True, right_index=True)
-            concerts_stats_df = concerts_stats_df.merge(venues_df['linked_venue_id'], left_on='venue_id', right_index=True)
-            concerts_stats_df = concerts_stats_df.merge(venues_df['venue'], left_on='venue_id', right_index=True)
-            # sort df by venue name
-            concerts_stats_df = concerts_stats_df.sort_values(by=['venue'])
-            # keep concerts in venue whose nbr of artists is in range of artist_nbr slider
-            concerts_stats_df = concerts_stats_df.loc[concerts_stats_df['linked_venue_id'].isin(venues_stats_df.index)]
+            concerts_size = concerts_in_venues.groupby('concert_id').size().reset_index()
+            concerts_size = concerts_size.rename(columns={0: 'nbr_artists'})
+            # mean of artists stats by concert (pas besoin de median rarement plus de 2 artistes par concert)
+            concerts_in_venues = concerts_in_venues.groupby('concert_id').mean().reset_index()
+            # add number of artists in each concert
+            concerts_in_venues = concerts_in_venues.merge(concerts_size, on='concert_id')
+            # add date and venue of concert
+            concerts_in_venues = concerts_in_venues.merge(
+                concerts_df[['date', 'concert_id', 'venue_id']], on='concert_id')
+            concerts_in_venues = concerts_in_venues.merge(
+                venues_df[['linked_venue_id', 'venue']], left_on='venue_id', right_index=True)
+            # sort by venue
+            concerts_in_venues = concerts_in_venues.sort_values(by=['venue'])
 
-            return artists_stats_df, concerts_stats_df
+            return concerts_in_venues
 
-        artists_stats_df, concerts_stats_df = get_artists_and_concerts_stats()
-        st.write(len(artists_stats_df['artist_id'].unique()))
+        @st.cache
+        def get_artists_in_venue_stats():
+            # drop rows where venue_id and artist_id are a duplicate
+            # (ex: duplicated rows bc of multiple top genres for an artist)
+            artists_in_venues = full_data_df.drop_duplicates(subset=['concert_id', 'artist_id']).sort_values(
+                by=['venue_id'])
+            # get number concerts in venue by an artist
+            artists_size = artists_in_venues.groupby(['venue_id', 'artist_id']).size().reset_index()
+            artists_size = artists_size.rename(columns={0: 'nbr_concerts'})
+            artists_in_venues = artists_in_venues.drop(columns=['spotify_genre', 'top_genre'])
+            # add linked venue id and venue name
+            artists_in_venues = artists_in_venues.merge(
+                venues_df[['linked_venue_id', 'venue']], left_on='venue_id', right_index=True)
+            # get artist name
+            artists_in_venues = artists_in_venues.merge(
+                artists_df[['artist_name', 'spotify_name']], left_on='artist_id', right_index=True)
+            # add artist audio features stats
+            artists_in_venues = artists_in_venues.merge(
+                stats_artists_features_df.drop(columns=['nbr_concerts']), how='left', left_on='artist_id', right_index=True)
+            # add nbr concerts in venue by artist
+            artists_in_venues = artists_in_venues.merge(
+                artists_size, on=['artist_id', 'venue_id'])
+            # add date and venue of concert
+            artists_in_venues = artists_in_venues.merge(
+                concerts_df[['date', 'concert_id']], on='concert_id')
+            # sort by venue name
+            artists_in_venues = artists_in_venues.sort_values(by=['venue'])
 
-        col1, col2, col3 = st.columns(3)
+            return artists_in_venues
+
+        audio_features = [
+            'danceability', 'energy', 'speechiness', 'acousticness', 'instrumentalness', 'liveness',
+            'valence', 'loudness', 'tempo', 'duration_ms',
+        ]
+        popularity_features = ['spotify_followers', 'spotify_listeners']
+        spatial_features = [
+            'centroid_lat', 'centroid_lon', 'dist_centroid_total',
+            'dist_centroid_mean', 'mobility', 'mobility_weighted'
+        ]
+        temporal_features = [
+            'active_days', 'active_days_weighted', 'concert_frequency',
+            'nbr_tours', 'avg_tour_concerts', 'avg_tour_days', 'tour_concert_frequency',
+        ]
+
+        artists_stats_df = get_artists_in_venue_stats()
+        concerts_stats_df = get_concerts_in_venue_stats()
+
+        col1, col2, col3, col4 = st.columns((2, 1, 1, 1))
 
         with col1:
             venue_selection_scatter = st.selectbox(
                 'Select a venue',
-                options=concerts_stats_df['linked_venue_id'].unique(),
+                options=artists_stats_df['linked_venue_id'].unique(),
                 format_func=lambda x: venues_df.loc[x, 'venue'] + ' (' + venues_df.loc[x, 'locality'] + ')',
             )
 
-        with col2:
+        with col3:
             x_data_selection = st.selectbox(
                 'Select data for x-axis',
-                options=concerts_stats_df.drop(['venue_id', 'venue', 'linked_venue_id'], axis=1).columns,
+                options=popularity_features+audio_features+['date'],
                 format_func=lambda x: x.replace('_median', ''),  # remove _median from displayed results
-                index=1,
+                index=0,
             )
 
-        with col3:
+        with col4:
             y_data_selection = st.selectbox(
                 'Select data for y-axis',
-                options=concerts_stats_df.drop(['venue_id', 'venue', 'linked_venue_id'], axis=1).columns,
+                options=popularity_features+audio_features+['date'],
                 format_func=lambda x: x.replace('_median', ''),  # remove _median from displayed results
-                index=2,
+                index=1,
             )
 
         # get only concerts in given venue
@@ -603,19 +763,6 @@ with st.container():
 
         # get only artists in given venue
         filtered_artists_df = artists_stats_df[artists_stats_df['linked_venue_id'] == venue_selection_scatter]
-        # drop useless columns
-        filtered_artists_df = filtered_artists_df.drop(columns=['spotify_genre', 'top_genre'])
-        # get artist name
-        filtered_artists_df = filtered_artists_df.merge(artists_df[['artist_name', 'spotify_name']], left_on='artist_id', right_index=True)
-        # rename columns
-        filtered_artists_df = filtered_artists_df.rename(columns={
-            'listeners': 'listeners_median',
-            'followers': 'followers_median'})
-        # add date of concert
-        filtered_artists_df = filtered_artists_df.merge(concerts_df[['concert_id', 'date']], on='concert_id')
-        filtered_artists_df['date'] = pd.to_datetime(filtered_artists_df['date'])
-
-        col1, col2 = st.columns(2)
 
         if x_data_selection == y_data_selection:
             trendline = None
@@ -624,7 +771,10 @@ with st.container():
         else:
             trendline = 'ols'
 
+    col1, col2 = st.columns(2)
+
     with col1:
+        pass
         fig = px.scatter(
             filtered_concerts_df,
             x=x_data_selection,
@@ -636,10 +786,21 @@ with st.container():
         )
 
         fig.update_layout(
-            dragmode='pan'
+            dragmode='pan',
+            paper_bgcolor=bg_color,
+            margin=dict(t=30, b=0),
         )
 
         st.plotly_chart(fig, config=config)
+
+        venue_concerts_csv = convert_df(filtered_concerts_df)
+        venue_name = venues_df.loc[venue_selection_scatter, 'venue'].lower().replace(' ', '_')
+        st.download_button(
+            label="Download venue data as CSV",
+            data=venue_concerts_csv,
+            file_name='data_' + venue_name + '_concerts.csv',
+            mime='text/csv',
+        )
 
     with col2:
         fig = px.scatter(
@@ -647,17 +808,28 @@ with st.container():
             x=x_data_selection,
             y=y_data_selection,
             trendline=trendline,
-            #color='nbr_artists',
+            color='nbr_concerts',
             hover_data=['artist_name', 'concert_id'],
             hover_name='spotify_name',
             title='Show stats by artists in given venue',
         )
 
         fig.update_layout(
-            dragmode='pan'
+            dragmode='pan',
+            paper_bgcolor=bg_color,
+            margin=dict(t=30, b=0),
         )
 
         st.plotly_chart(fig, config=config)
+
+        venue_artists_csv = convert_df(filtered_artists_df)
+        venue_name = venues_df.loc[venue_selection_scatter, 'venue'].lower().replace(' ', '_')
+        st.download_button(
+            label="Download venue data as CSV",
+            data=venue_artists_csv,
+            file_name='data_' + venue_name + '_artists.csv',
+            mime='text/csv',
+        )
 
 # Individual artists stats
 with st.container():
@@ -670,14 +842,40 @@ with st.container():
     )
 
     artist_data = full_data_df.loc[full_data_df['artist_id'] == artist_stats_selection]
-    artist_data = artist_data.drop_duplicates(subset=['artist_id', 'concert_id'], keep='first')
-    artist_data = artist_data.merge(concerts_df[['concert_id', 'date']], on='concert_id')
-    artist_data = artist_data.merge(venues_df[['venue', 'locality']], left_on='venue_id', right_index=True)
-    artist_data = artist_data.merge(artists_df[['spotify_name']], left_on='artist_id', right_index=True)
-    artist_data = artist_data[['spotify_name', 'date', 'venue', 'locality']].sort_values(by=['date'])
-    artist_data = artist_data.rename(columns={'spotify_name': 'artist name', 'date': 'concert date'})
-    artist_data = artist_data.reset_index(drop=True)
-    st.write(artist_data)
+
+    col1, col2 = st.columns(2)
+    with col1:
+        # get concerts by artist
+        artist_concerts = artist_data.drop_duplicates(subset=['artist_id', 'concert_id'], keep='first')
+        # add concert data
+        artist_concerts = artist_concerts.merge(concerts_df[['concert_id', 'date']], on='concert_id')
+        # add venues data
+        artist_concerts = artist_concerts.merge(
+            venues_df[['venue', 'locality', 'latitude', 'longitude']], left_on='venue_id', right_index=True)
+        # add artist data
+        artist_concerts = artist_concerts.merge(artists_df[['artist_name']], left_on='artist_id', right_index=True)
+        # reorder and rename columns
+        col_order = ['artist_name', 'date', 'venue', 'locality', 'latitude', 'longitude']
+        artist_concerts = artist_concerts[col_order].sort_values(by=['date'])
+        artist_concerts = artist_concerts.rename(columns={'date': 'concert date'})
+        artist_concerts = artist_concerts.reset_index(drop=True)
+
+        st.write(artist_concerts)
+
+        artist_csv = convert_df(artist_concerts)
+        artist_name = artists_df.loc[artist_stats_selection, 'artist_name'].lower().replace(' ', '_')
+        st.download_button(
+            label="Download artist concerts data as CSV",
+            data=artist_csv,
+            file_name='data_' + artist_name + '_concerts.csv',
+            mime='text/csv',
+        )
+
+    with col2:
+        artist_genres = artist_data.drop_duplicates(subset=['spotify_genre', 'top_genre'])
+        artist_genres = artist_genres[['spotify_genre', 'top_genre']].reset_index(drop=True)
+
+        st.write(artist_genres)
 
 # Artists stats
 with st.container():
@@ -735,11 +933,12 @@ with st.container():
     )
 
     fig.update_layout(
-        dragmode='pan'
+        dragmode='pan',
+        paper_bgcolor=bg_color,
+        margin=dict(l=0, r=0, t=0, b=0),
     )
 
     st.plotly_chart(fig, config=config)
-
 
 # Artists popularity distribution
 with st.container():

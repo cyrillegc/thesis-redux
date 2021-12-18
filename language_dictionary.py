@@ -31,7 +31,7 @@ language_dict = {
     'dist_centroid_mean': {'fre': 'Distance centroïde moy.', 'eng': 'Distance centroid avg.'},
     'dist_to_artists_centroid': {'fre': 'Distance salle-centroïde moy.', 'eng': 'Distance venue-centroid'},
     'mobility': {'fre': 'Mobilité', 'eng': 'Mobility'},
-    'mobility_weighted_mean': {'fre': 'Mobilité pondérée', 'eng': 'Mobility weighted'},
+    'mobility_weighted': {'fre': 'Mobilité pondérée', 'eng': 'Mobility weighted'},
     'danceability': {'fre': 'Dansabilité', 'eng': 'Danceability'},
     'energy': {'fre': 'Energie', 'eng': 'Energy'},
     'loudness': {'fre': 'Force', 'eng': 'Loudness'},
