@@ -5,11 +5,9 @@ import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
 import datetime
-import statistics
 from sklearn import preprocessing
 from sklearn.cluster import KMeans
 from language_dictionary import language_dict
-import webcolors as wc
 from PIL import ImageColor
 
 
@@ -167,18 +165,21 @@ with st.container():
     with st.container():
         col1, col2, col3, col4, col5 = st.columns((1, 1, 4, 1, 1))
         with col1:
-            artist_genre_selection = st.radio(
+            map_item_selection = st.radio(
                 label=current_lang['label_artist_genre_selection'],
-                options=['Artists', 'Genres'],
+                options=['Artists', 'Genres', 'Venues'],
             )
 
         with col2:
-            st.markdown('<span style="font-size:14px">Display options</span>', unsafe_allow_html=True)
-            show_centroid_selection = st.checkbox(label='Centroids')
-            if show_centroid_selection:
-                show_links_selection = st.checkbox(label='Links')
+            if map_item_selection != 'Venues':
+                st.markdown('<span style="font-size:14px">Display options</span>', unsafe_allow_html=True)
+                show_centroid_selection = st.checkbox(label='Centroids')
+                if show_centroid_selection:
+                    show_links_selection = st.checkbox(label='Links')
+            else:
+                show_centroid_selection = None
 
-        if artist_genre_selection == 'Artists':
+        if map_item_selection == 'Artists':
             with col3:
                 artist_selection = st.multiselect(
                     label='Select artist',
@@ -186,7 +187,7 @@ with st.container():
                     default='/artists/8181873-duck-duck-grey-duck',  # artists_df.iloc[0].name,
                     format_func=lambda x: artists_df.loc[x, 'spotify_name'],
                 )
-        else:
+        elif map_item_selection == 'Genres':
             with col3:
                 genres_selection = st.multiselect(
                     label='Select genres',
@@ -210,8 +211,16 @@ with st.container():
                     value=30,
                     step=5,
                 )
+        else:
+            with col3:
+                venues_selection = st.multiselect(
+                    label='Select venues',
+                    options=sorted(full_data_df['venue_id'].unique()),
+                    default='/venues/35054',  # venues_df.iloc[0].name,
+                    format_func=lambda x: venues_df.loc[x, 'venue'],
+                )
 
-        if artist_genre_selection == 'Artists':
+        if map_item_selection == 'Artists':
             def get_artists_coord(data_df, artist_id_list):
                 artists_coord_df = data_df.loc[full_data_df['artist_id'].isin(artist_id_list)]
                 artists_coord_df = artists_coord_df.drop_duplicates(subset=['concert_id'], keep='first')
@@ -258,7 +267,7 @@ with st.container():
             opacity = 1
 
         # show venues with selected top genre
-        else:
+        elif map_item_selection == 'Genres':
             def get_genres_coord(genres_id_list, min_concerts):
                 # filter venues by min number of concerts
                 genres_coord_df = stats_venues_genres_df.loc[
@@ -280,7 +289,7 @@ with st.container():
 
                 # add centroid coord to df
                 genres_coord_df = genres_coord_df.merge(centroid_df, left_on='genre', right_index=True)
-                genres_coord_df['size'] = 5
+                genres_coord_df['size'] = 1
 
                 venues_distrib = genres_coord_df['genre'].value_counts().reset_index()
                 venues_distrib = venues_distrib.rename(columns={'genre': 'nbr venues', 'index': 'genre'})
@@ -310,6 +319,18 @@ with st.container():
             show_scale = False
             color = 'genre'
             hover_data = {'latitude': False, 'longitude': False, 'size': False, 'genre_frequency': True}
+            opacity = 1
+
+        else:
+            results_df = full_data_df.merge(venues_df, on='venue_id')
+            results_df = results_df.loc[results_df['venue_id'].isin(venues_selection)]
+            results_df = results_df.drop_duplicates(subset=['venue_id'], keep='first')
+            results_df['size'] = 1
+
+            color_map = dict()
+            show_scale = False
+            color = 'venue'
+            hover_data = {'latitude': False, 'longitude': False, 'size': False}
             opacity = 1
 
     if not results_df.empty:
@@ -368,7 +389,7 @@ with st.container():
                     centroid_lon = centroid_df['centroid_lon']
 
                     # add centroid
-                    if artist_genre_selection == 'Artists':
+                    if map_item_selection == 'Artists':
                         artist_name_list = centroid_df['spotify_name']
                         mobility_list = centroid_df['mobility_weighted']
                         centroid_text = list()
@@ -382,7 +403,7 @@ with st.container():
                             centroid_color.append(color_map[artist])
                         outer_size = 15
                         inner_size = 11
-                    else:
+                    elif map_item_selection == 'Genres':
                         centroid_text = ['<b>Centroid</b><br>' + s for s in centroid_df.index]
                         centroid_color = list()
                         for genre in centroid_df.index:
@@ -442,47 +463,48 @@ with st.container():
             fig_scatter = plot_scatter_map()
             st.plotly_chart(fig_scatter, use_container_width=True)
 
-        # bar plot for venue counts by artist/genre
-        with col1:
-            st.caption('Venue counts by artist/genre')
+        if map_item_selection != 'Venues':
+            # bar plot for venue counts by artist/genre
+            with col1:
+                st.caption('Venue counts by artist/genre')
 
-            nbr_items = venues_count_df.iloc[:, 0].nunique()
-            if nbr_items == 1:
-                bar_width = 0.5
-            else:
-                bar_width = 0.8
+                nbr_items = venues_count_df.iloc[:, 0].nunique()
+                if nbr_items == 1:
+                    bar_width = 0.5
+                else:
+                    bar_width = 0.8
 
-            if artist_genre_selection == 'Artists':
-                x_label = 'spotify_name'
-                y_label = 'nbr concerts'
-            else:
-                x_label = 'genre'
-                y_label = 'nbr venues'
+                if map_item_selection == 'Artists':
+                    x_label = 'spotify_name'
+                    y_label = 'nbr concerts'
+                elif map_item_selection == 'Genres':
+                    x_label = 'genre'
+                    y_label = 'nbr venues'
 
-            fig = px.bar(
-                venues_count_df,
-                x=x_label,
-                y=y_label,
-                height=500,
-                color_discrete_map=color_map,
-                color=color,
-                labels={
-                    'spotify_name': 'Artist name'
-                },
-            )
-            fig.update_traces(
-                width=bar_width,
-            )
-            fig.update_layout(
-                paper_bgcolor=bg_color,
-                margin=dict(l=0, r=0, t=0, b=0),
-                showlegend=False,
-            )
-            st.plotly_chart(fig, use_container_width=True)
+                fig = px.bar(
+                    venues_count_df,
+                    x=x_label,
+                    y=y_label,
+                    height=500,
+                    color_discrete_map=color_map,
+                    color=color,
+                    labels={
+                        'spotify_name': 'Artist name'
+                    },
+                )
+                fig.update_traces(
+                    width=bar_width,
+                )
+                fig.update_layout(
+                    paper_bgcolor=bg_color,
+                    margin=dict(l=0, r=0, t=0, b=0),
+                    showlegend=False,
+                )
+                st.plotly_chart(fig, use_container_width=True)
 
 # Genres in venue histogram
 with st.container():
-    st.subheader('Genres in venues')
+    st.subheader('Compare venues')
 
     venue_selection = st.multiselect(
         'Select a venue',
@@ -492,7 +514,7 @@ with st.container():
         help='Select at most 4 venues to compare',
     )
 
-    col1, col2, = st.columns(2)
+    col1, col2, = st.columns((3, 2))
 
     nbr_selected_venues = len(venue_selection)
 
@@ -521,7 +543,42 @@ with st.container():
             paper_bgcolor=bg_color,
             margin=dict(l=0, r=0, t=0, b=0),
         )
-        st.plotly_chart(fig_bar, use_container_width=True)
+
+        with col1:
+            st.caption('Genres distribution in selected venues')
+            st.plotly_chart(fig_bar, use_container_width=True)
+
+        # show common artists between venues
+        with col2:
+            st.caption('Common artists between selected venues')
+            artists_list = list()
+            for venue in venue_selection:
+                artists_in_venue = sorted(full_data_df.loc[full_data_df['venue_id'] == venue]['artist_id'].unique())
+                artists_list.append(artists_in_venue)
+
+            nbr_venues = len(artists_list)
+            if nbr_venues > 1:
+                common_artists = set(artists_list[0])
+                for i in range(1, nbr_venues):
+                    common_artists = common_artists.intersection(artists_list[i])
+
+                concerts_in_venues = full_data_df.loc[full_data_df['venue_id'].isin(venue_selection)]
+                concerts_by_artists = concerts_in_venues.loc[concerts_in_venues['artist_id'].isin(common_artists)]
+                concerts_by_artists = concerts_by_artists.drop_duplicates(subset=['artist_id', 'concert_id'], keep='first')
+                # add concert data
+                concerts_by_artists = concerts_by_artists.merge(concerts_df[['concert_id', 'date']], on='concert_id')
+                # add venues data
+                concerts_by_artists = concerts_by_artists.merge(
+                    venues_df[['venue', 'locality']], left_on='venue_id', right_index=True)
+                # add artist data
+                concerts_by_artists = concerts_by_artists.merge(
+                    artists_df[['artist_name']], left_on='artist_id', right_index=True)
+                # reorder and rename columns
+                col_order = ['artist_name', 'date', 'venue', 'locality']
+                concerts_by_artists = concerts_by_artists[col_order].sort_values(by=['artist_name', 'date', 'venue'])
+                concerts_by_artists.rename(columns={'date': 'concert date'}, inplace=True)
+                concerts_by_artists.set_index('artist_name', inplace=True)
+                concerts_by_artists
 
 # Venues data scatter plot
 with st.container():
@@ -529,18 +586,6 @@ with st.container():
 
     # scatter plot options
     with st.container():
-        def useless():
-            # get number of artists in each venue
-            venues_stats_df = pd.DataFrame(artists_stats_df.groupby('linked_venue_id').size())
-            venues_stats_df = venues_stats_df.rename(columns={0: 'nbr_artists'})
-            # get median values of listeners and followers for each venue
-            venues_stats_df = venues_stats_df.join(pd.DataFrame(artists_stats_df.groupby('linked_venue_id').median()))
-            # rename columns with median value
-            venues_stats_df = venues_stats_df.rename(columns={
-                'listeners': 'listeners_median',
-                'followers': 'followers_median'})
-            st.write(len(venues_stats_df))
-
         venues_stats_df = stats_venues_features_df.copy()
         # add venue name and locality to DataFrame
         venues_stats_df = venues_stats_df.merge(
@@ -643,11 +688,13 @@ with st.container():
             x=x_data_selection,
             y=y_data_selection,
             color='cluster',
-            trendline='ols',
+            trendline=None,
             trendline_scope='overall',
             trendline_color_override='grey',
             color_discrete_sequence=px.colors.qualitative.Plotly,
             hover_data=['venue', 'locality', 'nbr_artists'],
+            marginal_x='histogram',
+            marginal_y='histogram',
         )
 
         fig.update_layout(
@@ -958,40 +1005,3 @@ with st.container():
     )
 
     st.plotly_chart(fig, config=config)
-
-# Artists popularity distribution
-with st.container():
-    st.subheader('Artists stats')
-
-    col1, col2 = st.columns(2)
-
-    with col2:
-        preprocess_selection = st.radio('Preprocess data', ['Standardize', 'Normalize', 'None'])
-
-        artists_matched_df = artists_df.loc[pd.notna(artists_df['spotify_id'])]
-        artists_matched_df = artists_matched_df[['spotify_followers', 'spotify_listeners']]
-        stats_array = artists_matched_df.values
-
-        if preprocess_selection == 'Standardize':
-            standardizer = preprocessing.StandardScaler()
-            preprocessed_data = standardizer.fit_transform(stats_array.T)
-        elif preprocess_selection == 'Normalize':
-            normalizer = preprocessing.Normalizer()
-            preprocessed_data = normalizer.fit_transform(stats_array.T)
-        else:
-            preprocessed_data = stats_array.T
-
-        dist_data = [x for x in preprocessed_data]
-        dist_labels = [label for label in artists_matched_df.columns]
-
-    with col1:
-        # Create distplot with curve_type set to 'normal'
-        fig = ff.create_distplot(
-            dist_data,
-            dist_labels,
-            curve_type='normal',  # override default 'kde'
-            show_hist=False,
-            show_rug=False,
-        )
-
-        st.plotly_chart(fig, use_container_width=True)
