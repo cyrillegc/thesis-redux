@@ -206,6 +206,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\data\spotify\data_spotify_top_genres_final.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\data\wikidata\data_wikidata_bigcities.csv">
           <value>
             <Attribute>

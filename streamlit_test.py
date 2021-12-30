@@ -5,17 +5,44 @@ import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
 import datetime
-from sklearn import preprocessing
 from sklearn.cluster import KMeans
 from language_dictionary import language_dict
 from PIL import ImageColor
 
-
+in_dev = True
 st.set_page_config(layout="wide")
 bg_color = "white"
 mapbox_token = 'pk.eyJ1Ijoic29sbGlyeWMiLCJhIjoiY2t1bGl1aml1MW5lZDJxbXl2d2RvbWNwdiJ9.ugect2o_eFp-XGOgxaRpBg'
 min_date = datetime.date(2010, 1, 1)
-max_date = datetime.date(2020, 1, 1)
+max_date = datetime.date(2019, 12, 31)
+genres_id = [
+                'acoustic music',
+                'art music',
+                'blues',
+                "children's music",
+                'country music',
+                'dance music',
+                'electronic music',
+                'experimental music',
+                'folk music',
+                'functional music',
+                'funk',
+                'hip hop music',
+                'independent music',
+                'instrumental music',
+                'jazz',
+                'lo-fi music',
+                'pop music',
+                'rhythm and blues',
+                'rock music',
+                'soul music',
+                'underground music',
+                'vocal music',
+                'world music',
+            ]
+variables_list = [
+    'nbr_concerts',
+]
 config = {
     'scrollZoom': True,
     'toImageButtonOptions': {
@@ -62,12 +89,12 @@ def spiralize_coord(data_df):
 
     return data_df
 
+
 @st.cache
 def convert_df(df):
     return df.to_csv(encoding='utf-8')
 
 
-@st.cache
 def get_language_dict(lang_set):
     current_lang_dict = dict()
     for key, value in language_dict.items():
@@ -76,7 +103,7 @@ def get_language_dict(lang_set):
     return current_lang_dict
 
 
-@st.cache
+@st.cache(show_spinner=False)
 def open_data():
     with open('data/songkick/data_songkick_venues_light_coord.csv', encoding='utf-8') as file:
         venues_df = pd.read_csv(file, index_col=1).drop(columns=['Unnamed: 0'])
@@ -126,24 +153,18 @@ def open_data():
 
 data_dict = open_data()
 
-venues_df = data_dict['venues_df']
-concerts_df = data_dict['concerts_df']
-artists_df = data_dict['artists_df']
-genres_df = data_dict['genres_df']
-full_data_df = data_dict['full_data_df']
-stats_venues_genres_df = data_dict['stats_venues_genres_df']
-stats_venues_features_df = data_dict['stats_venues_features_df']
-stats_artists_features_df = data_dict['stats_artists_features_df']
-tracks_df = data_dict['tracks_df']
+venues_df = data_dict['venues_df'].copy()
+concerts_df = data_dict['concerts_df'].copy()
+artists_df = data_dict['artists_df'].copy()
+genres_df = data_dict['genres_df'].copy()
+full_data_df = data_dict['full_data_df'].copy()
+stats_venues_genres_df = data_dict['stats_venues_genres_df'].copy()
+stats_venues_features_df = data_dict['stats_venues_features_df'].copy()
+stats_artists_features_df = data_dict['stats_artists_features_df'].copy()
+tracks_df = data_dict['tracks_df'].copy()
 
-
+# header
 col1, col2 = st.columns((5, 1))
-with col1:
-    st.title("T'as où les salles?")
-    st.markdown(
-        'Outils de visualisation de la scène musicale suisse pour mieux comprendre comment '
-        'les salles de concert et les artistes évoluent dans ce milieu.'
-    )
 with col2:
     lang_id = {'fre': 'Français', 'eng': 'English'}
     lang_set = st.selectbox(
@@ -152,37 +173,73 @@ with col2:
         format_func=lambda x: lang_id[x],
     )
     current_lang = get_language_dict(lang_set)
+with col1:
+    st.title(current_lang['label_title'])
+    st.markdown(current_lang['description_overall'])
+
+st.markdown('---')
+
+# sidebar buttons
+page_homepage = st.sidebar.button(current_lang['label_button_homepage'])
+st.sidebar.markdown('---')
+page_map = st.sidebar.button(current_lang['label_button_map_distribution'])
+page_bars = st.sidebar.button(current_lang['label_button_genre_frequency'])
+page_scatter_venues = st.sidebar.button(current_lang['label_button_venues_characteristics'])
+page_scatter_concerts = st.sidebar.button(current_lang['label_button_concerts_in_venue'])
+page_scatter_artists = st.sidebar.button(current_lang['label_button_artists_characteristics'])
+
+# show all widgets in dev mode
+if in_dev:
+    page_map = True
+    page_bars = True
+    page_scatter_venues = True
+    page_scatter_concerts = True
+    page_scatter_artists = True
+
+# genres language dict
+genres_lang_dict = dict()
+for i in range(len(genres_id)):
+    genres_name = current_lang['list_labels_genres']
+    genres_lang_dict[genres_id[i]] = genres_name[i]
+
+# change genres name according to selected language
+full_data_df['top_genre'] = full_data_df['top_genre'].replace(to_replace=genres_lang_dict)
+stats_venues_genres_df = stats_venues_genres_df.rename(columns=genres_lang_dict)
 
 # Scatter map
-#TODO: choisir une salle et voir tous les centroides des artistes et centroïde moyen
-#TODO: afficher toutes les salles sur une carte (avec filtres nbr concerts)
-with st.container():
-    st.subheader(current_lang['label_geographical_distribution'])
-    with st.expander('Explications'):
-        st.markdown(current_lang['description_geographical_distribution'])
+# TODO: choisir une salle et voir tous les centroides des artistes et centroïde moyen
+# TODO: afficher toutes les salles sur une carte (avec filtres nbr concerts)
+
+if page_map:
+    st.subheader(current_lang['label_header_map_distribution'])
+    col1, col2 = st.columns((6, 2))
+    with col1:
+        with st.expander(current_lang['label_expander']):
+            st.markdown(current_lang['description_map_distribution'])
 
     # scatter map options
     with st.container():
         col1, col2, col3, col4, col5 = st.columns((1, 1, 4, 1, 1))
         with col1:
+            # select between artists, genres, names
             map_item_selection = st.radio(
-                label=current_lang['label_artist_genre_selection'],
-                options=['Artists', 'Genres', 'Venues'],
+                label=current_lang['label_selection_map_item'],
+                options=current_lang['options_map_item'],
             )
 
         with col2:
-            if map_item_selection != 'Venues':
-                st.markdown('<span style="font-size:14px">Display options</span>', unsafe_allow_html=True)
-                show_centroid_selection = st.checkbox(label='Centroids')
+            if map_item_selection not in ['Venues', 'Salles']:
+                st.markdown(current_lang['label_selection_display'], unsafe_allow_html=True)
+                show_centroid_selection = st.checkbox(label=current_lang['option_centroids'])
                 if show_centroid_selection:
-                    show_links_selection = st.checkbox(label='Links')
+                    show_links_selection = st.checkbox(label=current_lang['option_links'])
             else:
                 show_centroid_selection = None
 
-        if map_item_selection == 'Artists':
+        if map_item_selection in ['Artists', 'Artistes']:
             with col3:
                 artist_selection = st.multiselect(
-                    label='Select artist',
+                    label=current_lang['label_selection_artists'],
                     options=sorted(full_data_df['artist_id'].unique()),
                     default='/artists/8181873-duck-duck-grey-duck',  # artists_df.iloc[0].name,
                     format_func=lambda x: artists_df.loc[x, 'spotify_name'],
@@ -190,7 +247,7 @@ with st.container():
         elif map_item_selection == 'Genres':
             with col3:
                 genres_selection = st.multiselect(
-                    label='Select genres',
+                    label=current_lang['label_selection_genres'],
                     options=sorted(full_data_df['top_genre'].dropna().unique()),
                     default=sorted(full_data_df['top_genre'].dropna().unique())[1]
                     # format_func=lambda x: venues_df.loc[x, 'locality'],
@@ -198,14 +255,14 @@ with st.container():
 
             with col4:
                 min_concerts_selection = st.number_input(
-                    label=current_lang['label_min_concerts_selection'],
+                    label=current_lang['label_selection_min_concerts'],
                     min_value=1,
                     value=20,
                 )
 
             with col5:
                 genre_frequency_selection = st.slider(
-                    label='Genre frequency (in %)',
+                    label=current_lang['label_selection_genre_frequency'],
                     min_value=0,
                     max_value=100,
                     value=30,
@@ -214,13 +271,13 @@ with st.container():
         else:
             with col3:
                 venues_selection = st.multiselect(
-                    label='Select venues',
+                    label=current_lang['label_selection_venues'],
                     options=sorted(full_data_df['venue_id'].unique()),
                     default='/venues/35054',  # venues_df.iloc[0].name,
                     format_func=lambda x: venues_df.loc[x, 'venue'],
                 )
 
-        if map_item_selection == 'Artists':
+        if map_item_selection in ['Artists', 'Artistes']:
             def get_artists_coord(data_df, artist_id_list):
                 artists_coord_df = data_df.loc[full_data_df['artist_id'].isin(artist_id_list)]
                 artists_coord_df = artists_coord_df.drop_duplicates(subset=['concert_id'], keep='first')
@@ -240,7 +297,11 @@ with st.container():
                 artists_coord_df = spiralize_coord(artists_coord_df)
 
                 venues_distrib = artists_coord_df['spotify_name'].value_counts().reset_index()
-                venues_distrib = venues_distrib.rename(columns={'spotify_name': 'nbr concerts', 'index': 'spotify_name'})
+                venues_distrib = venues_distrib.rename(columns={
+                    'spotify_name': 'nbr_concerts',
+                    'index': 'spotify_name',
+                    'top_genre': 'genre',
+                })
 
                 return artists_coord_df, centroid_df, venues_distrib
 
@@ -273,7 +334,6 @@ with st.container():
                 genres_coord_df = stats_venues_genres_df.loc[
                     (stats_venues_genres_df['nbr_concerts'] >= min_concerts)
                 ]
-
                 genres_coord_df = genres_coord_df.drop(columns=['nbr_concerts', 'genre_diversity'])
 
                 # get venues with genre freq of at least specified ratio
@@ -292,7 +352,7 @@ with st.container():
                 genres_coord_df['size'] = 1
 
                 venues_distrib = genres_coord_df['genre'].value_counts().reset_index()
-                venues_distrib = venues_distrib.rename(columns={'genre': 'nbr venues', 'index': 'genre'})
+                venues_distrib = venues_distrib.rename(columns={'genre': 'nbr_venues', 'index': 'genre'})
 
                 # spiralize duplicate coordinates
                 genres_coord_df = spiralize_coord(genres_coord_df)
@@ -333,11 +393,17 @@ with st.container():
             hover_data = {'latitude': False, 'longitude': False, 'size': False}
             opacity = 1
 
+    results_df
     if not results_df.empty:
+        #results_df['genre'] = results_df['genre'].replace(to_replace=genres_lang_dict)
+
         col1, col2 = st.columns((2, 6))
 
         with col2:
-            st.caption('Venue geographical distribution')
+            if map_item_selection in ['Artistes', 'Artists']:
+                st.caption(current_lang['label_plot_map_concerts_artist'])
+            else:
+                st.caption(current_lang['label_plot_map_venues_genre'])
 
             def plot_scatter_map():
                 fig_scatter = px.scatter_mapbox(
@@ -354,12 +420,10 @@ with st.container():
                     size='size',
                     size_max=6,
                     category_orders={color: sorted(results_df[color])},
-                    labels={
-                        'spotify_name': 'Artist name'
-                    }
+                    labels=current_lang['label_variables'],
                 )
 
-                if show_centroid_selection:
+                if map_item_selection not in ['Names', 'Noms'] and show_centroid_selection:
                     if show_links_selection:
                         # add centroid lines
 
@@ -389,7 +453,7 @@ with st.container():
                     centroid_lon = centroid_df['centroid_lon']
 
                     # add centroid
-                    if map_item_selection == 'Artists':
+                    if map_item_selection in ['Artists', 'Artistes']:
                         artist_name_list = centroid_df['spotify_name']
                         mobility_list = centroid_df['mobility_weighted']
                         centroid_text = list()
@@ -463,10 +527,13 @@ with st.container():
             fig_scatter = plot_scatter_map()
             st.plotly_chart(fig_scatter, use_container_width=True)
 
-        if map_item_selection != 'Venues':
+        if map_item_selection not in ['Names', 'Noms']:
             # bar plot for venue counts by artist/genre
             with col1:
-                st.caption('Venue counts by artist/genre')
+                if map_item_selection in ['Artistes', 'Artists']:
+                    st.caption(current_lang['label_plot_concerts_count_artist'])
+                else:
+                    st.caption(current_lang['label_plot_venues_count_genre'])
 
                 nbr_items = venues_count_df.iloc[:, 0].nunique()
                 if nbr_items == 1:
@@ -474,12 +541,12 @@ with st.container():
                 else:
                     bar_width = 0.8
 
-                if map_item_selection == 'Artists':
+                if map_item_selection in ['Artists', 'Artistes']:
                     x_label = 'spotify_name'
-                    y_label = 'nbr concerts'
+                    y_label = 'nbr_concerts'
                 elif map_item_selection == 'Genres':
                     x_label = 'genre'
-                    y_label = 'nbr venues'
+                    y_label = 'nbr_venues'
 
                 fig = px.bar(
                     venues_count_df,
@@ -488,9 +555,7 @@ with st.container():
                     height=500,
                     color_discrete_map=color_map,
                     color=color,
-                    labels={
-                        'spotify_name': 'Artist name'
-                    },
+                    labels=current_lang['label_variables'],
                 )
                 fig.update_traces(
                     width=bar_width,
@@ -503,13 +568,18 @@ with st.container():
                 st.plotly_chart(fig, use_container_width=True)
 
 # Genres in venue histogram
-with st.container():
-    st.subheader('Compare venues')
+if page_bars:
+    st.subheader(current_lang['label_header_genre_frequency'])
+    col1, col2 = st.columns((6, 2))
+    with col1:
+        with st.expander(current_lang['label_expander']):
+            st.markdown(current_lang['description_genre_frequency'])
 
     venue_selection = st.multiselect(
-        'Select a venue',
+        label=current_lang['label_selection_venues'],
         options=stats_venues_genres_df.index,
         format_func=lambda x: venues_df.loc[x, 'venue'] + ' (' + venues_df.loc[x, 'locality'] + ')',
+        default='/venues/35054',
         #default=stats_df.index.get_loc(stats_df.loc['/venues/418386'].name),  # set default selection to Caves du Manoir
         help='Select at most 4 venues to compare',
     )
@@ -542,47 +612,55 @@ with st.container():
             height=500,
             paper_bgcolor=bg_color,
             margin=dict(l=0, r=0, t=0, b=0),
+
         )
 
         with col1:
-            st.caption('Genres distribution in selected venues')
+            st.caption(current_lang['label_plot_genre_frequency'])
             st.plotly_chart(fig_bar, use_container_width=True)
 
         # show common artists between venues
         with col2:
-            st.caption('Common artists between selected venues')
-            artists_list = list()
-            for venue in venue_selection:
-                artists_in_venue = sorted(full_data_df.loc[full_data_df['venue_id'] == venue]['artist_id'].unique())
-                artists_list.append(artists_in_venue)
+            if nbr_selected_venues > 1:
+                st.caption(current_lang['label_plot_common_artists'])
+                artists_list = list()
+                for venue in venue_selection:
+                    artists_in_venue = sorted(full_data_df.loc[full_data_df['venue_id'] == venue]['artist_id'].unique())
+                    artists_list.append(artists_in_venue)
 
-            nbr_venues = len(artists_list)
-            if nbr_venues > 1:
-                common_artists = set(artists_list[0])
-                for i in range(1, nbr_venues):
-                    common_artists = common_artists.intersection(artists_list[i])
+                nbr_venues = len(artists_list)
+                if nbr_venues > 1:
+                    common_artists = set(artists_list[0])
+                    for i in range(1, nbr_venues):
+                        common_artists = common_artists.intersection(artists_list[i])
 
-                concerts_in_venues = full_data_df.loc[full_data_df['venue_id'].isin(venue_selection)]
-                concerts_by_artists = concerts_in_venues.loc[concerts_in_venues['artist_id'].isin(common_artists)]
-                concerts_by_artists = concerts_by_artists.drop_duplicates(subset=['artist_id', 'concert_id'], keep='first')
-                # add concert data
-                concerts_by_artists = concerts_by_artists.merge(concerts_df[['concert_id', 'date']], on='concert_id')
-                # add venues data
-                concerts_by_artists = concerts_by_artists.merge(
-                    venues_df[['venue', 'locality']], left_on='venue_id', right_index=True)
-                # add artist data
-                concerts_by_artists = concerts_by_artists.merge(
-                    artists_df[['artist_name']], left_on='artist_id', right_index=True)
-                # reorder and rename columns
-                col_order = ['artist_name', 'date', 'venue', 'locality']
-                concerts_by_artists = concerts_by_artists[col_order].sort_values(by=['artist_name', 'date', 'venue'])
-                concerts_by_artists.rename(columns={'date': 'concert date'}, inplace=True)
-                concerts_by_artists.set_index('artist_name', inplace=True)
-                concerts_by_artists
+                    concerts_in_venues = full_data_df.loc[full_data_df['venue_id'].isin(venue_selection)]
+                    concerts_by_artists = concerts_in_venues.loc[concerts_in_venues['artist_id'].isin(common_artists)]
+                    concerts_by_artists = concerts_by_artists.drop_duplicates(subset=['artist_id', 'concert_id'], keep='first')
+                    # add concert data
+                    concerts_by_artists = concerts_by_artists.merge(concerts_df[['concert_id', 'date']], on='concert_id')
+                    # add venues data
+                    concerts_by_artists = concerts_by_artists.merge(
+                        venues_df[['venue', 'locality']], left_on='venue_id', right_index=True)
+                    # add artist data
+                    concerts_by_artists = concerts_by_artists.merge(
+                        artists_df[['artist_name']], left_on='artist_id', right_index=True)
+                    # reorder and rename columns
+                    col_order = ['artist_name', 'date', 'venue', 'locality']
+                    concerts_by_artists = concerts_by_artists[col_order].sort_values(by=['artist_name', 'date', 'venue'])
+                    concerts_by_artists.rename(columns=current_lang['label_variables'], inplace=True)
+                    concerts_by_artists.set_index('artist_name', inplace=True)
+
+                    # show dataframe
+                    st.write(concerts_by_artists)
 
 # Venues data scatter plot
-with st.container():
-    st.subheader('Venues stats')
+if page_scatter_venues:
+    st.subheader(current_lang['label_header_venues_characteristics'])
+    col1, col2 = st.columns((6, 2))
+    with col1:
+        with st.expander(current_lang['label_expander']):
+            st.markdown(current_lang['description_venues_characteristics'])
 
     # scatter plot options
     with st.container():
@@ -600,53 +678,54 @@ with st.container():
 
         with col1:
             x_data_selection = st.selectbox(
-                'Select data for x-axis',
+                label=current_lang['label_selection_x_data'],
                 options=venues_stats_df.drop(['venue', 'locality'], axis=1).columns,
-                format_func=lambda x: x.replace('_median', ''),  # remove _median from displayed results
-                index=1,
+                format_func=lambda x: current_lang[x],
+                index=0,
                 key='x_select_venues'
             )
 
             locality_selection = st.multiselect(
-                'Select one or multiple localities',
+                label=current_lang['label_selection_locality'],
                 options=venues_stats_df['locality'].unique(),
             )
 
         with col2:
             y_data_selection = st.selectbox(
-                current_lang['label_y_data_selection'],
+                label=current_lang['label_selection_y_data'],
                 options=venues_stats_df.drop(['venue', 'locality'], axis=1).columns,
                 format_func=lambda x: current_lang[x],
-                index=2,
+                index=1,
                 key='y_select_venues'
             )
 
             max_artists = int(venues_stats_df['nbr_artists'].max())
             range_nbr_artists = st.slider(
-                'Min number of artists',
-                1, max_artists,
-                (100, max_artists),
+                label=current_lang['label_selection_nbr_artists'],
+                min_value=1,
+                max_value=max_artists,
+                value=(100, max_artists),
             )
 
         with col3:
             nbr_clusters_selection = st.selectbox(
-                'Select number of clusters to show',
+                label=current_lang['label_selection_cluster'],
                 options=range(1, 11),
-                index=9,
+                index=5,
             )
 
-            max_followers = 10000000
-            range_followers = st.slider(
-                'Select min and max nbr of followers median',
-                min_followers, max_followers,
-                (min_followers, max_followers),
-                step=10000,
-            )
+            #max_followers = 10000000
+            #range_followers = st.slider(
+            #    label=current_lang['label_selection_nbr_followers'],
+            #    'Select min and max nbr of followers median',
+            #    min_followers, max_followers,
+            #    (min_followers, max_followers),
+            #    step=10000,
+            #)
 
         if locality_selection:
             venues_stats_df = venues_stats_df.loc[venues_stats_df['locality'].isin(locality_selection)]
 
-        @st.cache
         def filter_and_cluster(venues_stats_df, x_data, y_data, nbr_clusters):
 
             # filter DataFrame given the values selected in the options
@@ -654,15 +733,19 @@ with st.container():
                 (venues_stats_df['nbr_artists'] >= range_nbr_artists[0]) &
                 (venues_stats_df['nbr_artists'] <= range_nbr_artists[1])
             ]
-            venues_stats_df = venues_stats_df.loc[
-                (venues_stats_df['spotify_listeners'] >= range_followers[0]) &
-                (venues_stats_df['spotify_listeners'] <= range_followers[1])
-            ]
+            #venues_stats_df = venues_stats_df.loc[
+            #    (venues_stats_df['spotify_listeners'] >= range_followers[0]) &
+            #    (venues_stats_df['spotify_listeners'] <= range_followers[1])
+            #]
 
             stats_df = venues_stats_df.copy()
             stats_df = stats_df[[x_data, y_data]]
             stats_df = (stats_df - stats_df.mean()) / stats_df.std()
             venue_names = list(stats_df.index)
+
+            # there can't be more clusters than venues, so if nbr of clusters is too high set it to nbr of venues
+            if len(stats_df) < nbr_clusters:
+                nbr_clusters = len(stats_df)
 
             km = KMeans(n_clusters=nbr_clusters)
             km.fit(stats_df)
@@ -680,7 +763,7 @@ with st.container():
 
         venues_stats_df = filter_and_cluster(venues_stats_df, x_data_selection, y_data_selection, nbr_clusters_selection)
 
-    col1, col2 = st.columns((10, 9))
+    col1, col2 = st.columns((5, 3))
 
     with col1:
         fig = px.scatter(
@@ -693,8 +776,8 @@ with st.container():
             trendline_color_override='grey',
             color_discrete_sequence=px.colors.qualitative.Plotly,
             hover_data=['venue', 'locality', 'nbr_artists'],
-            marginal_x='histogram',
-            marginal_y='histogram',
+            #marginal_x='histogram',
+            #marginal_y='histogram',
         )
 
         fig.update_layout(
@@ -707,7 +790,7 @@ with st.container():
 
     with col2:
         similar_venue_selection = st.selectbox(
-            'Select a venue to see its similar venues',
+            label=current_lang['label_selection_similar_venues'],
             options=venues_stats_df.index,
             format_func=lambda x: venues_df.loc[x, 'venue'] + ' (' + venues_df.loc[x, 'locality'] + ')',
         )
@@ -719,12 +802,18 @@ with st.container():
         similar_venues_df = similar_venues_df.sort_values(by=['venue'])
         similar_venues_df = similar_venues_df[['venue', 'locality']]
         similar_venues_df = similar_venues_df.set_index('venue')
+        similar_venues_df.rename(columns=current_lang['label_variables'], inplace=True)
         #similar_venues_df = similar_venues_df.style.set_properties(**{'background-color': 'black', 'color': 'green'})
+
         st.write(similar_venues_df)
 
 # Concerts/artists in venue scatter plot
-with st.container():
-    st.subheader('Concerts stats')
+if page_scatter_concerts:
+    st.subheader(current_lang['label_header_concerts_in_venue'])
+    col1, col2 = st.columns((6, 2))
+    with col1:
+        with st.expander(current_lang['label_expander']):
+            st.markdown(current_lang['description_concerts_in_venue'])
 
     # scatter plot options
     with st.container():
@@ -803,14 +892,14 @@ with st.container():
 
         with col1:
             venue_selection_scatter = st.selectbox(
-                'Select a venue',
+                label=current_lang['label_selection_venue'],
                 options=artists_stats_df['linked_venue_id'].unique(),
                 format_func=lambda x: venues_df.loc[x, 'venue'] + ' (' + venues_df.loc[x, 'locality'] + ')',
             )
 
         with col3:
             x_data_selection = st.selectbox(
-                'Select data for x-axis',
+                label=current_lang['label_selection_x_data'],
                 options=popularity_features+audio_features+['date'],
                 format_func=lambda x: x.replace('_median', ''),  # remove _median from displayed results
                 index=0,
@@ -818,7 +907,7 @@ with st.container():
 
         with col4:
             y_data_selection = st.selectbox(
-                'Select data for y-axis',
+                label=current_lang['label_selection_y_data'],
                 options=popularity_features+audio_features+['date'],
                 format_func=lambda x: x.replace('_median', ''),  # remove _median from displayed results
                 index=1,
@@ -840,7 +929,7 @@ with st.container():
     col1, col2 = st.columns(2)
 
     with col1:
-        pass
+        st.caption(current_lang['label_plot_venue_concerts'])
         fig = px.scatter(
             filtered_concerts_df,
             x=x_data_selection,
@@ -848,13 +937,12 @@ with st.container():
             trendline=trendline,
             color='nbr_artists',
             hover_data=['venue', 'nbr_artists', filtered_concerts_df.index],
-            title='Show stats by concert in given venue',
         )
 
         fig.update_layout(
             dragmode='pan',
             paper_bgcolor=bg_color,
-            margin=dict(t=30, b=0),
+            margin=dict(t=0, b=0),
         )
 
         st.plotly_chart(fig, config=config)
@@ -869,6 +957,7 @@ with st.container():
         )
 
     with col2:
+        st.caption(current_lang['label_plot_venue_artists'])
         fig = px.scatter(
             filtered_artists_df,
             x=x_data_selection,
@@ -877,13 +966,12 @@ with st.container():
             color='nbr_concerts',
             hover_data=['artist_name', 'concert_id'],
             hover_name='spotify_name',
-            title='Show stats by artists in given venue',
         )
 
         fig.update_layout(
             dragmode='pan',
             paper_bgcolor=bg_color,
-            margin=dict(t=30, b=0),
+            margin=dict(t=0, b=0),
         )
 
         st.plotly_chart(fig, config=config)
@@ -898,8 +986,12 @@ with st.container():
         )
 
 # Individual artists stats
-with st.container():
-    st.subheader('Individual artist stats')
+if page_scatter_artists:
+    st.subheader(current_lang['label_header_artists_characteristics'])
+    col1, col2 = st.columns((6, 2))
+    with col1:
+        with st.expander(current_lang['label_expander']):
+            st.markdown(current_lang['description_artists_characteristics'])
 
     artist_stats_selection = st.selectbox(
         'Select an artist',
@@ -943,65 +1035,69 @@ with st.container():
 
         st.write(artist_genres)
 
-# Artists stats
-with st.container():
-    st.subheader('Artists stats')
-    artist_stats_df = stats_artists_features_df.copy()
-    categorical_columns = ['spotify_genres', 'top_genres', 'first_concert_date', 'last_concert_date']
-    artist_stats_df = artist_stats_df.drop(columns=categorical_columns)
+    # Artists stats
+    with st.container():
+        st.subheader('Artists stats')
+        artist_stats_df = stats_artists_features_df.copy()
+        categorical_columns = ['spotify_genres', 'top_genres', 'first_concert_date', 'last_concert_date']
+        artist_stats_df = artist_stats_df.drop(columns=categorical_columns)
 
-    col1, col2, col3 = st.columns(3)
+        col1, col2, col3 = st.columns(3)
 
-    with col1:
-        x_data_selection = st.selectbox(
-            label='Select data for x-axis',
-            options=artist_stats_df.columns,
-            format_func=lambda x: x.replace('_median', ''),  # remove _median from displayed results
-            index=1,
-            key='x_select_artist'
+        with col1:
+            x_data_selection = st.selectbox(
+                label=current_lang['label_selection_x_data'],
+                options=artist_stats_df.columns,
+                format_func=lambda x: x.replace('_median', ''),  # remove _median from displayed results
+                index=1,
+                key='x_select_artist'
+            )
+
+        with col2:
+            y_data_selection = st.selectbox(
+                label=current_lang['label_selection_y_data'],
+                options=artist_stats_df.columns,
+                #format_func=lambda x: current_lang[x],
+                index=2,
+                key='y_select_artist'
+            )
+
+        with col3:
+            max_concerts = int(artist_stats_df['nbr_concerts'].max())
+            range_nbr_concerts = st.slider(
+                'Min number of concerts',
+                1, max_concerts,
+                (5, max_concerts),
+            )
+
+        artist_stats_df = artist_stats_df.loc[
+            (artist_stats_df['nbr_concerts'] >= range_nbr_concerts[0]) &
+            (artist_stats_df['nbr_concerts'] <= range_nbr_concerts[1])
+            ]
+
+        artist_stats_df = artist_stats_df.merge(artists_df['spotify_name'], left_index=True, right_index=True)
+        artist_stats_df = artist_stats_df.rename(columns={'spotify_name': 'artist'})
+
+        fig = px.scatter(
+            artist_stats_df,
+            x=x_data_selection,
+            y=y_data_selection,
+            #color='cluster',
+            #trendline='ols',
+            #trendline_scope='overall',
+            trendline_color_override='grey',
+            color_discrete_sequence=px.colors.qualitative.Plotly,
+            hover_data=['artist'],
         )
 
-    with col2:
-        y_data_selection = st.selectbox(
-            label=current_lang['label_y_data_selection'],
-            options=artist_stats_df.columns,
-            #format_func=lambda x: current_lang[x],
-            index=2,
-            key='y_select_artist'
+        fig.update_layout(
+            dragmode='pan',
+            paper_bgcolor=bg_color,
+            margin=dict(l=0, r=0, t=0, b=0),
         )
 
-    with col3:
-        max_concerts = int(artist_stats_df['nbr_concerts'].max())
-        range_nbr_concerts = st.slider(
-            'Min number of concerts',
-            1, max_concerts,
-            (5, max_concerts),
-        )
+        st.plotly_chart(fig, config=config)
 
-    artist_stats_df = artist_stats_df.loc[
-        (artist_stats_df['nbr_concerts'] >= range_nbr_concerts[0]) &
-        (artist_stats_df['nbr_concerts'] <= range_nbr_concerts[1])
-        ]
-
-    artist_stats_df = artist_stats_df.merge(artists_df['spotify_name'], left_index=True, right_index=True)
-    artist_stats_df = artist_stats_df.rename(columns={'spotify_name': 'artist'})
-
-    fig = px.scatter(
-        artist_stats_df,
-        x=x_data_selection,
-        y=y_data_selection,
-        #color='cluster',
-        #trendline='ols',
-        #trendline_scope='overall',
-        trendline_color_override='grey',
-        color_discrete_sequence=px.colors.qualitative.Plotly,
-        hover_data=['artist'],
-    )
-
-    fig.update_layout(
-        dragmode='pan',
-        paper_bgcolor=bg_color,
-        margin=dict(l=0, r=0, t=0, b=0),
-    )
-
-    st.plotly_chart(fig, config=config)
+# sources
+st.subheader(current_lang['label_header_sources'])
+st.markdown(current_lang['description_sources'])
