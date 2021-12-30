@@ -9,7 +9,7 @@ from sklearn.cluster import KMeans
 from language_dictionary import language_dict
 from PIL import ImageColor
 
-in_dev = True
+in_dev = False
 st.set_page_config(layout="wide")
 bg_color = "white"
 mapbox_token = 'pk.eyJ1Ijoic29sbGlyeWMiLCJhIjoiY2t1bGl1aml1MW5lZDJxbXl2d2RvbWNwdiJ9.ugect2o_eFp-XGOgxaRpBg'
