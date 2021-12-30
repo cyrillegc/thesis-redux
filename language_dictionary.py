@@ -95,7 +95,7 @@ language_dict = {
         'fre': "Caractéristiques des concerts d'une salle",
         'eng': "Concerts' characteristics of a venue"},
     'label_button_artists_characteristics': {
-        'fre': "Caractéristiques des artistes?",
+        'fre': "Caractéristiques des artistes",
         'eng': "Artists' characteristics"},
 
     # label plot caption
@@ -224,15 +224,84 @@ language_dict = {
     },
     'description_map_distribution': {
         'fre': """
-            Cet outil montre comment les salles de concert sont distribuées sur le territoire suisse.
-        
-            Il est de filtrer les salles affichées selon trois critères:
-            - Les artistes: montre les salles dans lesquelles ont joué un ou plusieurs artistes sélectionnés.
-            - Les genres musicaux: montre les salles dans lesquelles le ou les genres musicaux sélectionnés sont les plus fréquents.
-            - Le nom du lieu: montre les salles sélectionnées.
+            Cet outil de cartographie montre comment les salles de concert et les concerts sont géographiquement distribués sur le territoire suisse, en fonction des artistes, des genres musicaux ou des noms des salles.
+            
+            ### Graphiques
+            ##### Carte
+            Cette carte montre où les concerts et les salles sont situés en Suisse. Chaque point sur la carte montre l'emplacement d'un salle de concert. Si plusieurs concerts ont lieu dans la même salle, les différents événements sont affichés légèrement en décalage. Chaque artiste ou chaque genre a une couleur différente (jusqu'à 10 individus). Des informations pour chaque point sont affichées en survolant un point avec la souris.
+            
+            ##### Nombre d'individus
+            Ce diagramme en barre comptabilise le nombre d'individus affichés sur la carte. Si les concerts d'un ou plusieurs artistes sont affichés sur la carte, le diagramme montre le nombre de concerts joués par chaque artiste. Si les salles d'un ou plusieurs genres sont affichées sur la carte, le diagramme montre le nombre de salles pour chaque genre.
+            
+            ### Paramètres
+            
+            ##### Filtrer
+            
+            - **Artistes:**
+            Voir toutes les salles où ont joué un ou plusieurs artistes.
+            - **Genres:**
+            Voir toutes les salles où un ou plusieurs genres sont fréquents.
+            - **Noms:**
+            Voir où se situe une ou plusieurs salles précises.
+            
+            #####
+            ##### Options d'affichage
+            - **Centroïdes:** La carte peut afficher le centroïde (le point moyen) des salles ou concerts affichés. Cela permet de voir la zone moyenne d'un artiste ou d'un genre.
+              - Le centroïde d'un artiste correspond à l'emplacement moyen de tous ses concerts. La couleur du centroïde d'un artiste est définie par sa mobilité. La mobilité d'un artiste est définie par la distance parcourue entre ses différents concerts et la variété des lieux de concert. Plus un artiste est mobile, plus son centroïde tendra vers le rouge. A l'inverse, moins un artiste est mobile, plus son centroïde tendra vers le jaune.
+              - Le centroïde d'un genre correspond à l'emplacement moyen des salles de concert où ce genre est fréquent. La couleur du centroïde est noire, avec un cercle de la couleur du genre autour.
+            - **Liens:**
+            Si l'option *Centroïdes* est sélectionnée, les liens entre un centroïde et ses points peuvent être affichés. Cela permet de voir vers quelles zones un artiste ou un genre convergent. L'affichage des liens nécessite une capacité de calcul plus importante et peut péjorer les performances de l'application.
+            
+            #####
+            ##### Choix des artistes, genres ou salles
+            En fonction du paramètre *Filtrer* sélectionné, il est possible de choisir un ou plusieurs artistes, genres ou salles. Pour des questions de lisibilité de la carte, il est conseillé de sélectionner au maximum 5 éléments.
+            
+            ##### Nombre de concerts par salle (avec option *Genres* uniquement)
+            Cette option permet de choisir les salles dans lesquelles un nombre minimum de concerts ont été organisés. Par exemple si le nombre minimum choisi est 20, seules les salles où au moins 20 concerts ont eu lieu seront affichées. Cela permet de désengorger la carte des lieux qui ont organisé peu de concerts et qui sont moins représentatifs de la scène musicale suisse.
+            
+            ##### Fréquence des genres (avec option *Genres* uniquement)
+            Cette option permet de choisir les salles dont la fréquence minimum des genres sélectionnés se situe au-delà d'un certain seuil. Par exemple, si le seuil de fréquence choisi est de 30% et que le genre *Rock* est choisi, seules les salles où au moins 30% des artistes sont apparentés au rock sont affichées. Cela permet de mettre en évidence les salles où un genre est commun ou dominant.
+
         """,
         'eng': """
-            TBD
+            This mapping tool shows how concert venues and concerts are geographically distributed on the Swiss territory, depending on artists, musical genres or venue names.
+            
+            ### Charts
+            ##### Map
+            This map shows where concerts and venues are located in Switzerland. Each point on the map shows the location of a concert venue. If several concerts take place in the same venue, the different events are displayed slightly offset. Each artist or genre has a different color (up to 10 individuals). Information for each point is displayed by hovering over it with the mouse.
+            
+            ##### Number of individuals
+            This bar chart counts the number of individuals displayed on the map. If the concerts of one or more artists are displayed on the map, the chart shows the number of concerts played by each artist. If the venues of one or more genres are displayed on the map, the chart shows the number of venues for each genre.
+            
+            ### Settings
+            
+            ##### Filter
+            
+            - Artists:**
+            See all the venues where one or more artists have played.
+            - Genres:**
+            See all venues where one or more genres are frequent.
+            - Names:**
+            See where one or more specific venues are located.
+            
+            #####
+            ##### Display options
+            - Centroids:** The map can display the centroid (the average point) of the venues or concerts displayed. This allows you to see the average area of an artist or genre.
+              - The centroid of an artist is the average location of all his concerts. The color of the centroid of an artist is defined by its mobility. The mobility of an artist is defined by the distance traveled between his concerts and the variety of venues. The more mobile an artist is, the more his centroid will tend towards red. On the contrary, the less mobile an artist is, the more his centroid will tend towards yellow.
+              - The centroid of a genre corresponds to the average location of concert halls where this genre is frequent. The color of the centroid is black, with a circle of the genre color around it.
+            - Links:**
+            If the *Centroids* option is selected, the links between a centroid and its points can be displayed. This allows you to see which areas an artist or genre converges on. Displaying links requires more computing power and may affect the performance of the application.
+            
+            #####
+            ##### Choice of artists, genres or venues
+            Depending on the *Filter* parameter selected, it is possible to choose one or more artists, genres or venues.For the sake of readability of the map, it is recommended to select a maximum of 5 individuals.
+            
+            
+            ##### Number of concerts per venue (with *Genres* option only)
+            This option allows you to select the venues in which a minimum number of concerts have been organized. For example, if the minimum number chosen is 20, only the venues where at least 20 concerts have taken place will be displayed. This allows to clear the map of venues that have organized few concerts and are less representative of the Swiss music scene.
+            
+            ##### Genre frequency (with *Genres* option only)
+            This option allows you to select the venues whose minimum frequency of the selected genres is above a certain threshold. For example, if the frequency threshold is 30% and the genre *Rock* is selected, only venues where at least 30% of the artists are rock related are displayed. This allows to highlight the venues where a genre is common or dominant.            
         """
     },
     'description_genre_frequency': {
