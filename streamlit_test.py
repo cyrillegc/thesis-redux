@@ -174,7 +174,6 @@ with col2:
     )
     current_lang = get_language_dict(lang_set)
 with col1:
-    current_lang
     st.title(current_lang['label_title'])
     st.markdown(current_lang['description_overall'])
 
@@ -394,7 +393,6 @@ if page_map:
             hover_data = {'latitude': False, 'longitude': False, 'size': False}
             opacity = 1
 
-    results_df
     if not results_df.empty:
         #results_df['genre'] = results_df['genre'].replace(to_replace=genres_lang_dict)
 
