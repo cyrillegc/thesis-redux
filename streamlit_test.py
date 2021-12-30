@@ -174,6 +174,7 @@ with col2:
     )
     current_lang = get_language_dict(lang_set)
 with col1:
+    current_lang
     st.title(current_lang['label_title'])
     st.markdown(current_lang['description_overall'])
 
