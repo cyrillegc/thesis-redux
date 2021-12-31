@@ -2,6 +2,11 @@ language_dict = {
     '': {
         'fre': '',
         'eng': ''},
+
+    # others
+    'alpha': {'fre': 'Ordre alphabétique', 'eng': 'Alphabetical order'},
+
+    # variables
     'spotify_followers': {'fre': 'Nbr followers Spotify', 'eng': 'Nbr Spotify followers'},
     'spotify_listeners': {'fre': 'Nbr auditeurs Spotify (par mois)', 'eng': 'Nbr Spotify listeners (monthly)'},
     'nbr_venues': {'fre': 'Nbr salles', 'eng': 'Nbr venues'},
@@ -78,23 +83,23 @@ language_dict = {
         'fre': 'Source des données',
         'eng': "Data sources"},
 
-    # label button
-    'label_button_homepage': {
+    # label page
+    'label_page_homepage': {
         'fre': "Page d'accueil",
         'eng': 'Homepage'},
-    'label_button_map_distribution': {
+    'label_page_map_distribution': {
         'fre': 'Cartographie des salles et concerts',
         'eng': 'Venues and concerts mapping'},
-    'label_button_genre_frequency': {
+    'label_page_genre_frequency': {
         'fre': 'Genres les plus fréquents dans les salles',
         'eng': 'Most frequent genres in venues'},
-    'label_button_venues_characteristics': {
+    'label_page_venues_characteristics': {
         'fre': 'Caractéristiques des salles',
         'eng': "Venues' characteristics"},
-    'label_button_concerts_in_venue': {
+    'label_page_concerts_in_venue': {
         'fre': "Caractéristiques des concerts d'une salle",
         'eng': "Concerts' characteristics of a venue"},
-    'label_button_artists_characteristics': {
+    'label_page_artists_characteristics': {
         'fre': "Caractéristiques des artistes",
         'eng': "Artists' characteristics"},
 
@@ -124,16 +129,22 @@ language_dict = {
         'fre': 'Caractéristiques des concerts dans la salle sélectionnée',
         'eng': 'Concerts charateristics in selected venue'},
 
-    # label
+    # label selections
+    'label_selection_page': {
+        'fre': 'Choisir une page',
+        'eng': 'Select a page'},
     'label_selection_artists': {
         'fre': 'Choisir un ou plusieurs artistes',
         'eng': 'Select one or multiple artists'},
     'label_selection_genre_frequency': {
-        'fre': 'Fréq. genre (%)',
+        'fre': 'Fréquence genre (en %)',
         'eng': 'Genre frequency (in %)'},
     'label_selection_genres': {
         'fre': 'Choisir un ou plusieurs genres',
         'eng': 'Select one or multiple genres'},
+    'label_selection_genres_sorting': {
+        'fre': 'Trier les genres par',
+        'eng': 'Sort genres by'},
     'label_selection_map_item': {
         'fre': 'Filtrer les salles par:',
         'eng': 'Filter venues by:'},
@@ -173,6 +184,19 @@ language_dict = {
     'label_selection_y_data': {
         'fre': "Sélectionner une variable pour l'axe y",
         'eng': 'Select data for y-axis'},
+
+    # label axis
+    'label_axis_y_genre_frequency': {
+        'fre': "Fréquence (en %)",
+        'eng': 'Frequency (in %)'},
+
+    # warnings
+    'warning_genre_frequency': {
+        'fre': "⚠️ *Choisir entre 1 et 4 salles.*",
+        'eng': '⚠️ *Please select between 1 and 4 venues.*'},
+    'warning_common_artists': {
+        'fre': "*Aucun artiste commun entre les salles choisies.*",
+        'eng': '*No common artist between selected venues.*'},
 
     # label variables
     'label_variables': {
@@ -306,10 +330,38 @@ language_dict = {
     },
     'description_genre_frequency': {
         'fre': """
-            TBD
+            Cet outil montre comment les genres musicaux sont distribués dans les salles de concert.
+            
+            ### Graphique et tableau
+            ##### Fréquence des genres
+            Ce diagramme en barre montre le pourcentage d'artistes apparentés à un genre musical dans une ou plusieurs salles. Si aucun artiste apparenté à un certain genre n'a joué dans une salle, la fréquence de ce genre est de 0%. Si tous les artistes ayant joué dans une salle sont apparentés à un même genre, ce genre a une fréquence de 100%. Un artiste peut-être apparenté à plusieurs genres, c'est pourquoi la somme des fréquences de tous les genres peut dépasser 100.
+            
+            ##### Artistes communs
+            Lorsque plusieurs salles sont sélectionnées et que ces salles ont des artistes en commun, un tableau s'affiche et montre les concerts donnés par ces artistes dans ces salles. Il est possible de trier le tableau par nom d'artiste, date du concert, salle ou localité.
+            
+            ### Paramètres
+            ##### Choix des salles
+            Cette option permet de choisir une ou plusieurs salles pour voir la fréquence des genres dans ces lieux. Pour des questions de lisibilité du graphique, 4 salles maximum peuvent être comparées.
+            
+            ##### Tri
+            Cette option permet de choisir comment les genres sont classés sur le graphique. Il est possible de trier alphabétiquement les genres ou bien en fonction d'une des salles sélectionnées. Si une salle est sélectionnée pour le tri, les genres sont triés en fonction de la fréquence des genres dans cette salle, de manière descendante (du plus fréquent au moins fréquent).
         """,
         'eng': """
-            TBD
+            This tool shows how musical genres are distributed in concert venues.
+            
+            ### Graph and table
+            ##### Genre frequency
+            This bar chart shows the percentage of artists related to a musical genre in one or more venues. If no artists related to a certain genre played at a venue, the frequency of that genre is 0%. If all artists who played in a venue are related to a certain genre, this genre has a frequency of 100%. An artist can be related to several genres, that's why the sum of the frequencies of all the genres can exceed 100.
+            
+            ##### Common artists
+            When several venues are selected and these venues have artists in common, a table is displayed showing the concerts given by these artists in these venues. It is possible to sort the table by artist name, concert date, venue or location.
+            
+            ### Settings
+            ##### Choice of venues
+            This option allows you to choose one or more venues to see the frequency of genres in these places. For the sake of readability of the chart, a maximum of 4 venues can be compared.
+            
+            ##### Sorting
+            This option allows you to choose how the genres are sorted on the graph. It is possible to sort the genres alphabetically or according to one of the selected venues. If a room is selected for sorting, the genres are sorted according to the frequency of the genres in this room, in a descending order (from most frequent to least frequent).
         """
     },
     'description_venues_characteristics': {

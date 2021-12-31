@@ -16,32 +16,29 @@ mapbox_token = 'pk.eyJ1Ijoic29sbGlyeWMiLCJhIjoiY2t1bGl1aml1MW5lZDJxbXl2d2RvbWNwd
 min_date = datetime.date(2010, 1, 1)
 max_date = datetime.date(2019, 12, 31)
 genres_id = [
-                'acoustic music',
-                'art music',
-                'blues',
-                "children's music",
-                'country music',
-                'dance music',
-                'electronic music',
-                'experimental music',
-                'folk music',
-                'functional music',
-                'funk',
-                'hip hop music',
-                'independent music',
-                'instrumental music',
-                'jazz',
-                'lo-fi music',
-                'pop music',
-                'rhythm and blues',
-                'rock music',
-                'soul music',
-                'underground music',
-                'vocal music',
-                'world music',
-            ]
-variables_list = [
-    'nbr_concerts',
+    'acoustic music',
+    'art music',
+    'blues',
+    "children's music",
+    'country music',
+    'dance music',
+    'electronic music',
+    'experimental music',
+    'folk music',
+    'functional music',
+    'funk',
+    'hip hop music',
+    'independent music',
+    'instrumental music',
+    'jazz',
+    'lo-fi music',
+    'pop music',
+    'rhythm and blues',
+    'rock music',
+    'soul music',
+    'underground music',
+    'vocal music',
+    'world music',
 ]
 config = {
     'scrollZoom': True,
@@ -177,24 +174,14 @@ with col1:
     st.title(current_lang['label_title'])
     st.markdown(current_lang['description_overall'])
 
-st.markdown('---')
 
-# sidebar buttons
-page_homepage = st.sidebar.button(current_lang['label_button_homepage'])
-st.sidebar.markdown('---')
-page_map = st.sidebar.button(current_lang['label_button_map_distribution'])
-page_bars = st.sidebar.button(current_lang['label_button_genre_frequency'])
-page_scatter_venues = st.sidebar.button(current_lang['label_button_venues_characteristics'])
-page_scatter_concerts = st.sidebar.button(current_lang['label_button_concerts_in_venue'])
-page_scatter_artists = st.sidebar.button(current_lang['label_button_artists_characteristics'])
-
-# show all widgets in dev mode
-if in_dev:
-    page_map = True
-    page_bars = True
-    page_scatter_venues = True
-    page_scatter_concerts = True
-    page_scatter_artists = True
+# sidebar
+page_selection = st.sidebar.selectbox(
+    label=current_lang['label_selection_page'],
+    options=['label_page_homepage', 'label_page_map_distribution', 'label_page_genre_frequency',
+             'label_page_venues_characteristics', 'label_page_concerts_in_venue', 'label_page_artists_characteristics'],
+    format_func=lambda x: current_lang[x],
+)
 
 # genres language dict
 genres_lang_dict = dict()
@@ -210,7 +197,8 @@ stats_venues_genres_df = stats_venues_genres_df.rename(columns=genres_lang_dict)
 # TODO: choisir une salle et voir tous les centroides des artistes et centroïde moyen
 # TODO: afficher toutes les salles sur une carte (avec filtres nbr concerts)
 
-if page_map:
+if page_selection == 'label_page_map_distribution' or in_dev:
+    st.markdown('---')
     st.subheader(current_lang['label_header_map_distribution'])
     col1, col2 = st.columns((6, 2))
     with col1:
@@ -567,21 +555,37 @@ if page_map:
                 st.plotly_chart(fig, use_container_width=True)
 
 # Genres in venue histogram
-if page_bars:
+if page_selection == 'label_page_genre_frequency' or in_dev:
+    st.markdown('---')
     st.subheader(current_lang['label_header_genre_frequency'])
     col1, col2 = st.columns((6, 2))
     with col1:
         with st.expander(current_lang['label_expander']):
             st.markdown(current_lang['description_genre_frequency'])
 
-    venue_selection = st.multiselect(
-        label=current_lang['label_selection_venues'],
-        options=stats_venues_genres_df.index,
-        format_func=lambda x: venues_df.loc[x, 'venue'] + ' (' + venues_df.loc[x, 'locality'] + ')',
-        default='/venues/35054',
-        #default=stats_df.index.get_loc(stats_df.loc['/venues/418386'].name),  # set default selection to Caves du Manoir
-        help='Select at most 4 venues to compare',
-    )
+    col1, col2 = st.columns((6, 2))
+    with col1:
+        venue_selection = st.multiselect(
+            label=current_lang['label_selection_venues'],
+            options=stats_venues_genres_df.index,
+            format_func=lambda x: venues_df.loc[x, 'venue'] + ' (' + venues_df.loc[x, 'locality'] + ')',
+            default='/venues/35054',  # default choice: les docks
+        )
+
+    with col2:
+        venue_dict = {current_lang['alpha']: 'alpha'}
+        venue_names = list()
+        for venue_id in venue_selection:
+            venue_name = venues_df.loc[venue_id, 'venue'] + ' (' + venues_df.loc[venue_id, 'locality'] + ')'
+            venue_names.append(venue_name)
+            venue_dict[venue_name] = venue_id
+
+        genres_sorting_selection = st.selectbox(
+            label=current_lang['label_selection_genres_sorting'],
+            options=[current_lang['alpha']] + venue_names,
+        )
+
+        genres_sorting_selection = venue_dict[genres_sorting_selection]
 
     col1, col2, = st.columns((3, 2))
 
@@ -592,12 +596,19 @@ if page_bars:
         fig_bar = go.Figure()
         colors = ['#f06868', '#80d6ff', '#fab57a', '#edf798']
 
+        # get a list of the genres alphabetically sorted
+        sorted_genres = sorted(stats_venues_genres_df.drop(columns=['nbr_concerts', 'genre_diversity']).columns)
         for venue in venue_selection:
             venue_stats = stats_venues_genres_df.loc[venue].drop(['nbr_concerts', 'genre_diversity'])
+
+            # sort the genres by a venue, if selected
+            if genres_sorting_selection == venue:
+                sorted_genres = list(venue_stats.sort_values(ascending=False).index)
+
             venue_name = venues_df.loc[venue]['venue']
             fig_bar.add_trace(go.Bar(
                 x=venue_stats.index,
-                y=venue_stats.values,
+                y=venue_stats.values*100,
                 name=venue_name,
                 marker_color=colors[idx],
             ))
@@ -607,11 +618,15 @@ if page_bars:
         fig_bar.update_layout(
             barmode='group',
             xaxis_tickangle=-45,
+            yaxis_title=current_lang['label_axis_y_genre_frequency'],
             autosize=False,
             height=500,
             paper_bgcolor=bg_color,
             margin=dict(l=0, r=0, t=0, b=0),
-
+            xaxis={
+                'categoryorder': 'array',
+                'categoryarray': sorted_genres,
+            },
         )
 
         with col1:
@@ -651,10 +666,16 @@ if page_bars:
                     concerts_by_artists.set_index('artist_name', inplace=True)
 
                     # show dataframe
-                    st.write(concerts_by_artists)
+                    if not concerts_by_artists.empty:
+                        st.write(concerts_by_artists)
+                    else:
+                        st.markdown(current_lang['warning_common_artists'])
+    else:
+        st.markdown(current_lang['warning_genre_frequency'])
 
 # Venues data scatter plot
-if page_scatter_venues:
+if page_selection == 'label_page_venues_characteristics' or in_dev:
+    st.markdown('---')
     st.subheader(current_lang['label_header_venues_characteristics'])
     col1, col2 = st.columns((6, 2))
     with col1:
@@ -807,7 +828,8 @@ if page_scatter_venues:
         st.write(similar_venues_df)
 
 # Concerts/artists in venue scatter plot
-if page_scatter_concerts:
+if page_selection == 'label_page_concerts_in_venue' or in_dev:
+    st.markdown('---')
     st.subheader(current_lang['label_header_concerts_in_venue'])
     col1, col2 = st.columns((6, 2))
     with col1:
@@ -985,7 +1007,8 @@ if page_scatter_concerts:
         )
 
 # Individual artists stats
-if page_scatter_artists:
+if page_selection == 'label_page_artists_characteristics' or in_dev:
+    st.markdown('---')
     st.subheader(current_lang['label_header_artists_characteristics'])
     col1, col2 = st.columns((6, 2))
     with col1:
@@ -1098,5 +1121,6 @@ if page_scatter_artists:
         st.plotly_chart(fig, config=config)
 
 # sources
+st.markdown('---')
 st.subheader(current_lang['label_header_sources'])
 st.markdown(current_lang['description_sources'])
