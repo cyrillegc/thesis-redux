@@ -248,6 +248,7 @@ language_dict = {
     },
     'description_map_distribution': {
         'fre': """
+            #####
             Cet outil de cartographie montre comment les salles de concert et les concerts sont géographiquement distribués sur le territoire suisse, en fonction des artistes, des genres musicaux ou des noms des salles.
             
             ### Graphiques
@@ -288,6 +289,7 @@ language_dict = {
 
         """,
         'eng': """
+            #####
             This mapping tool shows how concert venues and concerts are geographically distributed on the Swiss territory, depending on artists, musical genres or venue names.
             
             ### Charts
@@ -330,6 +332,7 @@ language_dict = {
     },
     'description_genre_frequency': {
         'fre': """
+            #####
             Cet outil montre comment les genres musicaux sont distribués dans les salles de concert.
             
             ### Graphique et tableau
@@ -347,6 +350,7 @@ language_dict = {
             Cette option permet de choisir comment les genres sont classés sur le graphique. Il est possible de trier alphabétiquement les genres ou bien en fonction d'une des salles sélectionnées. Si une salle est sélectionnée pour le tri, les genres sont triés en fonction de la fréquence des genres dans cette salle, de manière descendante (du plus fréquent au moins fréquent).
         """,
         'eng': """
+            #####
             This tool shows how musical genres are distributed in concert venues.
             
             ### Graph and table
