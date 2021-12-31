@@ -838,7 +838,7 @@ if page_selection == 'label_page_concerts_in_venue' or in_dev:
 
     # scatter plot options
     with st.container():
-        @st.cache
+
         def get_concerts_in_venue_stats():
             # drop rows where concert_id and artist_id are a duplicate
             concerts_in_venues = full_data_df.drop_duplicates(subset=['concert_id', 'artist_id']).sort_values(
@@ -862,7 +862,6 @@ if page_selection == 'label_page_concerts_in_venue' or in_dev:
 
             return concerts_in_venues
 
-        @st.cache
         def get_artists_in_venue_stats():
             # drop rows where venue_id and artist_id are a duplicate
             # (ex: duplicated rows bc of multiple top genres for an artist)
