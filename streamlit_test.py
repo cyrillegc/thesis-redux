@@ -1009,6 +1009,7 @@ if page_selection == 'label_page_concerts_in_venue' or in_dev:
 if page_selection == 'label_page_artists_characteristics' or in_dev:
     st.markdown('---')
     st.subheader(current_lang['label_header_artists_characteristics'])
+
     col1, col2 = st.columns((6, 2))
     with col1:
         with st.expander(current_lang['label_expander']):
