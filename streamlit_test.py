@@ -9,7 +9,8 @@ from sklearn.cluster import KMeans
 from language_dictionary import language_dict
 from PIL import ImageColor
 
-in_dev = False
+
+in_dev = True
 st.set_page_config(layout="wide")
 bg_color = "white"
 mapbox_token = 'pk.eyJ1Ijoic29sbGlyeWMiLCJhIjoiY2t1bGl1aml1MW5lZDJxbXl2d2RvbWNwdiJ9.ugect2o_eFp-XGOgxaRpBg'
@@ -39,6 +40,25 @@ genres_id = [
     'underground music',
     'vocal music',
     'world music',
+]
+selected_variables = [
+    'nbr_artists',
+    'artist_spotify_followers',
+    'artist_spotify_listeners',
+    'acousticness',
+    'danceability',
+    'duration_ms',
+    'energy',
+    'instrumentalness',
+    #'liveness',
+    'loudness',
+    'speechiness',
+    'tempo',
+    'valence',
+    'artist_concert_frequency',
+    'artist_average_tour_concerts',
+    'artist_mobility',
+    'artist_mobility_weighted',
 ]
 config = {
     'scrollZoom': True,
@@ -194,7 +214,6 @@ full_data_df['top_genre'] = full_data_df['top_genre'].replace(to_replace=genres_
 stats_venues_genres_df = stats_venues_genres_df.rename(columns=genres_lang_dict)
 
 # Scatter map
-# TODO: choisir une salle et voir tous les centroides des artistes et centroïde moyen
 # TODO: afficher toutes les salles sur une carte (avec filtres nbr concerts)
 
 if page_selection == 'label_page_map_distribution' or in_dev:
@@ -226,9 +245,12 @@ if page_selection == 'label_page_map_distribution' or in_dev:
 
         if map_item_selection in ['Artists', 'Artistes']:
             with col3:
+                artists_list = full_data_df.merge(artists_df['spotify_name'], left_on='artist_id', right_index=True)
+                artists_list = list(artists_list.sort_values(by=['spotify_name'])['artist_id'].unique())
+
                 artist_selection = st.multiselect(
                     label=current_lang['label_selection_artists'],
-                    options=sorted(full_data_df['artist_id'].unique()),
+                    options=artists_list,
                     default='/artists/8181873-duck-duck-grey-duck',  # artists_df.iloc[0].name,
                     format_func=lambda x: artists_df.loc[x, 'spotify_name'],
                 )
@@ -258,11 +280,14 @@ if page_selection == 'label_page_map_distribution' or in_dev:
                 )
         else:
             with col3:
+                venues_list = full_data_df.merge(venues_df[['venue', 'locality']], left_on='venue_id', right_index=True)
+                venues_list = list(venues_list.sort_values(by=['locality', 'venue'])['venue_id'].unique())
+
                 venues_selection = st.multiselect(
                     label=current_lang['label_selection_venues'],
-                    options=sorted(full_data_df['venue_id'].unique()),
+                    options=venues_list,
                     default='/venues/35054',  # venues_df.iloc[0].name,
-                    format_func=lambda x: venues_df.loc[x, 'venue'],
+                    format_func=lambda x: venues_df.loc[x, 'venue'] + ' (' + venues_df.loc[x, 'locality'] + ')',
                 )
 
         if map_item_selection in ['Artists', 'Artistes']:
@@ -411,16 +436,16 @@ if page_selection == 'label_page_map_distribution' or in_dev:
                 )
 
                 if map_item_selection not in ['Names', 'Noms'] and show_centroid_selection:
-                    if show_links_selection:
-                        # add centroid lines
 
+                    # add centroid lines
+                    if show_links_selection:
                         for idx, row in results_df.iterrows():
                             line_lat = [row['latitude'], row['centroid_lat']]
                             line_lon = [row['longitude'], row['centroid_lon']]
                             color_id = row[color]
                             hex = color_map[color_id]
                             rgb = ImageColor.getrgb(hex)
-                            color_line = 'rgba(' + str(rgb[0]) + ',' + str(rgb[1]) + ',' + str(rgb[2]) + ', 0.1)'
+                            color_line = 'rgba(' + str(rgb[0]) + ',' + str(rgb[1]) + ',' + str(rgb[2]) + ', 0.2)'
 
                             fig_scatter.add_trace(
                                 go.Scattermapbox(
@@ -445,8 +470,9 @@ if page_selection == 'label_page_map_distribution' or in_dev:
                         mobility_list = centroid_df['mobility_weighted']
                         centroid_text = list()
                         for i in range(len(mobility_list)):
-                            hover_string = '<b>Centroid</b><br>Artist: ' + artist_name_list[i] + \
-                                           '<br>Mobility: ' + str(round(mobility_list[i], 2))
+                            hover_string = '<b>' + current_lang['centroid'] + \
+                                           '</b><br>' + current_lang['artist'] + ': ' + artist_name_list[i] + \
+                                           '<br>' + current_lang['mobility'] + ': ' + str(round(mobility_list[i], 2))
                             centroid_text.append(hover_string)
                         inner_centroid_color = centroid_df['mobility_weighted']
                         centroid_color = list()
@@ -489,7 +515,7 @@ if page_selection == 'label_page_map_distribution' or in_dev:
                             cmax=1,
                             showscale=show_scale,
                             colorbar=dict(
-                                title='Mobility',
+                                title=current_lang['mobility'],
                                 len=0.5,
                                 y=0.25,
                             ),
@@ -514,8 +540,8 @@ if page_selection == 'label_page_map_distribution' or in_dev:
             fig_scatter = plot_scatter_map()
             st.plotly_chart(fig_scatter, use_container_width=True)
 
+        # bar plot for venue counts by artist/genre
         if map_item_selection not in ['Names', 'Noms']:
-            # bar plot for venue counts by artist/genre
             with col1:
                 if map_item_selection in ['Artistes', 'Artists']:
                     st.caption(current_lang['label_plot_concerts_count_artist'])
@@ -690,16 +716,22 @@ if page_selection == 'label_page_venues_characteristics' or in_dev:
             venues_df[['venue', 'locality', 'latitude', 'longitude']], left_index=True, right_index=True)
         venues_stats_df = venues_stats_df.sort_values(by=['locality'])
 
-        # get min and max nbr of followers (used for slider selection)
-        min_followers = int(venues_stats_df['spotify_listeners'].min())
-        #max_followers = int(venues_stats_df['listeners_median'].max())
+        # rename columns
+        venues_stats_df = venues_stats_df.rename(columns={
+            'spotify_followers': 'artist_spotify_followers',
+            'spotify_listeners': 'artist_spotify_listeners',
+            'mobility_weighted': 'artist_mobility_weighted',
+        })
 
-        col1, col2, col3 = st.columns(3)
+        # get min and max nbr of followers (used for slider selection)
+        #min_followers = int(venues_stats_df['spotify_listeners'].min())
+
+        col1, col2, col3, col4 = st.columns((2, 2, 1, 1))
 
         with col1:
             x_data_selection = st.selectbox(
                 label=current_lang['label_selection_x_data'],
-                options=venues_stats_df.drop(['venue', 'locality'], axis=1).columns,
+                options=selected_variables,
                 format_func=lambda x: current_lang[x],
                 index=0,
                 key='x_select_venues'
@@ -713,7 +745,7 @@ if page_selection == 'label_page_venues_characteristics' or in_dev:
         with col2:
             y_data_selection = st.selectbox(
                 label=current_lang['label_selection_y_data'],
-                options=venues_stats_df.drop(['venue', 'locality'], axis=1).columns,
+                options=selected_variables,
                 format_func=lambda x: current_lang[x],
                 index=1,
                 key='y_select_venues'
@@ -728,11 +760,29 @@ if page_selection == 'label_page_venues_characteristics' or in_dev:
             )
 
         with col3:
-            nbr_clusters_selection = st.selectbox(
-                label=current_lang['label_selection_cluster'],
-                options=range(1, 11),
-                index=5,
+            st.markdown(current_lang['label_selection_display'], unsafe_allow_html=True)
+            show_cluster_selection = st.checkbox(
+                label=current_lang['option_clusters'],
+                value=True,
             )
+            show_trendline_selection = st.checkbox(
+                label=current_lang['option_trendline'],
+                value=True,
+            )
+            if show_trendline_selection:
+                trendline = 'ols'
+            else:
+                trendline = None
+
+        with col4:
+            if show_cluster_selection:
+                nbr_clusters_selection = st.selectbox(
+                    label=current_lang['label_selection_cluster'],
+                    options=range(1, 11),
+                    index=4,
+                )
+            else:
+                nbr_clusters_selection = 1
 
             #max_followers = 10000000
             #range_followers = st.slider(
@@ -746,6 +796,9 @@ if page_selection == 'label_page_venues_characteristics' or in_dev:
         if locality_selection:
             venues_stats_df = venues_stats_df.loc[venues_stats_df['locality'].isin(locality_selection)]
 
+        venues_stats_df
+
+        @st.cache
         def filter_and_cluster(venues_stats_df, x_data, y_data, nbr_clusters):
 
             # filter DataFrame given the values selected in the options
@@ -781,6 +834,11 @@ if page_selection == 'label_page_venues_characteristics' or in_dev:
 
             return venues_stats_df
 
+        if nbr_clusters_selection == 1:
+            cluster_color = None
+        else:
+            cluster_color = 'cluster'
+
         venues_stats_df = filter_and_cluster(venues_stats_df, x_data_selection, y_data_selection, nbr_clusters_selection)
 
     col1, col2 = st.columns((5, 3))
@@ -790,12 +848,13 @@ if page_selection == 'label_page_venues_characteristics' or in_dev:
             venues_stats_df,
             x=x_data_selection,
             y=y_data_selection,
-            color='cluster',
-            trendline=None,
+            color=cluster_color,
+            trendline=trendline,
             trendline_scope='overall',
             trendline_color_override='grey',
             color_discrete_sequence=px.colors.qualitative.Plotly,
             hover_data=['venue', 'locality', 'nbr_artists'],
+            labels=current_lang,
             #marginal_x='histogram',
             #marginal_y='histogram',
         )
@@ -803,7 +862,7 @@ if page_selection == 'label_page_venues_characteristics' or in_dev:
         fig.update_layout(
             dragmode='pan',
             paper_bgcolor=bg_color,
-            margin=dict(l=0, r=0, t=0, b=0),
+            margin=dict(l=30, r=30, t=30, b=30),
         )
 
         st.plotly_chart(fig, config=config)
@@ -816,7 +875,6 @@ if page_selection == 'label_page_venues_characteristics' or in_dev:
         )
 
         cluster_selection = venues_stats_df.loc[similar_venue_selection, 'cluster']
-        st.write('Cluster ID:', cluster_selection)
 
         similar_venues_df = venues_stats_df.loc[venues_stats_df['cluster'] == str(cluster_selection)]
         similar_venues_df = similar_venues_df.sort_values(by=['venue'])
@@ -826,6 +884,7 @@ if page_selection == 'label_page_venues_characteristics' or in_dev:
         #similar_venues_df = similar_venues_df.style.set_properties(**{'background-color': 'black', 'color': 'green'})
 
         st.write(similar_venues_df)
+        st.write('Cluster ID:', cluster_selection)
 
 # Concerts/artists in venue scatter plot
 if page_selection == 'label_page_concerts_in_venue' or in_dev:
@@ -962,7 +1021,7 @@ if page_selection == 'label_page_concerts_in_venue' or in_dev:
         fig.update_layout(
             dragmode='pan',
             paper_bgcolor=bg_color,
-            margin=dict(t=0, b=0),
+            margin=dict(t=30, b=0),
         )
 
         st.plotly_chart(fig, config=config)
@@ -991,7 +1050,7 @@ if page_selection == 'label_page_concerts_in_venue' or in_dev:
         fig.update_layout(
             dragmode='pan',
             paper_bgcolor=bg_color,
-            margin=dict(t=0, b=0),
+            margin=dict(t=30, b=0),
         )
 
         st.plotly_chart(fig, config=config)
@@ -1115,7 +1174,7 @@ if page_selection == 'label_page_artists_characteristics' or in_dev:
         fig.update_layout(
             dragmode='pan',
             paper_bgcolor=bg_color,
-            margin=dict(l=0, r=0, t=0, b=0),
+            margin=dict(l=10, r=30, t=30, b=10),
         )
 
         st.plotly_chart(fig, config=config)
@@ -1123,4 +1182,5 @@ if page_selection == 'label_page_artists_characteristics' or in_dev:
 # sources
 st.markdown('---')
 st.subheader(current_lang['label_header_sources'])
-st.markdown(current_lang['description_sources'])
+st.markdown(current_lang['description_sources_data'])
+st.markdown(current_lang['description_sources_packages'])

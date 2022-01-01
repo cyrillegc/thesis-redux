@@ -5,10 +5,15 @@ language_dict = {
 
     # others
     'alpha': {'fre': 'Ordre alphabétique', 'eng': 'Alphabetical order'},
+    'artist': {'fre': "Artiste", 'eng': 'Artist'},
+    'cluster': {'fre': 'Partition', 'eng': 'Cluster'},
+    'locality': {'fre': 'Localité', 'eng': 'Locality'},
+    'venue': {'fre': 'Salle', 'eng': 'Venue'},
+
 
     # variables
     'spotify_followers': {'fre': 'Nbr followers Spotify', 'eng': 'Nbr Spotify followers'},
-    'spotify_listeners': {'fre': 'Nbr auditeurs Spotify (par mois)', 'eng': 'Nbr Spotify listeners (monthly)'},
+    'spotify_listeners': {'fre': 'Nbr auditeurs Spotify', 'eng': 'Nbr Spotify listeners'},
     'nbr_venues': {'fre': 'Nbr salles', 'eng': 'Nbr venues'},
     'nbr_concerts': {'fre': 'Nbr concerts', 'eng': 'Nbr concerts'},
     'active_days': {'fre': 'Jours actifs', 'eng': 'Active days'},
@@ -19,6 +24,8 @@ language_dict = {
     'avg_tour_days': {'fre': 'Durée moy. tournée', 'eng': 'Tour duration avg.'},
     'tour_concert_frequency': {'fre': 'Fréquence concerts par tournée', 'eng': 'Concert frequency by tour'},
 
+    'artist_spotify_followers': {'fre': 'Nbr followers Spotify (moy. des artistes)', 'eng': 'Nbr Spotify followers'},
+    'artist_spotify_listeners': {'fre': 'Nbr auditeurs Spotify (moy. des artistes)', 'eng': 'Nbr Spotify listeners'},
     'artist_nbr_venues': {'fre': 'Nbr salles (moy. des artistes)', 'eng': 'Nbr venues'},
     'artist_nbr_concerts': {'fre': 'Nbr concerts (moy. des artistes)', 'eng': 'Nbr concerts'},
     'artist_active_days': {'fre': 'Jours actifs (moy. des artistes)', 'eng': 'Active days by artists'},
@@ -26,6 +33,7 @@ language_dict = {
     'artist_concert_frequency': {'fre': 'Fréquence concerts (moy. des artistes)', 'eng': 'Concert frequency'},
     'artist_nbr_tours': {'fre': 'Nbr tournées (moy. des artistes)', 'eng': 'Nbr tours'},
     'artist_avg_tour_concerts': {'fre': 'Nbr concerts moy. par tournée (moy. des artistes)', 'eng': 'Nbr concerts by tour avg.'},
+    'artist_average_tour_concerts': {'fre': 'Nbr concerts moy. par tournée (moy. des artistes)', 'eng': 'Nbr concerts by tour avg.'},
     'artist_avg_tour_days': {'fre': 'Durée moy. tournée (moy. des artistes)', 'eng': 'Tour duration avg.'},
     'artist_tour_concert_frequency': {'fre': 'Fréquence concerts par tournée (moy. des artistes)', 'eng': 'Concert frequency by tour'},
     'artist_centroid_lat': {'fre': 'Latitude centroïde (moy. des artistes)', 'eng': 'Latitude centroid'},
@@ -35,6 +43,7 @@ language_dict = {
     'artist_mobility': {'fre': 'Mobilité (moy. des artistes)', 'eng': 'Mobility'},
     'artist_mobility_weighted': {'fre': 'Mobilité pondérée (moy. des artistes)', 'eng': 'Mobility weighted'},
 
+    'centroid': {'fre': 'Centroïde', 'eng': 'Centroid'},
     'centroid_lat': {'fre': 'Latitude centroïde', 'eng': 'Latitude centroid'},
     'centroid_lon': {'fre': 'Longitude centroïde', 'eng': 'Longitude centroid'},
     'dist_centroid_total': {'fre': 'Distance centroïde tot.', 'eng': 'Distance centroid tot.'},
@@ -42,16 +51,16 @@ language_dict = {
     'dist_to_artists_centroid': {'fre': 'Distance salle-centroïde moy.', 'eng': 'Distance venue-centroid'},
     'mobility': {'fre': 'Mobilité', 'eng': 'Mobility'},
     'mobility_weighted': {'fre': 'Mobilité pondérée', 'eng': 'Mobility weighted'},
-    'danceability': {'fre': 'Dansabilité', 'eng': 'Danceability'},
-    'energy': {'fre': 'Energie', 'eng': 'Energy'},
-    'loudness': {'fre': 'Force', 'eng': 'Loudness'},
-    'speechiness': {'fre': 'Paroles', 'eng': 'Speechiness'},
-    'acousticness': {'fre': 'Acoustique', 'eng': 'Acousticness'},
-    'instrumentalness': {'fre': 'Instrumental', 'eng': 'Instrumentalness'},
-    'liveness': {'fre': 'Live', 'eng': 'Liveness'},
-    'valence': {'fre': 'Valence', 'eng': 'Valence'},
-    'tempo': {'fre': 'Tempo', 'eng': 'Tempo'},
-    'duration_ms': {'fre': 'Durée morceau (ms)', 'eng': 'Song duration (ms)'},
+    'danceability': {'fre': 'Musique dansante', 'eng': 'Dancy music'},
+    'energy': {'fre': 'Musique énergique', 'eng': 'Energic music'},
+    'loudness': {'fre': 'Musique forte', 'eng': 'Loud music'},
+    'speechiness': {'fre': 'Musique avec des paroles', 'eng': 'Speechy music'},
+    'acousticness': {'fre': 'Musique acoustique', 'eng': 'Acoustic music'},
+    'instrumentalness': {'fre': 'Musique instrumentale', 'eng': 'Instrumental music'},
+    'liveness': {'fre': 'Musique live', 'eng': 'Live music'},
+    'valence': {'fre': 'Valence de la musique', 'eng': 'Valence of music'},
+    'tempo': {'fre': 'Tempo de la musique', 'eng': 'Music tempo'},
+    'duration_ms': {'fre': "Durée moy. d'un morceau (en ms)", 'eng': 'Average song duration (in ms)'},
     'nbr_artists': {'fre': 'Nbr artistes', 'eng': 'Nbr artists'},
     'latitude': {'fre': 'Latitude', 'eng': 'Latitude'},
     'longitude': {'fre': 'Longitude', 'eng': 'Longitude'},
@@ -80,8 +89,8 @@ language_dict = {
         'fre': "Quelles sont les caractéristiques des artistes?",
         'eng': "What are the artists' characteristics?"},
     'label_header_sources': {
-        'fre': 'Source des données',
-        'eng': "Data sources"},
+        'fre': 'Sources',
+        'eng': "Sources"},
 
     # label page
     'label_page_homepage': {
@@ -164,8 +173,8 @@ language_dict = {
         'fre': 'Choisir une salle de concert',
         'eng': 'Select one venue'},
     'label_selection_cluster': {
-        'fre': 'Choisir le nombre de partitions à afficher',
-        'eng': 'Select number of clusters to show'},
+        'fre': 'Choisir le nombre de partitions',
+        'eng': 'Select number of clusters'},
     'label_selection_locality': {
         'fre': 'Choisir une ou plusieurs localités',
         'eng': 'Select one or multiple localities'},
@@ -236,6 +245,12 @@ language_dict = {
     'option_links': {
         'fre': 'Liens',
         'eng': 'Links'},
+    'option_clusters': {
+        'fre': 'Partitions',
+        'eng': 'Clusters'},
+    'option_trendline': {
+        'fre': 'Ligne de tendance',
+        'eng': 'Trendline'},
 
     'description_overall': {
         'fre': """
@@ -370,10 +385,94 @@ language_dict = {
     },
     'description_venues_characteristics': {
         'fre': """
-            TBD    
+            #####
+            Cet outil met en évidence les caractéristiques des salles de concert, qui sont définies par la moyenne des caractéristiques des artistes ayant joué dans cette salle. La popularité, les attributs musicaux, l'activité et la mobilité des artistes peuvent être comparés. 
+            
+            ### Graphique et tableau
+            ##### Caractéristiques des salles
+            Ce diagramme en nuage de points montre les caractéristiques des salles de concert. Chaque point représente une salle et l'emplacement de ce point est défini par deux variables qui sont deux caractéristiques de la salle. Des informations pour chaque point sont affichées en survolant un point avec la souris.
+            
+            ##### Salles similaires
+            Lorsque l'option *Partitions* est sélectionnée, il est possible d'afficher un tableau des salles similaires à une salle donnée, selon les deux caractéristiques choisies. La similarité des salles est définie par l'algorithme du *K-means*.
+            
+            ### Paramètres
+            ##### Variables pour les axes x et y
+            Cette option permet de choisir les deux caractéristiques pour comparer les salles. Si une même variable est choisie pour les deux axes, tous les points seront alignés. Les variables possibles sont les suivantes:
+            - Popularité:
+              - **Nombre d'artistes**: nombre d'artistes ayant joué dans la salle
+              - **Nombre de followers**: nombre de followers sur Spotify
+              - **Nombre d'auditeurs**: nombre d'auditeurs mensuels sur Spotify
+            - Attributs musicaux
+              - **Musique acoustique**: de 0 (peu acoustique) à 1 (très acoustique)
+              - **Musique dansante**: de 0 (peu dansant) à 1 (très dansant)
+              - **Musique énergique**: de 0 (peu énergique) à 1 (très énergique)
+              - **Musique instrumentale**: de 0 (peu instrumentale) à 1 (très instrumentale)
+              - **Musique forte**: de 0 (musique douce) à 1 (musique forte)
+              - **Musique avec des paroles**: de 0 (musique sans parole) à 1 (musique avec que des paroles)
+              - **Tempo de la musique**: de 0 à 100
+              - **Valence de la musique**: de 0 (négatif) à 1 (positif)
+            - Activité des artistes
+              - **Fréquence des concerts**: de 0 (aucun concert) à 1 (concert quotidien)
+              - **Nombre moyen de concerts par tournée**: une tournée est définie comme une période durant laquelle au moins deux concerts ont lieu, sans qu’il ne se passe plus de 90 jours entre deux concerts successifs
+              - **Intensité moyenne d'une tournée**: de 0 (1 concert chaque 90 jours dans une tournée) à 1 (1 concert par jour dans une tournée)
+            - Mobilité des artistes
+              - **Mobilité**: de 0 (un artiste ne change pas de salle) à 1 (un artiste n'a jamais joué 2 fois au même endroit)
+              - **Mobilité pondérée**: de 0 (1 seule salle fréquentée et aucune distance parcourue) à 1 (jamais 2 fois la même salle et une distance maximum parcourue entre chaque salle)
+            #####
+            ##### Choix de localités
+            Cette option permet de choisir d'afficher uniquement les salles situées dans une ou plusieurs localités. Cela permet de faire des comparaisons plus ciblées sur des salles qui se trouvent dans des même localités.
+            
+            ##### Nombre d'artistes par salle
+            Cette option permet de choisir les salles dans lesquelles un certain nombre d'artistes ont joué. Par exemple si le nombre minimum choisi est 100, seules les salles où au moins 100 artistes ont se sont produits seront affichées. Cela permet de désengorger le graphique des lieux qui ont organisé peu de concerts et qui sont moins représentatifs de la scène musicale suisse.
+            
+            ##### Options d'affichage
+            - **Partitions**: cette option permet de grouper les points en un certain nombre de partitions, définies par l'algorithme du *K-means*. Si cette option est sélectionnée, il est possible de choisir le **Nombre de partitions**, entre 1 et 10. Cela permet de montrer quelles salles sont similaires selon les caractéristiques choisies. Dans la plupart des combinaisons de variables, il est recommandé d'avoir un nombre de partitions entre 4 et 8. Au-delà de 8, les partitions obtenues ne reflètent pas nécessairement une réelle différence entre chaque groupe.
+            - **Ligne de tendance**: cette option permet d'afficher sur le graphique une ligne de tendance..   
         """,
         'eng': """
-            TBD
+            #####
+            This tool highlights the characteristics of concert venues, which are defined by the average of the characteristics of the artists who have performed in that venue. Artists' popularity, musical attributes, activity and mobility can be compared. 
+            
+            ### Graph and table
+            ##### Venue characteristics
+            This scatter plot shows the characteristics of concert venues. Each point represents a venue and the location of that point is defined by two variables that are two characteristics of the venue. Information for each point is displayed by hovering over a point with the mouse.
+            
+            ##### Similar venues
+            When the *Partitions* option is selected, it is possible to display a table of venues similar to a given venue, according to the two selected characteristics. The similarity of the venues is defined by the *K-means* algorithm.
+            
+            ### Parameters
+            ##### Variables for x and y axis
+            This option allows to choose the two characteristics to compare the venues. If the same variable is chosen for both axes, all points will be aligned. The possible variables are as follows:
+            - Popularity:
+              - **Number of artists**: number of artists who have played in the venue
+              - **Number of followers**: number of followers on Spotify
+              - **Number of listeners**: number of monthly listeners on Spotify
+            - Musical attributes
+              - **Acoustic music**: from 0 (not very acoustic) to 1 (very acoustic)
+              - **Dance music**: from 0 (not very danceable) to 1 (very danceable)
+              - **Energetic music**: from 0 (not very energetic) to 1 (very energetic)
+              - **Instrumental music**: from 0 (not very instrumental) to 1 (very instrumental)
+              - **Loud music**: from 0 (soft music) to 1 (loud music)
+              - **Music with lyrics**: from 0 (music without lyrics) to 1 (music with lyrics only)
+              - **Music tempo**: from 0 to 100
+              - **Music valence**: from 0 (negative) to 1 (positive)
+            - Activity of artists
+              - **Frequency of concerts**: from 0 (no concert) to 1 (daily concert)
+              - **Average number of concerts per tour**: a tour is defined as a period during which at least two concerts take place, with no more than 90 days between two successive concerts
+              - **Average density of a tour**: from 0 (1 concert every 90 days on a tour) to 1 (1 concert per day on a tour)
+            - Mobility of artists
+              - **Mobility**: from 0 (an artist does not change venue) to 1 (an artist has never played twice in the same place)
+              - **Weighted mobility**: from 0 (only 1 venue attended and no distance traveled) to 1 (never the same venue twice and maximum distance traveled between each venue)
+            #####
+            ##### Choice of localities
+            This option allows you to choose to display only the rooms located in one or more localities. This allows you to make more targeted comparisons between venues in the same locality.
+            
+            ##### Number of artists per venue
+            This option allows you to select the venues in which a certain number of artists have played. For example, if the minimum number chosen is 100, only the venues where at least 100 artists have performed will be displayed. This allows you to clear the graph of venues that have organized few concerts and that are less representative of the Swiss music scene.
+            
+            ##### Display options
+            - Partitions**: this option allows to group the points into a number of partitions, defined by the *K-means* algorithm. If this option is selected, it is possible to choose the **Number of partitions**, between 1 and 10. This allows to show which rooms are similar according to the chosen characteristics. In most combinations of variables, it is recommended to have a number of partitions between 4 and 8. Beyond 8, the scores obtained do not necessarily reflect a real difference between each group.
+            - Trend line**: this option allows you to display a trend line on the graph.
         """
     },
     'description_concerts_in_venue': {
@@ -393,8 +492,9 @@ language_dict = {
         """
     },
 
-    'description_sources': {
+    'description_sources_data': {
         'fre': """
+            #### Données
             - Salles et concerts: [Songkick](https://www.songkick.com/)
             - Artistes: [Spotify](https://developer.spotify.com/documentation/web-api/)
             - Genres musicaux: [Wikidata](https://www.wikidata.org/)
@@ -402,11 +502,26 @@ language_dict = {
             Le projet complet est disponible sur [Github](https://github.com/cyrillegc/thesis-redux).
         """,
         'eng': """
+            #### Data
             - Venues and concerts: [Songkick](https://www.songkick.com/)
             - Artists: [Spotify](https://developer.spotify.com/documentation/web-api/)
             - Music genres: [Wikidata](https://www.wikidata.org/)
             
             The full project is available on [Github](https://github.com/cyrillegc/thesis-redux).            
+        """
+    },
+    'description_sources_packages': {
+        'fre': """
+            #### Librairies
+            - Mise en page: [Streamlit](https://streamlit.io/)
+            - Graphiques: [Plotly](https://plotly.com/)
+            - Cartographie: [Mapbox](https://www.mapbox.com/)
+        """,
+        'eng': """
+            #### Packages
+            - Layout: [Streamlit](https://streamlit.io/)
+            - Graphs: [Plotly](https://plotly.com/)
+            - Map: [Mapbox](https://www.mapbox.com/)
         """
     },
 }
