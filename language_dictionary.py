@@ -473,6 +473,7 @@ language_dict = {
             ##### Display options
             - Partitions**: this option allows to group the points into a number of partitions, defined by the *K-means* algorithm. If this option is selected, it is possible to choose the **Number of partitions**, between 1 and 10. This allows to show which rooms are similar according to the chosen characteristics. In most combinations of variables, it is recommended to have a number of partitions between 4 and 8. Beyond 8, the scores obtained do not necessarily reflect a real difference between each group.
             - Trend line**: this option allows you to display a trend line on the graph.
+            
         """
     },
     'description_concerts_in_venue': {
