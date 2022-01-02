@@ -23,6 +23,7 @@ language_dict = {
     'avg_tour_concerts': {'fre': 'Nbr concerts moy. par tournée', 'eng': 'Nbr concerts by tour avg.'},
     'avg_tour_days': {'fre': 'Durée moy. tournée', 'eng': 'Tour duration avg.'},
     'tour_concert_frequency': {'fre': 'Fréquence concerts par tournée', 'eng': 'Concert frequency by tour'},
+    'date': {'fre': 'Date concert', 'eng': 'Concert date'},
 
     'artist_spotify_followers': {'fre': 'Nbr followers Spotify (moy. des artistes)', 'eng': 'Nbr Spotify followers'},
     'artist_spotify_listeners': {'fre': 'Nbr auditeurs Spotify (moy. des artistes)', 'eng': 'Nbr Spotify listeners'},
@@ -88,6 +89,9 @@ language_dict = {
     'label_header_artists_characteristics': {
         'fre': "Quelles sont les caractéristiques des artistes?",
         'eng': "What are the artists' characteristics?"},
+    'label_header_artist_stats': {
+        'fre': "Quels sont les genres et les concerts d'un artiste précis?",
+        'eng': "What are the genres and concerts of a specific artist?"},
     'label_header_sources': {
         'fre': 'Sources',
         'eng': "Sources"},
@@ -111,6 +115,9 @@ language_dict = {
     'label_page_artists_characteristics': {
         'fre': "Caractéristiques des artistes",
         'eng': "Artists' characteristics"},
+    'label_page_artist_stats': {
+        'fre': "Genres et concerts d'un artiste",
+        'eng': "Artist's genres and concerts"},
 
     # label plot caption
     'label_plot_concerts_count_artist': {
@@ -145,6 +152,15 @@ language_dict = {
     'label_selection_artists': {
         'fre': 'Choisir un ou plusieurs artistes',
         'eng': 'Select one or multiple artists'},
+    'label_selection_all_artists': {
+        'fre': 'Tous les artistes?',
+        'eng': 'All artists?'},
+    'label_selection_artist_stats': {
+        'fre': 'Choisir un artiste',
+        'eng': 'Select one artist'},
+    'label_selection_concerts_artists': {
+        'fre': 'Caractéristiques',
+        'eng': 'Characteristics'},
     'label_selection_genre_frequency': {
         'fre': 'Fréquence genre (en %)',
         'eng': 'Genre frequency (in %)'},
@@ -181,6 +197,9 @@ language_dict = {
     'label_selection_nbr_artists': {
         'fre': "Choisir les salles avec un certain nombre d'artistes",
         'eng': 'Select venues with given number of artists'},
+    'label_selection_nbr_concerts': {
+        'fre': "Choisir les artistes avec un certain nombre de concerts",
+        'eng': 'Select artists with given number of concerts'},
     'label_selection_nbr_followers': {
         'fre': "TBD",
         'eng': 'TBD'},
@@ -199,6 +218,22 @@ language_dict = {
         'fre': "Fréquence (en %)",
         'eng': 'Frequency (in %)'},
 
+    # label table
+    'label_table_artist_concerts': {
+        'fre': "Historique des concerts de l'artiste sélectionné",
+        'eng': 'Concert history of the selected artist'},
+    'label_table_artist_genres': {
+        'fre': "**Genres associés à l'artiste sélectionné**",
+        'eng': '**Genres of the selected artist**'},
+
+    # label download
+    'label_download_data': {
+        'fre': "Télécharger les données en CSV",
+        'eng': 'Download data as CSV'},
+    'label_download_artist_concerts': {
+        'fre': "Télécharger les données sur les concerts de l'artiste en CSV",
+        'eng': 'Download artist concerts data as CSV'},
+
     # warnings
     'warning_genre_frequency': {
         'fre': "⚠️ *Choisir entre 1 et 4 salles.*",
@@ -206,6 +241,17 @@ language_dict = {
     'warning_common_artists': {
         'fre': "*Aucun artiste commun entre les salles choisies.*",
         'eng': '*No common artist between selected venues.*'},
+    'warning_artist_genre': {
+        'fre': "*Aucun genre associé à cet artiste.*",
+        'eng': '*No genre associated with this artist.*'},
+
+    # details
+    'details_common_artists': {
+        'fre': "Nombre d'artistes en commun: ",
+        'eng': 'Number of common artists: '},
+    'details_venues_cluster': {
+        'fre': "Ces salles font partie de la ",
+        'eng': 'Theses venues belong to '},
 
     # label variables
     'label_variables': {
@@ -239,6 +285,12 @@ language_dict = {
     'options_map_item': {
         'fre': ['Artistes', 'Genres', 'Noms'],
         'eng': ['Artists', 'Genres', 'Names']},
+    'options_concerts_artists': {
+        'fre': ['Concerts', 'Artistes'],
+        'eng': ['Concerts', 'Artists']},
+    'options_yes_no': {
+        'fre': ['Oui', 'Non'],
+        'eng': ['Yes', 'No']},
     'option_centroids': {
         'fre': 'Centroïdes',
         'eng': 'Centroids'},
@@ -258,7 +310,7 @@ language_dict = {
             les artistes évoluent dans ce milieu.
         """,
         'eng': """
-            TBD
+            Visualization tools of the Swiss music scene to better understand how concert venues and artists evolve in this environment.
         """
     },
     'description_map_distribution': {
@@ -427,7 +479,7 @@ language_dict = {
             
             ##### Options d'affichage
             - **Partitions**: cette option permet de grouper les points en un certain nombre de partitions, définies par l'algorithme du *K-means*. Si cette option est sélectionnée, il est possible de choisir le **Nombre de partitions**, entre 1 et 10. Cela permet de montrer quelles salles sont similaires selon les caractéristiques choisies. Dans la plupart des combinaisons de variables, il est recommandé d'avoir un nombre de partitions entre 4 et 8. Au-delà de 8, les partitions obtenues ne reflètent pas nécessairement une réelle différence entre chaque groupe.
-            - **Ligne de tendance**: cette option permet d'afficher sur le graphique une ligne de tendance..   
+            - **Ligne de tendance**: cette option permet d'afficher sur le graphique une ligne de tendance.
         """,
         'eng': """
             #####
@@ -478,18 +530,204 @@ language_dict = {
     },
     'description_concerts_in_venue': {
         'fre': """
-            TBD
+            Cet outil met en évidence, pour une salle de concert précise, les caractéristiques des concerts qui y ont eu lieu et des artistes qui y ont joué. Les caractéristiques d'un concert sont définies par la moyenne des caractéristiques des artistes participant à ce concert. La popularité, les attributs musicaux, l'activité et la mobilité des artistes peuvent être comparés. 
+            
+            ### Graphique
+            ##### Caractéristiques des concerts d'une salle
+            Ce diagramme en nuage de points montre les caractéristiques de tous les concerts ayant eu lieu dans une salle. Chaque point représente un concert et l'emplacement de ce point est défini par deux variables qui sont deux caractéristiques de ce concert. Des informations pour chaque point sont affichées en survolant un point avec la souris.
+            
+            ### Paramètres
+            ##### Choix d'une salle de concert
+            Cette option permet de choisir une salle de concert pour voir les caractéristiques de ses concerts ou artistes.
+            
+            ##### Variables pour les axes x et y
+            Cette option permet de choisir les deux caractéristiques pour comparer les concerts ou les artistes liés à la salle sélectionnée. Si une même variable est choisie pour les deux axes, tous les points seront alignés. Les variables possibles sont les suivantes:
+            - Popularité:
+              - **Nombre d'artistes**: nombre d'artistes ayant pris part au concert (uniquement avec l'option *Caractéristiques: Concerts* sélectionnée)
+               - **Nombre de concerts**: nombre de concerts auxquels l'artiste a pris part dans la salle sélectionnée (uniquement avec l'option *Caractéristiques: Artistes* sélectionnée)
+              - **Nombre de followers**: nombre de followers sur Spotify
+              - **Nombre d'auditeurs**: nombre d'auditeurs mensuels sur Spotify
+            - Attributs musicaux
+              - **Musique acoustique**: de 0 (peu acoustique) à 1 (très acoustique)
+              - **Musique dansante**: de 0 (peu dansant) à 1 (très dansant)
+              - **Musique énergique**: de 0 (peu énergique) à 1 (très énergique)
+              - **Musique instrumentale**: de 0 (peu instrumentale) à 1 (très instrumentale)
+              - **Musique forte**: de 0 (musique douce) à 1 (musique forte)
+              - **Musique avec des paroles**: de 0 (musique sans parole) à 1 (musique avec que des paroles)
+              - **Tempo de la musique**: de 0 à 100
+              - **Valence de la musique**: de 0 (négatif) à 1 (positif)
+            - Intensité des tournées
+              - **Fréquence des concerts**: de 0 (aucun concert) à 1 (concert quotidien)
+              - **Nombre moyen de concerts par tournée**: une tournée est définie comme une période durant laquelle au moins deux concerts ont lieu, sans qu’il ne se passe plus de 90 jours entre deux concerts successifs
+              - **Intensité moyenne d'une tournée**: de 0 (1 concert chaque 90 jours dans une tournée) à 1 (1 concert par jour dans une tournée)
+            - Mobilité des artistes
+              - **Mobilité**: de 0 (un artiste ne change pas de salle) à 1 (un artiste n'a jamais joué 2 fois au même endroit)
+              - **Mobilité pondérée**: de 0 (1 seule salle fréquentée et aucune distance parcourue) à 1 (jamais 2 fois la même salle et une distance maximum parcourue entre chaque salle)
+            - Autre
+              - **Date du concert**
+            #####
+            ##### Caractéristiques
+            Cette option permet de choisir de montrer les caractéristiques des concerts ou des artistes. Les caractéristiques d'un concert sont définies par la moyenne des caractéristiques des artistes ayant pris part à ce concert. Des artistes hétéroclites peuvent participer au même concert, c'est pourquoi il peut être intéressant de voir individuellement les caractéristiques de chaque artiste.
+            
+            ##### Options d'affichage
+            L'option de *Ligne de tendance* permet d'afficher sur le graphique une ligne de tendance.            
         """,
         'eng': """
-            TBD
+            This tool highlights, for a specific concert venue, the characteristics of the concerts that took place there and of the artists that played there. The characteristics of a concert are defined by the average of the characteristics of the artists participating in that concert. The popularity, musical attributes, activity and mobility of the artists can be compared. 
+            
+            ### Chart
+            ##### Characteristics of concerts in a venue
+            This scatter plot shows the characteristics of all concerts that took place in a venue. Each point represents a concert and the location of this point is defined by two variables that are two characteristics of this concert. Information for each point is displayed by hovering over a point with the mouse.
+            
+            ### Parameters
+            ##### Choice of a concert venue
+            This option allows you to choose a concert venue to see the characteristics of its concerts or artists.
+            
+            ##### Variables for the x and y axes
+            This option allows you to choose the two characteristics to compare the concerts or artists related to the selected venue. If the same variable is chosen for both axes, all points will be aligned. The possible variables are as follows:
+            - Popularity:
+              - **Number of artists**: number of artists who took part in the concert (only with the *Characteristics: Concerts* option selected)
+              - **Number of concerts**: number of concerts in which the artist has taken part in the selected venue (only with the option *Characteristics: Artists* selected)
+              - **Number of followers**: number of followers on Spotify
+              - **Number of listeners**: number of monthly listeners on Spotify
+            - Music attributes
+              - **Acoustic music**: from 0 (not very acoustic) to 1 (very acoustic)
+              - **Dance music**: from 0 (not very danceable) to 1 (very danceable)
+              - **Energetic music**: from 0 (not very energetic) to 1 (very energetic)
+              - **Instrumental music**: from 0 (not very instrumental) to 1 (very instrumental)
+              - **Loud music**: from 0 (soft music) to 1 (loud music)
+              - **Music with lyrics**: from 0 (music without lyrics) to 1 (music with lyrics only)
+              - **Music tempo**: from 0 to 100
+              - **Music valence**: from 0 (negative) to 1 (positive)
+            - Intensity of the tours
+              - **Frequency of concerts**: from 0 (no concert) to 1 (daily concert)
+              - **Average number of concerts per tour**: a tour is defined as a period during which at least two concerts take place, with no more than 90 days between two successive concerts
+              - **Average density of a tour**: from 0 (1 concert every 90 days on a tour) to 1 (1 concert per day on a tour)
+            - Mobility of artists
+              - **Mobility**: from 0 (an artist does not change venue) to 1 (an artist has never played twice in the same place)
+              - **Weighted mobility**: from 0 (only 1 venue attended and no distance traveled) to 1 (never the same venue twice and a maximum distance traveled between each venue)
+            - Other
+              - **Date of the concert**
+            #####
+            ##### Characteristics
+            This option allows you to choose to show the characteristics of concerts or artists. The characteristics of a concert are defined by the average of the characteristics of the artists who took part in this concert. Different artists may participate in the same concert, so it may be interesting to see the characteristics of each artist individually.
+            
+            ##### Display options
+            The *Trend line* option allows you to display a trend line on the graph.
         """
     },
     'description_artists_characteristics': {
         'fre': """
-            TBD
+            Cet outil met en évidence les caractéristiques des artistes ayant joué en Suisse ou de certains artistes. La popularité, les attributs musicaux, l'activité et la mobilité des artistes peuvent être comparés.
+            
+            ### Graphique
+            ##### Caractéristiques des artistes
+            Ce diagramme en nuage de points montre les caractéristiques des artistes ayant joué en Suisse ou de certains artistes. Chaque point représente un artiste et l'emplacement de ce point est défini par deux variables qui sont deux caractéristiques de cet artiste. Des informations pour chaque point sont affichées en survolant un point avec la souris. Un bouton permet de télécharger les données du graphique en format CSV.
+            
+            ### Paramètres  
+            ##### Variables pour les axes x et y  
+            Cette option permet de choisir les deux caractéristiques pour comparer les artistes. Si une même variable est choisie pour les deux axes, tous les points seront alignés. Les variables possibles sont les suivantes:  
+            - Popularité:  
+              - **Nombre d'artistes**: nombre d'artistes ayant joué dans la salle
+              - **Nombre de followers**: nombre de followers sur Spotify
+              - **Nombre d'auditeurs**: nombre d'auditeurs mensuels sur Spotify
+            - Attributs musicaux  
+              - **Musique acoustique**: de 0 (peu acoustique) à 1 (très acoustique)
+              - **Musique dansante**: de 0 (peu dansant) à 1 (très dansant)
+              - **Musique énergique**: de 0 (peu énergique) à 1 (très énergique)
+              - **Musique instrumentale**: de 0 (peu instrumentale) à 1 (très instrumentale) 
+              - **Musique forte**: de 0 (musique douce) à 1 (musique forte)
+              - **Musique avec des paroles**: de 0 (musique sans parole) à 1 (musique avec que des paroles)
+              - **Tempo de la musique**: de 0 à 100
+              - **Valence de la musique**: de 0 (négatif) à 1 (positif)
+            - Activité des artistes
+              - **Fréquence des concerts**: de 0 (aucun concert) à 1 (concert quotidien)
+              - **Nombre moyen de concerts par tournée**: une tournée est définie comme une période durant laquelle au moins deux concerts ont lieu, sans qu’il ne se passe plus de 90 jours entre deux concerts successifs
+              - **Intensité moyenne d'une tournée**: de 0 (1 concert chaque 90 jours dans une tournée) à 1 (1 concert par jour dans une tournée)
+            - Mobilité des artistes
+              - **Mobilité**: de 0 (un artiste ne change pas de salle) à 1 (un artiste n'a jamais joué 2 fois au même endroit)
+              - **Mobilité pondérée**: de 0 (1 seule salle fréquentée et aucune distance parcourue) à 1 (jamais 2 fois la même salle et une distance maximum parcourue entre chaque salle)
+            #####
+            ##### Tous les artistes?
+            Cette option binaire permet d'afficher soit l'ensemble des artistes soit une sélection d'artistes.
+            
+            ##### Nombre de concerts (avec l'option *Tous les artistes* uniquement)
+            Cette option permet de choisir les artistes qui ont joué un certain nombre de concerts en Suisse. Par exemple, si le nombre de concerts minimum choisi est 5, seuls les artistes qui se sont produits au moins 5 fois en Suisse seront affichés. Cela permet de désengorger le graphique des artistes qui ont peu joué en Suisse et qui peuvent être moins représentatifs de la scène musicale suisse.
+            
+            ##### Choix d'un artiste (sans l'option *Tous les artistes* uniquement)
+            Cette option permet de choisir les artistes à afficher sur le graphique.
         """,
         'eng': """
-            TBD
+            This tool highlights the characteristics of artists who have performed in Switzerland or of certain artists. The popularity, musical attributes, activity and mobility of the artists can be compared.
+            
+            ### Graphic
+            ##### Characteristics of the artists
+            This scatter plot shows the characteristics of artists who have performed in Switzerland or of selected artists. Each point represents an artist and the location of this point is defined by two variables that are two characteristics of this artist. Information for each point is displayed by hovering the mouse over a point. A button allows you to download the graph data in CSV format.
+            
+            ### Parameters  
+            ##### Variables for x and y axis  
+            This option allows you to choose the two characteristics to compare the artists. If the same variable is chosen for both axes, all points will be aligned. The possible variables are as follows:  
+            - Popularity:
+              - **Number of artists**: number of artists who took part in the concert (only with the *Characteristics: Concerts* option selected)
+              - **Number of concerts**: number of concerts in which the artist has taken part in the selected venue (only with the option *Characteristics: Artists* selected)
+              - **Number of followers**: number of followers on Spotify
+              - **Number of listeners**: number of monthly listeners on Spotify
+            - Music attributes
+              - **Acoustic music**: from 0 (not very acoustic) to 1 (very acoustic)
+              - **Dance music**: from 0 (not very danceable) to 1 (very danceable)
+              - **Energetic music**: from 0 (not very energetic) to 1 (very energetic)
+              - **Instrumental music**: from 0 (not very instrumental) to 1 (very instrumental)
+              - **Loud music**: from 0 (soft music) to 1 (loud music)
+              - **Music with lyrics**: from 0 (music without lyrics) to 1 (music with lyrics only)
+              - **Music tempo**: from 0 to 100
+              - **Music valence**: from 0 (negative) to 1 (positive)
+            - Intensity of the tours
+              - **Frequency of concerts**: from 0 (no concert) to 1 (daily concert)
+              - **Average number of concerts per tour**: a tour is defined as a period during which at least two concerts take place, with no more than 90 days between two successive concerts
+              - **Average density of a tour**: from 0 (1 concert every 90 days on a tour) to 1 (1 concert per day on a tour)
+            - Mobility of artists
+              - **Mobility**: from 0 (an artist does not change venue) to 1 (an artist has never played twice in the same place)
+              - **Weighted mobility**: from 0 (only 1 venue attended and no distance traveled) to 1 (never the same venue twice and a maximum distance traveled between each venue)
+            #####
+            ##### All artists?
+            This binary option allows you to display either all the artists or a selection of artists.
+            
+            ##### Number of concerts (with the *All artists* option only)
+            This option allows you to select the artists who have played a certain number of concerts in Switzerland. For example, if the minimum number of concerts chosen is 5, only the artists who have performed at least 5 times in Switzerland will be displayed. This allows to clear the chart of artists who have not played many concerts in Switzerland and who may be less representative of the Swiss music scene.
+            
+            ##### Choose an artist (without the *All artists* option only)
+            This option allows you to choose the artists to be displayed on the graph.
+        """
+    },
+
+    'description_artist_stats': {
+        'fre': """
+            Cet outil permet de voir quels genres sont associés à un artiste précis et d'obtenir une liste détaillée des concerts auxquels il a pris part en Suisse.
+            
+            ### Graphique et tableau
+            ##### Genres associés à un artiste
+            Ce diagramme de Sankey montre les genres musicaux associés à un certain artiste, en mettant en évidence ses genres globaux et les genres spécifiques. Par exemple, si un artiste a comme genre spécifique le *dance rock*, les genres globaux de *dance* et *rock* seront associés aussi à cet artiste. Un genre global peut être lié à plusieurs genres spécifiques et vice versa. Le diagramme montre donc à la fois l'ensemble des genres associés à un artiste, mais aussi les liens entre les genres globaux et les genres spécifiques. 
+            
+            ##### Historique des concerts d'un artiste
+            Ce tableau liste l'ensemble des concerts joués par un artiste précis. Pour chaque  concert est renseigné sa date, sa salle, sa localité et ses coordonnées géographiques. Un bouton permet de télécharger les données du tableau en format CSV.
+            
+            ### Paramètre
+            ##### Choix d'un artiste
+            Cette option permet de choisir un artiste pour voir les genres qui lui sont associés et son historique de concerts en Suisse.
+        """,
+        'eng': """
+            This tool allows you to see which genres are associated with a specific artist and to obtain a detailed list of concerts in which he or she took part in Switzerland.
+            
+            ### Graphic and table
+            ##### Genres associated with an artist
+            This Sankey diagram shows the musical genres associated with a certain artist, highlighting their global genres and specific genres. For example, if an artist has *dance rock* as a specific genre, the global genres of *dance* and *rock* will also be associated with that artist. A global genre can be linked to several specific genres and vice versa. The diagram therefore shows both the set of genres associated with an artist, but also the links between the global genres and the specific genres. 
+            
+            ##### Concert history of an artist
+            This table lists all the concerts played by a specific artist. For each concert, the date, the venue, the location and the geographical coordinates are indicated. A button allows you to download the data from the table in CSV format.
+            
+            ### Parameter
+            ##### Choice of an artist
+            This option allows you to choose an artist to see the genres associated with him/her and his/her concert history in Switzerland.
         """
     },
 
