@@ -243,6 +243,8 @@ if page_selection == 'label_page_map_distribution' or in_dev:
     with col1:
         with st.expander(current_lang['label_expander']):
             st.markdown(current_lang['description_map_distribution'])
+        with st.sidebar.expander(current_lang['label_expander']):
+            st.markdown(current_lang['description_map_distribution'])
 
     # scatter map options
     with st.container():
@@ -616,6 +618,8 @@ if page_selection == 'label_page_genre_frequency' or in_dev:
     with col1:
         with st.expander(current_lang['label_expander']):
             st.markdown(current_lang['description_genre_frequency'])
+        with st.sidebar.expander(current_lang['label_expander']):
+            st.markdown(current_lang['description_genre_frequency'])
 
     col1, col2 = st.columns((6, 2))
     with col1:
@@ -754,6 +758,8 @@ if page_selection == 'label_page_venues_characteristics' or in_dev:
     col1, col2 = st.columns((6, 2))
     with col1:
         with st.expander(current_lang['label_expander']):
+            st.markdown(current_lang['description_venues_characteristics'])
+        with st.sidebar.expander(current_lang['label_expander']):
             st.markdown(current_lang['description_venues_characteristics'])
 
     # scatter plot options
@@ -952,6 +958,8 @@ if page_selection == 'label_page_concerts_in_venue' or in_dev:
     col1, col2 = st.columns((6, 2))
     with col1:
         with st.expander(current_lang['label_expander']):
+            st.markdown(current_lang['description_concerts_in_venue'])
+        with st.sidebar.expander(current_lang['label_expander']):
             st.markdown(current_lang['description_concerts_in_venue'])
 
     # scatter plot options
@@ -1154,6 +1162,8 @@ if page_selection == 'label_page_artists_characteristics' or in_dev:
     with col1:
         with st.expander(current_lang['label_expander']):
             st.markdown(current_lang['description_artists_characteristics'])
+        with st.sidebar.expander(current_lang['label_expander']):
+            st.markdown(current_lang['description_artists_characteristics'])
 
     artist_stats_df = stats_artists_features_df.copy()
     categorical_columns = ['spotify_genres', 'top_genres', 'first_concert_date', 'last_concert_date']
@@ -1257,6 +1267,8 @@ if page_selection == 'label_page_artist_stats' or in_dev:
     col1, col2 = st.columns((6, 2))
     with col1:
         with st.expander(current_lang['label_expander']):
+            st.markdown(current_lang['description_artist_stats'])
+        with st.sidebar.expander(current_lang['label_expander']):
             st.markdown(current_lang['description_artist_stats'])
 
     artists_list = full_data_df.merge(artists_df['spotify_name'], left_on='artist_id', right_index=True)
