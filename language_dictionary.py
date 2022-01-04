@@ -70,22 +70,22 @@ language_dict = {
         'fre': "T'as où les salles?",
         'eng': 'Where are your venues?'},
     'label_expander': {
-        'fre': "Explications",
-        'eng': 'Details'},
+        'fre': "Explications de cet outil",
+        'eng': 'Explaination of this tool'},
 
     # label header
     'label_header_map_distribution': {
-        'fre': 'Comment sont répartis les salles et les concerts en Suisse?',
-        'eng': 'How are venues and concerts distributed in Switzerland?'},
+        'fre': 'Où se trouvent les concerts et les salles de concert en Suisse?',
+        'eng': 'Where are venues and concerts located in Switzerland?'},
     'label_header_genre_frequency': {
-        'fre': 'Quels sont les genres les plus fréquents dans les salles?',
-        'eng': 'What are the most frequent genres in venues?'},
+        'fre': 'Quels genres écoute-t-on dans dans les salles de concert?',
+        'eng': 'Which genres do we listen to in the venues?'},
     'label_header_venues_characteristics': {
-        'fre': 'Quelles sont les caractéristiques des salles?',
-        'eng': "What are the venues' characteristics?"},
+        'fre': 'Comment les salles de concert se différencient-elles?',
+        'eng': "How do venues distinguish from one another?"},
     'label_header_concerts_in_venue': {
-        'fre': "Quelles sont les caractéristiques des concerts d'une salle?",
-        'eng': "What are the concerts' characteristics of a venue?"},
+        'fre': "Quelles sont les différences entre les artistes d'une salle?",
+        'eng': "What are the differences between the artists of a venue?"},
     'label_header_artists_characteristics': {
         'fre': "Quelles sont les caractéristiques des artistes?",
         'eng': "What are the artists' characteristics?"},
@@ -98,8 +98,8 @@ language_dict = {
 
     # label page
     'label_page_homepage': {
-        'fre': "Page d'accueil",
-        'eng': 'Homepage'},
+        'fre': "Description du projet",
+        'eng': 'Project description'},
     'label_page_map_distribution': {
         'fre': 'Cartographie des salles et concerts',
         'eng': 'Venues and concerts mapping'},
@@ -167,6 +167,9 @@ language_dict = {
     'label_selection_genres': {
         'fre': 'Choisir un ou plusieurs genres',
         'eng': 'Select one or multiple genres'},
+    'label_selection_all_genres': {
+        'fre': 'Tous les genres sont sélectionnés',
+        'eng': 'All genres are selected'},
     'label_selection_genres_sorting': {
         'fre': 'Trier les genres par',
         'eng': 'Sort genres by'},
@@ -179,6 +182,9 @@ language_dict = {
     'label_selection_min_concerts': {
         'fre': 'Nbr min. concerts par salle',
         'eng': 'Min. nbr concerts by venue'},
+    'label_selection_max_concerts': {
+        'fre': 'Nbr max. concerts par salle',
+        'eng': 'Max. nbr concerts by venue'},
     'label_selection_display': {
         'fre': "<span style='font-size:14px'>Options d'affichage</span>",
         'eng': '<span style="font-size:14px">Display options</span>'},
@@ -188,6 +194,9 @@ language_dict = {
     'label_selection_venue': {
         'fre': 'Choisir une salle de concert',
         'eng': 'Select one venue'},
+    'label_selection_all_venues': {
+        'fre': 'Toutes les salles de concert sont sélectionnées',
+        'eng': 'All venues are selected'},
     'label_selection_cluster': {
         'fre': 'Choisir le nombre de partitions',
         'eng': 'Select number of clusters'},
@@ -257,16 +266,20 @@ language_dict = {
     'label_variables': {
         'fre': {
             'nbr_concerts': 'Nombre de concerts',
+            'nbr_venues': 'Nombre de salles',
             'spotify_name': "Nom de l'artiste",
             'date': 'Date concert',
+            'genre': 'Genre',
             'venue': 'Salle',
             'locality': 'Localité',
             'cluster': 'Partition'
         },
         'eng': {
             'nbr_concerts': 'Number of concerts',
+            'nbr_venues': 'Number of venues',
             'spotify_name': "Artist name",
             'date': 'Concert date',
+            'genre': 'Genre',
             'venue': 'Venue',
             'locality': 'Locality',
             'cluster': 'Cluster',
@@ -283,8 +296,8 @@ language_dict = {
                 'Rhythm and blues', 'Rock', 'Soul', 'Underground', 'Vocal', 'World music']},
 
     'options_map_item': {
-        'fre': ['Artistes', 'Genres', 'Noms'],
-        'eng': ['Artists', 'Genres', 'Names']},
+        'fre': ['Artiste', 'Genre', 'Nom'],
+        'eng': ['Artist', 'Genre', 'Name']},
     'options_concerts_artists': {
         'fre': ['Concerts', 'Artistes'],
         'eng': ['Concerts', 'Artists']},
@@ -294,6 +307,12 @@ language_dict = {
     'option_centroids': {
         'fre': 'Centroïdes',
         'eng': 'Centroids'},
+    'option_show_genres': {
+        'fre': 'Tous les genres',
+        'eng': 'All genres'},
+    'option_show_venues': {
+        'fre': 'Toutes les salles',
+        'eng': 'All venues'},
     'option_links': {
         'fre': 'Liens',
         'eng': 'Links'},
