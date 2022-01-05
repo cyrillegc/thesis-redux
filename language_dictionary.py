@@ -215,6 +215,9 @@ language_dict = {
     'label_selection_similar_venues': {
         'fre': "Choisir une salle pour voir les salles similaires",
         'eng': 'Select a venue to see its similar venues'},
+    'label_selection_trendline': {
+        'fre': 'Ligne de tendance?',
+        'eng': 'Trendline?'},
     'label_selection_x_data': {
         'fre': "Sélectionner une variable pour l'axe x",
         'eng': 'Select data for x-axis'},

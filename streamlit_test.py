@@ -81,10 +81,10 @@ selected_variables_artists = [
 config = {
     'scrollZoom': True,
     'toImageButtonOptions': {
-        'format': 'png',  # one of png, svg, jpeg, webp
+        'format': 'svg',  # one of png, svg, jpeg, webp
         'filename': 'custom_image',
-        'height': 720,
-        'width': 1280,
+        'height': 360,
+        'width': 640,
     },
     'toImage': {
         'title': None,  # change snapshot icon label to "Download plot"
@@ -632,7 +632,7 @@ if page_selection == 'label_page_map_distribution' or in_dev:
                 return fig_scatter
 
             fig_scatter = plot_scatter_map()
-            st.plotly_chart(fig_scatter, use_container_width=True)
+            st.plotly_chart(fig_scatter, config=config, use_container_width=True)
 
         # bar plot for venue counts by artist/genre
         if map_item_selection != 'name':
@@ -672,7 +672,7 @@ if page_selection == 'label_page_map_distribution' or in_dev:
                     margin=dict(l=0, r=0, t=0, b=0),
                     showlegend=False,
                 )
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig, config=config, use_container_width=True)
 
 # Genres in venue histogram
 if page_selection == 'label_page_genre_frequency' or in_dev:
@@ -759,7 +759,7 @@ if page_selection == 'label_page_genre_frequency' or in_dev:
 
         with col1:
             st.caption(current_lang['label_plot_genre_frequency'])
-            st.plotly_chart(fig_bar, use_container_width=True)
+            st.plotly_chart(fig_bar, config=config, use_container_width=True)
 
         # show common artists between venues
         with col2:
@@ -977,7 +977,7 @@ if page_selection == 'label_page_venues_characteristics' or in_dev:
             margin=dict(t=30, b=30),
         )
 
-        st.plotly_chart(fig, config=config)
+        st.plotly_chart(fig, config=config, use_container_width=True)
 
     with col2:
         similar_venue_selection = st.selectbox(
@@ -1092,7 +1092,7 @@ if page_selection == 'label_page_concerts_in_venue' or in_dev:
         artists_stats_df = get_artists_in_venue_stats()
         concerts_stats_df = get_concerts_in_venue_stats()
 
-        col1, col2, col3, col4, col5 = st.columns((3, 3, 3, 1, 2))
+        col1, col2, col3, col4, col5 = st.columns((3, 3, 3, 2, 2))
 
         with col1:
             venue_selection_scatter = st.selectbox(
@@ -1169,7 +1169,7 @@ if page_selection == 'label_page_concerts_in_venue' or in_dev:
             margin=dict(t=30, b=0),
         )
 
-        st.plotly_chart(fig, config=config)
+        st.plotly_chart(fig, config=config, use_container_width=True)
 
         venue_concerts_csv = convert_df(filtered_concerts_df)
         venue_name = venues_df.loc[venue_selection_scatter, 'venue'].lower().replace(' ', '_')
@@ -1199,7 +1199,7 @@ if page_selection == 'label_page_concerts_in_venue' or in_dev:
             margin=dict(t=30, b=0),
         )
 
-        st.plotly_chart(fig, config=config)
+        st.plotly_chart(fig, config=config, use_container_width=True)
 
         venue_artists_csv = convert_df(filtered_artists_df)
         venue_name = venues_df.loc[venue_selection_scatter, 'venue'].lower().replace(' ', '_')
@@ -1300,10 +1300,10 @@ if page_selection == 'label_page_artists_characteristics' or in_dev:
     fig.update_layout(
         dragmode='pan',
         paper_bgcolor=bg_color,
-        margin=dict(l=10, r=30, t=30, b=10),
+        margin=dict(t=30, b=30),
     )
 
-    st.plotly_chart(fig, config=config)
+    st.plotly_chart(fig, config=config, use_container_width=True)
 
     #data_for_export = artist_stats_df.merge(venues_df['venue'], left_index=True, right_index=True)
     artist_stats_csv = convert_df(artist_stats_df)
@@ -1369,7 +1369,7 @@ if page_selection == 'label_page_artist_stats' or in_dev:
                 margin=dict(t=30, b=10),
             )
 
-            st.plotly_chart(fig, config=config)
+            st.plotly_chart(fig, config=config, use_container_width=True)
         else:
             st.markdown(current_lang['warning_artist_genre'])
 
