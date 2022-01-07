@@ -1,0 +1,10 @@
+montrer toute une panoplie de possibilités grâce à la méthodo
+
+lecteur doit se dire à la fin: grâce à cette méthodo je peux enfin avoir accès à ces choses là
+
+travail en humanités num: pourquoi les humanités numériques ? on doit encore se justifier
+méthodologie 
+
+faire des pages pour streamlit
+homepage
+chaque partie sur une page

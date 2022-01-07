@@ -213,7 +213,6 @@ with col1:
     st.title(current_lang['label_title'])
     st.markdown(current_lang['description_overall'])
 
-
 # sidebar
 page_selection = st.sidebar.selectbox(
     label=current_lang['label_selection_page'],
@@ -240,6 +239,7 @@ stats_venues_genres_df = stats_venues_genres_df.rename(columns=genres_lang_dict)
 if page_selection == 'label_page_map_distribution' or in_dev:
     st.markdown('---')
     st.subheader(current_lang['label_header_map_distribution'])
+
     col1, col2 = st.columns((6, 2))
     with col1:
         with st.sidebar.expander(current_lang['label_expander']):
@@ -678,6 +678,7 @@ if page_selection == 'label_page_map_distribution' or in_dev:
 if page_selection == 'label_page_genre_frequency' or in_dev:
     st.markdown('---')
     st.subheader(current_lang['label_header_genre_frequency'])
+
     col1, col2 = st.columns((6, 2))
     with col1:
         with st.sidebar.expander(current_lang['label_expander']):
