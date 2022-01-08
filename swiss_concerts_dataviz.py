@@ -216,9 +216,15 @@ with col1:
 # sidebar
 page_selection = st.sidebar.selectbox(
     label=current_lang['label_selection_page'],
-    options=['label_page_homepage', 'label_page_map_distribution', 'label_page_genre_frequency',
-             'label_page_venues_characteristics', 'label_page_concerts_in_venue',
-             'label_page_artists_characteristics', 'label_page_artist_stats'],
+    options=[
+        'label_page_homepage',
+        'label_page_map_distribution',
+        'label_page_genre_frequency',
+        'label_page_venues_characteristics',
+        'label_page_concerts_in_venue',
+        #'label_page_artists_characteristics',
+        'label_page_artist_stats',
+    ],
     format_func=lambda x: current_lang[x],
 )
 st.sidebar.markdown('---\n#####')
