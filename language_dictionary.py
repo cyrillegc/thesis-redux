@@ -74,6 +74,9 @@ language_dict = {
         'eng': 'Explaination of this tool'},
 
     # label header
+    'label_header_homepage': {
+        'fre': 'Description du projet',
+        'eng': 'Project description'},
     'label_header_map_distribution': {
         'fre': 'Où se trouvent les concerts et les salles de concert en Suisse?',
         'eng': 'Where are venues and concerts located in Switzerland?'},
@@ -328,11 +331,56 @@ language_dict = {
 
     'description_overall': {
         'fre': """
-            Outils de visualisation de la scène musicale suisse pour mieux comprendre comment les salles de concert et 
-            les artistes évoluent dans ce milieu.
+            Une exploration statistique et visuelle de la scène musicale suisse.
         """,
         'eng': """
-            Visualization tools of the Swiss music scene to better understand how concert venues and artists evolve in this environment.
+            A statistical and visual exploration of the Swiss music scene.
+        """
+    },
+    'description_homepage': {
+        'fre': """
+            ### Description du projet
+            Ce projet de visualisation de données entreprend de rendre compte de la complexité et de la diversité des concerts en Suisse entre 2010 et 2019.
+
+            Riche d’une histoire mouvementée, la scène musicale suisse consiste en un champ d’études encore relativement incomplet et les quelques études consacrées à ce milieu ne se sont pas intéressées à l’étudier d’un point de vue quantitatif.
+
+            Pour y parvenir, nous avons mobilisé les ressources de trois bases de données distinctes, Songkick, Spotify et Wikidata. Nous les avons mises en relation afin d’obtenir à la fois un historique des concerts qui ont eu lieu en Suisse sur une période de dix ans entre 2010 et 2019, mais aussi des caractéristiques liées aux artistes de ces concerts pour pouvoir distinguer les salles les unes des autres. 
+
+            Dans le but de mieux saisir ce que ces données représentent, des techniques de visualisation de données ont été développées pour mettre en lumière les variables spatiales, musicales et de popularité relatives à ces concerts. 
+
+            Grâce à ces outils, des perspectives de recherches et une utilité de ces données pour les acteurs du milieu des concerts ont pu être mises en valeur. Les données disponibles permettent donc de mener une étude quantitative sur les concerts en Suisse, même si en raison de leur nature il est nécessaire de les manipuler avec précaution et de relativiser les conclusions que l’on pourrait en tirer.
+
+            Nous espérons que ce projet saura vous éclairer sur un domaine vaste, passionnant et incroyablement vivant !
+            
+            ### Comment ça marche ?
+            Pour accéder aux outils de visualisation de données :
+            - Ouvrez la barre latérale (à gauche)
+            - Choisissez une page dans le menu déroulant
+            - Explorez les données !
+            
+            Pour chaque outil, une explication détaillée de son fonctionnement se trouve dans la barre latérale.
+        """,
+        'eng': """
+            ### Project description
+            This data visualization project aims to capture the complexity and diversity of the Swiss concert scene between 2010 and 2019.
+            
+            The Swiss music scene has a rich history and is still a relatively incomplete field of study, and the few studies devoted to this milieu have not focused on studying it from a quantitative point of view.
+            
+            To do so, we mobilized the resources of three distinct databases, Songkick, Spotify and Wikidata. We linked them in order to obtain both a history of concerts that took place in Switzerland over a ten-year period between 2010 and 2019, but also characteristics related to the artists of these concerts to be able to distinguish one venue from another. 
+            
+            In order to better understand what this data represents, data visualization techniques were developed to highlight spatial, musical, and popularity variables related to these concerts. 
+            
+            Thanks to these tools, research perspectives and the usefulness of these data for the actors of the concert community could be highlighted. The available data allow to conduct a quantitative study on concerts in Switzerland, even if, due to their nature, it is necessary to handle them with care and to relativize the conclusions that could be drawn from them.
+            
+            We hope that this project will enlighten you on a vast, fascinating and incredibly lively field!
+            
+            ### How does it work?
+            To access the data visualization tools:
+            - Open the sidebar (on the left)
+            - Choose a page from the drop-down menu
+            - Explore the data!
+            
+            For each tool, a detailed explanation of how it works can be found in the sidebar.     
         """
     },
     'description_map_distribution': {
@@ -460,7 +508,7 @@ language_dict = {
     'description_venues_characteristics': {
         'fre': """
             #####
-            Cet outil met en évidence les caractéristiques des salles de concert, qui sont définies par la moyenne des caractéristiques des artistes ayant joué dans cette salle. La popularité, les attributs musicaux, l'activité et la mobilité des artistes peuvent être comparés. 
+            Cet outil met en évidence les caractéristiques des salles de concert, qui sont définies par la moyenne des caractéristiques des artistes ayant joué dans cette salle. La popularité, les attributs musicaux et la mobilité des artistes peuvent être comparés. 
             
             ### Graphique et tableau
             ##### Caractéristiques des salles
@@ -485,10 +533,6 @@ language_dict = {
               - **Musique avec des paroles**: de 0 (musique sans parole) à 1 (musique avec que des paroles)
               - **Tempo de la musique**: de 0 à 100
               - **Valence de la musique**: de 0 (négatif) à 1 (positif)
-            - Activité des artistes
-              - **Fréquence des concerts**: de 0 (aucun concert) à 1 (concert quotidien)
-              - **Nombre moyen de concerts par tournée**: une tournée est définie comme une période durant laquelle au moins deux concerts ont lieu, sans qu’il ne se passe plus de 90 jours entre deux concerts successifs
-              - **Intensité moyenne d'une tournée**: de 0 (1 concert chaque 90 jours dans une tournée) à 1 (1 concert par jour dans une tournée)
             - Mobilité des artistes
               - **Mobilité**: de 0 (un artiste ne change pas de salle) à 1 (un artiste n'a jamais joué 2 fois au même endroit)
               - **Mobilité pondérée**: de 0 (1 seule salle fréquentée et aucune distance parcourue) à 1 (jamais 2 fois la même salle et une distance maximum parcourue entre chaque salle)
@@ -505,7 +549,7 @@ language_dict = {
         """,
         'eng': """
             #####
-            This tool highlights the characteristics of concert venues, which are defined by the average of the characteristics of the artists who have performed in that venue. Artists' popularity, musical attributes, activity and mobility can be compared. 
+            This tool highlights the characteristics of concert venues, which are defined by the average of the characteristics of the artists who have performed in that venue. Artists' popularity, musical attributes and mobility can be compared. 
             
             ### Graph and table
             ##### Venue characteristics
@@ -530,10 +574,6 @@ language_dict = {
               - **Music with lyrics**: from 0 (music without lyrics) to 1 (music with lyrics only)
               - **Music tempo**: from 0 to 100
               - **Music valence**: from 0 (negative) to 1 (positive)
-            - Activity of artists
-              - **Frequency of concerts**: from 0 (no concert) to 1 (daily concert)
-              - **Average number of concerts per tour**: a tour is defined as a period during which at least two concerts take place, with no more than 90 days between two successive concerts
-              - **Average density of a tour**: from 0 (1 concert every 90 days on a tour) to 1 (1 concert per day on a tour)
             - Mobility of artists
               - **Mobility**: from 0 (an artist does not change venue) to 1 (an artist has never played twice in the same place)
               - **Weighted mobility**: from 0 (only 1 venue attended and no distance traveled) to 1 (never the same venue twice and maximum distance traveled between each venue)
@@ -552,7 +592,7 @@ language_dict = {
     },
     'description_concerts_in_venue': {
         'fre': """
-            Cet outil met en évidence, pour une salle de concert précise, les caractéristiques des concerts qui y ont eu lieu et des artistes qui y ont joué. Les caractéristiques d'un concert sont définies par la moyenne des caractéristiques des artistes participant à ce concert. La popularité, les attributs musicaux, l'activité et la mobilité des artistes peuvent être comparés. 
+            Cet outil met en évidence, pour une salle de concert précise, les caractéristiques des concerts qui y ont eu lieu et des artistes qui y ont joué. Les caractéristiques d'un concert sont définies par la moyenne des caractéristiques des artistes participant à ce concert. La popularité, les attributs musicaux et la mobilité des artistes peuvent être comparés. 
             
             ### Graphique
             ##### Caractéristiques des concerts d'une salle
@@ -595,7 +635,7 @@ language_dict = {
             L'option de *Ligne de tendance* permet d'afficher sur le graphique une ligne de tendance.            
         """,
         'eng': """
-            This tool highlights, for a specific concert venue, the characteristics of the concerts that took place there and of the artists that played there. The characteristics of a concert are defined by the average of the characteristics of the artists participating in that concert. The popularity, musical attributes, activity and mobility of the artists can be compared. 
+            This tool highlights, for a specific concert venue, the characteristics of the concerts that took place there and of the artists that played there. The characteristics of a concert are defined by the average of the characteristics of the artists participating in that concert. The popularity, musical attributes and mobility of the artists can be compared. 
             
             ### Chart
             ##### Characteristics of concerts in a venue
@@ -640,7 +680,7 @@ language_dict = {
     },
     'description_artists_characteristics': {
         'fre': """
-            Cet outil met en évidence les caractéristiques des artistes ayant joué en Suisse ou de certains artistes. La popularité, les attributs musicaux, l'activité et la mobilité des artistes peuvent être comparés.
+            Cet outil met en évidence les caractéristiques des artistes ayant joué en Suisse ou de certains artistes. La popularité, les attributs musicaux et la mobilité des artistes peuvent être comparés.
             
             ### Graphique
             ##### Caractéristiques des artistes
@@ -662,10 +702,6 @@ language_dict = {
               - **Musique avec des paroles**: de 0 (musique sans parole) à 1 (musique avec que des paroles)
               - **Tempo de la musique**: de 0 à 100
               - **Valence de la musique**: de 0 (négatif) à 1 (positif)
-            - Activité des artistes
-              - **Fréquence des concerts**: de 0 (aucun concert) à 1 (concert quotidien)
-              - **Nombre moyen de concerts par tournée**: une tournée est définie comme une période durant laquelle au moins deux concerts ont lieu, sans qu’il ne se passe plus de 90 jours entre deux concerts successifs
-              - **Intensité moyenne d'une tournée**: de 0 (1 concert chaque 90 jours dans une tournée) à 1 (1 concert par jour dans une tournée)
             - Mobilité des artistes
               - **Mobilité**: de 0 (un artiste ne change pas de salle) à 1 (un artiste n'a jamais joué 2 fois au même endroit)
               - **Mobilité pondérée**: de 0 (1 seule salle fréquentée et aucune distance parcourue) à 1 (jamais 2 fois la même salle et une distance maximum parcourue entre chaque salle)
@@ -680,7 +716,7 @@ language_dict = {
             Cette option permet de choisir les artistes à afficher sur le graphique.
         """,
         'eng': """
-            This tool highlights the characteristics of artists who have performed in Switzerland or of certain artists. The popularity, musical attributes, activity and mobility of the artists can be compared.
+            This tool highlights the characteristics of artists who have performed in Switzerland or of certain artists. The popularity, musical attributes and mobility of the artists can be compared.
             
             ### Graphic
             ##### Characteristics of the artists

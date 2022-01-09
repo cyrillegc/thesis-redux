@@ -47,16 +47,13 @@ selected_variables_venues = [
     'artist_spotify_listeners',
     'acousticness',
     'danceability',
-    'duration_ms',
     'energy',
     'instrumentalness',
-    #'liveness',
     'loudness',
     'speechiness',
     'tempo',
     'valence',
-    'artist_concert_frequency',
-    'artist_average_tour_concerts',
+    'duration_ms',
     'artist_mobility',
     'artist_mobility_weighted',
 ]
@@ -65,15 +62,13 @@ selected_variables_artists = [
     'spotify_listeners',
     'acousticness',
     'danceability',
-    'duration_ms',
     'energy',
     'instrumentalness',
-    #'liveness',
     'loudness',
     'speechiness',
     'tempo',
     'valence',
-    'concert_frequency',
+    'duration_ms',
     'mobility',
     'mobility_weighted',
     'date',
@@ -239,9 +234,12 @@ for i in range(len(genres_id)):
 full_data_df['top_genre'] = full_data_df['top_genre'].replace(to_replace=genres_lang_dict)
 stats_venues_genres_df = stats_venues_genres_df.rename(columns=genres_lang_dict)
 
-# Scatter map
-# TODO: afficher toutes les salles sur une carte (avec filtres nbr concerts)
+# homepage
+if page_selection == 'label_page_homepage' or in_dev:
+    st.markdown('---')
+    st.markdown(current_lang['description_homepage'])
 
+# Scatter map
 if page_selection == 'label_page_map_distribution' or in_dev:
     st.markdown('---')
     st.subheader(current_lang['label_header_map_distribution'])
