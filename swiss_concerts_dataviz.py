@@ -237,8 +237,11 @@ stats_venues_genres_df = stats_venues_genres_df.rename(columns=genres_lang_dict)
 # homepage
 if page_selection == 'label_page_homepage' or in_dev:
     st.markdown('---')
-    st.markdown(current_lang['description_homepage'])
-
+    col1, col2, col3 = st.columns((6, 1, 4))
+    with col1:
+        st.markdown(current_lang['description_homepage_1'])
+    with col3:
+        st.markdown(current_lang['description_homepage_2'])
 # Scatter map
 if page_selection == 'label_page_map_distribution' or in_dev:
     st.markdown('---')
@@ -1391,7 +1394,7 @@ if page_selection == 'label_page_artist_stats' or in_dev:
         # reorder and rename columns
         col_order = ['spotify_name', 'date', 'venue', 'locality', 'latitude', 'longitude']
         artist_concerts = artist_concerts[col_order].sort_values(by=['date'])
-        artist_concerts = artist_concerts.rename(columns={'date': 'concert date'})
+        artist_concerts = artist_concerts.rename(columns=current_lang)
         artist_concerts = artist_concerts.set_index('spotify_name')
 
         # show artist concerts dataframe

@@ -337,7 +337,7 @@ language_dict = {
             A statistical and visual exploration of the Swiss music scene.
         """
     },
-    'description_homepage': {
+    'description_homepage_1': {
         'fre': """
             ### Description du projet
             Ce projet de visualisation de données entreprend de rendre compte de la complexité et de la diversité des concerts en Suisse entre 2010 et 2019.
@@ -351,14 +351,6 @@ language_dict = {
             Grâce à ces outils, des perspectives de recherches et une utilité de ces données pour les acteurs du milieu des concerts ont pu être mises en valeur. Les données disponibles permettent donc de mener une étude quantitative sur les concerts en Suisse, même si en raison de leur nature il est nécessaire de les manipuler avec précaution et de relativiser les conclusions que l’on pourrait en tirer.
 
             Nous espérons que ce projet saura vous éclairer sur un domaine vaste, passionnant et incroyablement vivant !
-            
-            ### Comment ça marche ?
-            Pour accéder aux outils de visualisation de données :
-            - Ouvrez la barre latérale (à gauche)
-            - Choisissez une page dans le menu déroulant
-            - Explorez les données !
-            
-            Pour chaque outil, une explication détaillée de son fonctionnement se trouve dans la barre latérale.
         """,
         'eng': """
             ### Project description
@@ -372,14 +364,26 @@ language_dict = {
             
             Thanks to these tools, research perspectives and the usefulness of these data for the actors of the concert community could be highlighted. The available data allow to conduct a quantitative study on concerts in Switzerland, even if, due to their nature, it is necessary to handle them with care and to relativize the conclusions that could be drawn from them.
             
-            We hope that this project will enlighten you on a vast, fascinating and incredibly lively field!
-            
+            We hope that this project will enlighten you on a vast, fascinating and incredibly lively field!  
+        """
+    },
+    'description_homepage_2': {
+        'fre': """
+            ### Comment ça marche ?
+            Pour accéder aux outils de visualisation de données :
+            - Ouvrez la barre latérale (à gauche)
+            - Choisissez une page dans le menu déroulant
+            - Explorez les données !
+    
+            Pour chaque outil, une explication détaillée de son fonctionnement se trouve dans la barre latérale.
+        """,
+        'eng': """
             ### How does it work?
             To access the data visualization tools:
             - Open the sidebar (on the left)
             - Choose a page from the drop-down menu
             - Explore the data!
-            
+    
             For each tool, a detailed explanation of how it works can be found in the sidebar.     
         """
     },
@@ -797,6 +801,8 @@ language_dict = {
             - Genres musicaux: [Wikidata](https://www.wikidata.org/)
             
             Le projet complet est disponible sur [Github](https://github.com/cyrillegc/thesis-redux).
+            
+            Ce projet a été créé par Cyrille Gay-Crosier dans le cadre du Mémoire de Master en Humanités numériques et Informatique pour les sciences humaines à l'Université de Lausanne, sous la co-direction de Dr. Davide Picca et Dr. Isaac Pante.
         """,
         'eng': """
             #### Data
@@ -804,7 +810,9 @@ language_dict = {
             - Artists: [Spotify](https://developer.spotify.com/documentation/web-api/)
             - Music genres: [Wikidata](https://www.wikidata.org/)
             
-            The full project is available on [Github](https://github.com/cyrillegc/thesis-redux).            
+            The full project is available on [Github](https://github.com/cyrillegc/thesis-redux). 
+            
+            This project was created by Cyrille Gay-Crosier as part of the Master's thesis in Digital Humanities and Computer Science for the Humanities at the University of Lausanne, under the co-direction of Dr. Davide Picca and Dr. Isaac Pante.           
         """
     },
     'description_sources_packages': {
