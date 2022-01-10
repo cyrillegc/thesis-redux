@@ -550,6 +550,7 @@ language_dict = {
             ##### Options d'affichage
             - **Partitions**: cette option permet de grouper les points en un certain nombre de partitions, définies par l'algorithme du *K-means*. Si cette option est sélectionnée, il est possible de choisir le **Nombre de partitions**, entre 1 et 10. Cela permet de montrer quelles salles sont similaires selon les caractéristiques choisies. Dans la plupart des combinaisons de variables, il est recommandé d'avoir un nombre de partitions entre 4 et 8. Au-delà de 8, les partitions obtenues ne reflètent pas nécessairement une réelle différence entre chaque groupe.
             - **Ligne de tendance**: cette option permet d'afficher sur le graphique une ligne de tendance.
+            
         """,
         'eng': """
             #####
